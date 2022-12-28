@@ -1,0 +1,26 @@
+//case (bob, bo) leaves (steve, st) joins
+//case (steve, pub, priv)
+ 
+PROPS : {p, al, bo} .
+
+AGENTS : {gaze, alice, bob} .
+
+MODEL : { NODES = {
+
+(1,{p, -al, -bo}), 
+(2,{p, -al, bo}),
+(3,{p, al, -bo}),
+(4,{p, al, bo})
+
+},
+  
+EDGES = {
+(gaze , {1=(1,1),2=(2,2),3=(3,3),4=(4,4)}),
+(alice , {1=(1,1),2=(2,2),3=(3,3),4=(4,4),5=(4,3),6=(3,4),7=(1,2),8=(2,1)}), 
+(bob , {1=(1,1),2=(2,2),3=(3,3),4=(4,4),5=(4,2),6=(2,4),7=(1,3),8=(3,1)})
+} ,
+
+DES = {2}} .
+
+//GOAL : ( BELIEVES [gaze] ( BELIEVES [steve] (st) AND NOT (BELIEVES [steve] (bo)))).
+GOAL : ( BELIEVES [gaze] ( BELIEVES [steve] (st) AND NOT (BELIEVES [steve] (bo)))).

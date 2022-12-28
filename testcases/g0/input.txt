@@ -1,0 +1,198 @@
+// at(agent), th(agent). at is different from no arrows. at means presence at a location in question where as no arrows would mean no existence
+//at combined with th makes people flee. eat action requires only at
+
+PROPS : {atm, atf, atg, ato, thm, thf, thg, tho} .
+
+AGENTS : {m, f, o, g} .
+
+MODEL : 
+{ NODES = {(1,{atm, atf, -atg, -ato, thm, -thf, -thg, -tho}),
+(2,{atm, atf, atg, -ato, thm, thf, -thg, -tho}),
+(3,{atm, atf, -atg, -ato, thm, -thf, -thg, -tho})
+} ,  
+EDGES = {(m,{-(1,1),-(2,2),-(3,3),-(1,2),-(2,1),-(1,3),-(3,1),-(2,3),-(3,2)}),
+(f,{-(1,1),-(2,2),-(3,3),-(1,2),-(2,1),-(1,3),-(3,1),-(2,3),-(3,2)}),
+(o,{-(1,1),-(2,2),-(3,3),-(1,2),-(2,1),-(1,3),-(3,1),-(2,3),-(3,2)}),
+(g,{-(2,2),-(3,3)})
+},
+DES = {1,2}
+} .
+
+ACTIONS : {
+
+CAPABILITY = (( flee_f = { 
+
+EVENTS = { 
+1 = ( PRE = atf AND (BELIEVES [f] (thf)) , POST = {-atf, -thf, -thm} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(g,{-(1,1)}),
+(o,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+f, test),
+
+CAPABILITY = (( flee_g = { 
+
+EVENTS = { 
+1 = ( PRE = atg AND (BELIEVES [g] (thg)) , POST = {-atg, -thg, -thf} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(g,{-(1,1)}),
+(o,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+g, test),
+
+CAPABILITY = (( f_eats_m = { 
+//dropping m arrows and make the proposition false
+EVENTS = { 
+1 = ( PRE = atf AND atm , POST = {-atm} )
+},
+ 
+EDGES = {
+(f,{-(1,1)}),
+(g,{-(1,1)}),
+(o,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+f, test),
+
+CAPABILITY = (( g_eats_m = { 
+
+EVENTS = { 
+1 = ( PRE = atg AND atm , POST = {-atm} )
+},
+ 
+EDGES = {
+(f,{-(1,1)}),
+(g,{-(1,1)}),
+(o,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+f, test),
+
+CAPABILITY = (( g_eats_f = { 
+
+EVENTS = { 
+1 = ( PRE = atg AND atf , POST = {-atf, -thm} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(g,{-(1,1)}),
+(o,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+g, test),
+
+CAPABILITY = (( infer_thf = { 
+
+EVENTS = { 
+1 = ( PRE = atg AND atf AND POSSIBLE [g] TRUE, POST = {thf} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(g,{-(1,1)}),
+(o,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+x, test),
+
+CAPABILITY = (( infer_thm = { 
+
+EVENTS = { 
+1 = ( PRE = atm AND atf AND POSSIBLE [f] TRUE, POST = {thm} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(g,{-(1,1)}),
+(o,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+x, test),
+
+CAPABILITY = (( dcv_add_g_by_m_for_f = { 
+
+EVENTS = { 
+1 = ( PRE = TRUE , POST = {nil} ),  
+2 = ( PRE = POSSIBLE [g] TRUE AND atg, POST = {nil} ),
+3 = ( PRE = TRUE , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1),-(2,2),-(3,3)}),
+(f,{-(1,2),-(2,2),-(3,3)}),
+(o,{-(1,3),-(2,3),-(3,3)}),
+(g,{-(2,2),-(3,3)}),
+}
+,
+
+DES = {1}}), 
+m, test),
+
+CAPABILITY = (( dcv_add_f_by_m_for_g = { 
+
+EVENTS = { 
+1 = ( PRE = TRUE , POST = {nil} ),  
+2 = ( PRE = POSSIBLE [f] TRUE AND atf, POST = {nil} ),
+3 = ( PRE = TRUE , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1),-(2,2),-(3,3)}),
+(g,{-(1,2),-(2,2),-(3,3)}),
+(o,{-(1,3),-(2,3),-(3,3)}),
+(f,{-(2,2),-(3,3)}),
+}
+,
+
+DES = {1}}), 
+m, test),
+
+CAPABILITY = (( arrive_m = { 
+
+EVENTS = { 
+1 = ( PRE = -atm AND (BELIEVES [m] (-thm)) , POST = {atm} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(g,{-(1,1)}),
+(o,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+m, test)
+}.
+
+//GOAL : POSSIBLE [f] (POSSIBLE [g] (p AND TRUE)) AND (POSSIBLE [o] (POSSIBLE [f] NOT POSSIBLE [g] (p AND TRUE))).
+//GOAL : POSSIBLE [f] (POSSIBLE [g] (p AND TRUE)) AND POSSIBLE [o] (POSSIBLE [g] (p AND TRUE)).
+GOAL : -thm.
+// GOAL : NOT POSSIBLE [m] TRUE.

@@ -1,0 +1,292 @@
+<PROGRAM>
+    <PROPOSITIONS text='PROPS' pos='1:0'>
+        <PROPOSITION text='p' pos='1:9'/>
+    </PROPOSITIONS>
+    <AG text='AGENTS' pos='3:0'>
+        <AGENT text='m' pos='3:10'/>
+        <AGENT text='f' pos='3:13'/>
+        <AGENT text='o' pos='3:16'/>
+    </AG>
+    <INITIAL_KRIPKE text='MODEL' pos='5:0'>
+        <NODELIST text='NODES' pos='6:2'>
+            <N text='1' pos='6:12'>
+                <PROPOSITION text='p' pos='6:15'/>
+            </N>
+        </NODELIST>
+        <EDGELIST text='EDGES' pos='7:0'>
+            <AE text='m' pos='7:10'>
+                <E text='-' pos='7:13'>
+                    <ID text='1' pos='7:15'/>
+                    <ID text='1' pos='7:17'/>
+                </E>
+            </AE>
+            <AE text='f' pos='7:23'>
+                <E text='-' pos='7:26'>
+                    <ID text='1' pos='7:28'/>
+                    <ID text='1' pos='7:30'/>
+                </E>
+            </AE>
+            <AE text='o' pos='7:36'>
+                <E text='-' pos='7:39'>
+                    <ID text='1' pos='7:41'/>
+                    <ID text='1' pos='7:43'/>
+                </E>
+            </AE>
+        </EDGELIST>
+        <DES pos='8:0'>
+            <ID text='1' pos='8:7'/>
+        </DES>
+    </INITIAL_KRIPKE>
+    <EVENTMODELS text='ACTIONS' pos='11:0'>
+        <CAPABILITIES text='CAPABILITY' pos='13:0'>
+            <EVENTMODEL text='dcv_add_g_by_m_for_f' pos='13:16'>
+                <EVENTLIST text='EVENTS' pos='15:0'>
+                    <ID text='1' pos='16:0'>
+                        <PRECONDITIONS text='PRE' pos='16:6'>
+                            <TRUE pos='16:12'/>
+                        </PRECONDITIONS>
+                        <POST pos='16:19'>
+                            <PROPOSITION text='nil' pos='16:27'/>
+                        </POST>
+                    </ID>
+                    <ID text='2' pos='17:0'>
+                        <PRECONDITIONS text='PRE' pos='17:6'>
+                            <TRUE pos='17:12'/>
+                        </PRECONDITIONS>
+                        <POST pos='17:19'>
+                            <PROPOSITION text='nil' pos='17:27'/>
+                        </POST>
+                    </ID>
+                    <ID text='3' pos='18:0'>
+                        <PRECONDITIONS text='PRE' pos='18:6'>
+                            <TRUE pos='18:12'/>
+                        </PRECONDITIONS>
+                        <POST pos='18:19'>
+                            <PROPOSITION text='nil' pos='18:27'/>
+                        </POST>
+                    </ID>
+                </EVENTLIST>
+                <EDGELIST text='EDGES' pos='21:0'>
+                    <AE text='m' pos='22:1'>
+                        <E text='-' pos='22:4'>
+                            <ID text='1' pos='22:6'/>
+                            <ID text='1' pos='22:8'/>
+                        </E>
+                        <E text='-' pos='22:11'>
+                            <ID text='2' pos='22:13'/>
+                            <ID text='2' pos='22:15'/>
+                        </E>
+                        <E text='-' pos='22:18'>
+                            <ID text='3' pos='22:20'/>
+                            <ID text='3' pos='22:22'/>
+                        </E>
+                    </AE>
+                    <AE text='f' pos='23:1'>
+                        <E text='-' pos='23:4'>
+                            <ID text='1' pos='23:6'/>
+                            <ID text='2' pos='23:8'/>
+                        </E>
+                        <E text='-' pos='23:11'>
+                            <ID text='2' pos='23:13'/>
+                            <ID text='2' pos='23:15'/>
+                        </E>
+                        <E text='-' pos='23:18'>
+                            <ID text='3' pos='23:20'/>
+                            <ID text='3' pos='23:22'/>
+                        </E>
+                    </AE>
+                    <AE text='o' pos='24:1'>
+                        <E text='-' pos='24:4'>
+                            <ID text='1' pos='24:6'/>
+                            <ID text='3' pos='24:8'/>
+                        </E>
+                        <E text='-' pos='24:11'>
+                            <ID text='2' pos='24:13'/>
+                            <ID text='3' pos='24:15'/>
+                        </E>
+                        <E text='-' pos='24:18'>
+                            <ID text='3' pos='24:20'/>
+                            <ID text='3' pos='24:22'/>
+                        </E>
+                    </AE>
+                </EDGELIST>
+                <SUMEDGELIST text='SUMEDGES' pos='29:0'>
+                    <AE text='g' pos='30:1'>
+                        <E text='-' pos='30:4'>
+                            <ID text='2' pos='30:6'/>
+                            <ID text='2' pos='30:8'/>
+                        </E>
+                    </AE>
+                </SUMEDGELIST>
+                <DES pos='34:0'>
+                    <ID text='1' pos='34:7'/>
+                </DES>
+            </EVENTMODEL>
+            <NAME text='m' pos='35:0'/>
+            <EXPLANATION text='test' pos='35:3'/>
+        </CAPABILITIES>
+        <CAPABILITIES text='CAPABILITY' pos='37:0'>
+            <EVENTMODEL text='make_p_false' pos='37:16'>
+                <EVENTLIST text='EVENTS' pos='39:0'>
+                    <ID text='1' pos='40:0'>
+                        <PRECONDITIONS text='PRE' pos='40:6'>
+                            <PROPOSITION text='p' pos='40:12'/>
+                        </PRECONDITIONS>
+                        <POST pos='40:16'>
+                            <PROPOSITION text='-p' pos='40:24'/>
+                        </POST>
+                    </ID>
+                </EVENTLIST>
+                <EDGELIST text='EDGES' pos='43:0'>
+                    <AE text='m' pos='44:1'>
+                        <E text='-' pos='44:4'>
+                            <ID text='1' pos='44:6'/>
+                            <ID text='1' pos='44:8'/>
+                        </E>
+                    </AE>
+                    <AE text='f' pos='45:1'>
+                        <E text='-' pos='45:4'>
+                            <ID text='1' pos='45:6'/>
+                            <ID text='1' pos='45:8'/>
+                        </E>
+                    </AE>
+                    <AE text='o' pos='46:1'>
+                        <E text='-' pos='46:4'>
+                            <ID text='1' pos='46:6'/>
+                            <ID text='1' pos='46:8'/>
+                        </E>
+                    </AE>
+                    <AE text='g' pos='47:1'>
+                        <E text='-' pos='47:4'>
+                            <ID text='1' pos='47:6'/>
+                            <ID text='1' pos='47:8'/>
+                        </E>
+                    </AE>
+                </EDGELIST>
+                <DES pos='51:0'>
+                    <ID text='1' pos='51:7'/>
+                </DES>
+            </EVENTMODEL>
+            <NAME text='m' pos='52:0'/>
+            <EXPLANATION text='test' pos='52:3'/>
+        </CAPABILITIES>
+        <CAPABILITIES text='CAPABILITY' pos='54:0'>
+            <EVENTMODEL text='dcv_add_g_by_m_for_o' pos='54:16'>
+                <EVENTLIST text='EVENTS' pos='56:0'>
+                    <ID text='1' pos='57:0'>
+                        <PRECONDITIONS text='PRE' pos='57:6'>
+                            <TRUE pos='57:12'/>
+                        </PRECONDITIONS>
+                        <POST pos='57:19'>
+                            <PROPOSITION text='nil' pos='57:27'/>
+                        </POST>
+                    </ID>
+                    <ID text='2' pos='58:0'>
+                        <PRECONDITIONS text='PRE' pos='58:6'>
+                            <TRUE pos='58:12'/>
+                        </PRECONDITIONS>
+                        <POST pos='58:19'>
+                            <PROPOSITION text='nil' pos='58:27'/>
+                        </POST>
+                    </ID>
+                    <ID text='3' pos='59:0'>
+                        <PRECONDITIONS text='PRE' pos='59:6'>
+                            <TRUE pos='59:12'/>
+                        </PRECONDITIONS>
+                        <POST pos='59:19'>
+                            <PROPOSITION text='nil' pos='59:27'/>
+                        </POST>
+                    </ID>
+                </EVENTLIST>
+                <EDGELIST text='EDGES' pos='62:0'>
+                    <AE text='m' pos='63:1'>
+                        <E text='-' pos='63:4'>
+                            <ID text='1' pos='63:6'/>
+                            <ID text='1' pos='63:8'/>
+                        </E>
+                        <E text='-' pos='63:11'>
+                            <ID text='2' pos='63:13'/>
+                            <ID text='2' pos='63:15'/>
+                        </E>
+                        <E text='-' pos='63:18'>
+                            <ID text='3' pos='63:20'/>
+                            <ID text='3' pos='63:22'/>
+                        </E>
+                    </AE>
+                    <AE text='o' pos='64:1'>
+                        <E text='-' pos='64:4'>
+                            <ID text='1' pos='64:6'/>
+                            <ID text='2' pos='64:8'/>
+                        </E>
+                        <E text='-' pos='64:11'>
+                            <ID text='2' pos='64:13'/>
+                            <ID text='2' pos='64:15'/>
+                        </E>
+                        <E text='-' pos='64:18'>
+                            <ID text='3' pos='64:20'/>
+                            <ID text='3' pos='64:22'/>
+                        </E>
+                    </AE>
+                    <AE text='f' pos='65:1'>
+                        <E text='-' pos='65:4'>
+                            <ID text='1' pos='65:6'/>
+                            <ID text='3' pos='65:8'/>
+                        </E>
+                        <E text='-' pos='65:11'>
+                            <ID text='2' pos='65:13'/>
+                            <ID text='3' pos='65:15'/>
+                        </E>
+                        <E text='-' pos='65:18'>
+                            <ID text='3' pos='65:20'/>
+                            <ID text='3' pos='65:22'/>
+                        </E>
+                    </AE>
+                    <AE text='g' pos='66:1'>
+                        <E text='-' pos='66:4'>
+                            <ID text='3' pos='66:6'/>
+                            <ID text='3' pos='66:8'/>
+                        </E>
+                    </AE>
+                </EDGELIST>
+                <SUMEDGELIST text='SUMEDGES' pos='71:0'>
+                    <AE text='g' pos='72:1'>
+                        <E text='-' pos='72:4'>
+                            <ID text='2' pos='72:6'/>
+                            <ID text='2' pos='72:8'/>
+                        </E>
+                    </AE>
+                </SUMEDGELIST>
+                <DES pos='76:0'>
+                    <ID text='1' pos='76:7'/>
+                </DES>
+            </EVENTMODEL>
+            <NAME text='m' pos='77:0'/>
+            <EXPLANATION text='test1' pos='77:3'/>
+        </CAPABILITIES>
+    </EVENTMODELS>
+    <GOAL pos='81:0'>
+        <AND pos='81:49'>
+            <POSSIBLE pos='81:7'>
+                <AGENT text='f' pos='81:17'/>
+                <POSSIBLE pos='81:21'>
+                    <AGENT text='g' pos='81:31'/>
+                    <AND pos='81:38'>
+                        <PROPOSITION text='-p' pos='81:35'/>
+                        <TRUE pos='81:42'/>
+                    </AND>
+                </POSSIBLE>
+            </POSSIBLE>
+            <POSSIBLE pos='81:53'>
+                <AGENT text='o' pos='81:63'/>
+                <POSSIBLE pos='81:67'>
+                    <AGENT text='g' pos='81:77'/>
+                    <AND pos='81:84'>
+                        <PROPOSITION text='-p' pos='81:81'/>
+                        <TRUE pos='81:88'/>
+                    </AND>
+                </POSSIBLE>
+            </POSSIBLE>
+        </AND>
+    </GOAL>
+    <ERROR:NULL-TOKEN/>
+</PROGRAM>

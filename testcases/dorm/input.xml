@@ -1,0 +1,144 @@
+<PROGRAM>
+    <PROPOSITIONS text='PROPS' pos='4:0'>
+        <PROPOSITION text='p' pos='4:9'/>
+        <PROPOSITION text='al' pos='4:12'/>
+        <PROPOSITION text='bo' pos='4:16'/>
+    </PROPOSITIONS>
+    <AG text='AGENTS' pos='6:0'>
+        <AGENT text='gaze' pos='6:10'/>
+        <AGENT text='alice' pos='6:16'/>
+        <AGENT text='bob' pos='6:23'/>
+    </AG>
+    <INITIAL_KRIPKE text='MODEL' pos='8:0'>
+        <NODELIST text='NODES' pos='8:10'>
+            <N text='1' pos='10:1'>
+                <PROPOSITION text='p' pos='10:4'/>
+                <PROPOSITION text='-al' pos='10:7'/>
+                <PROPOSITION text='-bo' pos='10:12'/>
+            </N>
+            <N text='2' pos='11:1'>
+                <PROPOSITION text='p' pos='11:4'/>
+                <PROPOSITION text='-al' pos='11:7'/>
+                <PROPOSITION text='bo' pos='11:12'/>
+            </N>
+            <N text='3' pos='12:1'>
+                <PROPOSITION text='p' pos='12:4'/>
+                <PROPOSITION text='al' pos='12:7'/>
+                <PROPOSITION text='-bo' pos='12:11'/>
+            </N>
+            <N text='4' pos='13:1'>
+                <PROPOSITION text='p' pos='13:4'/>
+                <PROPOSITION text='al' pos='13:7'/>
+                <PROPOSITION text='bo' pos='13:11'/>
+            </N>
+        </NODELIST>
+        <EDGELIST text='EDGES' pos='17:0'>
+            <AE text='gaze' pos='18:1'>
+                <E text='1' pos='18:9'>
+                    <ID text='1' pos='18:12'/>
+                    <ID text='1' pos='18:14'/>
+                </E>
+                <E text='2' pos='18:17'>
+                    <ID text='2' pos='18:20'/>
+                    <ID text='2' pos='18:22'/>
+                </E>
+                <E text='3' pos='18:25'>
+                    <ID text='3' pos='18:28'/>
+                    <ID text='3' pos='18:30'/>
+                </E>
+                <E text='4' pos='18:33'>
+                    <ID text='4' pos='18:36'/>
+                    <ID text='4' pos='18:38'/>
+                </E>
+            </AE>
+            <AE text='alice' pos='19:1'>
+                <E text='1' pos='19:10'>
+                    <ID text='1' pos='19:13'/>
+                    <ID text='1' pos='19:15'/>
+                </E>
+                <E text='2' pos='19:18'>
+                    <ID text='2' pos='19:21'/>
+                    <ID text='2' pos='19:23'/>
+                </E>
+                <E text='3' pos='19:26'>
+                    <ID text='3' pos='19:29'/>
+                    <ID text='3' pos='19:31'/>
+                </E>
+                <E text='4' pos='19:34'>
+                    <ID text='4' pos='19:37'/>
+                    <ID text='4' pos='19:39'/>
+                </E>
+                <E text='5' pos='19:42'>
+                    <ID text='4' pos='19:45'/>
+                    <ID text='3' pos='19:47'/>
+                </E>
+                <E text='6' pos='19:50'>
+                    <ID text='3' pos='19:53'/>
+                    <ID text='4' pos='19:55'/>
+                </E>
+                <E text='7' pos='19:58'>
+                    <ID text='1' pos='19:61'/>
+                    <ID text='2' pos='19:63'/>
+                </E>
+                <E text='8' pos='19:66'>
+                    <ID text='2' pos='19:69'/>
+                    <ID text='1' pos='19:71'/>
+                </E>
+            </AE>
+            <AE text='bob' pos='20:1'>
+                <E text='1' pos='20:8'>
+                    <ID text='1' pos='20:11'/>
+                    <ID text='1' pos='20:13'/>
+                </E>
+                <E text='2' pos='20:16'>
+                    <ID text='2' pos='20:19'/>
+                    <ID text='2' pos='20:21'/>
+                </E>
+                <E text='3' pos='20:24'>
+                    <ID text='3' pos='20:27'/>
+                    <ID text='3' pos='20:29'/>
+                </E>
+                <E text='4' pos='20:32'>
+                    <ID text='4' pos='20:35'/>
+                    <ID text='4' pos='20:37'/>
+                </E>
+                <E text='5' pos='20:40'>
+                    <ID text='4' pos='20:43'/>
+                    <ID text='2' pos='20:45'/>
+                </E>
+                <E text='6' pos='20:48'>
+                    <ID text='2' pos='20:51'/>
+                    <ID text='4' pos='20:53'/>
+                </E>
+                <E text='7' pos='20:56'>
+                    <ID text='1' pos='20:59'/>
+                    <ID text='3' pos='20:61'/>
+                </E>
+                <E text='8' pos='20:64'>
+                    <ID text='3' pos='20:67'/>
+                    <ID text='1' pos='20:69'/>
+                </E>
+            </AE>
+        </EDGELIST>
+        <DES pos='23:0'>
+            <ID text='2' pos='23:7'/>
+        </DES>
+    </INITIAL_KRIPKE>
+    <GOAL pos='26:0'>
+        <BELIEVES pos='26:9'>
+            <AGENT text='gaze' pos='26:19'/>
+            <AND pos='26:49'>
+                <BELIEVES pos='26:27'>
+                    <AGENT text='steve' pos='26:37'/>
+                    <PROPOSITION text='st' pos='26:45'/>
+                </BELIEVES>
+                <NOT pos='26:53'>
+                    <BELIEVES pos='26:58'>
+                        <AGENT text='steve' pos='26:68'/>
+                        <PROPOSITION text='bo' pos='26:76'/>
+                    </BELIEVES>
+                </NOT>
+            </AND>
+        </BELIEVES>
+    </GOAL>
+</PROGRAM>
