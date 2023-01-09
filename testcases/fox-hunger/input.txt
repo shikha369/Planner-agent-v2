@@ -833,8 +833,8 @@ IACTIONS : {
 ( infer_th_m = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND ((at_f AND POSSIBLE [f] (TRUE) AND predator_f_m AND -friends_m_f) OR (at_g AND POSSIBLE [g] (TRUE) AND predator_g_m AND -friends_m_g)), POST = {th_m} ),
-2 = ( PRE = POSSIBLE [m] (TRUE) AND NOT(at_m AND at_f AND POSSIBLE [f] (TRUE) AND predator_f_m AND -friends_m_f) AND NOT (at_g AND POSSIBLE [g] (TRUE) AND predator_g_m AND -friends_m_g), POST = {-th_m} )
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND ((at_f AND POSSIBLE [f] (TRUE) AND predator_f_m AND -friends_m_f) OR (at_g AND POSSIBLE [g] (TRUE) AND predator_g_m AND -friends_m_g) OR (at_o AND POSSIBLE [o] (TRUE) AND predator_o_m AND -friends_m_o)), POST = {th_m} ),
+2 = ( PRE = POSSIBLE [m] (TRUE) AND NOT(at_m AND at_f AND POSSIBLE [f] (TRUE) AND predator_f_m AND -friends_m_f) AND NOT (at_g AND POSSIBLE [g] (TRUE) AND predator_g_m AND -friends_m_g) AND NOT (at_o AND POSSIBLE [o] (TRUE) AND predator_o_m AND -friends_m_o), POST = {-th_m} )
 },
 EDGES = {
 (f,{-(1,1), -(1,2), -(2,1), -(2,2)}),

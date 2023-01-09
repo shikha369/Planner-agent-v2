@@ -17,13 +17,19 @@ public class SearchNode {
     KripkeAction Action;
     ArrayList<String> listIactions;
     KripkeStructure ks;
+    String path; 
     
-    public SearchNode(SearchNode parentNode, KripkeAction Action, KripkeStructure self, ArrayList<String> iactionslist)
+    public SearchNode(SearchNode parentNode, KripkeAction Action, KripkeStructure self, ArrayList<String> iactionslist, String path)
     {
         this.ParentNode = parentNode;
         this.Action = Action;
         this.ks = self;
         this.listIactions = iactionslist;
+        /** 
+        if(parentNode.equals(null) )
+            this.path = path;
+        else
+            this.path = parentNode.path + "," + Action.ActionName;*/
     }
     
     

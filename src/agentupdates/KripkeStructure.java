@@ -88,7 +88,8 @@ public class KripkeStructure {
         ArrayList<Integer> new_des = new ArrayList<>();
         
         //Initialise identifiers
-        int numM = Planner.models.size();
+        //int numM = Planner.models.size();
+        int numM = Planner.model_ctr++;
         int numW = 0;
         int numE = 0;
         
@@ -105,7 +106,7 @@ public class KripkeStructure {
             {
                 KripkeEvent curr_event = kaction.eventlist.get(e_itr);
 
-                if(curr_world.isEntailed(curr_event.preconditions))
+                if(curr_world.isEntailed(this, curr_event.preconditions))
                 {
                     /**
                      * 1- create a new state with updated valuation and add the w-id and e-id pair to twmp list
@@ -441,7 +442,7 @@ public boolean checkIfApplicable(ArrayList<Kripkeworld> designated_worlds,
         {
             for(int e_itr = 0; e_itr < designated_events.size(); e_itr++)
             {
-                if(designated_worlds.get(w_itr).isEntailed(designated_events.get(e_itr).preconditions))
+                if(designated_worlds.get(w_itr).isEntailed(this, designated_events.get(e_itr).preconditions))
                 {
                   isapplicable = true;
                   break;

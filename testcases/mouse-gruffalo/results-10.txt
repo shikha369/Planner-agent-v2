@@ -1,0 +1,27 @@
+Domain size:10
+	 Number of models evaluated: 576	 Plan found is : [f_arrives, flee_f, o_arrives, flee_o, m_lie_inf_app_to_g, flee_g]
+	 elapsed time:0.285355833
+	 Number of models evaluated: 627	 Plan found is : [f_arrives, flee_f, m_lie_inf_app_to_g, o_arrives, flee_o, flee_g]
+	 elapsed time:0.299804375
+	 Number of models evaluated: 668	 Plan found is : [f_arrives, o_arrives, flee_f, flee_o, m_lie_inf_app_to_g, flee_g]
+	 elapsed time:0.310799083
+	 Number of models evaluated: 715	 Plan found is : [f_arrives, o_arrives, flee_o, flee_f, m_lie_inf_app_to_g, flee_g]
+	 elapsed time:0.31151825
+	 Number of models evaluated: 762	 Plan found is : [o_arrives, flee_o, f_arrives, flee_f, m_lie_inf_app_to_g, flee_g]
+	 elapsed time:0.312188625
+	 Number of models evaluated: 835	 Plan found is : [o_arrives, flee_o, m_lie_inf_app_to_g, f_arrives, flee_f, flee_g]
+	 elapsed time:0.315973708
+	 Number of models evaluated: 896	 Plan found is : [o_arrives, f_arrives, flee_f, flee_o, m_lie_inf_app_to_g, flee_g]
+	 elapsed time:0.344873917
+	 Number of models evaluated: 943	 Plan found is : [o_arrives, f_arrives, flee_o, flee_f, m_lie_inf_app_to_g, flee_g]
+	 elapsed time:0.345578292
+	 Number of models evaluated: 994	 Plan found is : [m_lie_inf_app_to_g, f_arrives, flee_f, o_arrives, flee_o, flee_g]
+	 elapsed time:0.622213458
+	 Number of models evaluated: 1019	 Plan found is : [m_lie_inf_app_to_g, f_arrives, o_arrives, flee_f, flee_o, flee_g]
+	 elapsed time:0.902928042
+	 Number of models evaluated: 1044	 Plan found is : [m_lie_inf_app_to_g, f_arrives, o_arrives, flee_o, flee_f, flee_g]
+	 elapsed time:1.181014542
+	 Number of models evaluated: 1069	 Plan found is : [m_lie_inf_app_to_g, o_arrives, flee_o, f_arrives, flee_f, flee_g]
+	 elapsed time:1.467102792
+	 Number of models evaluated: 1114	 Plan found is : [m_lie_inf_app_to_g, o_arrives, f_arrives, flee_f, flee_o, flee_g]
+	 elapsed time:1.981383792

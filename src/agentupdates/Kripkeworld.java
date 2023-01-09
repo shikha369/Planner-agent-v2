@@ -50,7 +50,7 @@ public class Kripkeworld {
      * methods to check whether a formula holds true in this world
      */
     
-    public boolean isEntailed(Formula formula) {   
+    public boolean isEntailed(KripkeStructure model, Formula formula) {   
         boolean isEnt = false;
         
         switch(formula.type)
@@ -69,18 +69,18 @@ public class Kripkeworld {
                 break;
                 
             case AND:
-                isEnt = isEntailed(formula.leftFormula) && isEntailed(formula.rightFormula);
+                isEnt = isEntailed(model, formula.leftFormula) && isEntailed(model, formula.rightFormula);
                 break;
                 
             case OR:
-                isEnt = isEntailed(formula.leftFormula) || isEntailed(formula.rightFormula);                
+                isEnt = isEntailed(model, formula.leftFormula) || isEntailed(model, formula.rightFormula);                
                 break;
                 
             case NOT:
                 /**
                  * rightmost character '-'
                  */
-                isEnt = !(isEntailed(formula.rightFormula));
+                isEnt = !(isEntailed(model, formula.rightFormula));
                 break;
                 
             case B:
@@ -102,12 +102,22 @@ public class Kripkeworld {
                     {
                         
                         //int to_world_edge_id = Planner.models.get(this.reverseId).kedgelist.get(e).toKripkeWorldId;
+                        /** 
                         int to_world_id = 
                                 KripkeStructure.pull_an_edge_by_id(Planner.models.get(this.reverseId).kedgelist, e).toKripkeWorldId;
-                        
+                        */
+
+                        int to_world_id = 
+                                KripkeStructure.pull_an_edge_by_id(model.kedgelist, e).toKripkeWorldId;
+
+                        /** 
                         Kripkeworld to_world = 
                                 KripkeStructure.pull_a_state_by_id(Planner.models.get(this.reverseId).statelist, to_world_id);
-                        isEnt = to_world.isEntailed(formula.rightFormula);
+                        */
+                        Kripkeworld to_world = 
+                                KripkeStructure.pull_a_state_by_id(model.statelist, to_world_id);
+
+                        isEnt = to_world.isEntailed(model, formula.rightFormula);
                         
                         if(!isEnt)
                             break;
@@ -151,11 +161,11 @@ public class Kripkeworld {
                         
                         //int to_world_edge_id = Planner.models.get(this.reverseId).kedgelist.get(e).toKripkeWorldId;
                         int to_world_id = 
-                                KripkeStructure.pull_an_edge_by_id(Planner.models.get(this.reverseId).kedgelist, e).toKripkeWorldId;
+                                KripkeStructure.pull_an_edge_by_id(model.kedgelist, e).toKripkeWorldId;
                         
                         Kripkeworld to_world = 
-                                KripkeStructure.pull_a_state_by_id(Planner.models.get(this.reverseId).statelist, to_world_id);
-                        isEnt = to_world.isEntailed(formula.rightFormula);
+                                KripkeStructure.pull_a_state_by_id(model.statelist, to_world_id);
+                        isEnt = to_world.isEntailed(model, formula.rightFormula);
                         
                         if(isEnt)
                             break;

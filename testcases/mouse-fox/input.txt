@@ -92,6 +92,148 @@ EDGES = {
 DES = {1}}), 
 o, o_runs_away),
 
+//arrives actions
+
+CAPABILITY = (( m_arrives = { 
+
+EVENTS = { 
+1 = ( PRE = -at_m AND POSSIBLE [m] (TRUE), POST = {at_m} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+m, m_arrives),
+
+CAPABILITY = (( f_arrives = { 
+
+EVENTS = { 
+1 = ( PRE = -at_f AND POSSIBLE [f] (TRUE), POST = {at_f} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+f, f_arrives),
+
+CAPABILITY = (( g_arrives = { 
+
+EVENTS = { 
+1 = ( PRE = -at_g AND POSSIBLE [g] (TRUE), POST = {at_g} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+g, g_arrives),
+
+CAPABILITY = (( o_arrives = { 
+
+EVENTS = { 
+1 = ( PRE = -at_o AND POSSIBLE [o] (TRUE), POST = {at_o} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+o, o_arrives),
+
+
+//leaves actions
+
+CAPABILITY = (( m_leaves = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE), POST = {-at_m} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+m, m_leaves),
+
+CAPABILITY = (( f_leaves = { 
+
+EVENTS = { 
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE), POST = {-at_f} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+f, f_leaves),
+
+CAPABILITY = (( g_leaves = { 
+
+EVENTS = { 
+1 = ( PRE = at_g AND POSSIBLE [g] (TRUE), POST = {-at_g} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+g, g_leaves),
+
+CAPABILITY = (( o_leaves = { 
+
+EVENTS = { 
+1 = ( PRE = at_o AND POSSIBLE [o] (TRUE), POST = {-at_o} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+o, o_leaves),
+
+
 //'eats' actions affect alive, will have DEL edges
 
 CAPABILITY = (( g_eats_m = { 
@@ -624,17 +766,34 @@ IACTIONS : {
 ( infer_th_m = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND ((at_f AND POSSIBLE [f] (TRUE) AND predator_f_m AND -friends_m_f) OR (at_g AND POSSIBLE [g] (TRUE) AND predator_g_m AND -friends_m_g)), POST = {th_m} ),
-2 = ( PRE = POSSIBLE [m] (TRUE) AND NOT(at_m AND at_f AND POSSIBLE [f] (TRUE) AND predator_f_m AND -friends_m_f) AND NOT (at_g AND POSSIBLE [g] (TRUE) AND predator_g_m AND -friends_m_g), POST = {-th_m} )
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND ((at_f AND POSSIBLE [f] (TRUE) AND predator_f_m AND -friends_m_f) OR (at_g AND POSSIBLE [g] (TRUE) AND predator_g_m AND -friends_m_g) OR (at_o AND POSSIBLE [o] (TRUE) AND predator_o_m AND -friends_m_o)), POST = {th_m} ),
+2 = ( PRE = POSSIBLE [m] (TRUE) AND NOT(at_m AND at_f AND POSSIBLE [f] (TRUE) AND predator_f_m AND -friends_m_f) AND NOT (at_g AND POSSIBLE [g] (TRUE) AND predator_g_m AND -friends_m_g) AND NOT (at_o AND POSSIBLE [o] (TRUE) AND predator_o_m AND -friends_m_o), POST = {-th_m} )
 },
 EDGES = {
 (f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
 (m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
-(g,{-(1,1), -(1,2), -(2,1), -(2,2)})
+(g,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(o,{-(1,1), -(1,2), -(2,1), -(2,2)})
 }
 ,
 
 DES = {1,2}}), 
+
+( infer_th_f = { 
+
+EVENTS = { 
+1 = ( PRE = at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND predator_g_o AND -friends_o_g, POST = {th_o} ),
+2 = ( PRE = POSSIBLE [o] (TRUE) AND NOT(at_o AND at_g AND POSSIBLE [g] (TRUE) AND predator_g_o AND -friends_o_g), POST = {-th_o} )
+},
+EDGES = {
+(f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(g,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(o,{-(1,1), -(1,2), -(2,1), -(2,2)})
+}
+,
+
+DES = {1,2}}),
 
 ( infer_th_f = { 
 
@@ -645,7 +804,8 @@ EVENTS = {
 EDGES = {
 (f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
 (m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
-(g,{-(1,1), -(1,2), -(2,1), -(2,2)})
+(g,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(o,{-(1,1), -(1,2), -(2,1), -(2,2)})
 }
 ,
 
@@ -654,5 +814,6 @@ DES = {1,2}})
 
 //GOAL : BELIEVES [m] (-th_m  AND -th_f AND BELIEVES [f] (th_f)).
 //GOAL : BELIEVES [m] (-th_m) AND BELIEVES [f] (-th_f) AND BELIEVES [f] (at_g) AND BELIEVES [m] (-at_g).
-GOAL : at_m AND -th_m AND BELIEVES [f] (-th_f) AND BELIEVES [f] (-th_m).
+GOAL : at_m AND -th_m AND BELIEVES [f] (-th_f AND -th_m).
+//GOAL : at_m AND -th_m.
 //GOAL : BELIEVES [m] (-th_m AND -th_f) AND BELIEVES [f] (-th_m AND -th_f).

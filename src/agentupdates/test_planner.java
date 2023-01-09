@@ -18,7 +18,7 @@ import java.nio.file.Paths;
  *
  * @author shikha
  */
-public class Planner {
+public class test_planner {
 
     public static final ArrayList<KripkeStructure> models = new ArrayList<>();
     public static final ArrayList<String> fluentlist =new ArrayList<>();
@@ -26,7 +26,6 @@ public class Planner {
     public static final ArrayList<KripkeAction> sequence =new ArrayList<>();
     public static final ArrayList<KripkeAction> inferencing_actions =new ArrayList<>();
     public static Formula goal = new Formula();
-    public static int model_ctr = 0;
     
     public static void main(String[] args)
     {
@@ -42,11 +41,11 @@ public class Planner {
         String logs = "Domain size:" + (sequence.size() + inferencing_actions.size())+ "\n";
         
 
-        SearchNode curr = new SearchNode(null, null, Planner.models.get(0), null, "[");
-        //model_ctr++;
+        SearchNode curr = new SearchNode(null, null, Planner.models.get(0), null);
         KripkeStructure next;
         //ArrayList<SearchNode> closed = new ArrayList<>();
         ArrayList<SearchNode> open = new ArrayList<>();
+        ArrayList<SearchNode> closed = new ArrayList<>(); //to maintain node-action-node relation, no need to store models that are closed
         
         open.add(curr);
         
@@ -54,7 +53,7 @@ public class Planner {
         double end = System.nanoTime();
         //double elapsedTime = 0;
         double totalTime = System.nanoTime();
-        //System.out.println((end-start)/1000000000);
+        System.out.println((end-start)/1000000000);
         // = (end - start)/1000000000;
         boolean breakfromsearch = false;
         boolean to_close = false;
@@ -63,7 +62,7 @@ public class Planner {
 
         result = "Y";
         
-        while (!open.isEmpty() && !breakfromsearch && ((end-start)/1000000000) < 600)
+        while (!open.isEmpty() && !breakfromsearch && ((end-start)/1000000000) < 2)
         //while (!open.isEmpty() && elapsedTime < 5 && !plan_found)
         //while (!open.isEmpty() && !plan_found)
         {
@@ -97,8 +96,7 @@ public class Planner {
                     if(curr.ks.isApplicable(action))
                     {
                         next = curr.ks.update(action);
-                        //Planner.models.add(next);
-
+                        Planner.models.add(next);
                         //DEBUG
                         //System.out.println(next.modelId +" = "+": "+action.ActionName +" on "+ curr.ks.modelId);
 
@@ -112,13 +110,12 @@ public class Planner {
                             if(next.isApplicable(iaction)){
                                 //System.out.println("applying: "+iaction.ActionName +" on "+ next.modelId);
                                 next = next.update(iaction);
-                                //Planner.models.add(next);
-
+                                Planner.models.add(next);
                                 inferences.add(iaction.ActionName);
                             }
                         } 
 
-                        SearchNode child = new SearchNode(curr, action, next, inferences, "");
+                        SearchNode child = new SearchNode(curr, action, next, inferences);
                         
                         if(goal_satisfied(next)){
                         logs = print_plan(child,logs);
@@ -227,7 +224,7 @@ public class Planner {
         public static boolean goal_satisfied(KripkeStructure model) {
             boolean satisfied = true;
             for (int i = 0; i < model.designated.size(); i++){
-                if(!KripkeStructure.pull_a_state_by_id(model.statelist, model.designated.get(i)).isEntailed(model, Planner.goal))
+                if(!KripkeStructure.pull_a_state_by_id(model.statelist, model.designated.get(i)).isEntailed(Planner.goal))
                     return false;
             }
                 return satisfied;       
@@ -237,4 +234,5 @@ public class Planner {
 
     
     
+
 

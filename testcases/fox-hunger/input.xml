@@ -3892,86 +3892,118 @@
                                     <TRUE pos='836:35'/>
                                 </POSSIBLE>
                             </AND>
-                            <OR pos='836:111'>
-                                <AND pos='836:93'>
-                                    <AND pos='836:76'>
-                                        <AND pos='836:52'>
-                                            <PROPOSITION text='at_f' pos='836:47'/>
-                                            <POSSIBLE pos='836:56'>
-                                                <AGENT text='f' pos='836:66'/>
-                                                <TRUE pos='836:70'/>
+                            <OR pos='836:179'>
+                                <OR pos='836:111'>
+                                    <AND pos='836:93'>
+                                        <AND pos='836:76'>
+                                            <AND pos='836:52'>
+                                                <PROPOSITION text='at_f' pos='836:47'/>
+                                                <POSSIBLE pos='836:56'>
+                                                    <AGENT text='f' pos='836:66'/>
+                                                    <TRUE pos='836:70'/>
+                                                </POSSIBLE>
+                                            </AND>
+                                            <PROPOSITION text='predator_f_m' pos='836:80'/>
+                                        </AND>
+                                        <PROPOSITION text='-friends_m_f' pos='836:97'/>
+                                    </AND>
+                                    <AND pos='836:161'>
+                                        <AND pos='836:144'>
+                                            <AND pos='836:120'>
+                                                <PROPOSITION text='at_g' pos='836:115'/>
+                                                <POSSIBLE pos='836:124'>
+                                                    <AGENT text='g' pos='836:134'/>
+                                                    <TRUE pos='836:138'/>
+                                                </POSSIBLE>
+                                            </AND>
+                                            <PROPOSITION text='predator_g_m' pos='836:148'/>
+                                        </AND>
+                                        <PROPOSITION text='-friends_m_g' pos='836:165'/>
+                                    </AND>
+                                </OR>
+                                <AND pos='836:229'>
+                                    <AND pos='836:212'>
+                                        <AND pos='836:188'>
+                                            <PROPOSITION text='at_o' pos='836:183'/>
+                                            <POSSIBLE pos='836:192'>
+                                                <AGENT text='o' pos='836:202'/>
+                                                <TRUE pos='836:206'/>
                                             </POSSIBLE>
                                         </AND>
-                                        <PROPOSITION text='predator_f_m' pos='836:80'/>
+                                        <PROPOSITION text='predator_o_m' pos='836:216'/>
                                     </AND>
-                                    <PROPOSITION text='-friends_m_f' pos='836:97'/>
-                                </AND>
-                                <AND pos='836:161'>
-                                    <AND pos='836:144'>
-                                        <AND pos='836:120'>
-                                            <PROPOSITION text='at_g' pos='836:115'/>
-                                            <POSSIBLE pos='836:124'>
-                                                <AGENT text='g' pos='836:134'/>
-                                                <TRUE pos='836:138'/>
-                                            </POSSIBLE>
-                                        </AND>
-                                        <PROPOSITION text='predator_g_m' pos='836:148'/>
-                                    </AND>
-                                    <PROPOSITION text='-friends_m_g' pos='836:165'/>
+                                    <PROPOSITION text='-friends_m_o' pos='836:233'/>
                                 </AND>
                             </OR>
                         </AND>
                     </PRECONDITIONS>
-                    <POST pos='836:181'>
-                        <PROPOSITION text='th_m' pos='836:189'/>
+                    <POST pos='836:249'>
+                        <PROPOSITION text='th_m' pos='836:257'/>
                     </POST>
                 </ID>
                 <ID text='2' pos='837:0'>
                     <PRECONDITIONS text='PRE' pos='837:6'>
-                        <AND pos='837:113'>
-                            <AND pos='837:32'>
-                                <POSSIBLE pos='837:12'>
-                                    <AGENT text='m' pos='837:22'/>
-                                    <TRUE pos='837:26'/>
-                                </POSSIBLE>
-                                <NOT pos='837:36'>
-                                    <AND pos='837:95'>
-                                        <AND pos='837:78'>
-                                            <AND pos='837:54'>
-                                                <AND pos='837:45'>
-                                                    <PROPOSITION text='at_m' pos='837:40'/>
-                                                    <PROPOSITION text='at_f' pos='837:49'/>
+                        <AND pos='837:186'>
+                            <AND pos='837:113'>
+                                <AND pos='837:32'>
+                                    <POSSIBLE pos='837:12'>
+                                        <AGENT text='m' pos='837:22'/>
+                                        <TRUE pos='837:26'/>
+                                    </POSSIBLE>
+                                    <NOT pos='837:36'>
+                                        <AND pos='837:95'>
+                                            <AND pos='837:78'>
+                                                <AND pos='837:54'>
+                                                    <AND pos='837:45'>
+                                                        <PROPOSITION text='at_m' pos='837:40'/>
+                                                        <PROPOSITION text='at_f' pos='837:49'/>
+                                                    </AND>
+                                                    <POSSIBLE pos='837:58'>
+                                                        <AGENT text='f' pos='837:68'/>
+                                                        <TRUE pos='837:72'/>
+                                                    </POSSIBLE>
                                                 </AND>
-                                                <POSSIBLE pos='837:58'>
-                                                    <AGENT text='f' pos='837:68'/>
-                                                    <TRUE pos='837:72'/>
+                                                <PROPOSITION text='predator_f_m' pos='837:82'/>
+                                            </AND>
+                                            <PROPOSITION text='-friends_m_f' pos='837:99'/>
+                                        </AND>
+                                    </NOT>
+                                </AND>
+                                <NOT pos='837:117'>
+                                    <AND pos='837:168'>
+                                        <AND pos='837:151'>
+                                            <AND pos='837:127'>
+                                                <PROPOSITION text='at_g' pos='837:122'/>
+                                                <POSSIBLE pos='837:131'>
+                                                    <AGENT text='g' pos='837:141'/>
+                                                    <TRUE pos='837:145'/>
                                                 </POSSIBLE>
                                             </AND>
-                                            <PROPOSITION text='predator_f_m' pos='837:82'/>
+                                            <PROPOSITION text='predator_g_m' pos='837:155'/>
                                         </AND>
-                                        <PROPOSITION text='-friends_m_f' pos='837:99'/>
+                                        <PROPOSITION text='-friends_m_g' pos='837:172'/>
                                     </AND>
                                 </NOT>
                             </AND>
-                            <NOT pos='837:117'>
-                                <AND pos='837:168'>
-                                    <AND pos='837:151'>
-                                        <AND pos='837:127'>
-                                            <PROPOSITION text='at_g' pos='837:122'/>
-                                            <POSSIBLE pos='837:131'>
-                                                <AGENT text='g' pos='837:141'/>
-                                                <TRUE pos='837:145'/>
+                            <NOT pos='837:190'>
+                                <AND pos='837:241'>
+                                    <AND pos='837:224'>
+                                        <AND pos='837:200'>
+                                            <PROPOSITION text='at_o' pos='837:195'/>
+                                            <POSSIBLE pos='837:204'>
+                                                <AGENT text='o' pos='837:214'/>
+                                                <TRUE pos='837:218'/>
                                             </POSSIBLE>
                                         </AND>
-                                        <PROPOSITION text='predator_g_m' pos='837:155'/>
+                                        <PROPOSITION text='predator_o_m' pos='837:228'/>
                                     </AND>
-                                    <PROPOSITION text='-friends_m_g' pos='837:172'/>
+                                    <PROPOSITION text='-friends_m_o' pos='837:245'/>
                                 </AND>
                             </NOT>
                         </AND>
                     </PRECONDITIONS>
-                    <POST pos='837:187'>
-                        <PROPOSITION text='-th_m' pos='837:195'/>
+                    <POST pos='837:260'>
+                        <PROPOSITION text='-th_m' pos='837:268'/>
                     </POST>
                 </ID>
             </EVENTLIST>
