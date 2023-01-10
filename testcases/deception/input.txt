@@ -1,0 +1,607 @@
+PROPS : {at_m, at_g, at_f, at_o th_m, th_f, th_g, th_o, friends_m_g, friends_f_g, friends_m_f, friends_m_o, friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, alive_m, alive_o, alive_f, alive_g} .
+
+//alive_i predicates have to be replaced going forward with possibility formulas. 
+
+
+AGENTS : {m, f, o, g}.
+
+//initial model description starts here
+//same's as Tiep's? Check initial?
+
+//uncertainty about mouse being friends with the gruffalo in the initial model as well as gruffalo being around
+MODEL : 
+{ NODES = {
+(1,{at_m, -at_g, at_f, -at_o, th_m, -th_f, -th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, alive_m, alive_o, alive_f, alive_g}),
+(2,{at_m, at_g, at_f, -at_o, th_m, -th_f, -th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, alive_m, alive_o, alive_f, alive_g}),
+(3,{at_m, -at_g, at_f, -at_o, th_m, -th_f, -th_g, -th_o, friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, alive_m, alive_o, alive_f, alive_g}),
+(4,{at_m, at_g, at_f, -at_o, th_m, -th_f, -th_g, -th_o, friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, alive_m, alive_o, alive_f, alive_g})
+},  
+
+EDGES = {
+(m,{-(1,1), -(2,2), -(3,3), -(4,4)}),
+(g,{-(1,1), -(2,2), -(3,3), -(4,4)}),
+(f,{-(1,1), -(1,2), -(1,3), -(1,4), -(2,1), -(2,2), -(2,3), -(2,4), -(3,1), -(3,2), -(3,3), -(3,4), -(4,1), -(4,2), -(4,3), -(4,4)}),
+(o,{-(1,1), -(1,2), -(1,3), -(1,4), -(2,1), -(2,2), -(2,3), -(2,4), -(3,1), -(3,2), -(3,3), -(3,4), -(4,1), -(4,2), -(4,3), -(4,4)})
+},
+
+DES = {1}
+}.
+
+//action description starts here
+//encoding the plausibility of having a gruffalo within the system
+
+ACTIONS : {
+
+CAPABILITY = (( flee_m = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [m] (th_m)) AND at_m AND alive_m, POST = {-at_m} )
+},
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+},
+DES = {1}}), 
+m, m_runs_away),
+
+CAPABILITY = (( flee_f = { 
+
+EVENTS = { 
+1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND alive_f, POST = {-at_f} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+f, f_runs_away),
+
+CAPABILITY = (( flee_g = { 
+
+EVENTS = { 
+1 = ( PRE = (BELIEVES [g] (th_g)) AND at_g AND alive_g, POST = {-at_g} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+g, g_runs_away),
+
+CAPABILITY = (( flee_o = { 
+
+EVENTS = { 
+1 = ( PRE = (BELIEVES [o] (th_o)) AND at_o AND alive_o, POST = {-at_o} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+o, o_runs_away),
+
+//arrives actions
+
+CAPABILITY = (( m_arrives = { 
+
+EVENTS = { 
+1 = ( PRE = -at_m AND alive_m, POST = {at_m} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+m, m_arrives),
+
+CAPABILITY = (( f_arrives = { 
+
+EVENTS = { 
+1 = ( PRE = -at_f AND alive_f, POST = {at_f} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+f, f_arrives),
+
+CAPABILITY = (( g_arrives = { 
+
+EVENTS = { 
+1 = ( PRE = -at_g AND alive_g, POST = {at_g} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+g, g_arrives),
+
+CAPABILITY = (( o_arrives = { 
+
+EVENTS = { 
+1 = ( PRE = -at_o AND alive_o, POST = {at_o} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+o, o_arrives),
+
+
+//leaves actions
+
+CAPABILITY = (( m_leaves = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND alive_m, POST = {-at_m} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+m, m_leaves),
+
+CAPABILITY = (( f_leaves = { 
+
+EVENTS = { 
+1 = ( PRE = at_f AND alive_f, POST = {-at_f} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+f, f_leaves),
+
+CAPABILITY = (( g_leaves = { 
+
+EVENTS = { 
+1 = ( PRE = at_g AND alive_g, POST = {-at_g} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+g, g_leaves),
+
+CAPABILITY = (( o_leaves = { 
+
+EVENTS = { 
+1 = ( PRE = at_o AND alive_o, POST = {-at_o} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+o, o_leaves),
+
+
+// 'eats' actions affect alive and edges will be dropped simply because there are no-arrows in the action model.
+// The beliefs are not carried forward
+
+CAPABILITY = (( g_eats_m = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND at_g AND predator_g_m AND -friends_m_g AND alive_m AND alive_g, POST = {-at_m, -alive_m})
+},
+ 
+EDGES = {
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+},
+
+DES = {1}}), 
+g, g_eats_m),
+
+CAPABILITY = (( g_eats_f = { 
+
+EVENTS = { 
+1 = ( PRE = at_f AND at_g AND predator_g_f AND -friends_f_g AND alive_f AND alive_g, POST = {-at_f, -alive_f} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+},
+
+DES = {1}}), 
+g, g_eats_f),
+
+CAPABILITY = (( g_eats_o = { 
+
+EVENTS = { 
+1 = ( PRE = at_o AND at_g AND predator_g_o AND -friends_o_g AND alive_o AND alive_g, POST = {-at_o, -alive_o} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+g, g_eats_o),
+
+
+CAPABILITY = (( f_eats_m = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND at_f AND predator_f_m AND -friends_m_f AND alive_f AND alive_m, POST = {-at_m, -alive_m} )
+},
+EDGES = {
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+f, f_eats_m),
+
+CAPABILITY = (( o_eats_m = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND at_o AND predator_o_m AND -friends_m_o AND alive_o AND alive_m, POST = {-at_m, -alive_m} )
+},
+EDGES = {
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+o, o_eats_m),
+
+//no adding actions
+
+
+//assuming all information related to g is known by g
+
+CAPABILITY = (( m_truth_ann_at_g_to_gfo = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND alive_m AND at_g AND alive_g AND at_f AND alive_f AND at_o AND alive_o AND BELIEVES [m] (at_g AND (NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [g] (-at_g) AND NOT POSSIBLE [o] (-at_g)) , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(g,{-(1,1)}),
+(o,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+m, m_truth_ann_at_g_to_gfo),
+
+CAPABILITY = (( m_truth_ann_at_g_to_gf_o_oblivious = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND alive_m AND at_g AND alive_g AND at_f AND alive_f AND BELIEVES [m] (at_g AND (NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [g] (-at_g)) , POST = {nil} ),
+2 = ( PRE =  TRUE , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1), -(2,2)}),
+(f,{-(1,1), -(2,2)}),
+(g,{-(1,1), -(2,2)}),
+(o,{-(1,2),-(2,2)})
+}
+,
+
+DES = {1}}), 
+m, m_truth_ann_at_g_to_gf_o_oblivious),
+
+CAPABILITY = (( m_truth_ann_at_g_to_go_f_oblivious = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND alive_m AND at_g AND alive_g AND at_f AND alive_f AND BELIEVES [m] (at_g AND (NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [g] (-at_g)) , POST = {nil} ),
+2 = ( PRE =  TRUE , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1), -(2,2)}),
+(o,{-(1,1), -(2,2)}),
+(g,{-(1,1), -(2,2)}),
+(f,{-(1,2),-(2,2)})
+}
+,
+
+DES = {1}}), 
+m, m_truth_ann_at_g_to_go_f_oblivious),
+
+CAPABILITY = (( m_truth_ann_friends_mg_to_gfo = { 
+
+EVENTS = { 
+1 = ( PRE = friends_m_g AND at_m AND alive_m AND alive_g AND at_f AND alive_f AND at_o AND alive_o AND BELIEVES [m] (friends_m_g AND (NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [g] (-friends_m_g) AND NOT POSSIBLE [o] (-friends_m_g)) , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(g,{-(1,1)}),
+(o,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+m, m_truth_ann_friends_mg_to_gfo),
+
+CAPABILITY = (( m_truth_ann_friends_mg_to_gf_o_oblivious = { 
+
+EVENTS = { 
+1 = ( PRE = friends_m_g AND at_m AND alive_m AND alive_g AND at_f AND alive_f AND BELIEVES [m] (friends_m_g AND (NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [g] (-friends_m_g)) , POST = {nil} ),
+2 = ( PRE =  TRUE , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1), -(2,2)}),
+(f,{-(1,1), -(2,2)}),
+(g,{-(1,1), -(2,2)}),
+(o,{-(1,2),-(2,2)})
+}
+,
+
+DES = {1}}), 
+m, m_truth_ann_friends_mg_to_gf_o_oblivious),
+
+CAPABILITY = (( m_truth_ann_friends_mg_to_go_f_oblivious = { 
+
+EVENTS = { 
+1 = ( PRE = friends_m_g AND at_m AND alive_m AND at_g AND alive_g AND at_f AND alive_f AND BELIEVES [m] (friends_m_g AND (NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [g] (-friends_m_g)) , POST = {nil} ),
+2 = ( PRE =  TRUE , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1), -(2,2)}),
+(o,{-(1,1), -(2,2)}),
+(g,{-(1,1), -(2,2)}),
+(f,{-(1,2),-(2,2)})
+}
+,
+
+DES = {1}}), 
+m, m_truth_ann_friends_mg_to_go_f_oblivious),
+
+//lying starts here
+
+CAPABILITY = (( m_lie_ann_at_g_to_fo_oblivious_g = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND alive_m AND at_f AND alive_f AND at_o AND alive_o AND -at_g AND BELIEVES [m] (-at_g AND NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [o] (-at_g)) , POST = {nil} ),  
+2 = ( PRE = at_m AND alive_m AND at_f AND alive_f AND at_o AND alive_o AND at_g, POST = {nil} ),
+3 = ( PRE = TRUE) , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1),-(2,2),-(3,3)}),
+(f,{-(1,2),-(2,2),-(3,3)}),
+(o,{-(1,2),-(2,2),-(3,3)}),
+(g,{-(1,3),-(2,3),-(3,3)})
+}
+,
+
+DES = {1}}), 
+m, m_lie_ann_at_g_to_fo_oblivious_g),
+
+CAPABILITY = (( m_lie_ann_at_g_to_f_oblivious_go = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND alive_m AND at_f AND alive_f AND -at_g AND BELIEVES [m] (-at_g AND NOT POSSIBLE [f] (-at_g)) , POST = {nil} ),  
+2 = ( PRE = at_m AND alive_m AND at_f AND alive_f AND at_g, POST = {nil} ),
+3 = ( PRE = TRUE) , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1),-(2,2),-(3,3)}),
+(f,{-(1,2),-(2,2),-(3,3)}),
+(o,{-(1,3),-(2,3),-(3,3)}),
+(g,{-(1,3),-(2,3),-(3,3)})
+}
+,
+
+DES = {1}}), 
+m, m_lie_ann_at_g_to_f_oblivious_go),
+
+CAPABILITY = (( m_lie_ann_at_g_to_o_oblivious_gf = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND alive_m AND at_f AND alive_f AND -at_g AND BELIEVES [m] (-at_g AND NOT POSSIBLE [o] (-at_g)) , POST = {nil} ),  
+2 = ( PRE = at_m AND alive_m AND at_f AND alive_f AND at_g, POST = {nil} ),
+3 = ( PRE = TRUE) , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1),-(2,2),-(3,3)}),
+(o,{-(1,2),-(2,2),-(3,3)}),
+(f,{-(1,3),-(2,3),-(3,3)}),
+(g,{-(1,3),-(2,3),-(3,3)})
+}
+,
+
+DES = {1}}), 
+m, m_lie_ann_at_g_to_o_oblivious_gf),
+
+CAPABILITY = (( m_lie_ann_friends_mg_to_fo_oblivious_g = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND alive_m AND at_f AND alive_f AND at_o AND alive_o AND -friends_m_g AND BELIEVES [m] (-friends_m_g AND NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [o] (-friends_m_g)) , POST = {nil} ),  
+2 = ( PRE = at_m AND alive_m AND at_f AND alive_f AND at_o AND alive_o AND friends_m_g, POST = {nil} ),
+3 = ( PRE = TRUE) , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1),-(2,2),-(3,3)}),
+(f,{-(1,2),-(2,2),-(3,3)}),
+(o,{-(1,2),-(2,2),-(3,3)}),
+(g,{-(1,3),-(2,3),-(3,3)})
+}
+,
+
+DES = {1}}), 
+m, m_lie_ann_friends_mg_to_fo_oblivious_g),
+
+CAPABILITY = (( m_lie_ann_friends_mg_to_f_oblivious_go = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND alive_m AND at_f AND alive_f AND -friends_m_g AND BELIEVES [m] (-friends_m_g AND NOT POSSIBLE [f] (-friends_m_g)) , POST = {nil} ),  
+2 = ( PRE = at_m AND alive_m AND at_f AND alive_f AND friends_m_g, POST = {nil} ),
+3 = ( PRE = TRUE) , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1),-(2,2),-(3,3)}),
+(f,{-(1,2),-(2,2),-(3,3)}),
+(o,{-(1,3),-(2,3),-(3,3)}),
+(g,{-(1,3),-(2,3),-(3,3)})
+}
+,
+
+DES = {1}}), 
+m, m_lie_ann_friends_mg_to_f_oblivious_go),
+
+CAPABILITY = (( m_lie_ann_friends_mg_to_o_oblivious_gf = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND alive_m AND at_f AND alive_f AND -friends_m_g AND BELIEVES [m] (-friends_m_g AND NOT POSSIBLE [o] (-friends_m_g)) , POST = {nil} ),  
+2 = ( PRE = at_m AND alive_m AND at_f AND alive_f AND friends_m_g, POST = {nil} ),
+3 = ( PRE = TRUE) , POST = {nil} )
+},
+ 
+EDGES = {
+(m,{-(1,1),-(2,2),-(3,3)}),
+(o,{-(1,2),-(2,2),-(3,3)}),
+(f,{-(1,3),-(2,3),-(3,3)}),
+(g,{-(1,3),-(2,3),-(3,3)})
+}
+,
+
+DES = {1}}), 
+m, m_lie_ann_friends_mg_to_o_oblivious_gf)
+
+}.
+
+//--adding inferencing actions below--
+IACTIONS : {
+
+( infer_th_m = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND alive_m AND ((at_f AND alive_f AND predator_f_m AND -friends_m_f) OR (at_g AND alive_g AND predator_g_m AND -friends_m_g) OR (at_o AND alive_o AND predator_o_m AND -friends_m_o)), POST = {th_m} ),
+2 = ( PRE = alive_m AND NOT(at_m AND at_f AND alive_f AND predator_f_m AND -friends_m_f) AND NOT (at_m AND at_g AND alive_g AND predator_g_m AND -friends_m_g) AND NOT (at_m AND at_o AND alive_o AND predator_o_m AND -friends_m_o), POST = {-th_m} )
+},
+EDGES = {
+(f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(g,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(o,{-(1,1), -(1,2), -(2,1), -(2,2)})
+}
+,
+
+DES = {1,2}}), 
+
+( infer_th_o = { 
+
+EVENTS = { 
+1 = ( PRE = at_o AND alive_o AND at_g AND alive_g AND predator_g_o AND -friends_o_g, POST = {th_o} ),
+2 = ( PRE = alive_o AND NOT(at_o AND at_g AND alive_g AND predator_g_o AND -friends_o_g), POST = {-th_o} )
+},
+EDGES = {
+(f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(g,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(o,{-(1,1), -(1,2), -(2,1), -(2,2)})
+}
+,
+
+DES = {1,2}}),
+
+( infer_th_f = { 
+
+EVENTS = { 
+1 = ( PRE = at_f AND alive_f AND at_g AND alive_g AND predator_g_f AND -friends_f_g, POST = {th_f} ),
+2 = ( PRE = alive_f AND NOT(at_f AND at_g AND alive_g AND predator_g_f AND -friends_f_g), POST = {-th_f} )
+},
+EDGES = {
+(f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(g,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(o,{-(1,1), -(1,2), -(2,1), -(2,2)})
+}
+,
+
+DES = {1,2}})
+}.
+
+// GOAL : BELIEVES [m] (-th_m  AND -th_f AND BELIEVES [f] (th_f)).
+// GOAL : BELIEVES [m] (-th_m) AND BELIEVES [f] (-th_f) AND BELIEVES [f] (at_g) AND BELIEVES [m] (-at_g).
+// GOAL : -th_m AND BELIEVES [f] (-th_f AND -th_m).
+// GOAL : at_m AND -th_m AND BELIEVES [f] (-th_f AND -th_m) AND BELIEVES [m] (-th_f AND -th_m).
+GOAL : at_m AND -th_m AND BELIEVES [f] (-th_f AND -th_m) AND BELIEVES [m] (-th_f AND -th_m).
+//GOAL : BELIEVES [m] (-th_m AND -th_f) AND BELIEVES [f] (-th_m AND -th_f).

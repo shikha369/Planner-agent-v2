@@ -1,0 +1,109 @@
+//The planner is a virtual intelligent assistant. 
+//There are two agents- virtual assistant:v, user:u
+//Scenario 1: The user is claustrophobic, and hence, prefers to take either a less crowded bus or walk to office. They share a common goal: reach office in time.
+//fluents: crowded, sleepy, scared, ontime, walking 
+
+//Other scenarios with assitive agents
+//Scenario 2: 
+
+
+PROPS : {crowded, sleepy, scared, ontime, walking, shop-near} .
+
+AGENTS : {u, v} .
+
+MODEL : 
+{ NODES = {(1,{crowded,sleepy, scared, -ontime,walking, shop-near, -far}), 
+(2,{-crowded,sleepy, scared,-ontime,walking, shop-near, shop-near, -far})
+},  
+EDGES = {
+(u,{-(1,1),-(1,2),-(2,1),-(2,2)}),
+(v,{-(1,1),-(1,2),-(2,1),-(2,2)})
+},
+DES = {2}}.
+
+
+ACTIONS : {
+
+
+CAPABILITY = (( take_bus = { 
+    EVENTS = { 
+        1 = ( PRE = (B[u] (-crowded) AND walking AND -far) , POST = {-walking, ontime} ) 
+        }, 
+        EDGES ={
+            (u,{-(1,1)}),
+            (v,{-(1,1)})
+            }, 
+            DES = {1} }), 
+            u, user_believes_bus_not_crowded_and_takes_bus_to_reach_office_ontime),
+
+CAPABILITY = (( do-not-take_bus = { 
+    EVENTS = { 
+        1 = ( PRE = (B[u] (crowded) AND walking AND far) , POST = {-ontime} ) 
+        }, 
+        EDGES ={
+            (u,{-(1,1)}),
+            (v,{-(1,1)})
+            }, 
+            DES = {1} }), 
+            u, user_believes_bus_crowded_and_doesnot_takes_notontime),
+
+CAPABILITY = (( walk = { 
+    EVENTS = { 1 = ( PRE =  B[u] (crowded) , POST = {-ontime} ) }, 
+    EDGES ={(u,{-(1,1)}),(v,{-(1,1)})}, DES = {1} }), 
+    u, user_doesnot_believe_bus_not_crowded_and_walks_to_office_late),
+
+CAPABILITY = (( run_from_near = { 
+    EVENTS = { 1 = ( PRE =  B[u] (crowded) AND -hungry AND -far, POST = {ontime} ) }, 
+    EDGES ={(u,{-(1,1)}),(v,{-(1,1)})}, DES = {1} }), 
+    u, test),
+
+CAPABILITY = (( run_from_far = { 
+    EVENTS = { 1 = ( PRE =  B[u] (crowded) AND -hungry AND far, POST = {-ontime} ) }, 
+    EDGES ={(u,{-(1,1)}),(v,{-(1,1)})}, DES = {1} }), 
+    u, test),
+
+CAPABILITY = (( sip_coffee_nearby = { 
+    EVENTS = { 1 = ( PRE = sleepy AND B[u] (shop-near) AND -walking, POST = {-sleepy} ) }, 
+    EDGES ={(u,{-(1,1)}),(v,{-(1,1)})}, DES = {1} }), u, 
+    user_is_sleepy_sips_coffee_from_a_nearby),
+
+CAPABILITY = (( sip_coffee_faraway = { 
+    EVENTS = { 1 = ( PRE = sleepy AND NOT B[u] (-shop-near), POST = {-sleepy, -ontime, far} ) }, 
+    EDGES ={(u,{-(1,1)}),(v,{-(1,1)})}, DES = {1} }), u, user_is_sleepy_sips_coffee_on_the_way_and_gets_late),
+
+CAPABILITY = (( inform_not_crowded = { 
+    EVENTS = { 1 = ( PRE = (B[v] (NOT (crowded)) AND B[v] (NOT (B[u] (NOT crowded) OR B[u] (crowded)))) , POST = {nil} )}, 
+    EDGES ={(v,{ -(1,1)}),(u,{ -(1,1)})}, DES = {1} }), v, v_believes_user_uncertain_of_bus_not_being_crowded_it_informs_the_user),
+
+CAPABILITY = (( ping_bus_service = { 
+    EVENTS = { 
+        1 = ( PRE =  scared AND crowded AND (NOT (B[v] (NOT crowded) OR B[v] (crowded))) , POST = {nil} ) , 
+        2 = ( PRE =  scared AND (NOT (crowded) AND (NOT (B[v] (NOT crowded) OR B[v] (crowded)))), POST = {nil} )  
+        }, 
+    EDGES ={
+        (u,{ -(1,1), -(2,2), -(1,2), -(2,1)}),
+        (v,{ -(1,1), -(2,2)})
+        }, 
+        DES = {1,2} }), 
+        v, v_finds_user_scared_checks_crowded_status),
+
+CAPABILITY = (( clock_tick = { 
+    EVENTS = { 
+        1 = ( PRE =  -scared , POST = {nil} ) 
+        }, 
+    EDGES ={
+        (u,{ -(1,1)}),
+        (v,{ -(1,1)})
+        }, 
+        DES = {1} }), 
+        v, assistant_does_nothing)
+
+}.
+
+GOAL : (-sleepy AND B[u](ontime)).
+
+PLANNER : {v} .
+
+
+
+

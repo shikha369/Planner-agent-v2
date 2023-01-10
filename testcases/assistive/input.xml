@@ -1,0 +1,570 @@
+<PROGRAM>
+    <PROPOSITIONS text='PROPS' pos='10:0'>
+        <PROPOSITION text='crowded' pos='10:9'/>
+        <PROPOSITION text='sleepy' pos='10:18'/>
+        <PROPOSITION text='scared' pos='10:26'/>
+        <PROPOSITION text='ontime' pos='10:34'/>
+        <PROPOSITION text='walking' pos='10:42'/>
+        <PROPOSITION text='shop-near' pos='10:51'/>
+    </PROPOSITIONS>
+    <AG text='AGENTS' pos='12:0'>
+        <AGENT text='u' pos='12:10'/>
+        <AGENT text='v' pos='12:13'/>
+    </AG>
+    <INITIAL_KRIPKE text='MODEL' pos='14:0'>
+        <NODELIST text='NODES' pos='15:2'>
+            <N text='1' pos='15:12'>
+                <PROPOSITION text='crowded' pos='15:15'/>
+                <PROPOSITION text='sleepy' pos='15:23'/>
+                <PROPOSITION text='scared' pos='15:31'/>
+                <PROPOSITION text='-ontime' pos='15:39'/>
+                <PROPOSITION text='walking' pos='15:47'/>
+                <PROPOSITION text='shop-near' pos='15:56'/>
+                <PROPOSITION text='-far' pos='15:67'/>
+            </N>
+            <N text='2' pos='16:1'>
+                <PROPOSITION text='-crowded' pos='16:4'/>
+                <PROPOSITION text='sleepy' pos='16:13'/>
+                <PROPOSITION text='scared' pos='16:21'/>
+                <PROPOSITION text='-ontime' pos='16:28'/>
+                <PROPOSITION text='walking' pos='16:36'/>
+                <PROPOSITION text='shop-near' pos='16:45'/>
+                <PROPOSITION text='shop-near' pos='16:56'/>
+                <PROPOSITION text='-far' pos='16:67'/>
+            </N>
+        </NODELIST>
+        <EDGELIST text='EDGES' pos='18:0'>
+            <AE text='u' pos='19:1'>
+                <E text='-' pos='19:4'>
+                    <ID text='1' pos='19:6'/>
+                    <ID text='1' pos='19:8'/>
+                </E>
+                <E text='-' pos='19:11'>
+                    <ID text='1' pos='19:13'/>
+                    <ID text='2' pos='19:15'/>
+                </E>
+                <E text='-' pos='19:18'>
+                    <ID text='2' pos='19:20'/>
+                    <ID text='1' pos='19:22'/>
+                </E>
+                <E text='-' pos='19:25'>
+                    <ID text='2' pos='19:27'/>
+                    <ID text='2' pos='19:29'/>
+                </E>
+            </AE>
+            <AE text='v' pos='20:1'>
+                <E text='-' pos='20:4'>
+                    <ID text='1' pos='20:6'/>
+                    <ID text='1' pos='20:8'/>
+                </E>
+                <E text='-' pos='20:11'>
+                    <ID text='1' pos='20:13'/>
+                    <ID text='2' pos='20:15'/>
+                </E>
+                <E text='-' pos='20:18'>
+                    <ID text='2' pos='20:20'/>
+                    <ID text='1' pos='20:22'/>
+                </E>
+                <E text='-' pos='20:25'>
+                    <ID text='2' pos='20:27'/>
+                    <ID text='2' pos='20:29'/>
+                </E>
+            </AE>
+        </EDGELIST>
+        <DES pos='22:0'>
+            <ID text='2' pos='22:7'/>
+        </DES>
+    </INITIAL_KRIPKE>
+    <EVENTMODELS text='ACTIONS' pos='25:0'>
+        <CAPABILITIES text='CAPABILITY' pos='28:0'>
+            <EVENTMODEL text='take_bus' pos='28:16'>
+                <EVENTLIST text='EVENTS' pos='29:4'>
+                    <ID text='1' pos='30:8'>
+                        <PRECONDITIONS text='PRE' pos='30:14'>
+                            <AND pos='30:49'>
+                                <AND pos='30:37'>
+                                    <BELIEVES text='B' pos='30:21'>
+                                        <AGENT text='u' pos='30:23'/>
+                                        <PROPOSITION text='-crowded' pos='30:27'/>
+                                    </BELIEVES>
+                                    <PROPOSITION text='walking' pos='30:41'/>
+                                </AND>
+                                <PROPOSITION text='-far' pos='30:53'/>
+                            </AND>
+                        </PRECONDITIONS>
+                        <POST pos='30:61'>
+                            <PROPOSITION text='-walking' pos='30:69'/>
+                            <PROPOSITION text='ontime' pos='30:79'/>
+                        </POST>
+                    </ID>
+                </EVENTLIST>
+                <EDGELIST text='EDGES' pos='32:8'>
+                    <AE text='u' pos='33:13'>
+                        <E text='-' pos='33:16'>
+                            <ID text='1' pos='33:18'/>
+                            <ID text='1' pos='33:20'/>
+                        </E>
+                    </AE>
+                    <AE text='v' pos='34:13'>
+                        <E text='-' pos='34:16'>
+                            <ID text='1' pos='34:18'/>
+                            <ID text='1' pos='34:20'/>
+                        </E>
+                    </AE>
+                </EDGELIST>
+                <DES pos='36:12'>
+                    <ID text='1' pos='36:19'/>
+                </DES>
+            </EVENTMODEL>
+            <NAME text='u' pos='37:12'/>
+            <EXPLANATION text='user_believes_bus_not_crowded_and_takes_bus_to_reach_office_ontime' pos='37:15'/>
+        </CAPABILITIES>
+        <CAPABILITIES text='CAPABILITY' pos='39:0'>
+            <EVENTMODEL text='do-not-take_bus' pos='39:16'>
+                <EVENTLIST text='EVENTS' pos='40:4'>
+                    <ID text='1' pos='41:8'>
+                        <PRECONDITIONS text='PRE' pos='41:14'>
+                            <AND pos='41:48'>
+                                <AND pos='41:36'>
+                                    <BELIEVES text='B' pos='41:21'>
+                                        <AGENT text='u' pos='41:23'/>
+                                        <PROPOSITION text='crowded' pos='41:27'/>
+                                    </BELIEVES>
+                                    <PROPOSITION text='walking' pos='41:40'/>
+                                </AND>
+                                <PROPOSITION text='far' pos='41:52'/>
+                            </AND>
+                        </PRECONDITIONS>
+                        <POST pos='41:59'>
+                            <PROPOSITION text='-ontime' pos='41:67'/>
+                        </POST>
+                    </ID>
+                </EVENTLIST>
+                <EDGELIST text='EDGES' pos='43:8'>
+                    <AE text='u' pos='44:13'>
+                        <E text='-' pos='44:16'>
+                            <ID text='1' pos='44:18'/>
+                            <ID text='1' pos='44:20'/>
+                        </E>
+                    </AE>
+                    <AE text='v' pos='45:13'>
+                        <E text='-' pos='45:16'>
+                            <ID text='1' pos='45:18'/>
+                            <ID text='1' pos='45:20'/>
+                        </E>
+                    </AE>
+                </EDGELIST>
+                <DES pos='47:12'>
+                    <ID text='1' pos='47:19'/>
+                </DES>
+            </EVENTMODEL>
+            <NAME text='u' pos='48:12'/>
+            <EXPLANATION text='user_believes_bus_crowded_and_doesnot_takes_notontime' pos='48:15'/>
+        </CAPABILITIES>
+        <CAPABILITIES text='CAPABILITY' pos='50:0'>
+            <EVENTMODEL text='walk' pos='50:16'>
+                <EVENTLIST text='EVENTS' pos='51:4'>
+                    <ID text='1' pos='51:15'>
+                        <PRECONDITIONS text='PRE' pos='51:21'>
+                            <BELIEVES text='B' pos='51:28'>
+                                <AGENT text='u' pos='51:30'/>
+                                <PROPOSITION text='crowded' pos='51:34'/>
+                            </BELIEVES>
+                        </PRECONDITIONS>
+                        <POST pos='51:45'>
+                            <PROPOSITION text='-ontime' pos='51:53'/>
+                        </POST>
+                    </ID>
+                </EVENTLIST>
+                <EDGELIST text='EDGES' pos='52:4'>
+                    <AE text='u' pos='52:13'>
+                        <E text='-' pos='52:16'>
+                            <ID text='1' pos='52:18'/>
+                            <ID text='1' pos='52:20'/>
+                        </E>
+                    </AE>
+                    <AE text='v' pos='52:26'>
+                        <E text='-' pos='52:29'>
+                            <ID text='1' pos='52:31'/>
+                            <ID text='1' pos='52:33'/>
+                        </E>
+                    </AE>
+                </EDGELIST>
+                <DES pos='52:40'>
+                    <ID text='1' pos='52:47'/>
+                </DES>
+            </EVENTMODEL>
+            <NAME text='u' pos='53:4'/>
+            <EXPLANATION text='user_doesnot_believe_bus_not_crowded_and_walks_to_office_late' pos='53:7'/>
+        </CAPABILITIES>
+        <CAPABILITIES text='CAPABILITY' pos='55:0'>
+            <EVENTMODEL text='run_from_near' pos='55:16'>
+                <EVENTLIST text='EVENTS' pos='56:4'>
+                    <ID text='1' pos='56:15'>
+                        <PRECONDITIONS text='PRE' pos='56:21'>
+                            <AND pos='56:55'>
+                                <AND pos='56:43'>
+                                    <BELIEVES text='B' pos='56:28'>
+                                        <AGENT text='u' pos='56:30'/>
+                                        <PROPOSITION text='crowded' pos='56:34'/>
+                                    </BELIEVES>
+                                    <PROPOSITION text='-hungry' pos='56:47'/>
+                                </AND>
+                                <PROPOSITION text='-far' pos='56:59'/>
+                            </AND>
+                        </PRECONDITIONS>
+                        <POST pos='56:65'>
+                            <PROPOSITION text='ontime' pos='56:73'/>
+                        </POST>
+                    </ID>
+                </EVENTLIST>
+                <EDGELIST text='EDGES' pos='57:4'>
+                    <AE text='u' pos='57:13'>
+                        <E text='-' pos='57:16'>
+                            <ID text='1' pos='57:18'/>
+                            <ID text='1' pos='57:20'/>
+                        </E>
+                    </AE>
+                    <AE text='v' pos='57:26'>
+                        <E text='-' pos='57:29'>
+                            <ID text='1' pos='57:31'/>
+                            <ID text='1' pos='57:33'/>
+                        </E>
+                    </AE>
+                </EDGELIST>
+                <DES pos='57:40'>
+                    <ID text='1' pos='57:47'/>
+                </DES>
+            </EVENTMODEL>
+            <NAME text='u' pos='58:4'/>
+            <EXPLANATION text='test' pos='58:7'/>
+        </CAPABILITIES>
+        <CAPABILITIES text='CAPABILITY' pos='60:0'>
+            <EVENTMODEL text='run_from_far' pos='60:16'>
+                <EVENTLIST text='EVENTS' pos='61:4'>
+                    <ID text='1' pos='61:15'>
+                        <PRECONDITIONS text='PRE' pos='61:21'>
+                            <AND pos='61:55'>
+                                <AND pos='61:43'>
+                                    <BELIEVES text='B' pos='61:28'>
+                                        <AGENT text='u' pos='61:30'/>
+                                        <PROPOSITION text='crowded' pos='61:34'/>
+                                    </BELIEVES>
+                                    <PROPOSITION text='-hungry' pos='61:47'/>
+                                </AND>
+                                <PROPOSITION text='far' pos='61:59'/>
+                            </AND>
+                        </PRECONDITIONS>
+                        <POST pos='61:64'>
+                            <PROPOSITION text='-ontime' pos='61:72'/>
+                        </POST>
+                    </ID>
+                </EVENTLIST>
+                <EDGELIST text='EDGES' pos='62:4'>
+                    <AE text='u' pos='62:13'>
+                        <E text='-' pos='62:16'>
+                            <ID text='1' pos='62:18'/>
+                            <ID text='1' pos='62:20'/>
+                        </E>
+                    </AE>
+                    <AE text='v' pos='62:26'>
+                        <E text='-' pos='62:29'>
+                            <ID text='1' pos='62:31'/>
+                            <ID text='1' pos='62:33'/>
+                        </E>
+                    </AE>
+                </EDGELIST>
+                <DES pos='62:40'>
+                    <ID text='1' pos='62:47'/>
+                </DES>
+            </EVENTMODEL>
+            <NAME text='u' pos='63:4'/>
+            <EXPLANATION text='test' pos='63:7'/>
+        </CAPABILITIES>
+        <CAPABILITIES text='CAPABILITY' pos='65:0'>
+            <EVENTMODEL text='sip_coffee_nearby' pos='65:16'>
+                <EVENTLIST text='EVENTS' pos='66:4'>
+                    <ID text='1' pos='66:15'>
+                        <PRECONDITIONS text='PRE' pos='66:21'>
+                            <AND pos='66:55'>
+                                <AND pos='66:34'>
+                                    <PROPOSITION text='sleepy' pos='66:27'/>
+                                    <BELIEVES text='B' pos='66:38'>
+                                        <AGENT text='u' pos='66:40'/>
+                                        <PROPOSITION text='shop-near' pos='66:44'/>
+                                    </BELIEVES>
+                                </AND>
+                                <PROPOSITION text='-walking' pos='66:59'/>
+                            </AND>
+                        </PRECONDITIONS>
+                        <POST pos='66:69'>
+                            <PROPOSITION text='-sleepy' pos='66:77'/>
+                        </POST>
+                    </ID>
+                </EVENTLIST>
+                <EDGELIST text='EDGES' pos='67:4'>
+                    <AE text='u' pos='67:13'>
+                        <E text='-' pos='67:16'>
+                            <ID text='1' pos='67:18'/>
+                            <ID text='1' pos='67:20'/>
+                        </E>
+                    </AE>
+                    <AE text='v' pos='67:26'>
+                        <E text='-' pos='67:29'>
+                            <ID text='1' pos='67:31'/>
+                            <ID text='1' pos='67:33'/>
+                        </E>
+                    </AE>
+                </EDGELIST>
+                <DES pos='67:40'>
+                    <ID text='1' pos='67:47'/>
+                </DES>
+            </EVENTMODEL>
+            <NAME text='u' pos='67:54'/>
+            <EXPLANATION text='user_is_sleepy_sips_coffee_from_a_nearby' pos='68:4'/>
+        </CAPABILITIES>
+        <CAPABILITIES text='CAPABILITY' pos='70:0'>
+            <EVENTMODEL text='sip_coffee_faraway' pos='70:16'>
+                <EVENTLIST text='EVENTS' pos='71:4'>
+                    <ID text='1' pos='71:15'>
+                        <PRECONDITIONS text='PRE' pos='71:21'>
+                            <AND pos='71:34'>
+                                <PROPOSITION text='sleepy' pos='71:27'/>
+                                <NOT pos='71:38'>
+                                    <BELIEVES text='B' pos='71:42'>
+                                        <AGENT text='u' pos='71:44'/>
+                                        <PROPOSITION text='-shop-near' pos='71:48'/>
+                                    </BELIEVES>
+                                </NOT>
+                            </AND>
+                        </PRECONDITIONS>
+                        <POST pos='71:61'>
+                            <PROPOSITION text='-sleepy' pos='71:69'/>
+                            <PROPOSITION text='-ontime' pos='71:78'/>
+                            <PROPOSITION text='far' pos='71:87'/>
+                        </POST>
+                    </ID>
+                </EVENTLIST>
+                <EDGELIST text='EDGES' pos='72:4'>
+                    <AE text='u' pos='72:13'>
+                        <E text='-' pos='72:16'>
+                            <ID text='1' pos='72:18'/>
+                            <ID text='1' pos='72:20'/>
+                        </E>
+                    </AE>
+                    <AE text='v' pos='72:26'>
+                        <E text='-' pos='72:29'>
+                            <ID text='1' pos='72:31'/>
+                            <ID text='1' pos='72:33'/>
+                        </E>
+                    </AE>
+                </EDGELIST>
+                <DES pos='72:40'>
+                    <ID text='1' pos='72:47'/>
+                </DES>
+            </EVENTMODEL>
+            <NAME text='u' pos='72:54'/>
+            <EXPLANATION text='user_is_sleepy_sips_coffee_on_the_way_and_gets_late' pos='72:57'/>
+        </CAPABILITIES>
+        <CAPABILITIES text='CAPABILITY' pos='74:0'>
+            <EVENTMODEL text='inform_not_crowded' pos='74:16'>
+                <EVENTLIST text='EVENTS' pos='75:4'>
+                    <ID text='1' pos='75:15'>
+                        <PRECONDITIONS text='PRE' pos='75:21'>
+                            <AND pos='75:49'>
+                                <BELIEVES text='B' pos='75:28'>
+                                    <AGENT text='v' pos='75:30'/>
+                                    <NOT pos='75:34'>
+                                        <PROPOSITION text='crowded' pos='75:39'/>
+                                    </NOT>
+                                </BELIEVES>
+                                <BELIEVES text='B' pos='75:53'>
+                                    <AGENT text='v' pos='75:55'/>
+                                    <NOT pos='75:59'>
+                                        <OR pos='75:83'>
+                                            <BELIEVES text='B' pos='75:64'>
+                                                <AGENT text='u' pos='75:66'/>
+                                                <NOT pos='75:70'>
+                                                    <PROPOSITION text='crowded' pos='75:74'/>
+                                                </NOT>
+                                            </BELIEVES>
+                                            <BELIEVES text='B' pos='75:86'>
+                                                <AGENT text='u' pos='75:88'/>
+                                                <PROPOSITION text='crowded' pos='75:92'/>
+                                            </BELIEVES>
+                                        </OR>
+                                    </NOT>
+                                </BELIEVES>
+                            </AND>
+                        </PRECONDITIONS>
+                        <POST pos='75:106'>
+                            <PROPOSITION text='nil' pos='75:114'/>
+                        </POST>
+                    </ID>
+                </EVENTLIST>
+                <EDGELIST text='EDGES' pos='76:4'>
+                    <AE text='v' pos='76:13'>
+                        <E text='-' pos='76:17'>
+                            <ID text='1' pos='76:19'/>
+                            <ID text='1' pos='76:21'/>
+                        </E>
+                    </AE>
+                    <AE text='u' pos='76:27'>
+                        <E text='-' pos='76:31'>
+                            <ID text='1' pos='76:33'/>
+                            <ID text='1' pos='76:35'/>
+                        </E>
+                    </AE>
+                </EDGELIST>
+                <DES pos='76:42'>
+                    <ID text='1' pos='76:49'/>
+                </DES>
+            </EVENTMODEL>
+            <NAME text='v' pos='76:56'/>
+            <EXPLANATION text='v_believes_user_uncertain_of_bus_not_being_crowded_it_informs_the_user' pos='76:59'/>
+        </CAPABILITIES>
+        <CAPABILITIES text='CAPABILITY' pos='78:0'>
+            <EVENTMODEL text='ping_bus_service' pos='78:16'>
+                <EVENTLIST text='EVENTS' pos='79:4'>
+                    <ID text='1' pos='80:8'>
+                        <PRECONDITIONS text='PRE' pos='80:14'>
+                            <AND pos='80:40'>
+                                <AND pos='80:28'>
+                                    <PROPOSITION text='scared' pos='80:21'/>
+                                    <PROPOSITION text='crowded' pos='80:32'/>
+                                </AND>
+                                <NOT pos='80:45'>
+                                    <OR pos='80:69'>
+                                        <BELIEVES text='B' pos='80:50'>
+                                            <AGENT text='v' pos='80:52'/>
+                                            <NOT pos='80:56'>
+                                                <PROPOSITION text='crowded' pos='80:60'/>
+                                            </NOT>
+                                        </BELIEVES>
+                                        <BELIEVES text='B' pos='80:72'>
+                                            <AGENT text='v' pos='80:74'/>
+                                            <PROPOSITION text='crowded' pos='80:78'/>
+                                        </BELIEVES>
+                                    </OR>
+                                </NOT>
+                            </AND>
+                        </PRECONDITIONS>
+                        <POST pos='80:91'>
+                            <PROPOSITION text='nil' pos='80:99'/>
+                        </POST>
+                    </ID>
+                    <ID text='2' pos='81:8'>
+                        <PRECONDITIONS text='PRE' pos='81:14'>
+                            <AND pos='81:28'>
+                                <PROPOSITION text='scared' pos='81:21'/>
+                                <AND pos='81:47'>
+                                    <NOT pos='81:33'>
+                                        <PROPOSITION text='crowded' pos='81:38'/>
+                                    </NOT>
+                                    <NOT pos='81:52'>
+                                        <OR pos='81:76'>
+                                            <BELIEVES text='B' pos='81:57'>
+                                                <AGENT text='v' pos='81:59'/>
+                                                <NOT pos='81:63'>
+                                                    <PROPOSITION text='crowded' pos='81:67'/>
+                                                </NOT>
+                                            </BELIEVES>
+                                            <BELIEVES text='B' pos='81:79'>
+                                                <AGENT text='v' pos='81:81'/>
+                                                <PROPOSITION text='crowded' pos='81:85'/>
+                                            </BELIEVES>
+                                        </OR>
+                                    </NOT>
+                                </AND>
+                            </AND>
+                        </PRECONDITIONS>
+                        <POST pos='81:98'>
+                            <PROPOSITION text='nil' pos='81:106'/>
+                        </POST>
+                    </ID>
+                </EVENTLIST>
+                <EDGELIST text='EDGES' pos='83:4'>
+                    <AE text='u' pos='84:9'>
+                        <E text='-' pos='84:13'>
+                            <ID text='1' pos='84:15'/>
+                            <ID text='1' pos='84:17'/>
+                        </E>
+                        <E text='-' pos='84:21'>
+                            <ID text='2' pos='84:23'/>
+                            <ID text='2' pos='84:25'/>
+                        </E>
+                        <E text='-' pos='84:29'>
+                            <ID text='1' pos='84:31'/>
+                            <ID text='2' pos='84:33'/>
+                        </E>
+                        <E text='-' pos='84:37'>
+                            <ID text='2' pos='84:39'/>
+                            <ID text='1' pos='84:41'/>
+                        </E>
+                    </AE>
+                    <AE text='v' pos='85:9'>
+                        <E text='-' pos='85:13'>
+                            <ID text='1' pos='85:15'/>
+                            <ID text='1' pos='85:17'/>
+                        </E>
+                        <E text='-' pos='85:21'>
+                            <ID text='2' pos='85:23'/>
+                            <ID text='2' pos='85:25'/>
+                        </E>
+                    </AE>
+                </EDGELIST>
+                <DES pos='87:8'>
+                    <ID text='1' pos='87:15'/>
+                    <ID text='2' pos='87:17'/>
+                </DES>
+            </EVENTMODEL>
+            <NAME text='v' pos='88:8'/>
+            <EXPLANATION text='v_finds_user_scared_checks_crowded_status' pos='88:11'/>
+        </CAPABILITIES>
+        <CAPABILITIES text='CAPABILITY' pos='90:0'>
+            <EVENTMODEL text='clock_tick' pos='90:16'>
+                <EVENTLIST text='EVENTS' pos='91:4'>
+                    <ID text='1' pos='92:8'>
+                        <PRECONDITIONS text='PRE' pos='92:14'>
+                            <PROPOSITION text='-scared' pos='92:21'/>
+                        </PRECONDITIONS>
+                        <POST pos='92:31'>
+                            <PROPOSITION text='nil' pos='92:39'/>
+                        </POST>
+                    </ID>
+                </EVENTLIST>
+                <EDGELIST text='EDGES' pos='94:4'>
+                    <AE text='u' pos='95:9'>
+                        <E text='-' pos='95:13'>
+                            <ID text='1' pos='95:15'/>
+                            <ID text='1' pos='95:17'/>
+                        </E>
+                    </AE>
+                    <AE text='v' pos='96:9'>
+                        <E text='-' pos='96:13'>
+                            <ID text='1' pos='96:15'/>
+                            <ID text='1' pos='96:17'/>
+                        </E>
+                    </AE>
+                </EDGELIST>
+                <DES pos='98:8'>
+                    <ID text='1' pos='98:15'/>
+                </DES>
+            </EVENTMODEL>
+            <NAME text='v' pos='99:8'/>
+            <EXPLANATION text='assistant_does_nothing' pos='99:11'/>
+        </CAPABILITIES>
+    </EVENTMODELS>
+    <GOAL pos='103:0'>
+        <AND pos='103:16'>
+            <PROPOSITION text='-sleepy' pos='103:8'/>
+            <BELIEVES text='B' pos='103:20'>
+                <AGENT text='u' pos='103:22'/>
+                <PROPOSITION text='ontime' pos='103:25'/>
+            </BELIEVES>
+        </AND>
+    </GOAL>
+    <PLANNER pos='105:0'>
+        <NAME text='v' pos='105:11'/>
+    </PLANNER>
+</PROGRAM>

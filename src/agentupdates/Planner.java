@@ -63,7 +63,7 @@ public class Planner {
 
         result = "Y";
         
-        while (!open.isEmpty() && !breakfromsearch && ((end-start)/1000000000) < 600)
+        while (!open.isEmpty() && !breakfromsearch && ((end-start)/1000000000) < 3)
         //while (!open.isEmpty() && elapsedTime < 5 && !plan_found)
         //while (!open.isEmpty() && !plan_found)
         {
