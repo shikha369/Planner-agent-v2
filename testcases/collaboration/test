@@ -1,0 +1,38 @@
+CAPABILITY = (( b_sense_sec2 = { 
+    EVENTS = { 
+        1 = ( PRE =  (NOT (B [b] (secret1) AND B [b] (-secret1)) AND (br4 AND secret1)), POST = {nil} ) , 
+        2 = ( PRE =  (NOT (B [b] (secret1) AND B [b] (-secret1)) AND (br4 AND -secret1)), POST = {nil} ) , 
+        3 = ( PRE = (TRUE) , POST = {nil} )  }, 
+    EDGES = {
+        (a,{ -(1,3), -(1,3), -(3,3)}),
+        (b,{ -(1,1), -(2,2), -(3,3)}), 
+        (c,{ -(1,3), -(1,3), -(3,3)})
+        }, 
+    DES = {1,2} }), 
+    b, b_finds_that_the_secret1_is_true_and_for_others_nothing_happened),
+
+CAPABILITY = (( a_sense_sec2 = { 
+    EVENTS = { 
+        1 = ( PRE =  (NOT (B [a] (secret1) AND B [a] (-secret1)) AND (ar4 AND secret1)), POST = {nil} ) , 
+        2 = ( PRE =  (NOT (B [a] (secret1) AND B [a] (-secret1)) AND (ar4 AND -secret1)), POST = {nil} ) , 
+        3 = ( PRE = (TRUE) , POST = {nil} )  }, 
+    EDGES = {
+        (b,{ -(1,3), -(2,3), -(3,3)}),
+        (a,{ -(1,1), -(2,2), -(3,3)}), 
+        (c,{ -(1,3), -(2,3), -(3,3)})
+        }, 
+    DES = {1,2} }), 
+    a, a_finds_that_the_secret1_is_true_and_for_others_nothing_happened),
+
+CAPABILITY = (( c_sense_sec2 = { 
+    EVENTS = { 
+        1 = ( PRE =  (NOT (B [c] (secret1) AND B [c] (-secret1)) AND (cr4 AND secret1)), POST = {nil} ) , 
+        2 = ( PRE =  (NOT (B [c] (secret1) AND B [c] (-secret1)) AND (cr4 AND -secret1)), POST = {nil} ) , 
+        3 = ( PRE = (TRUE) , POST = {nil} )  }, 
+    EDGES = {
+        (b,{ -(1,3), -(2,3), -(3,3)}),
+        (c,{ -(1,1), -(2,2), -(3,3)}), 
+        (a,{ -(1,3), -(2,3), -(3,3)})
+        }, 
+    DES = {1,2} }), 
+    c, c_finds_that_the_secret1_is_true_and_for_others_nothing_happened),
