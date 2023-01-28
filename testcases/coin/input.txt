@@ -1,0 +1,407 @@
+PROPS : {tail, has_key_a, has_key_b, has_key_c, opened ,looking_a, looking_b, looking_c} .
+
+AGENTS : {a, b, c} .
+
+MODEL : 
+{ NODES = {(1,{tail, has_key_a, -has_key_b, -has_key_c, -opened, looking_a, looking_b, looking_c}), 
+(2,{-tail, has_key_a, -has_key_b, -has_key_c, -opened, looking_a, looking_b, looking_c})
+},  
+EDGES = {
+(a,{-(1,1),-(1,2),-(2,1),-(2,2)}),
+(b,{-(1,1),-(1,2),-(2,1),-(2,2)}),
+(c,{-(1,1),-(1,2),-(2,1),-(2,2)})
+},
+DES = {1}}.
+
+// action open_a_b_c, open_a_b, open_a_c, open_a
+// action peek_a_b_c, peek_a_b, peek_a_c, peek_a, peek_b_a_c, peek_b_a, peek_b_c, peek_b, peek_c_a_b, peek_c_a, peek_c_b, peek_c
+// action signal_a_b, signal_a_c, signal_b_a, signal_b_c, signal_c_a, signal_c_b
+// action distract_a_b, distract_a_c, distract_b_a, distract_b_c, distract_c_a, distract_c_b
+// action shout_tail_a, shout_tail_b, shout_tail_c
+
+ACTIONS : {
+
+
+CAPABILITY = (( open_a_b_c = { 
+    EVENTS = { 
+        1 = ( PRE = (B[a] (has_key_a) AND B[a] (looking_b) AND B[a] (looking_c) AND has_key_a AND looking_c AND looking_b) , POST = {opened} ) 
+        }, 
+        EDGES = {
+            (a, {-(1,1)}),
+            (b, {-(1,1)}),
+            (c, {-(1,1)})
+            }, 
+            DES = {1} }), 
+            a, test),
+
+CAPABILITY = (( open_a_b = { 
+    EVENTS = { 
+        1 = ( PRE = (B[a] (has_key_a) AND B[a] (looking_b) AND B[a] (-looking_c) AND has_key_a AND -looking_c AND looking_b) , POST = {opened} ),
+        2 = ( PRE = TRUE , POST = {} )  
+        }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2)}),
+            (b, {-(1,1), -(2,2)}),
+            (c, {-(1,2), -(2,2)})
+            }, 
+            DES = {1}}), 
+            a, test),
+
+CAPABILITY = (( open_a_c = { 
+    EVENTS = { 
+        1 = ( PRE = (B[a] (has_key_a) AND B[a] (-looking_b) AND B[a] (looking_c) AND has_key_a AND looking_c AND -looking_b) , POST = {opened} ),
+        2 = ( PRE = TRUE , POST = {} )  
+        }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2)}),
+            (c, {-(1,1), -(2,2)}),
+            (b, {-(1,2), -(2,2)})
+            }, 
+            DES = {1}}), 
+            a, test),
+
+CAPABILITY = (( open_a = {
+    EVENTS = { 
+        1 = ( PRE = (B[a] (has_key_a) AND B[a] (-looking_b) AND B[a] (-looking_c) AND has_key_a AND -looking_c AND -looking_b) , POST = {opened} ),
+        2 = ( PRE = TRUE , POST = {} )  
+        }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2)}),
+            (b, {-(1,2), -(2,2)}),
+            (c, {-(1,2), -(2,2)})
+            }, 
+            DES = {1}}), 
+            a, test),
+
+CAPABILITY = (( peek_a_b_c = { 
+    EVENTS = { 
+        1 = ( PRE =  B[a] (opened) AND B[a] (looking_b) AND B[a] (looking_c) AND opened AND looking_b AND looking_c AND tail) , POST = {} ),
+        2 = ( PRE =  B[a] (opened) AND B[a] (looking_b) AND B[a] (looking_c) AND opened AND looking_b AND looking_c AND -tail) , POST = {} )
+    }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2)}),
+            (b, {-(1,1),-(1,2),-(2,1),-(2,2)}),
+            (c, {-(1,1),-(1,2),-(2,1),-(2,2)})
+            },
+    DES = {1} }), 
+    a, test),
+
+CAPABILITY = (( peek_a_b = { 
+    EVENTS = { 
+        1 = ( PRE =  B[a] (opened) AND B[a] (looking_b) AND B[a] (-looking_c) AND opened AND looking_b AND -looking_c AND tail) , POST = {} ),
+        2 = ( PRE =  B[a] (opened) AND B[a] (looking_b) AND B[a] (-looking_c) AND opened AND looking_b AND -looking_c AND -tail) , POST = {} ),
+        3 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2), -(3,3)}),
+            (b, {-(1,1),-(1,2),-(2,1),-(2,2), -(3,3)}),
+            (c, {-(1,3),-(2,3),-(3,3)})
+            },
+    DES = {1} }), 
+    a, test),
+
+CAPABILITY = (( peek_a_c = { 
+    EVENTS = { 
+        1 = ( PRE =  B[a] (opened) AND B[a] (-looking_b) AND B[a] (looking_c) AND opened AND -looking_b AND looking_c AND tail) , POST = {} ),
+        2 = ( PRE =  B[a] (opened) AND B[a] (-looking_b) AND B[a] (looking_c) AND opened AND -looking_b AND looking_c AND -tail) , POST = {} ),
+        3 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2), -(3,3)}),
+            (c, {-(1,1),-(1,2),-(2,1),-(2,2), -(3,3)}),
+            (b, {-(1,3),-(2,3),-(3,3)})
+            },
+    DES = {1} }), 
+    a, test),
+
+CAPABILITY = (( peek_a = { 
+    EVENTS = { 
+        1 = ( PRE =  B[a] (opened) AND B[a] (-looking_b) AND B[a] (-looking_c) AND opened AND -looking_b AND -looking_c AND tail) , POST = {} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2)}),
+            (b, {-(1,2), -(2,2)}),
+            (c, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    a, test),
+
+CAPABILITY = (( peek_b_a_c = { 
+    EVENTS = { 
+        1 = ( PRE =  B[b] (opened) AND B[b] (looking_a) AND B[b] (looking_c) AND opened AND looking_a AND looking_c AND tail) , POST = {} ),
+        2 = ( PRE =  B[b] (opened) AND B[b] (looking_a) AND B[b] (looking_c) AND opened AND looking_a AND looking_c AND -tail) , POST = {} )
+    }, 
+        EDGES ={
+            (b, {-(1,1), -(2,2)}),
+            (a, {-(1,1),-(1,2),-(2,1),-(2,2)}),
+            (c, {-(1,1),-(1,2),-(2,1),-(2,2)})
+            },
+    DES = {1} }), 
+    b, test),
+
+CAPABILITY = (( peek_b_a = { 
+    EVENTS = { 
+        1 = ( PRE =  B[b] (opened) AND B[b] (looking_a) AND B[b] (-looking_c) AND opened AND looking_a AND -looking_c AND tail) , POST = {} ),
+        2 = ( PRE =  B[b] (opened) AND B[b] (looking_a) AND B[b] (-looking_c) AND opened AND looking_a AND -looking_c AND -tail) , POST = {} ),
+        3 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (b, {-(1,1), -(2,2), -(3,3)}),
+            (a, {-(1,1),-(1,2),-(2,1),-(2,2), -(3,3)}),
+            (c, {-(1,3),-(2,3),-(3,3)})
+            },
+    DES = {1} }), 
+    b, test),
+
+CAPABILITY = (( peek_b_c = { 
+    EVENTS = { 
+        1 = ( PRE =  B[b] (opened) AND B[b] (-looking_b) AND B[b] (looking_c) AND opened AND -looking_b AND looking_c AND tail) , POST = {} ),
+        2 = ( PRE =  B[b] (opened) AND B[b] (-looking_b) AND B[b] (looking_c) AND opened AND -looking_b AND looking_c AND -tail) , POST = {} ),
+        3 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (b, {-(1,1), -(2,2), -(3,3)}),
+            (c, {-(1,1),-(1,2),-(2,1),-(2,2), -(3,3)}),
+            (a, {-(1,3),-(2,3),-(3,3)})
+            },
+    DES = {1} }), 
+    b, test),
+
+CAPABILITY = (( peek_b = { 
+    EVENTS = { 
+        1 = ( PRE =  B[b] (opened) AND B[b] (-looking_a) AND B[b] (-looking_c) AND opened AND -looking_a AND -looking_c AND tail) , POST = {} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (b, {-(1,1), -(2,2)}),
+            (a, {-(1,2), -(2,2)}),
+            (c, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    b, test),
+
+// done till here
+
+CAPABILITY = (( peek_c_a_b = { 
+    EVENTS = { 
+        1 = ( PRE =  B[c] (opened) AND B[c] (looking_a) AND B[c] (looking_b) AND opened AND looking_a AND looking_b AND tail) , POST = {} ),
+        2 = ( PRE =  B[c] (opened) AND B[c] (looking_a) AND B[c] (looking_b) AND opened AND looking_a AND looking_b AND -tail) , POST = {} )
+    }, 
+        EDGES ={
+            (c, {-(1,1), -(2,2)}),
+            (a, {-(1,1),-(1,2),-(2,1),-(2,2)}),
+            (b, {-(1,1),-(1,2),-(2,1),-(2,2)})
+            },
+    DES = {1} }), 
+    c, test),
+
+CAPABILITY = (( peek_c_a = { 
+    EVENTS = { 
+        1 = ( PRE =  B[c] (opened) AND B[c] (looking_a) AND B[c] (-looking_b) AND opened AND looking_a AND -looking_b AND tail) , POST = {} ),
+        2 = ( PRE =  B[c] (opened) AND B[c] (looking_a) AND B[c] (-looking_b) AND opened AND looking_a AND -looking_b AND -tail) , POST = {} ),
+        3 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (c, {-(1,1), -(2,2), -(3,3)}),
+            (a, {-(1,1),-(1,2),-(2,1),-(2,2), -(3,3)}),
+            (b, {-(1,3),-(2,3),-(3,3)})
+            },
+    DES = {1} }), 
+    c, test),
+
+CAPABILITY = (( peek_c_b = { 
+    EVENTS = { 
+        1 = ( PRE =  B[c] (opened) AND B[c] (-looking_a) AND B[c] (looking_b) AND opened AND -looking_a AND looking_b AND tail) , POST = {} ),
+        2 = ( PRE =  B[c] (opened) AND B[c] (-looking_a) AND B[c] (looking_b) AND opened AND -looking_a AND looking_b AND -tail) , POST = {} ),
+        3 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (c, {-(1,1), -(2,2), -(3,3)}),
+            (b, {-(1,1),-(1,2),-(2,1),-(2,2), -(3,3)}),
+            (a, {-(1,3),-(2,3),-(3,3)})
+            },
+    DES = {1} }), 
+    c, test),
+
+CAPABILITY = (( peek_c = { 
+    EVENTS = { 
+        1 = ( PRE =  B[c] (opened) AND B[c] (-looking_a) AND B[c] (-looking_b) AND opened AND -looking_a AND -looking_b AND tail) , POST = {} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (c, {-(1,1), -(2,2)}),
+            (b, {-(1,2), -(2,2)}),
+            (a, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    c, test),
+
+//signaling
+
+CAPABILITY = (( signal_a_b = { 
+    EVENTS = { 
+        1 = ( PRE =  B[a] (looking_a) AND B[a] (-looking_b) AND looking_a AND -looking_b) , POST = {looking_b} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2)}),
+            (b, {-(1,1), -(2,2)}),
+            (c, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    a, test),
+
+CAPABILITY = (( signal_a_c = { 
+    EVENTS = { 
+        1 = ( PRE =  B[a] (looking_a) AND B[a] (-looking_c) AND looking_a AND -looking_c) , POST = {looking_c} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2)}),
+            (c, {-(1,1), -(2,2)}),
+            (b, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    a, test),
+
+CAPABILITY = (( signal_b_a = { 
+    EVENTS = { 
+        1 = ( PRE =  B[b] (looking_b) AND B[b] (-looking_a) AND looking_b AND -looking_a) , POST = {looking_a} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2)}),
+            (b, {-(1,1), -(2,2)}),
+            (c, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    b, test),
+
+CAPABILITY = (( signal_b_c = { 
+    EVENTS = { 
+        1 = ( PRE =  B[b] (looking_b) AND B[b] (-looking_c) AND looking_b AND -looking_c) , POST = {looking_c} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (b, {-(1,1), -(2,2)}),
+            (c, {-(1,1), -(2,2)}),
+            (a, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    b, test),
+
+CAPABILITY = (( signal_c_a = { 
+    EVENTS = { 
+        1 = ( PRE =  B[c] (looking_c) AND B[c] (-looking_a) AND looking_c AND -looking_a) , POST = {looking_a} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2)}),
+            (c, {-(1,1), -(2,2)}),
+            (b, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    c, test),
+
+CAPABILITY = (( signal_c_b = { 
+    EVENTS = { 
+        1 = ( PRE =  B[b] (looking_c) AND B[b] (-looking_b) AND looking_c AND -looking_b) , POST = {looking_b} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (b, {-(1,1), -(2,2)}),
+            (c, {-(1,1), -(2,2)}),
+            (a, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    c, test),
+
+//distract actions
+
+CAPABILITY = (( distract_a_b = { 
+    EVENTS = { 
+        1 = ( PRE =  B[a] (looking_a) AND B[a] (looking_b) AND looking_a AND looking_b) , POST = {-looking_b} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2)}),
+            (b, {-(1,1), -(2,2)}),
+            (c, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    a, test),
+
+CAPABILITY = (( distract_a_c = { 
+    EVENTS = { 
+        1 = ( PRE =  B[a] (looking_a) AND B[a] (looking_c) AND looking_a AND looking_c) , POST = {-looking_c} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2)}),
+            (c, {-(1,1), -(2,2)}),
+            (b, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    a, test),
+
+CAPABILITY = (( distract_b_a = { 
+    EVENTS = { 
+        1 = ( PRE =  B[b] (looking_b) AND B[b] (looking_a) AND looking_b AND looking_a) , POST = {-looking_a} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2)}),
+            (b, {-(1,1), -(2,2)}),
+            (c, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    b, test),
+
+CAPABILITY = (( distract_b_c = { 
+    EVENTS = { 
+        1 = ( PRE =  B[b] (looking_b) AND B[b] (looking_c) AND looking_b AND looking_c) , POST = {-looking_c} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (b, {-(1,1), -(2,2)}),
+            (c, {-(1,1), -(2,2)}),
+            (a, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    b, test),
+
+CAPABILITY = (( distract_c_a = { 
+    EVENTS = { 
+        1 = ( PRE =  B[c] (looking_c) AND B[c] (looking_a) AND looking_c AND looking_a) , POST = {-looking_a} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (a, {-(1,1), -(2,2)}),
+            (c, {-(1,1), -(2,2)}),
+            (b, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    c, test),
+
+CAPABILITY = (( distract_c_b = { 
+    EVENTS = { 
+        1 = ( PRE =  B[b] (looking_c) AND B[b] (looking_b) AND looking_c AND looking_b) , POST = {-looking_b} ),
+        2 = ( PRE =  TRUE , POST = {} )
+    }, 
+        EDGES ={
+            (b, {-(1,1), -(2,2)}),
+            (c, {-(1,1), -(2,2)}),
+            (a, {-(1,2), -(2,2)})
+            },
+    DES = {1} }), 
+    c, test)
+}.
+
+GOAL : NOT (B[c] (B[a](tail) OR B[a](-tail))) AND B[a] (tail).
+
+PLANNER : {a} .
+
+
+
+

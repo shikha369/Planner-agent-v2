@@ -1,0 +1,2165 @@
+Domain size:28
+	 Number of models evaluated: 81	 Plan found is : [open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.01004575
+	 Number of models evaluated: 89	 Plan found is : [open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.012113667
+	 Number of models evaluated: 117	 Plan found is : [distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.016884917
+	 Number of models evaluated: 139	 Plan found is : [distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.026650917
+	 Number of models evaluated: 246	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.039244417
+	 Number of models evaluated: 254	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.039677542
+	 Number of models evaluated: 321	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:0.0417325
+	 Number of models evaluated: 322	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.041793667
+	 Number of models evaluated: 324	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:0.041880083
+	 Number of models evaluated: 326	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:0.041983125
+	 Number of models evaluated: 398	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:0.044390542
+	 Number of models evaluated: 406	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:0.044807667
+	 Number of models evaluated: 474	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:0.050074083
+	 Number of models evaluated: 482	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:0.050567417
+	 Number of models evaluated: 510	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.051894542
+	 Number of models evaluated: 517	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:0.052426208
+	 Number of models evaluated: 525	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:0.05287125
+	 Number of models evaluated: 547	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:0.054596375
+	 Number of models evaluated: 551	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:0.055105542
+	 Number of models evaluated: 556	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.055669042
+	 Number of models evaluated: 561	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:0.056004125
+	 Number of models evaluated: 577	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:0.057059208
+	 Number of models evaluated: 581	 Plan found is : [open_a_b_c, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:0.057575167
+	 Number of models evaluated: 698	 Plan found is : [distract_a_b, open_a_c, open_a_c, peek_a_c]
+	 elapsed time:0.067286708
+	 Number of models evaluated: 703	 Plan found is : [distract_a_b, open_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:0.068287708
+	 Number of models evaluated: 714	 Plan found is : [distract_a_b, open_a_c, distract_a_c, peek_a]
+	 elapsed time:0.0708435
+	 Number of models evaluated: 762	 Plan found is : [distract_a_b, distract_a_c, open_a, peek_a]
+	 elapsed time:0.085877208
+	 Number of models evaluated: 775	 Plan found is : [distract_a_b, distract_c_a, open_a_c, peek_a_c]
+	 elapsed time:0.08930575
+	 Number of models evaluated: 785	 Plan found is : [distract_a_c, open_a_b, open_a_b, peek_a_b]
+	 elapsed time:0.091906667
+	 Number of models evaluated: 789	 Plan found is : [distract_a_c, open_a_b, signal_a_c, peek_a_b_c]
+	 elapsed time:0.092432
+	 Number of models evaluated: 794	 Plan found is : [distract_a_c, open_a_b, distract_a_b, peek_a]
+	 elapsed time:0.093425917
+	 Number of models evaluated: 831	 Plan found is : [distract_a_c, distract_a_b, open_a, peek_a]
+	 elapsed time:0.100313292
+	 Number of models evaluated: 844	 Plan found is : [distract_a_c, distract_b_a, open_a_b, peek_a_b]
+	 elapsed time:0.10360825
+	 Number of models evaluated: 1121	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.1416925
+	 Number of models evaluated: 1129	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.142041167
+	 Number of models evaluated: 1196	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:0.143593667
+	 Number of models evaluated: 1197	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.1436565
+	 Number of models evaluated: 1199	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:0.143740292
+	 Number of models evaluated: 1201	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:0.143832875
+	 Number of models evaluated: 1273	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:0.151463583
+	 Number of models evaluated: 1281	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:0.151758375
+	 Number of models evaluated: 1349	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:0.153129458
+	 Number of models evaluated: 1357	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:0.153405333
+	 Number of models evaluated: 1385	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.154395083
+	 Number of models evaluated: 1392	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:0.154808458
+	 Number of models evaluated: 1400	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:0.155157667
+	 Number of models evaluated: 1422	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:0.156565625
+	 Number of models evaluated: 1426	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:0.156989333
+	 Number of models evaluated: 1431	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.157459833
+	 Number of models evaluated: 1436	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:0.15773625
+	 Number of models evaluated: 1452	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:0.158600458
+	 Number of models evaluated: 1456	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:0.15902775
+	 Number of models evaluated: 1612	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:0.166630958
+	 Number of models evaluated: 1613	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.166693125
+	 Number of models evaluated: 1615	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:0.166757833
+	 Number of models evaluated: 1617	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:0.16683625
+	 Number of models evaluated: 1688	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:0.168350292
+	 Number of models evaluated: 1689	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.168402167
+	 Number of models evaluated: 1691	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:0.168467042
+	 Number of models evaluated: 1693	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:0.168541458
+	 Number of models evaluated: 1764	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, open_a_c]
+	 elapsed time:0.170030667
+	 Number of models evaluated: 1765	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:0.170082792
+	 Number of models evaluated: 1767	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, peek_b_c]
+	 elapsed time:0.170146042
+	 Number of models evaluated: 1769	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, signal_c_b]
+	 elapsed time:0.170219667
+	 Number of models evaluated: 1840	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, open_a_c]
+	 elapsed time:0.171719042
+	 Number of models evaluated: 1841	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:0.171793583
+	 Number of models evaluated: 1843	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, peek_b_c]
+	 elapsed time:0.171881542
+	 Number of models evaluated: 1845	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, signal_c_b]
+	 elapsed time:0.171966208
+	 Number of models evaluated: 1876	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, open_a_c]
+	 elapsed time:0.172970125
+	 Number of models evaluated: 1877	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:0.173022
+	 Number of models evaluated: 1879	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, peek_b_c]
+	 elapsed time:0.17308825
+	 Number of models evaluated: 1881	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, signal_c_b]
+	 elapsed time:0.173164292
+	 Number of models evaluated: 1898	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, open_a_c]
+	 elapsed time:0.174268375
+	 Number of models evaluated: 1899	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:0.174391292
+	 Number of models evaluated: 1900	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, peek_b_c]
+	 elapsed time:0.174515583
+	 Number of models evaluated: 1902	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, signal_c_b]
+	 elapsed time:0.174736125
+	 Number of models evaluated: 2091	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.184926042
+	 Number of models evaluated: 2099	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.185232042
+	 Number of models evaluated: 2166	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:0.186769667
+	 Number of models evaluated: 2167	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.186863125
+	 Number of models evaluated: 2169	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:0.186964708
+	 Number of models evaluated: 2171	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:0.18708775
+	 Number of models evaluated: 2243	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:0.188850083
+	 Number of models evaluated: 2251	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:0.189221208
+	 Number of models evaluated: 2319	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:0.190869333
+	 Number of models evaluated: 2327	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:0.191156208
+	 Number of models evaluated: 2355	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.192312542
+	 Number of models evaluated: 2362	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:0.192838333
+	 Number of models evaluated: 2370	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:0.193295292
+	 Number of models evaluated: 2392	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:0.194850333
+	 Number of models evaluated: 2396	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:0.195379583
+	 Number of models evaluated: 2401	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.195949958
+	 Number of models evaluated: 2406	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:0.196292375
+	 Number of models evaluated: 2422	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:0.206413208
+	 Number of models evaluated: 2426	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:0.206954625
+	 Number of models evaluated: 2583	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.214439
+	 Number of models evaluated: 2591	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.214754792
+	 Number of models evaluated: 2658	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:0.216111917
+	 Number of models evaluated: 2659	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.216176667
+	 Number of models evaluated: 2661	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:0.21625075
+	 Number of models evaluated: 2663	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:0.216336958
+	 Number of models evaluated: 2735	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:0.217829125
+	 Number of models evaluated: 2743	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:0.218111333
+	 Number of models evaluated: 2811	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:0.2194695
+	 Number of models evaluated: 2819	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:0.219765875
+	 Number of models evaluated: 2847	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.22082375
+	 Number of models evaluated: 2854	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:0.22126125
+	 Number of models evaluated: 2862	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:0.221628917
+	 Number of models evaluated: 2884	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:0.223062667
+	 Number of models evaluated: 2888	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:0.223516583
+	 Number of models evaluated: 2893	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.223996292
+	 Number of models evaluated: 2898	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:0.224291042
+	 Number of models evaluated: 2914	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:0.225169833
+	 Number of models evaluated: 2918	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:0.225609375
+	 Number of models evaluated: 3035	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, open_a_c, peek_a_c]
+	 elapsed time:0.232974208
+	 Number of models evaluated: 3042	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:0.234109083
+	 Number of models evaluated: 3049	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, peek_b_c, peek_a_c]
+	 elapsed time:0.23489175
+	 Number of models evaluated: 3056	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:0.235933333
+	 Number of models evaluated: 3069	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, distract_a_c, peek_a]
+	 elapsed time:0.238140292
+	 Number of models evaluated: 3073	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, open_a_c, peek_a_c]
+	 elapsed time:0.238802458
+	 Number of models evaluated: 3080	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:0.239234958
+	 Number of models evaluated: 3088	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, peek_b_c, peek_a_c]
+	 elapsed time:0.239611208
+	 Number of models evaluated: 3110	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, distract_a_c, peek_a]
+	 elapsed time:0.241024875
+	 Number of models evaluated: 3114	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, distract_c_a, peek_a_c]
+	 elapsed time:0.241469167
+	 Number of models evaluated: 3119	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, open_a_c, peek_a_c]
+	 elapsed time:0.24222125
+	 Number of models evaluated: 3126	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, peek_b_a_c, peek_a_c]
+	 elapsed time:0.243329542
+	 Number of models evaluated: 3133	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, peek_b_c, peek_a_c]
+	 elapsed time:0.244101667
+	 Number of models evaluated: 3140	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, signal_a_b, peek_a_b_c]
+	 elapsed time:0.245119042
+	 Number of models evaluated: 3153	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, distract_a_c, peek_a]
+	 elapsed time:0.255590792
+	 Number of models evaluated: 3197	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, distract_a_b, peek_a_c]
+	 elapsed time:0.258156875
+	 Number of models evaluated: 3205	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, distract_a_c, peek_a_b]
+	 elapsed time:0.259769958
+	 Number of models evaluated: 3246	 Plan found is : [open_a_b_c, distract_a_b, signal_c_b, distract_c_b, peek_a_c]
+	 elapsed time:0.266631542
+	 Number of models evaluated: 3253	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, open_a, peek_a]
+	 elapsed time:0.267722167
+	 Number of models evaluated: 3257	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, signal_a_b, peek_a_b]
+	 elapsed time:0.268479167
+	 Number of models evaluated: 3263	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, signal_a_c, peek_a_c]
+	 elapsed time:0.269730167
+	 Number of models evaluated: 3271	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, open_a_c, peek_a_c]
+	 elapsed time:0.271460708
+	 Number of models evaluated: 3275	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, peek_b_c, peek_a_c]
+	 elapsed time:0.272517667
+	 Number of models evaluated: 3279	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, signal_c_a, peek_a_c]
+	 elapsed time:0.273500042
+	 Number of models evaluated: 3289	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, open_a_b, peek_a_b]
+	 elapsed time:0.275690542
+	 Number of models evaluated: 3294	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:0.27639575
+	 Number of models evaluated: 3305	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, distract_a_b, peek_a]
+	 elapsed time:0.277661375
+	 Number of models evaluated: 3309	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, open_a_b, peek_a_b]
+	 elapsed time:0.278300542
+	 Number of models evaluated: 3314	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:0.278597042
+	 Number of models evaluated: 3330	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, distract_a_b, peek_a]
+	 elapsed time:0.279467
+	 Number of models evaluated: 3334	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, distract_b_a, peek_a_b]
+	 elapsed time:0.2799035
+	 Number of models evaluated: 3377	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, distract_a_b, peek_a_c]
+	 elapsed time:0.28207225
+	 Number of models evaluated: 3385	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, distract_a_c, peek_a_b]
+	 elapsed time:0.283660042
+	 Number of models evaluated: 3413	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, open_a, peek_a]
+	 elapsed time:0.288308375
+	 Number of models evaluated: 3417	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, signal_a_b, peek_a_b]
+	 elapsed time:0.289087417
+	 Number of models evaluated: 3423	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, signal_a_c, peek_a_c]
+	 elapsed time:0.29033375
+	 Number of models evaluated: 3431	 Plan found is : [open_a_b_c, distract_a_c, distract_b_a, open_a_b, peek_a_b]
+	 elapsed time:0.292083167
+	 Number of models evaluated: 3433	 Plan found is : [open_a_b_c, distract_a_c, distract_b_a, signal_b_a, peek_a_b]
+	 elapsed time:0.292585208
+	 Number of models evaluated: 3529	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, distract_a_b, peek_a_c]
+	 elapsed time:0.30454225
+	 Number of models evaluated: 3537	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, distract_a_c, peek_a_b]
+	 elapsed time:0.306016917
+	 Number of models evaluated: 3666	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.322216917
+	 Number of models evaluated: 3674	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.323926333
+	 Number of models evaluated: 3843	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, distract_a_b, peek_a_c]
+	 elapsed time:0.340372375
+	 Number of models evaluated: 3851	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, distract_a_c, peek_a_b]
+	 elapsed time:0.341746625
+	 Number of models evaluated: 4037	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, distract_a_b, peek_a_c]
+	 elapsed time:0.36762725
+	 Number of models evaluated: 4045	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, distract_a_c, peek_a_b]
+	 elapsed time:0.36930625
+	 Number of models evaluated: 4100	 Plan found is : [distract_a_b, open_a_c, open_a_c, open_a_c, peek_a_c]
+	 elapsed time:0.381750375
+	 Number of models evaluated: 4105	 Plan found is : [distract_a_b, open_a_c, open_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:0.384279583
+	 Number of models evaluated: 4116	 Plan found is : [distract_a_b, open_a_c, open_a_c, distract_a_c, peek_a]
+	 elapsed time:0.391140917
+	 Number of models evaluated: 4120	 Plan found is : [distract_a_b, open_a_c, signal_a_b, open_a_b_c, peek_a_b_c]
+	 elapsed time:0.392784125
+	 Number of models evaluated: 4128	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_a_b, peek_a_c]
+	 elapsed time:0.394186583
+	 Number of models evaluated: 4133	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_a_c, peek_a_b]
+	 elapsed time:0.396759917
+	 Number of models evaluated: 4138	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_b_a, peek_a_b_c]
+	 elapsed time:0.399112
+	 Number of models evaluated: 4155	 Plan found is : [distract_a_b, open_a_c, signal_c_b, distract_c_b, peek_a_c]
+	 elapsed time:0.407496833
+	 Number of models evaluated: 4160	 Plan found is : [distract_a_b, open_a_c, distract_a_c, open_a, peek_a]
+	 elapsed time:0.409723292
+	 Number of models evaluated: 4164	 Plan found is : [distract_a_b, open_a_c, distract_a_c, signal_a_b, peek_a_b]
+	 elapsed time:0.412468125
+	 Number of models evaluated: 4169	 Plan found is : [distract_a_b, open_a_c, distract_a_c, signal_a_c, peek_a_c]
+	 elapsed time:0.416453
+	 Number of models evaluated: 4214	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.420806417
+	 Number of models evaluated: 4222	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.421926458
+	 Number of models evaluated: 4250	 Plan found is : [distract_a_b, signal_a_b, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.426338333
+	 Number of models evaluated: 4272	 Plan found is : [distract_a_b, signal_a_b, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.438936292
+	 Number of models evaluated: 4356	 Plan found is : [distract_a_b, signal_c_b, distract_c_b, open_a_c, peek_a_c]
+	 elapsed time:0.483526917
+	 Number of models evaluated: 4374	 Plan found is : [distract_a_b, distract_a_c, open_a, open_a, peek_a]
+	 elapsed time:0.490644833
+	 Number of models evaluated: 4378	 Plan found is : [distract_a_b, distract_a_c, open_a, signal_a_b, peek_a_b]
+	 elapsed time:0.492191208
+	 Number of models evaluated: 4383	 Plan found is : [distract_a_b, distract_a_c, open_a, signal_a_c, peek_a_c]
+	 elapsed time:0.494192042
+	 Number of models evaluated: 4389	 Plan found is : [distract_a_b, distract_a_c, signal_a_b, open_a_b, peek_a_b]
+	 elapsed time:0.496597042
+	 Number of models evaluated: 4405	 Plan found is : [distract_a_b, distract_a_c, signal_a_c, open_a_c, peek_a_c]
+	 elapsed time:0.505053875
+	 Number of models evaluated: 4427	 Plan found is : [distract_a_b, distract_c_a, open_a_c, open_a_c, peek_a_c]
+	 elapsed time:0.517007083
+	 Number of models evaluated: 4432	 Plan found is : [distract_a_b, distract_c_a, signal_c_a, open_a_c, peek_a_c]
+	 elapsed time:0.520406917
+	 Number of models evaluated: 4457	 Plan found is : [distract_a_c, open_a_b, open_a_b, open_a_b, peek_a_b]
+	 elapsed time:0.534677375
+	 Number of models evaluated: 4461	 Plan found is : [distract_a_c, open_a_b, open_a_b, signal_a_c, peek_a_b_c]
+	 elapsed time:0.536282
+	 Number of models evaluated: 4466	 Plan found is : [distract_a_c, open_a_b, open_a_b, distract_a_b, peek_a]
+	 elapsed time:0.538934792
+	 Number of models evaluated: 4476	 Plan found is : [distract_a_c, open_a_b, signal_a_c, distract_a_b, peek_a_c]
+	 elapsed time:0.541705042
+	 Number of models evaluated: 4481	 Plan found is : [distract_a_c, open_a_b, signal_a_c, distract_a_c, peek_a_b]
+	 elapsed time:0.544211458
+	 Number of models evaluated: 4485	 Plan found is : [distract_a_c, open_a_b, signal_a_c, distract_c_a, peek_a_b_c]
+	 elapsed time:0.545426667
+	 Number of models evaluated: 4488	 Plan found is : [distract_a_c, open_a_b, distract_a_b, open_a, peek_a]
+	 elapsed time:0.546296292
+	 Number of models evaluated: 4492	 Plan found is : [distract_a_c, open_a_b, distract_a_b, signal_a_b, peek_a_b]
+	 elapsed time:0.547861208
+	 Number of models evaluated: 4496	 Plan found is : [distract_a_c, open_a_b, distract_a_b, signal_a_c, peek_a_c]
+	 elapsed time:0.549711458
+	 Number of models evaluated: 4541	 Plan found is : [distract_a_c, signal_a_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.552555625
+	 Number of models evaluated: 4549	 Plan found is : [distract_a_c, signal_a_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.553305167
+	 Number of models evaluated: 4577	 Plan found is : [distract_a_c, signal_a_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.556144167
+	 Number of models evaluated: 4599	 Plan found is : [distract_a_c, signal_a_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.573153083
+	 Number of models evaluated: 4666	 Plan found is : [distract_a_c, distract_a_b, open_a, open_a, peek_a]
+	 elapsed time:0.594334708
+	 Number of models evaluated: 4670	 Plan found is : [distract_a_c, distract_a_b, open_a, signal_a_b, peek_a_b]
+	 elapsed time:0.595513583
+	 Number of models evaluated: 4675	 Plan found is : [distract_a_c, distract_a_b, open_a, signal_a_c, peek_a_c]
+	 elapsed time:0.597062833
+	 Number of models evaluated: 4681	 Plan found is : [distract_a_c, distract_a_b, signal_a_b, open_a_b, peek_a_b]
+	 elapsed time:0.598962292
+	 Number of models evaluated: 4697	 Plan found is : [distract_a_c, distract_a_b, signal_a_c, open_a_c, peek_a_c]
+	 elapsed time:0.605294208
+	 Number of models evaluated: 4719	 Plan found is : [distract_a_c, distract_b_a, open_a_b, open_a_b, peek_a_b]
+	 elapsed time:0.614369667
+	 Number of models evaluated: 4721	 Plan found is : [distract_a_c, distract_b_a, signal_b_a, open_a_b, peek_a_b]
+	 elapsed time:0.615177458
+	 Number of models evaluated: 4827	 Plan found is : [distract_b_a, open_a_b_c, signal_b_a, distract_a_b, peek_a_c]
+	 elapsed time:0.624028708
+	 Number of models evaluated: 4835	 Plan found is : [distract_b_a, open_a_b_c, signal_b_a, distract_a_c, peek_a_b]
+	 elapsed time:0.624978667
+	 Number of models evaluated: 4923	 Plan found is : [distract_b_a, signal_b_a, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.632980042
+	 Number of models evaluated: 4931	 Plan found is : [distract_b_a, signal_b_a, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.633921042
+	 Number of models evaluated: 4959	 Plan found is : [distract_b_a, signal_b_a, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.63799475
+	 Number of models evaluated: 4981	 Plan found is : [distract_b_a, signal_b_a, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.644313208
+	 Number of models evaluated: 5128	 Plan found is : [distract_b_c, signal_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.686831292
+	 Number of models evaluated: 5136	 Plan found is : [distract_b_c, signal_b_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.687565208
+	 Number of models evaluated: 5164	 Plan found is : [distract_b_c, signal_b_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.690239917
+	 Number of models evaluated: 5186	 Plan found is : [distract_b_c, signal_b_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.69822875
+	 Number of models evaluated: 5410	 Plan found is : [distract_c_a, open_a_b_c, signal_c_a, distract_a_b, peek_a_c]
+	 elapsed time:0.735358833
+	 Number of models evaluated: 5418	 Plan found is : [distract_c_a, open_a_b_c, signal_c_a, distract_a_c, peek_a_b]
+	 elapsed time:0.736314625
+	 Number of models evaluated: 5513	 Plan found is : [distract_c_a, signal_c_a, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.74490225
+	 Number of models evaluated: 5521	 Plan found is : [distract_c_a, signal_c_a, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.745809667
+	 Number of models evaluated: 5549	 Plan found is : [distract_c_a, signal_c_a, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.74969925
+	 Number of models evaluated: 5571	 Plan found is : [distract_c_a, signal_c_a, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.76355275
+	 Number of models evaluated: 5720	 Plan found is : [distract_c_b, signal_c_b, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.801941958
+	 Number of models evaluated: 5728	 Plan found is : [distract_c_b, signal_c_b, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.802820125
+	 Number of models evaluated: 5756	 Plan found is : [distract_c_b, signal_c_b, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.805767458
+	 Number of models evaluated: 5778	 Plan found is : [distract_c_b, signal_c_b, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.813822417
+	 Number of models evaluated: 5921	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.850287125
+	 Number of models evaluated: 5929	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.850719292
+	 Number of models evaluated: 5996	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:0.851873917
+	 Number of models evaluated: 5997	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.852053792
+	 Number of models evaluated: 5999	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:0.852230917
+	 Number of models evaluated: 6001	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:0.85242475
+	 Number of models evaluated: 6073	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:0.853652917
+	 Number of models evaluated: 6081	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:0.853971375
+	 Number of models evaluated: 6149	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:0.855121292
+	 Number of models evaluated: 6157	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:0.855440333
+	 Number of models evaluated: 6185	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.856391333
+	 Number of models evaluated: 6192	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:0.856842958
+	 Number of models evaluated: 6200	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:0.857276167
+	 Number of models evaluated: 6222	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:0.85860975
+	 Number of models evaluated: 6226	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:0.859134917
+	 Number of models evaluated: 6231	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.859660667
+	 Number of models evaluated: 6236	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:0.860032875
+	 Number of models evaluated: 6252	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:0.860823083
+	 Number of models evaluated: 6256	 Plan found is : [open_a_b_c, open_a_b_c, open_a_b_c, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:0.861321417
+	 Number of models evaluated: 6412	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:0.867720667
+	 Number of models evaluated: 6413	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.86788975
+	 Number of models evaluated: 6415	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:0.86804825
+	 Number of models evaluated: 6417	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:0.868224833
+	 Number of models evaluated: 6488	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:0.8694085
+	 Number of models evaluated: 6489	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.869580875
+	 Number of models evaluated: 6491	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:0.869752292
+	 Number of models evaluated: 6493	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:0.869925875
+	 Number of models evaluated: 6564	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, open_a_c]
+	 elapsed time:0.871056542
+	 Number of models evaluated: 6565	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:0.871200792
+	 Number of models evaluated: 6567	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, peek_b_c]
+	 elapsed time:0.8713775
+	 Number of models evaluated: 6569	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, signal_c_b]
+	 elapsed time:0.871544417
+	 Number of models evaluated: 6640	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, open_a_c]
+	 elapsed time:0.872671458
+	 Number of models evaluated: 6641	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:0.87284775
+	 Number of models evaluated: 6643	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, peek_b_c]
+	 elapsed time:0.873031
+	 Number of models evaluated: 6645	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, signal_c_b]
+	 elapsed time:0.873223333
+	 Number of models evaluated: 6676	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, open_a_c]
+	 elapsed time:0.874048167
+	 Number of models evaluated: 6677	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:0.87421475
+	 Number of models evaluated: 6679	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, peek_b_c]
+	 elapsed time:0.874396875
+	 Number of models evaluated: 6681	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, signal_c_b]
+	 elapsed time:0.874588958
+	 Number of models evaluated: 6698	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, open_a_c]
+	 elapsed time:0.875668833
+	 Number of models evaluated: 6699	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:0.87590375
+	 Number of models evaluated: 6700	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, peek_b_c]
+	 elapsed time:0.876131667
+	 Number of models evaluated: 6702	 Plan found is : [open_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, signal_c_b]
+	 elapsed time:0.8764505
+	 Number of models evaluated: 6891	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.8847485
+	 Number of models evaluated: 6899	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.885003292
+	 Number of models evaluated: 6966	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:0.88592875
+	 Number of models evaluated: 6967	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.886012542
+	 Number of models evaluated: 6969	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:0.886124917
+	 Number of models evaluated: 6971	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:0.886235708
+	 Number of models evaluated: 7043	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:0.887246292
+	 Number of models evaluated: 7051	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:0.887479333
+	 Number of models evaluated: 7119	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:0.888384833
+	 Number of models evaluated: 7127	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:0.88861325
+	 Number of models evaluated: 7155	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.889286542
+	 Number of models evaluated: 7162	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:0.889605833
+	 Number of models evaluated: 7170	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:0.889899083
+	 Number of models evaluated: 7192	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:0.89088475
+	 Number of models evaluated: 7196	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:0.891214833
+	 Number of models evaluated: 7201	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.891572625
+	 Number of models evaluated: 7206	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:0.89181
+	 Number of models evaluated: 7222	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:0.892415
+	 Number of models evaluated: 7226	 Plan found is : [open_a_b_c, open_a_b_c, peek_b_a_c, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:0.892745125
+	 Number of models evaluated: 7383	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.897686958
+	 Number of models evaluated: 7391	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.897936208
+	 Number of models evaluated: 7458	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:0.898905125
+	 Number of models evaluated: 7459	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.912212792
+	 Number of models evaluated: 7461	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:0.912526375
+	 Number of models evaluated: 7463	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:0.912653708
+	 Number of models evaluated: 7535	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:0.913695208
+	 Number of models evaluated: 7543	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:0.913921125
+	 Number of models evaluated: 7611	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:0.914869458
+	 Number of models evaluated: 7619	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:0.915098292
+	 Number of models evaluated: 7647	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:0.915817458
+	 Number of models evaluated: 7654	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:0.916142458
+	 Number of models evaluated: 7662	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:0.916413
+	 Number of models evaluated: 7684	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:0.917384167
+	 Number of models evaluated: 7688	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:0.917715083
+	 Number of models evaluated: 7693	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:0.918071792
+	 Number of models evaluated: 7698	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:0.918327667
+	 Number of models evaluated: 7714	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:0.918955667
+	 Number of models evaluated: 7718	 Plan found is : [open_a_b_c, open_a_b_c, peek_c_a_b, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:0.919290833
+	 Number of models evaluated: 7835	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, open_a_c, open_a_c, peek_a_c]
+	 elapsed time:0.924222
+	 Number of models evaluated: 7842	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, open_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:0.925026375
+	 Number of models evaluated: 7849	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, open_a_c, peek_b_c, peek_a_c]
+	 elapsed time:0.9255845
+	 Number of models evaluated: 7856	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, open_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:0.926457667
+	 Number of models evaluated: 7869	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, open_a_c, distract_a_c, peek_a]
+	 elapsed time:0.928065542
+	 Number of models evaluated: 7873	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, peek_b_a_c, open_a_c, peek_a_c]
+	 elapsed time:0.928624792
+	 Number of models evaluated: 7880	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, peek_b_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:0.928948458
+	 Number of models evaluated: 7888	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, peek_b_a_c, peek_b_c, peek_a_c]
+	 elapsed time:0.929238083
+	 Number of models evaluated: 7910	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, peek_b_a_c, distract_a_c, peek_a]
+	 elapsed time:0.930212292
+	 Number of models evaluated: 7914	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, peek_b_a_c, distract_c_a, peek_a_c]
+	 elapsed time:0.930563292
+	 Number of models evaluated: 7919	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, peek_b_c, open_a_c, peek_a_c]
+	 elapsed time:0.93118375
+	 Number of models evaluated: 7926	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, peek_b_c, peek_b_a_c, peek_a_c]
+	 elapsed time:0.931976167
+	 Number of models evaluated: 7933	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, peek_b_c, peek_b_c, peek_a_c]
+	 elapsed time:0.932538375
+	 Number of models evaluated: 7940	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, peek_b_c, signal_a_b, peek_a_b_c]
+	 elapsed time:0.93330025
+	 Number of models evaluated: 7953	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, peek_b_c, distract_a_c, peek_a]
+	 elapsed time:0.934743458
+	 Number of models evaluated: 7997	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, signal_a_b, distract_a_b, peek_a_c]
+	 elapsed time:0.936438292
+	 Number of models evaluated: 8005	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, signal_a_b, distract_a_c, peek_a_b]
+	 elapsed time:0.937580833
+	 Number of models evaluated: 8046	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, signal_c_b, distract_c_b, peek_a_c]
+	 elapsed time:0.94233425
+	 Number of models evaluated: 8053	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, distract_a_c, open_a, peek_a]
+	 elapsed time:0.943140833
+	 Number of models evaluated: 8057	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, distract_a_c, signal_a_b, peek_a_b]
+	 elapsed time:0.943732333
+	 Number of models evaluated: 8063	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, distract_a_c, signal_a_c, peek_a_c]
+	 elapsed time:0.944652375
+	 Number of models evaluated: 8071	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, distract_c_a, open_a_c, peek_a_c]
+	 elapsed time:0.945962958
+	 Number of models evaluated: 8075	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, distract_c_a, peek_b_c, peek_a_c]
+	 elapsed time:0.946797208
+	 Number of models evaluated: 8079	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_b, distract_c_a, signal_c_a, peek_a_c]
+	 elapsed time:0.947647458
+	 Number of models evaluated: 8089	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, open_a_b, open_a_b, peek_a_b]
+	 elapsed time:0.949458875
+	 Number of models evaluated: 8094	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, open_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:0.950076708
+	 Number of models evaluated: 8105	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, open_a_b, distract_a_b, peek_a]
+	 elapsed time:0.951138042
+	 Number of models evaluated: 8109	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, peek_c_a_b, open_a_b, peek_a_b]
+	 elapsed time:0.951687833
+	 Number of models evaluated: 8114	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, peek_c_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:0.952038333
+	 Number of models evaluated: 8130	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, peek_c_a_b, distract_a_b, peek_a]
+	 elapsed time:0.952771583
+	 Number of models evaluated: 8134	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, peek_c_a_b, distract_b_a, peek_a_b]
+	 elapsed time:0.95323775
+	 Number of models evaluated: 8177	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, signal_a_c, distract_a_b, peek_a_c]
+	 elapsed time:0.954918792
+	 Number of models evaluated: 8185	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, signal_a_c, distract_a_c, peek_a_b]
+	 elapsed time:0.95630975
+	 Number of models evaluated: 8213	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, distract_a_b, open_a, peek_a]
+	 elapsed time:0.959865625
+	 Number of models evaluated: 8217	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, distract_a_b, signal_a_b, peek_a_b]
+	 elapsed time:0.960488333
+	 Number of models evaluated: 8223	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, distract_a_b, signal_a_c, peek_a_c]
+	 elapsed time:0.961436208
+	 Number of models evaluated: 8231	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, distract_b_a, open_a_b, peek_a_b]
+	 elapsed time:0.962895875
+	 Number of models evaluated: 8233	 Plan found is : [open_a_b_c, open_a_b_c, distract_a_c, distract_b_a, signal_b_a, peek_a_b]
+	 elapsed time:0.96343375
+	 Number of models evaluated: 8329	 Plan found is : [open_a_b_c, open_a_b_c, distract_b_a, signal_b_a, distract_a_b, peek_a_c]
+	 elapsed time:0.967748042
+	 Number of models evaluated: 8337	 Plan found is : [open_a_b_c, open_a_b_c, distract_b_a, signal_b_a, distract_a_c, peek_a_b]
+	 elapsed time:0.968777167
+	 Number of models evaluated: 8466	 Plan found is : [open_a_b_c, open_a_b_c, distract_b_c, signal_b_c, distract_a_b, peek_a_c]
+	 elapsed time:0.979651625
+	 Number of models evaluated: 8474	 Plan found is : [open_a_b_c, open_a_b_c, distract_b_c, signal_b_c, distract_a_c, peek_a_b]
+	 elapsed time:0.980924667
+	 Number of models evaluated: 8643	 Plan found is : [open_a_b_c, open_a_b_c, distract_c_a, signal_c_a, distract_a_b, peek_a_c]
+	 elapsed time:0.991896542
+	 Number of models evaluated: 8651	 Plan found is : [open_a_b_c, open_a_b_c, distract_c_a, signal_c_a, distract_a_c, peek_a_b]
+	 elapsed time:0.9928395
+	 Number of models evaluated: 8837	 Plan found is : [open_a_b_c, open_a_b_c, distract_c_b, signal_c_b, distract_a_b, peek_a_c]
+	 elapsed time:1.020799458
+	 Number of models evaluated: 8845	 Plan found is : [open_a_b_c, open_a_b_c, distract_c_b, signal_c_b, distract_a_c, peek_a_b]
+	 elapsed time:1.022006083
+	 Number of models evaluated: 8939	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, open_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.029529917
+	 Number of models evaluated: 8940	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.0296415
+	 Number of models evaluated: 8942	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, open_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.029759417
+	 Number of models evaluated: 8944	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, open_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.029867667
+	 Number of models evaluated: 9015	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.030919125
+	 Number of models evaluated: 9016	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.031026125
+	 Number of models evaluated: 9018	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.031139958
+	 Number of models evaluated: 9020	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.03125125
+	 Number of models evaluated: 9091	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, peek_b_a_c, distract_a_b, open_a_c]
+	 elapsed time:1.032265708
+	 Number of models evaluated: 9092	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.0323655
+	 Number of models evaluated: 9094	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, peek_b_a_c, distract_a_b, peek_b_c]
+	 elapsed time:1.032476542
+	 Number of models evaluated: 9096	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, peek_b_a_c, distract_a_b, signal_c_b]
+	 elapsed time:1.032594292
+	 Number of models evaluated: 9167	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, peek_c_a_b, distract_a_b, open_a_c]
+	 elapsed time:1.0336015
+	 Number of models evaluated: 9168	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.033706875
+	 Number of models evaluated: 9170	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, peek_c_a_b, distract_a_b, peek_b_c]
+	 elapsed time:1.033814792
+	 Number of models evaluated: 9172	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, peek_c_a_b, distract_a_b, signal_c_b]
+	 elapsed time:1.033926042
+	 Number of models evaluated: 9203	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, peek_b_a_c, open_a_c]
+	 elapsed time:1.034651375
+	 Number of models evaluated: 9204	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.034751375
+	 Number of models evaluated: 9206	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, peek_b_a_c, peek_b_c]
+	 elapsed time:1.034858958
+	 Number of models evaluated: 9208	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, peek_b_a_c, signal_c_b]
+	 elapsed time:1.034971583
+	 Number of models evaluated: 9225	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, distract_c_a, open_a_c]
+	 elapsed time:1.035776875
+	 Number of models evaluated: 9226	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.035925875
+	 Number of models evaluated: 9227	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, distract_c_a, peek_b_c]
+	 elapsed time:1.03607275
+	 Number of models evaluated: 9229	 Plan found is : [open_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, distract_c_a, signal_c_b]
+	 elapsed time:1.036283625
+	 Number of models evaluated: 9417	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.042790792
+	 Number of models evaluated: 9418	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.042965208
+	 Number of models evaluated: 9420	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.043086417
+	 Number of models evaluated: 9422	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, open_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.0432095
+	 Number of models evaluated: 9493	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.04429725
+	 Number of models evaluated: 9494	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.044399333
+	 Number of models evaluated: 9496	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.044546083
+	 Number of models evaluated: 9498	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.044671083
+	 Number of models evaluated: 9569	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, open_a_c]
+	 elapsed time:1.045766292
+	 Number of models evaluated: 9570	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.045869917
+	 Number of models evaluated: 9572	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, peek_b_c]
+	 elapsed time:1.046009958
+	 Number of models evaluated: 9574	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, signal_c_b]
+	 elapsed time:1.046129917
+	 Number of models evaluated: 9645	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, open_a_c]
+	 elapsed time:1.047216917
+	 Number of models evaluated: 9646	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.047343375
+	 Number of models evaluated: 9648	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, peek_b_c]
+	 elapsed time:1.047462292
+	 Number of models evaluated: 9650	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, signal_c_b]
+	 elapsed time:1.04757975
+	 Number of models evaluated: 9681	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, open_a_c]
+	 elapsed time:1.048358083
+	 Number of models evaluated: 9682	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.048463083
+	 Number of models evaluated: 9684	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, peek_b_c]
+	 elapsed time:1.048577875
+	 Number of models evaluated: 9686	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, signal_c_b]
+	 elapsed time:1.048703875
+	 Number of models evaluated: 9703	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, open_a_c]
+	 elapsed time:1.049545958
+	 Number of models evaluated: 9704	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.049710083
+	 Number of models evaluated: 9705	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, peek_b_c]
+	 elapsed time:1.049876458
+	 Number of models evaluated: 9707	 Plan found is : [open_a_b_c, peek_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, signal_c_b]
+	 elapsed time:1.050105958
+	 Number of models evaluated: 9895	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, open_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.056607625
+	 Number of models evaluated: 9896	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.056730583
+	 Number of models evaluated: 9898	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, open_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.056846542
+	 Number of models evaluated: 9900	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, open_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.056966333
+	 Number of models evaluated: 9971	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.057965083
+	 Number of models evaluated: 9972	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.058064083
+	 Number of models evaluated: 9974	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.05817
+	 Number of models evaluated: 9976	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.058287667
+	 Number of models evaluated: 10047	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_b, open_a_c]
+	 elapsed time:1.059245417
+	 Number of models evaluated: 10048	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.059346667
+	 Number of models evaluated: 10050	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_b, peek_b_c]
+	 elapsed time:1.059459833
+	 Number of models evaluated: 10052	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_b, signal_c_b]
+	 elapsed time:1.059582542
+	 Number of models evaluated: 10123	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_b, open_a_c]
+	 elapsed time:1.060540333
+	 Number of models evaluated: 10124	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.060644542
+	 Number of models evaluated: 10126	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_b, peek_b_c]
+	 elapsed time:1.060758417
+	 Number of models evaluated: 10128	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_b, signal_c_b]
+	 elapsed time:1.06087775
+	 Number of models evaluated: 10159	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, peek_b_a_c, open_a_c]
+	 elapsed time:1.061554375
+	 Number of models evaluated: 10160	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.061661458
+	 Number of models evaluated: 10162	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, peek_b_a_c, peek_b_c]
+	 elapsed time:1.061775417
+	 Number of models evaluated: 10164	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, peek_b_a_c, signal_c_b]
+	 elapsed time:1.061948667
+	 Number of models evaluated: 10181	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, distract_c_a, open_a_c]
+	 elapsed time:1.062788042
+	 Number of models evaluated: 10182	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.062957208
+	 Number of models evaluated: 10183	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, distract_c_a, peek_b_c]
+	 elapsed time:1.063115458
+	 Number of models evaluated: 10185	 Plan found is : [open_a_b_c, peek_a_b_c, peek_b_a_c, distract_a_b, distract_c_a, signal_c_b]
+	 elapsed time:1.063324958
+	 Number of models evaluated: 10373	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, open_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.069060667
+	 Number of models evaluated: 10374	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.06917775
+	 Number of models evaluated: 10376	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, open_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.07688625
+	 Number of models evaluated: 10378	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, open_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.077029708
+	 Number of models evaluated: 10449	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.078057125
+	 Number of models evaluated: 10450	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.078161417
+	 Number of models evaluated: 10452	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.078280375
+	 Number of models evaluated: 10454	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.078400375
+	 Number of models evaluated: 10525	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_b, open_a_c]
+	 elapsed time:1.079351
+	 Number of models evaluated: 10526	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.079462875
+	 Number of models evaluated: 10528	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_b, peek_b_c]
+	 elapsed time:1.079578958
+	 Number of models evaluated: 10530	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_b, signal_c_b]
+	 elapsed time:1.079699542
+	 Number of models evaluated: 10601	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_b, open_a_c]
+	 elapsed time:1.080634792
+	 Number of models evaluated: 10602	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.080740958
+	 Number of models evaluated: 10604	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_b, peek_b_c]
+	 elapsed time:1.080873042
+	 Number of models evaluated: 10606	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_b, signal_c_b]
+	 elapsed time:1.081000625
+	 Number of models evaluated: 10637	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, peek_b_a_c, open_a_c]
+	 elapsed time:1.081718292
+	 Number of models evaluated: 10638	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.081831333
+	 Number of models evaluated: 10640	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, peek_b_a_c, peek_b_c]
+	 elapsed time:1.081954333
+	 Number of models evaluated: 10642	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, peek_b_a_c, signal_c_b]
+	 elapsed time:1.082079333
+	 Number of models evaluated: 10659	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, distract_c_a, open_a_c]
+	 elapsed time:1.082818667
+	 Number of models evaluated: 10660	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.082982667
+	 Number of models evaluated: 10661	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, distract_c_a, peek_b_c]
+	 elapsed time:1.083154583
+	 Number of models evaluated: 10663	 Plan found is : [open_a_b_c, peek_a_b_c, peek_c_a_b, distract_a_b, distract_c_a, signal_c_b]
+	 elapsed time:1.083375
+	 Number of models evaluated: 10811	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, peek_b_a_c, open_a_c]
+	 elapsed time:1.088886625
+	 Number of models evaluated: 10812	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.089024917
+	 Number of models evaluated: 10814	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, peek_b_a_c, peek_b_c]
+	 elapsed time:1.089170875
+	 Number of models evaluated: 10816	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, peek_b_a_c, signal_c_b]
+	 elapsed time:1.089353042
+	 Number of models evaluated: 10833	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, distract_c_a, open_a_c]
+	 elapsed time:1.090138333
+	 Number of models evaluated: 10834	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, distract_c_a, peek_a_c]
+	 elapsed time:1.090290458
+	 Number of models evaluated: 10835	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, distract_c_a, peek_b_c]
+	 elapsed time:1.090446625
+	 Number of models evaluated: 10837	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, peek_b_a_c, distract_c_a, signal_c_b]
+	 elapsed time:1.09065925
+	 Number of models evaluated: 10878	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, signal_a_b, distract_a_b, open_a_c]
+	 elapsed time:1.091864125
+	 Number of models evaluated: 10879	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, signal_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.092074917
+	 Number of models evaluated: 10881	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, signal_a_b, distract_a_b, peek_b_c]
+	 elapsed time:1.092342375
+	 Number of models evaluated: 10883	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, signal_a_b, distract_a_b, signal_c_b]
+	 elapsed time:1.092659708
+	 Number of models evaluated: 10928	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, distract_a_c, signal_a_c, open_a_c]
+	 elapsed time:1.097860625
+	 Number of models evaluated: 10929	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, distract_a_c, signal_a_c, peek_a_c]
+	 elapsed time:1.098074667
+	 Number of models evaluated: 10931	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, distract_a_c, signal_a_c, peek_b_c]
+	 elapsed time:1.098331292
+	 Number of models evaluated: 10933	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, distract_a_c, signal_a_c, signal_c_b]
+	 elapsed time:1.098686792
+	 Number of models evaluated: 10936	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, signal_c_a, open_a_c]
+	 elapsed time:1.0992675
+	 Number of models evaluated: 10937	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, signal_c_a, peek_a_c]
+	 elapsed time:1.0995105
+	 Number of models evaluated: 10939	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, signal_c_a, peek_b_c]
+	 elapsed time:1.099804333
+	 Number of models evaluated: 10941	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_b, distract_c_a, signal_c_a, signal_c_b]
+	 elapsed time:1.10015125
+	 Number of models evaluated: 11067	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_c, signal_a_c, distract_a_b, open_a_c]
+	 elapsed time:1.107579
+	 Number of models evaluated: 11068	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_c, signal_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.107801792
+	 Number of models evaluated: 11070	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_c, signal_a_c, distract_a_b, peek_b_c]
+	 elapsed time:1.108066458
+	 Number of models evaluated: 11072	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_c, signal_a_c, distract_a_b, signal_c_b]
+	 elapsed time:1.108417917
+	 Number of models evaluated: 11117	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_c, distract_a_b, signal_a_c, open_a_c]
+	 elapsed time:1.113547125
+	 Number of models evaluated: 11118	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_c, distract_a_b, signal_a_c, peek_a_c]
+	 elapsed time:1.113775458
+	 Number of models evaluated: 11120	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_c, distract_a_b, signal_a_c, peek_b_c]
+	 elapsed time:1.114032208
+	 Number of models evaluated: 11122	 Plan found is : [open_a_b_c, peek_a_b_c, distract_a_c, distract_a_b, signal_a_c, signal_c_b]
+	 elapsed time:1.114384208
+	 Number of models evaluated: 11225	 Plan found is : [open_a_b_c, peek_a_b_c, distract_b_a, signal_b_a, distract_a_b, open_a_c]
+	 elapsed time:1.11942125
+	 Number of models evaluated: 11226	 Plan found is : [open_a_b_c, peek_a_b_c, distract_b_a, signal_b_a, distract_a_b, peek_a_c]
+	 elapsed time:1.119619583
+	 Number of models evaluated: 11228	 Plan found is : [open_a_b_c, peek_a_b_c, distract_b_a, signal_b_a, distract_a_b, peek_b_c]
+	 elapsed time:1.119852417
+	 Number of models evaluated: 11230	 Plan found is : [open_a_b_c, peek_a_b_c, distract_b_a, signal_b_a, distract_a_b, signal_c_b]
+	 elapsed time:1.120126542
+	 Number of models evaluated: 11362	 Plan found is : [open_a_b_c, peek_a_b_c, distract_b_c, signal_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.12997175
+	 Number of models evaluated: 11363	 Plan found is : [open_a_b_c, peek_a_b_c, distract_b_c, signal_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.1302005
+	 Number of models evaluated: 11365	 Plan found is : [open_a_b_c, peek_a_b_c, distract_b_c, signal_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.137483833
+	 Number of models evaluated: 11367	 Plan found is : [open_a_b_c, peek_a_b_c, distract_b_c, signal_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.138153458
+	 Number of models evaluated: 11539	 Plan found is : [open_a_b_c, peek_a_b_c, distract_c_a, signal_c_a, distract_a_b, open_a_c]
+	 elapsed time:1.150394167
+	 Number of models evaluated: 11540	 Plan found is : [open_a_b_c, peek_a_b_c, distract_c_a, signal_c_a, distract_a_b, peek_a_c]
+	 elapsed time:1.151088667
+	 Number of models evaluated: 11542	 Plan found is : [open_a_b_c, peek_a_b_c, distract_c_a, signal_c_a, distract_a_b, peek_b_c]
+	 elapsed time:1.151952042
+	 Number of models evaluated: 11544	 Plan found is : [open_a_b_c, peek_a_b_c, distract_c_a, signal_c_a, distract_a_b, signal_c_b]
+	 elapsed time:1.153545083
+	 Number of models evaluated: 11733	 Plan found is : [open_a_b_c, peek_a_b_c, distract_c_b, signal_c_b, distract_a_b, open_a_c]
+	 elapsed time:1.175204917
+	 Number of models evaluated: 11734	 Plan found is : [open_a_b_c, peek_a_b_c, distract_c_b, signal_c_b, distract_a_b, peek_a_c]
+	 elapsed time:1.175608792
+	 Number of models evaluated: 11736	 Plan found is : [open_a_b_c, peek_a_b_c, distract_c_b, signal_c_b, distract_a_b, peek_b_c]
+	 elapsed time:1.176118583
+	 Number of models evaluated: 11738	 Plan found is : [open_a_b_c, peek_a_b_c, distract_c_b, signal_c_b, distract_a_b, signal_c_b]
+	 elapsed time:1.176704625
+	 Number of models evaluated: 11837	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.189943958
+	 Number of models evaluated: 11845	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:1.19046675
+	 Number of models evaluated: 11912	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.191690042
+	 Number of models evaluated: 11913	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.191983917
+	 Number of models evaluated: 11915	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.19228925
+	 Number of models evaluated: 11917	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.192592125
+	 Number of models evaluated: 11989	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.1938845
+	 Number of models evaluated: 11997	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:1.194401542
+	 Number of models evaluated: 12065	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.195658833
+	 Number of models evaluated: 12073	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:1.196097958
+	 Number of models evaluated: 12101	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:1.197040958
+	 Number of models evaluated: 12108	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.197602667
+	 Number of models evaluated: 12116	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:1.198141833
+	 Number of models evaluated: 12138	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:1.199423375
+	 Number of models evaluated: 12142	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.199986
+	 Number of models evaluated: 12147	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:1.200590375
+	 Number of models evaluated: 12152	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:1.201072125
+	 Number of models evaluated: 12168	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:1.201962667
+	 Number of models evaluated: 12172	 Plan found is : [open_a_b_c, peek_b_a_c, open_a_b_c, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:1.206034833
+	 Number of models evaluated: 12328	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, open_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.213704
+	 Number of models evaluated: 12329	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.214036667
+	 Number of models evaluated: 12331	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, open_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.214419958
+	 Number of models evaluated: 12333	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, open_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.215017958
+	 Number of models evaluated: 12404	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.216807417
+	 Number of models evaluated: 12405	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.217387667
+	 Number of models evaluated: 12407	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.217747292
+	 Number of models evaluated: 12409	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.218125167
+	 Number of models evaluated: 12480	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, peek_b_a_c, distract_a_b, open_a_c]
+	 elapsed time:1.219820083
+	 Number of models evaluated: 12481	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.220175458
+	 Number of models evaluated: 12483	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, peek_b_a_c, distract_a_b, peek_b_c]
+	 elapsed time:1.220615292
+	 Number of models evaluated: 12485	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, peek_b_a_c, distract_a_b, signal_c_b]
+	 elapsed time:1.22101475
+	 Number of models evaluated: 12556	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, peek_c_a_b, distract_a_b, open_a_c]
+	 elapsed time:1.224382292
+	 Number of models evaluated: 12557	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.224742583
+	 Number of models evaluated: 12559	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, peek_c_a_b, distract_a_b, peek_b_c]
+	 elapsed time:1.225142667
+	 Number of models evaluated: 12561	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, peek_c_a_b, distract_a_b, signal_c_b]
+	 elapsed time:1.225953958
+	 Number of models evaluated: 12592	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, peek_b_a_c, open_a_c]
+	 elapsed time:1.227575375
+	 Number of models evaluated: 12593	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.227940958
+	 Number of models evaluated: 12595	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, peek_b_a_c, peek_b_c]
+	 elapsed time:1.228672708
+	 Number of models evaluated: 12597	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, peek_b_a_c, signal_c_b]
+	 elapsed time:1.22905825
+	 Number of models evaluated: 12614	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, distract_c_a, open_a_c]
+	 elapsed time:1.230105167
+	 Number of models evaluated: 12615	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.230452583
+	 Number of models evaluated: 12616	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, distract_c_a, peek_b_c]
+	 elapsed time:1.230822708
+	 Number of models evaluated: 12618	 Plan found is : [open_a_b_c, peek_b_a_c, peek_a_b_c, distract_a_b, distract_c_a, signal_c_b]
+	 elapsed time:1.231264833
+	 Number of models evaluated: 12807	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.238026208
+	 Number of models evaluated: 12815	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:1.238548958
+	 Number of models evaluated: 12882	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.239763542
+	 Number of models evaluated: 12883	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.240072042
+	 Number of models evaluated: 12885	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.24042325
+	 Number of models evaluated: 12887	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.240743958
+	 Number of models evaluated: 12959	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.242065958
+	 Number of models evaluated: 12967	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:1.242543625
+	 Number of models evaluated: 13035	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.24380525
+	 Number of models evaluated: 13043	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:1.244402667
+	 Number of models evaluated: 13071	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:1.246754917
+	 Number of models evaluated: 13078	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.247400125
+	 Number of models evaluated: 13086	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:1.247999625
+	 Number of models evaluated: 13108	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:1.249498583
+	 Number of models evaluated: 13112	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.24996675
+	 Number of models evaluated: 13117	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:1.250405958
+	 Number of models evaluated: 13122	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:1.250818042
+	 Number of models evaluated: 13138	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:1.252106708
+	 Number of models evaluated: 13142	 Plan found is : [open_a_b_c, peek_b_a_c, peek_b_a_c, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:1.2531085
+	 Number of models evaluated: 13299	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.260757167
+	 Number of models evaluated: 13307	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:1.261053625
+	 Number of models evaluated: 13374	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.262263125
+	 Number of models evaluated: 13375	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.262412583
+	 Number of models evaluated: 13377	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.262572083
+	 Number of models evaluated: 13379	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.262722792
+	 Number of models evaluated: 13451	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.263722958
+	 Number of models evaluated: 13459	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:1.264025208
+	 Number of models evaluated: 13527	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.265034917
+	 Number of models evaluated: 13535	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:1.2653295
+	 Number of models evaluated: 13563	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:1.266123708
+	 Number of models evaluated: 13570	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.266513375
+	 Number of models evaluated: 13578	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:1.2668275
+	 Number of models evaluated: 13600	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:1.267948958
+	 Number of models evaluated: 13604	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.268355
+	 Number of models evaluated: 13609	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:1.268761458
+	 Number of models evaluated: 13614	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:1.269465
+	 Number of models evaluated: 13630	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:1.270101083
+	 Number of models evaluated: 13634	 Plan found is : [open_a_b_c, peek_b_a_c, peek_c_a_b, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:1.270464375
+	 Number of models evaluated: 13751	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, open_a_c, open_a_c, peek_a_c]
+	 elapsed time:1.275137542
+	 Number of models evaluated: 13758	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, open_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.276007042
+	 Number of models evaluated: 13765	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, open_a_c, peek_b_c, peek_a_c]
+	 elapsed time:1.276606875
+	 Number of models evaluated: 13772	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, open_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:1.277353333
+	 Number of models evaluated: 13785	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, open_a_c, distract_a_c, peek_a]
+	 elapsed time:1.278781167
+	 Number of models evaluated: 13789	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, peek_b_a_c, open_a_c, peek_a_c]
+	 elapsed time:1.279290625
+	 Number of models evaluated: 13796	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, peek_b_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.279662083
+	 Number of models evaluated: 13804	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, peek_b_a_c, peek_b_c, peek_a_c]
+	 elapsed time:1.280006333
+	 Number of models evaluated: 13826	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, peek_b_a_c, distract_a_c, peek_a]
+	 elapsed time:1.281047042
+	 Number of models evaluated: 13830	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, peek_b_a_c, distract_c_a, peek_a_c]
+	 elapsed time:1.298869958
+	 Number of models evaluated: 13835	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, peek_b_c, open_a_c, peek_a_c]
+	 elapsed time:1.3000225
+	 Number of models evaluated: 13842	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, peek_b_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.300804083
+	 Number of models evaluated: 13849	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, peek_b_c, peek_b_c, peek_a_c]
+	 elapsed time:1.301384542
+	 Number of models evaluated: 13856	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, peek_b_c, signal_a_b, peek_a_b_c]
+	 elapsed time:1.302108167
+	 Number of models evaluated: 13869	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, peek_b_c, distract_a_c, peek_a]
+	 elapsed time:1.303782167
+	 Number of models evaluated: 13913	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, signal_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.306222167
+	 Number of models evaluated: 13921	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, signal_a_b, distract_a_c, peek_a_b]
+	 elapsed time:1.307889833
+	 Number of models evaluated: 13962	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, signal_c_b, distract_c_b, peek_a_c]
+	 elapsed time:1.312259417
+	 Number of models evaluated: 13969	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, distract_a_c, open_a, peek_a]
+	 elapsed time:1.313058875
+	 Number of models evaluated: 13973	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, distract_a_c, signal_a_b, peek_a_b]
+	 elapsed time:1.313659708
+	 Number of models evaluated: 13979	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, distract_a_c, signal_a_c, peek_a_c]
+	 elapsed time:1.314586875
+	 Number of models evaluated: 13987	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, distract_c_a, open_a_c, peek_a_c]
+	 elapsed time:1.316499875
+	 Number of models evaluated: 13991	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, distract_c_a, peek_b_c, peek_a_c]
+	 elapsed time:1.31834925
+	 Number of models evaluated: 13995	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_b, distract_c_a, signal_c_a, peek_a_c]
+	 elapsed time:1.319523542
+	 Number of models evaluated: 14005	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, open_a_b, open_a_b, peek_a_b]
+	 elapsed time:1.321022417
+	 Number of models evaluated: 14010	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, open_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:1.321578625
+	 Number of models evaluated: 14021	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, open_a_b, distract_a_b, peek_a]
+	 elapsed time:1.322676583
+	 Number of models evaluated: 14025	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, peek_c_a_b, open_a_b, peek_a_b]
+	 elapsed time:1.323367542
+	 Number of models evaluated: 14030	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, peek_c_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:1.3239105
+	 Number of models evaluated: 14046	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, peek_c_a_b, distract_a_b, peek_a]
+	 elapsed time:1.324808583
+	 Number of models evaluated: 14050	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, peek_c_a_b, distract_b_a, peek_a_b]
+	 elapsed time:1.32530875
+	 Number of models evaluated: 14093	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, signal_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.327014583
+	 Number of models evaluated: 14101	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, signal_a_c, distract_a_c, peek_a_b]
+	 elapsed time:1.328303708
+	 Number of models evaluated: 14129	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, distract_a_b, open_a, peek_a]
+	 elapsed time:1.3317815
+	 Number of models evaluated: 14133	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, distract_a_b, signal_a_b, peek_a_b]
+	 elapsed time:1.332608667
+	 Number of models evaluated: 14139	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, distract_a_b, signal_a_c, peek_a_c]
+	 elapsed time:1.333658583
+	 Number of models evaluated: 14147	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, distract_b_a, open_a_b, peek_a_b]
+	 elapsed time:1.3351105
+	 Number of models evaluated: 14149	 Plan found is : [open_a_b_c, peek_b_a_c, distract_a_c, distract_b_a, signal_b_a, peek_a_b]
+	 elapsed time:1.335718708
+	 Number of models evaluated: 14245	 Plan found is : [open_a_b_c, peek_b_a_c, distract_b_a, signal_b_a, distract_a_b, peek_a_c]
+	 elapsed time:1.3398285
+	 Number of models evaluated: 14253	 Plan found is : [open_a_b_c, peek_b_a_c, distract_b_a, signal_b_a, distract_a_c, peek_a_b]
+	 elapsed time:1.340739958
+	 Number of models evaluated: 14382	 Plan found is : [open_a_b_c, peek_b_a_c, distract_b_c, signal_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.35383075
+	 Number of models evaluated: 14390	 Plan found is : [open_a_b_c, peek_b_a_c, distract_b_c, signal_b_c, distract_a_c, peek_a_b]
+	 elapsed time:1.355160542
+	 Number of models evaluated: 14559	 Plan found is : [open_a_b_c, peek_b_a_c, distract_c_a, signal_c_a, distract_a_b, peek_a_c]
+	 elapsed time:1.366239042
+	 Number of models evaluated: 14567	 Plan found is : [open_a_b_c, peek_b_a_c, distract_c_a, signal_c_a, distract_a_c, peek_a_b]
+	 elapsed time:1.367366333
+	 Number of models evaluated: 14753	 Plan found is : [open_a_b_c, peek_b_a_c, distract_c_b, signal_c_b, distract_a_b, peek_a_c]
+	 elapsed time:1.384080833
+	 Number of models evaluated: 14761	 Plan found is : [open_a_b_c, peek_b_a_c, distract_c_b, signal_c_b, distract_a_c, peek_a_b]
+	 elapsed time:1.385307583
+	 Number of models evaluated: 14856	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.392453
+	 Number of models evaluated: 14864	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:1.392911333
+	 Number of models evaluated: 14931	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.394177917
+	 Number of models evaluated: 14932	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.394550458
+	 Number of models evaluated: 14934	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.394806125
+	 Number of models evaluated: 14936	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.395146917
+	 Number of models evaluated: 15008	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.396401458
+	 Number of models evaluated: 15016	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:1.396864833
+	 Number of models evaluated: 15084	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.398060333
+	 Number of models evaluated: 15092	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:1.398524458
+	 Number of models evaluated: 15120	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:1.399570583
+	 Number of models evaluated: 15127	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.40002725
+	 Number of models evaluated: 15135	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:1.400372958
+	 Number of models evaluated: 15157	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:1.401394458
+	 Number of models evaluated: 15161	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.4017955
+	 Number of models evaluated: 15166	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:1.402216042
+	 Number of models evaluated: 15171	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:1.402515333
+	 Number of models evaluated: 15187	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:1.403197917
+	 Number of models evaluated: 15191	 Plan found is : [open_a_b_c, peek_c_a_b, open_a_b_c, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:1.403596375
+	 Number of models evaluated: 15347	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, open_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.4084975
+	 Number of models evaluated: 15348	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.408645875
+	 Number of models evaluated: 15350	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, open_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.408803875
+	 Number of models evaluated: 15352	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, open_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.408967917
+	 Number of models evaluated: 15423	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.410014625
+	 Number of models evaluated: 15424	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.410163583
+	 Number of models evaluated: 15426	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.410324958
+	 Number of models evaluated: 15428	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.410490708
+	 Number of models evaluated: 15499	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, peek_b_a_c, distract_a_b, open_a_c]
+	 elapsed time:1.411481042
+	 Number of models evaluated: 15500	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.41163175
+	 Number of models evaluated: 15502	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, peek_b_a_c, distract_a_b, peek_b_c]
+	 elapsed time:1.411790458
+	 Number of models evaluated: 15504	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, peek_b_a_c, distract_a_b, signal_c_b]
+	 elapsed time:1.411951833
+	 Number of models evaluated: 15575	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, peek_c_a_b, distract_a_b, open_a_c]
+	 elapsed time:1.412907875
+	 Number of models evaluated: 15576	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.413112917
+	 Number of models evaluated: 15578	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, peek_c_a_b, distract_a_b, peek_b_c]
+	 elapsed time:1.413288833
+	 Number of models evaluated: 15580	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, peek_c_a_b, distract_a_b, signal_c_b]
+	 elapsed time:1.413457375
+	 Number of models evaluated: 15611	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, peek_b_a_c, open_a_c]
+	 elapsed time:1.414230167
+	 Number of models evaluated: 15612	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.429974833
+	 Number of models evaluated: 15614	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, peek_b_a_c, peek_b_c]
+	 elapsed time:1.430161458
+	 Number of models evaluated: 15616	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, peek_b_a_c, signal_c_b]
+	 elapsed time:1.430365042
+	 Number of models evaluated: 15633	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, distract_c_a, open_a_c]
+	 elapsed time:1.431210708
+	 Number of models evaluated: 15634	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.431413208
+	 Number of models evaluated: 15635	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, distract_c_a, peek_b_c]
+	 elapsed time:1.431608375
+	 Number of models evaluated: 15637	 Plan found is : [open_a_b_c, peek_c_a_b, peek_a_b_c, distract_a_b, distract_c_a, signal_c_b]
+	 elapsed time:1.43186025
+	 Number of models evaluated: 15826	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.43770875
+	 Number of models evaluated: 15834	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:1.438008
+	 Number of models evaluated: 15901	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.438915125
+	 Number of models evaluated: 15902	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.439069792
+	 Number of models evaluated: 15904	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.4392355
+	 Number of models evaluated: 15906	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.439419875
+	 Number of models evaluated: 15978	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.440433583
+	 Number of models evaluated: 15986	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:1.440737542
+	 Number of models evaluated: 16054	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.441690917
+	 Number of models evaluated: 16062	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:1.441978083
+	 Number of models evaluated: 16090	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:1.442706292
+	 Number of models evaluated: 16097	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.443093708
+	 Number of models evaluated: 16105	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:1.443452875
+	 Number of models evaluated: 16127	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:1.444416708
+	 Number of models evaluated: 16131	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.444810708
+	 Number of models evaluated: 16136	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:1.445227708
+	 Number of models evaluated: 16141	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:1.445538542
+	 Number of models evaluated: 16157	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:1.44618325
+	 Number of models evaluated: 16161	 Plan found is : [open_a_b_c, peek_c_a_b, peek_b_a_c, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:1.446585292
+	 Number of models evaluated: 16318	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.4512485
+	 Number of models evaluated: 16326	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:1.451574125
+	 Number of models evaluated: 16393	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.452580958
+	 Number of models evaluated: 16394	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.45273625
+	 Number of models evaluated: 16396	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.452904583
+	 Number of models evaluated: 16398	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.45307725
+	 Number of models evaluated: 16470	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.454140125
+	 Number of models evaluated: 16478	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:1.454440417
+	 Number of models evaluated: 16546	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.455441417
+	 Number of models evaluated: 16554	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:1.45575825
+	 Number of models evaluated: 16582	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:1.456565833
+	 Number of models evaluated: 16589	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.456972167
+	 Number of models evaluated: 16597	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:1.457331667
+	 Number of models evaluated: 16619	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:1.458378958
+	 Number of models evaluated: 16623	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.458790208
+	 Number of models evaluated: 16628	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:1.459259667
+	 Number of models evaluated: 16633	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:1.459582208
+	 Number of models evaluated: 16649	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:1.460284458
+	 Number of models evaluated: 16653	 Plan found is : [open_a_b_c, peek_c_a_b, peek_c_a_b, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:1.460695708
+	 Number of models evaluated: 16770	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, open_a_c, open_a_c, peek_a_c]
+	 elapsed time:1.465726083
+	 Number of models evaluated: 16777	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, open_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.466601417
+	 Number of models evaluated: 16784	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, open_a_c, peek_b_c, peek_a_c]
+	 elapsed time:1.467222625
+	 Number of models evaluated: 16791	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, open_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:1.468004792
+	 Number of models evaluated: 16804	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, open_a_c, distract_a_c, peek_a]
+	 elapsed time:1.469536292
+	 Number of models evaluated: 16808	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, peek_b_a_c, open_a_c, peek_a_c]
+	 elapsed time:1.470084667
+	 Number of models evaluated: 16815	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, peek_b_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.47048575
+	 Number of models evaluated: 16823	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, peek_b_a_c, peek_b_c, peek_a_c]
+	 elapsed time:1.470854167
+	 Number of models evaluated: 16845	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, peek_b_a_c, distract_a_c, peek_a]
+	 elapsed time:1.471843458
+	 Number of models evaluated: 16849	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, peek_b_a_c, distract_c_a, peek_a_c]
+	 elapsed time:1.4722425
+	 Number of models evaluated: 16854	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, peek_b_c, open_a_c, peek_a_c]
+	 elapsed time:1.472848708
+	 Number of models evaluated: 16861	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, peek_b_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.473684167
+	 Number of models evaluated: 16868	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, peek_b_c, peek_b_c, peek_a_c]
+	 elapsed time:1.4742995
+	 Number of models evaluated: 16875	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, peek_b_c, signal_a_b, peek_a_b_c]
+	 elapsed time:1.475071625
+	 Number of models evaluated: 16888	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, peek_b_c, distract_a_c, peek_a]
+	 elapsed time:1.476539583
+	 Number of models evaluated: 16932	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, signal_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.478222042
+	 Number of models evaluated: 16940	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, signal_a_b, distract_a_c, peek_a_b]
+	 elapsed time:1.479354
+	 Number of models evaluated: 16981	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, signal_c_b, distract_c_b, peek_a_c]
+	 elapsed time:1.483837875
+	 Number of models evaluated: 16988	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, distract_a_c, open_a, peek_a]
+	 elapsed time:1.484681167
+	 Number of models evaluated: 16992	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, distract_a_c, signal_a_b, peek_a_b]
+	 elapsed time:1.48531325
+	 Number of models evaluated: 16998	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, distract_a_c, signal_a_c, peek_a_c]
+	 elapsed time:1.486242625
+	 Number of models evaluated: 17006	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, distract_c_a, open_a_c, peek_a_c]
+	 elapsed time:1.487517875
+	 Number of models evaluated: 17010	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, distract_c_a, peek_b_c, peek_a_c]
+	 elapsed time:1.488359083
+	 Number of models evaluated: 17014	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_b, distract_c_a, signal_c_a, peek_a_c]
+	 elapsed time:1.489138875
+	 Number of models evaluated: 17024	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, open_a_b, open_a_b, peek_a_b]
+	 elapsed time:1.49070975
+	 Number of models evaluated: 17029	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, open_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:1.491277208
+	 Number of models evaluated: 17040	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, open_a_b, distract_a_b, peek_a]
+	 elapsed time:1.492221042
+	 Number of models evaluated: 17044	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, peek_c_a_b, open_a_b, peek_a_b]
+	 elapsed time:1.492763917
+	 Number of models evaluated: 17049	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, peek_c_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:1.493077042
+	 Number of models evaluated: 17065	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, peek_c_a_b, distract_a_b, peek_a]
+	 elapsed time:1.493781583
+	 Number of models evaluated: 17069	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, peek_c_a_b, distract_b_a, peek_a_b]
+	 elapsed time:1.4941995
+	 Number of models evaluated: 17112	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, signal_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.507963667
+	 Number of models evaluated: 17120	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, signal_a_c, distract_a_c, peek_a_b]
+	 elapsed time:1.509170667
+	 Number of models evaluated: 17148	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, distract_a_b, open_a, peek_a]
+	 elapsed time:1.512258208
+	 Number of models evaluated: 17152	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, distract_a_b, signal_a_b, peek_a_b]
+	 elapsed time:1.512867917
+	 Number of models evaluated: 17158	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, distract_a_b, signal_a_c, peek_a_c]
+	 elapsed time:1.513784375
+	 Number of models evaluated: 17166	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, distract_b_a, open_a_b, peek_a_b]
+	 elapsed time:1.515030708
+	 Number of models evaluated: 17168	 Plan found is : [open_a_b_c, peek_c_a_b, distract_a_c, distract_b_a, signal_b_a, peek_a_b]
+	 elapsed time:1.515482125
+	 Number of models evaluated: 17264	 Plan found is : [open_a_b_c, peek_c_a_b, distract_b_a, signal_b_a, distract_a_b, peek_a_c]
+	 elapsed time:1.519196292
+	 Number of models evaluated: 17272	 Plan found is : [open_a_b_c, peek_c_a_b, distract_b_a, signal_b_a, distract_a_c, peek_a_b]
+	 elapsed time:1.520118208
+	 Number of models evaluated: 17401	 Plan found is : [open_a_b_c, peek_c_a_b, distract_b_c, signal_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.529495958
+	 Number of models evaluated: 17409	 Plan found is : [open_a_b_c, peek_c_a_b, distract_b_c, signal_b_c, distract_a_c, peek_a_b]
+	 elapsed time:1.530615167
+	 Number of models evaluated: 17578	 Plan found is : [open_a_b_c, peek_c_a_b, distract_c_a, signal_c_a, distract_a_b, peek_a_c]
+	 elapsed time:1.540477042
+	 Number of models evaluated: 17586	 Plan found is : [open_a_b_c, peek_c_a_b, distract_c_a, signal_c_a, distract_a_c, peek_a_b]
+	 elapsed time:1.541401292
+	 Number of models evaluated: 17772	 Plan found is : [open_a_b_c, peek_c_a_b, distract_c_b, signal_c_b, distract_a_b, peek_a_c]
+	 elapsed time:1.556980125
+	 Number of models evaluated: 17780	 Plan found is : [open_a_b_c, peek_c_a_b, distract_c_b, signal_c_b, distract_a_c, peek_a_b]
+	 elapsed time:1.558107125
+	 Number of models evaluated: 17835	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, open_a_c, open_a_c, peek_a_c]
+	 elapsed time:1.565543792
+	 Number of models evaluated: 17842	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, open_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.568083
+	 Number of models evaluated: 17849	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, open_a_c, peek_b_c, peek_a_c]
+	 elapsed time:1.569735583
+	 Number of models evaluated: 17856	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, open_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:1.5719995
+	 Number of models evaluated: 17869	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, open_a_c, distract_a_c, peek_a]
+	 elapsed time:1.576501708
+	 Number of models evaluated: 17873	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, peek_b_a_c, open_a_c, peek_a_c]
+	 elapsed time:1.577864417
+	 Number of models evaluated: 17880	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, peek_b_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.578688583
+	 Number of models evaluated: 17887	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, peek_b_a_c, peek_b_c, peek_a_c]
+	 elapsed time:1.579320542
+	 Number of models evaluated: 17894	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, peek_b_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:1.580095875
+	 Number of models evaluated: 17907	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, peek_b_a_c, distract_a_c, peek_a]
+	 elapsed time:1.581547
+	 Number of models evaluated: 17911	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, peek_b_c, open_a_c, peek_a_c]
+	 elapsed time:1.582918583
+	 Number of models evaluated: 17918	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, peek_b_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.585355667
+	 Number of models evaluated: 17925	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, peek_b_c, peek_b_c, peek_a_c]
+	 elapsed time:1.586968542
+	 Number of models evaluated: 17932	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, peek_b_c, signal_a_b, peek_a_b_c]
+	 elapsed time:1.589176917
+	 Number of models evaluated: 17945	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, peek_b_c, distract_a_c, peek_a]
+	 elapsed time:1.593454292
+	 Number of models evaluated: 17949	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, signal_a_b, open_a_b_c, peek_a_b_c]
+	 elapsed time:1.594556
+	 Number of models evaluated: 17957	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, signal_a_b, peek_b_a_c, peek_a_b_c]
+	 elapsed time:1.595107875
+	 Number of models evaluated: 17965	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, signal_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.596516958
+	 Number of models evaluated: 17972	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, signal_a_b, distract_a_c, peek_a_b]
+	 elapsed time:1.598867958
+	 Number of models evaluated: 17977	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, signal_a_b, distract_b_a, peek_a_b_c]
+	 elapsed time:1.600576958
+	 Number of models evaluated: 18003	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, signal_c_b, distract_c_b, peek_a_c]
+	 elapsed time:1.607571792
+	 Number of models evaluated: 18010	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, distract_a_c, open_a, peek_a]
+	 elapsed time:1.609584167
+	 Number of models evaluated: 18014	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, distract_a_c, signal_a_b, peek_a_b]
+	 elapsed time:1.611065625
+	 Number of models evaluated: 18019	 Plan found is : [open_a_b_c, distract_a_b, open_a_c, distract_a_c, signal_a_c, peek_a_c]
+	 elapsed time:1.613286875
+	 Number of models evaluated: 18026	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, open_a_c, open_a_c, peek_a_c]
+	 elapsed time:1.615316625
+	 Number of models evaluated: 18033	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, open_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.616155208
+	 Number of models evaluated: 18040	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, open_a_c, peek_b_c, peek_a_c]
+	 elapsed time:1.616805542
+	 Number of models evaluated: 18047	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, open_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:1.617593583
+	 Number of models evaluated: 18060	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, open_a_c, distract_a_c, peek_a]
+	 elapsed time:1.619049083
+	 Number of models evaluated: 18064	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, peek_b_a_c, open_a_c, peek_a_c]
+	 elapsed time:1.619584708
+	 Number of models evaluated: 18071	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, peek_b_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.619989875
+	 Number of models evaluated: 18079	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, peek_b_a_c, peek_b_c, peek_a_c]
+	 elapsed time:1.620367667
+	 Number of models evaluated: 18101	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, peek_b_a_c, distract_a_c, peek_a]
+	 elapsed time:1.621408125
+	 Number of models evaluated: 18105	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, peek_b_a_c, distract_c_a, peek_a_c]
+	 elapsed time:1.62184175
+	 Number of models evaluated: 18110	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, peek_b_c, open_a_c, peek_a_c]
+	 elapsed time:1.622470167
+	 Number of models evaluated: 18117	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, peek_b_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.636236667
+	 Number of models evaluated: 18124	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, peek_b_c, peek_b_c, peek_a_c]
+	 elapsed time:1.63720675
+	 Number of models evaluated: 18131	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, peek_b_c, signal_a_b, peek_a_b_c]
+	 elapsed time:1.638296458
+	 Number of models evaluated: 18144	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, peek_b_c, distract_a_c, peek_a]
+	 elapsed time:1.640122125
+	 Number of models evaluated: 18188	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, signal_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.642197833
+	 Number of models evaluated: 18196	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, signal_a_b, distract_a_c, peek_a_b]
+	 elapsed time:1.643693958
+	 Number of models evaluated: 18237	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, signal_c_b, distract_c_b, peek_a_c]
+	 elapsed time:1.648681542
+	 Number of models evaluated: 18244	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, distract_a_c, open_a, peek_a]
+	 elapsed time:1.64983225
+	 Number of models evaluated: 18248	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, distract_a_c, signal_a_b, peek_a_b]
+	 elapsed time:1.650848708
+	 Number of models evaluated: 18254	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, distract_a_c, signal_a_c, peek_a_c]
+	 elapsed time:1.653784375
+	 Number of models evaluated: 18262	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, distract_c_a, open_a_c, peek_a_c]
+	 elapsed time:1.655883833
+	 Number of models evaluated: 18266	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, distract_c_a, peek_b_c, peek_a_c]
+	 elapsed time:1.65718575
+	 Number of models evaluated: 18270	 Plan found is : [open_a_b_c, distract_a_b, peek_b_a_c, distract_c_a, signal_c_a, peek_a_c]
+	 elapsed time:1.658972875
+	 Number of models evaluated: 18280	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, open_a_c, open_a_c, peek_a_c]
+	 elapsed time:1.662047417
+	 Number of models evaluated: 18287	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, open_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.669760583
+	 Number of models evaluated: 18294	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, open_a_c, peek_b_c, peek_a_c]
+	 elapsed time:1.673144917
+	 Number of models evaluated: 18301	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, open_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:1.676200083
+	 Number of models evaluated: 18314	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, open_a_c, distract_a_c, peek_a]
+	 elapsed time:1.681668708
+	 Number of models evaluated: 18318	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, peek_b_a_c, open_a_c, peek_a_c]
+	 elapsed time:1.691119792
+	 Number of models evaluated: 18325	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, peek_b_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.692392708
+	 Number of models evaluated: 18332	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, peek_b_a_c, peek_b_c, peek_a_c]
+	 elapsed time:1.6934085
+	 Number of models evaluated: 18339	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, peek_b_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:1.694646833
+	 Number of models evaluated: 18352	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, peek_b_a_c, distract_a_c, peek_a]
+	 elapsed time:1.696679083
+	 Number of models evaluated: 18356	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, peek_b_c, open_a_c, peek_a_c]
+	 elapsed time:1.698597167
+	 Number of models evaluated: 18363	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, peek_b_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.702087875
+	 Number of models evaluated: 18370	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, peek_b_c, peek_b_c, peek_a_c]
+	 elapsed time:1.70458775
+	 Number of models evaluated: 18377	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, peek_b_c, signal_a_b, peek_a_b_c]
+	 elapsed time:1.707775042
+	 Number of models evaluated: 18390	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, peek_b_c, distract_a_c, peek_a]
+	 elapsed time:1.713193667
+	 Number of models evaluated: 18394	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, signal_a_b, open_a_b_c, peek_a_b_c]
+	 elapsed time:1.714804208
+	 Number of models evaluated: 18402	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, signal_a_b, peek_b_a_c, peek_a_b_c]
+	 elapsed time:1.715788917
+	 Number of models evaluated: 18410	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, signal_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.7178065
+	 Number of models evaluated: 18417	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, signal_a_b, distract_a_c, peek_a_b]
+	 elapsed time:1.720880583
+	 Number of models evaluated: 18422	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, signal_a_b, distract_b_a, peek_a_b_c]
+	 elapsed time:1.723200458
+	 Number of models evaluated: 18448	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, signal_c_b, distract_c_b, peek_a_c]
+	 elapsed time:1.73154
+	 Number of models evaluated: 18455	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, distract_a_c, open_a, peek_a]
+	 elapsed time:1.733789167
+	 Number of models evaluated: 18459	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, distract_a_c, signal_a_b, peek_a_b]
+	 elapsed time:1.735348667
+	 Number of models evaluated: 18464	 Plan found is : [open_a_b_c, distract_a_b, peek_b_c, distract_a_c, signal_a_c, peek_a_c]
+	 elapsed time:1.737653667
+	 Number of models evaluated: 18511	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.740775833
+	 Number of models evaluated: 18519	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:1.74174625
+	 Number of models evaluated: 18586	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.745112583
+	 Number of models evaluated: 18587	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.745347083
+	 Number of models evaluated: 18589	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.7456185
+	 Number of models evaluated: 18591	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.745921625
+	 Number of models evaluated: 18663	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.749787208
+	 Number of models evaluated: 18671	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:1.750966
+	 Number of models evaluated: 18739	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.755290292
+	 Number of models evaluated: 18747	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:1.756089625
+	 Number of models evaluated: 18775	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:1.759043208
+	 Number of models evaluated: 18782	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.761185875
+	 Number of models evaluated: 18790	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:1.762872167
+	 Number of models evaluated: 18812	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:1.77039125
+	 Number of models evaluated: 18816	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.772768625
+	 Number of models evaluated: 18821	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:1.775240792
+	 Number of models evaluated: 18826	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:1.77641475
+	 Number of models evaluated: 18842	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:1.780791
+	 Number of models evaluated: 18846	 Plan found is : [open_a_b_c, distract_a_b, signal_a_b, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:1.783037125
+	 Number of models evaluated: 18976	 Plan found is : [open_a_b_c, distract_a_b, signal_c_b, peek_b_a_c, distract_c_b, peek_a_c]
+	 elapsed time:1.815079833
+	 Number of models evaluated: 19009	 Plan found is : [open_a_b_c, distract_a_b, signal_c_b, distract_c_b, open_a_c, peek_a_c]
+	 elapsed time:1.822898292
+	 Number of models evaluated: 19016	 Plan found is : [open_a_b_c, distract_a_b, signal_c_b, distract_c_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.824374667
+	 Number of models evaluated: 19023	 Plan found is : [open_a_b_c, distract_a_b, signal_c_b, distract_c_b, peek_b_c, peek_a_c]
+	 elapsed time:1.825541708
+	 Number of models evaluated: 19030	 Plan found is : [open_a_b_c, distract_a_b, signal_c_b, distract_c_b, signal_a_b, peek_a_b_c]
+	 elapsed time:1.82723125
+	 Number of models evaluated: 19043	 Plan found is : [open_a_b_c, distract_a_b, signal_c_b, distract_c_b, distract_a_c, peek_a]
+	 elapsed time:1.830653542
+	 Number of models evaluated: 19047	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, open_a, open_a, peek_a]
+	 elapsed time:1.832040583
+	 Number of models evaluated: 19051	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, open_a, signal_a_b, peek_a_b]
+	 elapsed time:1.833293542
+	 Number of models evaluated: 19057	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, open_a, signal_a_c, peek_a_c]
+	 elapsed time:1.835108708
+	 Number of models evaluated: 19065	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, signal_a_b, open_a_b, peek_a_b]
+	 elapsed time:1.83743775
+	 Number of models evaluated: 19070	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, signal_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:1.838536167
+	 Number of models evaluated: 19086	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, signal_a_b, distract_a_b, peek_a]
+	 elapsed time:1.842589917
+	 Number of models evaluated: 19090	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, signal_a_b, distract_b_a, peek_a_b]
+	 elapsed time:1.84469325
+	 Number of models evaluated: 19093	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, signal_a_c, open_a_c, peek_a_c]
+	 elapsed time:1.845835542
+	 Number of models evaluated: 19100	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, signal_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:1.8474795
+	 Number of models evaluated: 19108	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, signal_a_c, peek_b_c, peek_a_c]
+	 elapsed time:1.84866175
+	 Number of models evaluated: 19130	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, signal_a_c, distract_a_c, peek_a]
+	 elapsed time:1.872747667
+	 Number of models evaluated: 19134	 Plan found is : [open_a_b_c, distract_a_b, distract_a_c, signal_a_c, distract_c_a, peek_a_c]
+	 elapsed time:1.87541075
+	 Number of models evaluated: 19139	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, open_a_c, open_a_c, peek_a_c]
+	 elapsed time:1.878826083
+	 Number of models evaluated: 19143	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, open_a_c, peek_b_c, peek_a_c]
+	 elapsed time:1.882253958
+	 Number of models evaluated: 19149	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, peek_b_c, open_a_c, peek_a_c]
+	 elapsed time:1.88593375
+	 Number of models evaluated: 19153	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, peek_b_c, peek_b_c, peek_a_c]
+	 elapsed time:1.889203792
+	 Number of models evaluated: 19159	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, signal_c_a, open_a_c, peek_a_c]
+	 elapsed time:1.893289042
+	 Number of models evaluated: 19166	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, signal_c_a, peek_b_a_c, peek_a_c]
+	 elapsed time:1.896169083
+	 Number of models evaluated: 19174	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, signal_c_a, peek_b_c, peek_a_c]
+	 elapsed time:1.898397375
+	 Number of models evaluated: 19196	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, signal_c_a, distract_a_c, peek_a]
+	 elapsed time:1.915066
+	 Number of models evaluated: 19200	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, signal_c_a, distract_c_a, peek_a_c]
+	 elapsed time:1.919358042
+	 Number of models evaluated: 19206	 Plan found is : [open_a_b_c, distract_a_b, distract_c_a, signal_c_b, distract_c_b, peek_a_c]
+	 elapsed time:1.925535083
+	 Number of models evaluated: 19210	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, open_a_b, open_a_b, peek_a_b]
+	 elapsed time:1.92843175
+	 Number of models evaluated: 19215	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, open_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:1.930129625
+	 Number of models evaluated: 19226	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, open_a_b, distract_a_b, peek_a]
+	 elapsed time:1.933670708
+	 Number of models evaluated: 19230	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, peek_c_a_b, open_a_b, peek_a_b]
+	 elapsed time:1.935834125
+	 Number of models evaluated: 19235	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, peek_c_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:1.937154917
+	 Number of models evaluated: 19246	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, peek_c_a_b, distract_a_b, peek_a]
+	 elapsed time:1.93883225
+	 Number of models evaluated: 19268	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, signal_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.941821625
+	 Number of models evaluated: 19273	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, signal_a_c, distract_a_c, peek_a_b]
+	 elapsed time:1.944801958
+	 Number of models evaluated: 19282	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, distract_a_b, open_a, peek_a]
+	 elapsed time:1.947209458
+	 Number of models evaluated: 19286	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, distract_a_b, signal_a_b, peek_a_b]
+	 elapsed time:1.94891325
+	 Number of models evaluated: 19291	 Plan found is : [open_a_b_c, distract_a_c, open_a_b, distract_a_b, signal_a_c, peek_a_c]
+	 elapsed time:1.950888708
+	 Number of models evaluated: 19296	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, open_a_b, open_a_b, peek_a_b]
+	 elapsed time:1.952862
+	 Number of models evaluated: 19301	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, open_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:1.95368975
+	 Number of models evaluated: 19312	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, open_a_b, distract_a_b, peek_a]
+	 elapsed time:1.954936917
+	 Number of models evaluated: 19316	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, peek_c_a_b, open_a_b, peek_a_b]
+	 elapsed time:1.955721458
+	 Number of models evaluated: 19321	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, peek_c_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:1.956211125
+	 Number of models evaluated: 19337	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, peek_c_a_b, distract_a_b, peek_a]
+	 elapsed time:1.957098208
+	 Number of models evaluated: 19341	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, peek_c_a_b, distract_b_a, peek_a_b]
+	 elapsed time:1.957741
+	 Number of models evaluated: 19384	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, signal_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.95947075
+	 Number of models evaluated: 19392	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, signal_a_c, distract_a_c, peek_a_b]
+	 elapsed time:1.960707833
+	 Number of models evaluated: 19420	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, distract_a_b, open_a, peek_a]
+	 elapsed time:1.964169542
+	 Number of models evaluated: 19424	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, distract_a_b, signal_a_b, peek_a_b]
+	 elapsed time:1.964809167
+	 Number of models evaluated: 19430	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, distract_a_b, signal_a_c, peek_a_c]
+	 elapsed time:1.965768625
+	 Number of models evaluated: 19438	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, distract_b_a, open_a_b, peek_a_b]
+	 elapsed time:1.967054375
+	 Number of models evaluated: 19440	 Plan found is : [open_a_b_c, distract_a_c, peek_c_a_b, distract_b_a, signal_b_a, peek_a_b]
+	 elapsed time:1.967538667
+	 Number of models evaluated: 19486	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.969263792
+	 Number of models evaluated: 19494	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:1.970079208
+	 Number of models evaluated: 19561	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:1.973247875
+	 Number of models evaluated: 19562	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:1.973537875
+	 Number of models evaluated: 19564	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:1.973829542
+	 Number of models evaluated: 19566	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:1.974138625
+	 Number of models evaluated: 19638	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:1.977669708
+	 Number of models evaluated: 19646	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:1.978432833
+	 Number of models evaluated: 19714	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:1.981787417
+	 Number of models evaluated: 19722	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:1.9829745
+	 Number of models evaluated: 19750	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:1.986505333
+	 Number of models evaluated: 19757	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:1.988154375
+	 Number of models evaluated: 19765	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:1.989320875
+	 Number of models evaluated: 19787	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:1.995599042
+	 Number of models evaluated: 19791	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:1.997656375
+	 Number of models evaluated: 19796	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:1.999870458
+	 Number of models evaluated: 19801	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:2.00124725
+	 Number of models evaluated: 19817	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:2.005339917
+	 Number of models evaluated: 19821	 Plan found is : [open_a_b_c, distract_a_c, signal_a_c, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:2.007678917
+	 Number of models evaluated: 19938	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, open_a, open_a, peek_a]
+	 elapsed time:2.0326485
+	 Number of models evaluated: 19942	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, open_a, signal_a_b, peek_a_b]
+	 elapsed time:2.033909458
+	 Number of models evaluated: 19948	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, open_a, signal_a_c, peek_a_c]
+	 elapsed time:2.035701
+	 Number of models evaluated: 19956	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, signal_a_b, open_a_b, peek_a_b]
+	 elapsed time:2.03804725
+	 Number of models evaluated: 19961	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, signal_a_b, peek_c_a_b, peek_a_b]
+	 elapsed time:2.039139583
+	 Number of models evaluated: 19977	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, signal_a_b, distract_a_b, peek_a]
+	 elapsed time:2.043199375
+	 Number of models evaluated: 19981	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, signal_a_b, distract_b_a, peek_a_b]
+	 elapsed time:2.045229625
+	 Number of models evaluated: 19984	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, signal_a_c, open_a_c, peek_a_c]
+	 elapsed time:2.046408458
+	 Number of models evaluated: 19991	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, signal_a_c, peek_b_a_c, peek_a_c]
+	 elapsed time:2.048054042
+	 Number of models evaluated: 19999	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, signal_a_c, peek_b_c, peek_a_c]
+	 elapsed time:2.04923925
+	 Number of models evaluated: 20021	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, signal_a_c, distract_a_c, peek_a]
+	 elapsed time:2.070448167
+	 Number of models evaluated: 20025	 Plan found is : [open_a_b_c, distract_a_c, distract_a_b, signal_a_c, distract_c_a, peek_a_c]
+	 elapsed time:2.072586083
+	 Number of models evaluated: 20030	 Plan found is : [open_a_b_c, distract_a_c, distract_b_a, open_a_b, open_a_b, peek_a_b]
+	 elapsed time:2.075290208
+	 Number of models evaluated: 20032	 Plan found is : [open_a_b_c, distract_a_c, distract_b_a, signal_b_a, open_a_b, peek_a_b]
+	 elapsed time:2.076336625
+	 Number of models evaluated: 20037	 Plan found is : [open_a_b_c, distract_a_c, distract_b_a, signal_b_a, peek_c_a_b, peek_a_b]
+	 elapsed time:2.077502458
+	 Number of models evaluated: 20053	 Plan found is : [open_a_b_c, distract_a_c, distract_b_a, signal_b_a, distract_a_b, peek_a]
+	 elapsed time:2.080926875
+	 Number of models evaluated: 20057	 Plan found is : [open_a_b_c, distract_a_c, distract_b_a, signal_b_a, distract_b_a, peek_a_b]
+	 elapsed time:2.082904083
+	 Number of models evaluated: 20150	 Plan found is : [open_a_b_c, distract_b_a, open_a_b_c, signal_b_a, distract_a_b, peek_a_c]
+	 elapsed time:2.087351208
+	 Number of models evaluated: 20158	 Plan found is : [open_a_b_c, distract_b_a, open_a_b_c, signal_b_a, distract_a_c, peek_a_b]
+	 elapsed time:2.088442875
+	 Number of models evaluated: 20295	 Plan found is : [open_a_b_c, distract_b_a, peek_a_b_c, signal_b_a, distract_a_b, open_a_c]
+	 elapsed time:2.098871708
+	 Number of models evaluated: 20296	 Plan found is : [open_a_b_c, distract_b_a, peek_a_b_c, signal_b_a, distract_a_b, peek_a_c]
+	 elapsed time:2.09917875
+	 Number of models evaluated: 20298	 Plan found is : [open_a_b_c, distract_b_a, peek_a_b_c, signal_b_a, distract_a_b, peek_b_c]
+	 elapsed time:2.099517708
+	 Number of models evaluated: 20300	 Plan found is : [open_a_b_c, distract_b_a, peek_a_b_c, signal_b_a, distract_a_b, signal_c_b]
+	 elapsed time:2.099904375
+	 Number of models evaluated: 20392	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:2.107517583
+	 Number of models evaluated: 20400	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:2.108541333
+	 Number of models evaluated: 20467	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:2.11339
+	 Number of models evaluated: 20468	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:2.113677125
+	 Number of models evaluated: 20470	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:2.1139895
+	 Number of models evaluated: 20472	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:2.114355333
+	 Number of models evaluated: 20544	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:2.119064208
+	 Number of models evaluated: 20552	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:2.11988
+	 Number of models evaluated: 20620	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:2.123020792
+	 Number of models evaluated: 20628	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:2.123793167
+	 Number of models evaluated: 20656	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:2.126415083
+	 Number of models evaluated: 20663	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:2.12783375
+	 Number of models evaluated: 20671	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:2.12892125
+	 Number of models evaluated: 20693	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:2.133739292
+	 Number of models evaluated: 20697	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:2.135340875
+	 Number of models evaluated: 20702	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:2.137095875
+	 Number of models evaluated: 20707	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:2.138048458
+	 Number of models evaluated: 20723	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:2.1410035
+	 Number of models evaluated: 20727	 Plan found is : [open_a_b_c, distract_b_a, signal_b_a, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:2.142620833
+	 Number of models evaluated: 21091	 Plan found is : [open_a_b_c, distract_b_c, peek_c_a_b, signal_b_c, distract_a_b, peek_a_c]
+	 elapsed time:2.214343458
+	 Number of models evaluated: 21099	 Plan found is : [open_a_b_c, distract_b_c, peek_c_a_b, signal_b_c, distract_a_c, peek_a_b]
+	 elapsed time:2.215495792
+	 Number of models evaluated: 21186	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:2.221921458
+	 Number of models evaluated: 21194	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:2.222748792
+	 Number of models evaluated: 21261	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:2.22598975
+	 Number of models evaluated: 21262	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:2.226249708
+	 Number of models evaluated: 21264	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:2.226550708
+	 Number of models evaluated: 21266	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:2.226877458
+	 Number of models evaluated: 21338	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:2.230416833
+	 Number of models evaluated: 21346	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:2.231212042
+	 Number of models evaluated: 21414	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:2.234802917
+	 Number of models evaluated: 21422	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:2.23600975
+	 Number of models evaluated: 21450	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:2.239727833
+	 Number of models evaluated: 21457	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:2.241443333
+	 Number of models evaluated: 21465	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:2.242690542
+	 Number of models evaluated: 21487	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:2.249168292
+	 Number of models evaluated: 21491	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:2.251191875
+	 Number of models evaluated: 21496	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:2.253224208
+	 Number of models evaluated: 21501	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:2.2543145
+	 Number of models evaluated: 21517	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:2.257657917
+	 Number of models evaluated: 21521	 Plan found is : [open_a_b_c, distract_b_c, signal_b_c, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:2.275714792
+	 Number of models evaluated: 21847	 Plan found is : [open_a_b_c, distract_c_a, open_a_b_c, signal_c_a, distract_a_b, peek_a_c]
+	 elapsed time:2.330548125
+	 Number of models evaluated: 21855	 Plan found is : [open_a_b_c, distract_c_a, open_a_b_c, signal_c_a, distract_a_c, peek_a_b]
+	 elapsed time:2.331658333
+	 Number of models evaluated: 22031	 Plan found is : [open_a_b_c, distract_c_a, peek_a_b_c, signal_c_a, distract_a_b, open_a_c]
+	 elapsed time:2.34423325
+	 Number of models evaluated: 22032	 Plan found is : [open_a_b_c, distract_c_a, peek_a_b_c, signal_c_a, distract_a_b, peek_a_c]
+	 elapsed time:2.344519167
+	 Number of models evaluated: 22034	 Plan found is : [open_a_b_c, distract_c_a, peek_a_b_c, signal_c_a, distract_a_b, peek_b_c]
+	 elapsed time:2.34486025
+	 Number of models evaluated: 22036	 Plan found is : [open_a_b_c, distract_c_a, peek_a_b_c, signal_c_a, distract_a_b, signal_c_b]
+	 elapsed time:2.345241458
+	 Number of models evaluated: 22167	 Plan found is : [open_a_b_c, distract_c_a, peek_c_b, signal_c_a, distract_a_b, peek_a_c]
+	 elapsed time:2.359457333
+	 Number of models evaluated: 22172	 Plan found is : [open_a_b_c, distract_c_a, peek_c_b, signal_c_a, distract_a_c, peek_a_b]
+	 elapsed time:2.361024
+	 Number of models evaluated: 22221	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:2.364256292
+	 Number of models evaluated: 22229	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:2.365328375
+	 Number of models evaluated: 22296	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:2.370270083
+	 Number of models evaluated: 22297	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:2.3705595
+	 Number of models evaluated: 22299	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:2.370902667
+	 Number of models evaluated: 22301	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:2.371283042
+	 Number of models evaluated: 22373	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:2.376170833
+	 Number of models evaluated: 22381	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:2.376969917
+	 Number of models evaluated: 22449	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:2.380152042
+	 Number of models evaluated: 22457	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:2.380984958
+	 Number of models evaluated: 22485	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:2.383666542
+	 Number of models evaluated: 22492	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:2.385097542
+	 Number of models evaluated: 22500	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:2.38620575
+	 Number of models evaluated: 22522	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:2.391167208
+	 Number of models evaluated: 22526	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:2.392827625
+	 Number of models evaluated: 22531	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:2.394638542
+	 Number of models evaluated: 22536	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:2.395609292
+	 Number of models evaluated: 22552	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:2.398657083
+	 Number of models evaluated: 22556	 Plan found is : [open_a_b_c, distract_c_a, signal_c_a, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:2.400312375
+	 Number of models evaluated: 22942	 Plan found is : [open_a_b_c, distract_c_b, peek_b_a_c, signal_c_b, distract_a_b, peek_a_c]
+	 elapsed time:2.4754305
+	 Number of models evaluated: 22950	 Plan found is : [open_a_b_c, distract_c_b, peek_b_a_c, signal_c_b, distract_a_c, peek_a_b]
+	 elapsed time:2.476614875
+	 Number of models evaluated: 23136	 Plan found is : [open_a_b_c, distract_c_b, peek_b_c, signal_c_b, distract_a_b, peek_a_c]
+	 elapsed time:2.509842875
+	 Number of models evaluated: 23144	 Plan found is : [open_a_b_c, distract_c_b, peek_b_c, signal_c_b, distract_a_c, peek_a_b]
+	 elapsed time:2.512827
+	 Number of models evaluated: 23359	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:2.578476
+	 Number of models evaluated: 23367	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:2.579334833
+	 Number of models evaluated: 23434	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:2.582545958
+	 Number of models evaluated: 23435	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:2.582820833
+	 Number of models evaluated: 23437	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:2.583121167
+	 Number of models evaluated: 23439	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:2.583449208
+	 Number of models evaluated: 23511	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:2.587218792
+	 Number of models evaluated: 23519	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:2.588379625
+	 Number of models evaluated: 23587	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:2.59251525
+	 Number of models evaluated: 23595	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:2.593307917
+	 Number of models evaluated: 23623	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:2.595938958
+	 Number of models evaluated: 23630	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:2.597560583
+	 Number of models evaluated: 23638	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:2.599023208
+	 Number of models evaluated: 23660	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:2.605060208
+	 Number of models evaluated: 23664	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:2.607021583
+	 Number of models evaluated: 23669	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:2.609375542
+	 Number of models evaluated: 23674	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:2.610504542
+	 Number of models evaluated: 23690	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:2.614528875
+	 Number of models evaluated: 23694	 Plan found is : [open_a_b_c, distract_c_b, signal_c_b, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:2.6165005
+	 Number of models evaluated: 23950	 Plan found is : [distract_a_b, open_a_c, open_a_c, open_a_c, open_a_c, peek_a_c]
+	 elapsed time:2.685809292
+	 Number of models evaluated: 23955	 Plan found is : [distract_a_b, open_a_c, open_a_c, open_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:2.692576125
+	 Number of models evaluated: 23966	 Plan found is : [distract_a_b, open_a_c, open_a_c, open_a_c, distract_a_c, peek_a]
+	 elapsed time:2.708446167
+	 Number of models evaluated: 23970	 Plan found is : [distract_a_b, open_a_c, open_a_c, signal_a_b, open_a_b_c, peek_a_b_c]
+	 elapsed time:2.712478875
+	 Number of models evaluated: 23978	 Plan found is : [distract_a_b, open_a_c, open_a_c, signal_a_b, distract_a_b, peek_a_c]
+	 elapsed time:2.715361583
+	 Number of models evaluated: 23983	 Plan found is : [distract_a_b, open_a_c, open_a_c, signal_a_b, distract_a_c, peek_a_b]
+	 elapsed time:2.721135625
+	 Number of models evaluated: 23988	 Plan found is : [distract_a_b, open_a_c, open_a_c, signal_a_b, distract_b_a, peek_a_b_c]
+	 elapsed time:2.726461042
+	 Number of models evaluated: 24005	 Plan found is : [distract_a_b, open_a_c, open_a_c, signal_c_b, distract_c_b, peek_a_c]
+	 elapsed time:2.743992875
+	 Number of models evaluated: 24010	 Plan found is : [distract_a_b, open_a_c, open_a_c, distract_a_c, open_a, peek_a]
+	 elapsed time:2.766088583
+	 Number of models evaluated: 24014	 Plan found is : [distract_a_b, open_a_c, open_a_c, distract_a_c, signal_a_b, peek_a_b]
+	 elapsed time:2.770639667
+	 Number of models evaluated: 24019	 Plan found is : [distract_a_b, open_a_c, open_a_c, distract_a_c, signal_a_c, peek_a_c]
+	 elapsed time:2.777665875
+	 Number of models evaluated: 24024	 Plan found is : [distract_a_b, open_a_c, signal_a_b, open_a_b_c, open_a_b_c, peek_a_b_c]
+	 elapsed time:2.781650917
+	 Number of models evaluated: 24032	 Plan found is : [distract_a_b, open_a_c, signal_a_b, open_a_b_c, peek_b_a_c, peek_a_b_c]
+	 elapsed time:2.782232708
+	 Number of models evaluated: 24040	 Plan found is : [distract_a_b, open_a_c, signal_a_b, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:2.783051625
+	 Number of models evaluated: 24047	 Plan found is : [distract_a_b, open_a_c, signal_a_b, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:2.78432275
+	 Number of models evaluated: 24052	 Plan found is : [distract_a_b, open_a_c, signal_a_b, open_a_b_c, distract_b_a, peek_a_b_c]
+	 elapsed time:2.785333958
+	 Number of models evaluated: 24065	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:2.78941575
+	 Number of models evaluated: 24070	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_a_b, signal_a_b, peek_a_b_c]
+	 elapsed time:2.793074667
+	 Number of models evaluated: 24081	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:2.80393175
+	 Number of models evaluated: 24085	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:2.808152833
+	 Number of models evaluated: 24089	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_a_c, signal_a_c, peek_a_b_c]
+	 elapsed time:2.810268708
+	 Number of models evaluated: 24096	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:2.818095875
+	 Number of models evaluated: 24100	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:2.823032667
+	 Number of models evaluated: 24103	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_b_a, open_a_b_c, peek_a_b_c]
+	 elapsed time:2.82451025
+	 Number of models evaluated: 24108	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_b_a, signal_b_a, peek_a_b_c]
+	 elapsed time:2.825595958
+	 Number of models evaluated: 24118	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_b_c, signal_b_c, peek_a_b_c]
+	 elapsed time:2.832356083
+	 Number of models evaluated: 24128	 Plan found is : [distract_a_b, open_a_c, signal_a_b, distract_c_b, signal_c_b, peek_a_b_c]
+	 elapsed time:2.838994792
+	 Number of models evaluated: 24153	 Plan found is : [distract_a_b, open_a_c, signal_c_b, distract_c_b, open_a_c, peek_a_c]
+	 elapsed time:2.859745042
+	 Number of models evaluated: 24158	 Plan found is : [distract_a_b, open_a_c, signal_c_b, distract_c_b, signal_a_b, peek_a_b_c]
+	 elapsed time:2.862550625
+	 Number of models evaluated: 24169	 Plan found is : [distract_a_b, open_a_c, signal_c_b, distract_c_b, distract_a_c, peek_a]
+	 elapsed time:2.871503792
+	 Number of models evaluated: 24173	 Plan found is : [distract_a_b, open_a_c, distract_a_c, open_a, open_a, peek_a]
+	 elapsed time:2.875298375
+	 Number of models evaluated: 24177	 Plan found is : [distract_a_b, open_a_c, distract_a_c, open_a, signal_a_b, peek_a_b]
+	 elapsed time:2.878693708
+	 Number of models evaluated: 24182	 Plan found is : [distract_a_b, open_a_c, distract_a_c, open_a, signal_a_c, peek_a_c]
+	 elapsed time:2.883447375
+	 Number of models evaluated: 24187	 Plan found is : [distract_a_b, open_a_c, distract_a_c, signal_a_b, open_a_b, peek_a_b]
+	 elapsed time:2.887659167
+	 Number of models evaluated: 24191	 Plan found is : [distract_a_b, open_a_c, distract_a_c, signal_a_b, signal_a_c, peek_a_b_c]
+	 elapsed time:2.889795958
+	 Number of models evaluated: 24198	 Plan found is : [distract_a_b, open_a_c, distract_a_c, signal_a_b, distract_a_b, peek_a]
+	 elapsed time:2.897460083
+	 Number of models evaluated: 24202	 Plan found is : [distract_a_b, open_a_c, distract_a_c, signal_a_b, distract_b_a, peek_a_b]
+	 elapsed time:2.902324292
+	 Number of models evaluated: 24205	 Plan found is : [distract_a_b, open_a_c, distract_a_c, signal_a_c, open_a_c, peek_a_c]
+	 elapsed time:2.905229167
+	 Number of models evaluated: 24210	 Plan found is : [distract_a_b, open_a_c, distract_a_c, signal_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:2.908497083
+	 Number of models evaluated: 24221	 Plan found is : [distract_a_b, open_a_c, distract_a_c, signal_a_c, distract_a_c, peek_a]
+	 elapsed time:2.919423292
+	 Number of models evaluated: 24265	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, open_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:2.923323625
+	 Number of models evaluated: 24273	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, open_a_b_c, distract_a_c, peek_a_b]
+	 elapsed time:2.924182708
+	 Number of models evaluated: 24340	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, peek_a_b_c, distract_a_b, open_a_c]
+	 elapsed time:2.927452167
+	 Number of models evaluated: 24341	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, peek_a_b_c, distract_a_b, peek_a_c]
+	 elapsed time:2.927731833
+	 Number of models evaluated: 24343	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, peek_a_b_c, distract_a_b, peek_b_c]
+	 elapsed time:2.92804675
+	 Number of models evaluated: 24345	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, peek_a_b_c, distract_a_b, signal_c_b]
+	 elapsed time:2.928388125
+	 Number of models evaluated: 24417	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, peek_b_a_c, distract_a_b, peek_a_c]
+	 elapsed time:2.939298583
+	 Number of models evaluated: 24425	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, peek_b_a_c, distract_a_c, peek_a_b]
+	 elapsed time:2.940099792
+	 Number of models evaluated: 24493	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, peek_c_a_b, distract_a_b, peek_a_c]
+	 elapsed time:2.943238708
+	 Number of models evaluated: 24501	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, peek_c_a_b, distract_a_c, peek_a_b]
+	 elapsed time:2.944028208
+	 Number of models evaluated: 24529	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, distract_a_b, open_a_c, peek_a_c]
+	 elapsed time:2.946553167
+	 Number of models evaluated: 24536	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, distract_a_b, peek_b_a_c, peek_a_c]
+	 elapsed time:2.947825792
+	 Number of models evaluated: 24544	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, distract_a_b, peek_b_c, peek_a_c]
+	 elapsed time:2.948858667
+	 Number of models evaluated: 24566	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, distract_a_b, distract_a_c, peek_a]
+	 elapsed time:2.95266425
+	 Number of models evaluated: 24570	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, distract_a_b, distract_c_a, peek_a_c]
+	 elapsed time:2.954049208
+	 Number of models evaluated: 24575	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, distract_a_c, open_a_b, peek_a_b]
+	 elapsed time:2.955521042
+	 Number of models evaluated: 24580	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, distract_a_c, peek_c_a_b, peek_a_b]
+	 elapsed time:2.956434167
+	 Number of models evaluated: 24596	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, distract_a_c, distract_a_b, peek_a]
+	 elapsed time:2.958879625
+	 Number of models evaluated: 24600	 Plan found is : [distract_a_b, signal_a_b, open_a_b_c, distract_a_c, distract_b_a, peek_a_b]
+	 elapsed time:2.960241833
+	 Number of models evaluated: 24717	 Plan found is : [distract_a_b, signal_a_b, distract_a_b, open_a_c, open_a_c, peek_a_c]
+	 elapsed time:2.981137208
+	 Number of models evaluated: 24722	 Plan found is : [distract_a_b, signal_a_b, distract_a_b, open_a_c, signal_a_b, peek_a_b_c]
+	 elapsed time:2.985673458
+	 Number of models evaluated: 24733	 Plan found is : [distract_a_b, signal_a_b, distract_a_b, open_a_c, distract_a_c, peek_a]
+	 elapsed time:2.99768575
