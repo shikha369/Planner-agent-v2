@@ -1,3 +1,3 @@
 Domain size:10
 	 Number of models evaluated: 9	 Plan found is : [ping_bus_service, inform_not_crowded, take_bus, sip_coffee_nearby]
-	 elapsed time:0.001201167
+	 elapsed time:0.00104925

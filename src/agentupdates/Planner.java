@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashMap;
 
 /**
  *
@@ -25,8 +26,12 @@ public class Planner {
     public static final ArrayList<String> agentlist =new ArrayList<>();
     public static final ArrayList<KripkeAction> sequence =new ArrayList<>();
     public static final ArrayList<KripkeAction> inferencing_actions =new ArrayList<>();
+    public static String self = new String();
     public static Formula goal = new Formula();
+    public static final HashMap<String, String> action_to_agent = new HashMap<>();
+    public static final HashMap<String, Integer> action_to_cost = new HashMap<>();
     public static int model_ctr = 0;
+
     
     public static void main(String[] args)
     {
@@ -40,6 +45,14 @@ public class Planner {
         BuildXML.build(testcase_dir);
         BuildProblem.build(testcase_dir);
         String logs = "Domain size:" + (sequence.size() + inferencing_actions.size())+ "\n";
+        boolean firstnode = true;
+
+        //System.out.println("cost of actions:");
+        //for(int a = 0; a < Planner.sequence.size(); a++){
+        //    String act_name = Planner.sequence.get(a).ActionName;
+        //    System.out.println(action_to_cost.get(act_name));
+        //}
+            
         
 
         SearchNode curr = new SearchNode(null, null, Planner.models.get(0), null, "[");
@@ -93,6 +106,9 @@ public class Planner {
                     //has to explore all sucessors
                     KripkeAction action = Planner.sequence.get(a);
                     //System.out.println("checking: "+action.ActionName +" on "+ curr.ks.modelId);
+
+                    if(firstnode && !Planner.action_to_agent.get(action.ActionName).equals(Planner.self))
+                        continue;
                     
                     if(curr.ks.isApplicable(action))
                     {
@@ -165,6 +181,7 @@ public class Planner {
                     }  
                 }       
             }
+            firstnode = false;
             
             //closed.add(curr);
             end = System.nanoTime();

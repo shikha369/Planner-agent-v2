@@ -61,7 +61,18 @@ public class BuildProblem {
                     
             System.out.println("\n Building goal\n");
             build_Goal(xPath);
-            
+
+            /*
+             * Adding the following elements in the problem descritpion for a protagonist deliberated planning (to make it 
+             * more purposeful or goal oriented)
+             * 1. information on planning agent
+             * 2. actor of each action
+             * 3. cost of actions (for now lets parse it from explanation of the action)
+             */
+
+            System.out.println("\n Building self\n");
+            build_Self(xPath);
+
             System.out.println("Problem built");
             
         }
@@ -275,7 +286,8 @@ public class BuildProblem {
             //Initialise action-name, actor-name, explanation
             String act_name = "mydefault";
             String actor_name;
-            String explanation;
+            //String explanation;
+            int cost;
             
             for(int i = 0; i < capChildren.getLength(); i++){
                 Node nNode = capChildren.item(i);
@@ -559,16 +571,16 @@ public class BuildProblem {
                     //}                
                 
                 }
-//                else if(nNode.getNodeName()=="NAME"){
-//                    actor_name = ((Element) nNode).getAttribute("text");
-//                    PlanningProblem.action_to_agent.put(act_name, actor_name);
-//                
-//                }
-//                else if(nNode.getNodeName()=="EXPLANATION"){
-//                    explanation = ((Element) nNode).getAttribute("text");
-//                    PlanningProblem.action_to_explanantion.put(act_name, explanation);
-//                
-//                }
+                else if(nNode.getNodeName()=="NAME"){
+                    actor_name = ((Element) nNode).getAttribute("text");
+                    Planner.action_to_agent.put(act_name, actor_name);               
+                }
+                else if(nNode.getNodeName()=="EXPLANATION"){
+                    //explanation = ((Element) nNode).getAttribute("text");
+                    cost = Integer.parseInt(((Element) nNode).getAttribute("text").substring(1));
+                    Planner.action_to_cost.put(act_name, cost);
+                
+                }
                 
             }
         }
@@ -782,6 +794,24 @@ public class BuildProblem {
             if (gNode.getNodeType() == Node.ELEMENT_NODE){
                 //extract the formula
                 Planner.goal = buildFormula(gNode);
+            }
+            
+        }
+    }
+
+    public static void build_Self(XPath xPath) throws XPathExpressionException{
+        
+        String expression = "/PROGRAM/PLANNER/NAME";
+        NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(
+            doc, XPathConstants.NODESET);
+        
+        for(int i = 0; i < nodeList.getLength(); i++){
+            Node gNode = nodeList.item(i);
+            if (gNode.getNodeType() == Node.ELEMENT_NODE){
+
+                Planner.self = ((Element) gNode).getAttribute("text");
+
+                
             }
             
         }

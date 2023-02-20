@@ -1,133 +1,61 @@
-Domain size:39
-	 Number of models evaluated: 16	 Plan found is : [f_leaves]
-	 elapsed time:0.002395792
-	 Number of models evaluated: 237	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, f_leaves]
-	 elapsed time:0.027440459
-	 Number of models evaluated: 272	 Plan found is : [m_lie_ann_friends_mg_to_o_oblivious_gf, f_leaves]
-	 elapsed time:0.029623209
-	 Number of models evaluated: 307	 Plan found is : [flee_m, m_arrives, f_leaves]
-	 elapsed time:0.037826959
-	 Number of models evaluated: 344	 Plan found is : [flee_m, f_leaves, m_arrives]
-	 elapsed time:0.038466667
-	 Number of models evaluated: 421	 Plan found is : [o_arrives, f_leaves, o_leaves]
-	 elapsed time:0.039333084
-	 Number of models evaluated: 448	 Plan found is : [o_arrives, o_leaves, f_leaves]
-	 elapsed time:0.039728709
-	 Number of models evaluated: 916	 Plan found is : [m_leaves, m_arrives, f_leaves]
-	 elapsed time:0.085651625
-	 Number of models evaluated: 953	 Plan found is : [m_leaves, f_leaves, m_arrives]
-	 elapsed time:0.086096792
-	 Number of models evaluated: 1066	 Plan found is : [add_g, flee_f, g_leaves]
-	 elapsed time:0.0868155
-	 Number of models evaluated: 1209	 Plan found is : [add_g, f_leaves, g_leaves]
-	 elapsed time:0.088305417
-	 Number of models evaluated: 1236	 Plan found is : [add_g, g_leaves, f_leaves]
-	 elapsed time:0.088469292
-	 Number of models evaluated: 1973	 Plan found is : [dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, flee_f]
-	 elapsed time:0.185199917
-	 Number of models evaluated: 1985	 Plan found is : [dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, f_leaves]
-	 elapsed time:0.186621542
-	 Number of models evaluated: 2200	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, dcv_add_g_by_m_for_f, flee_f]
-	 elapsed time:0.222968417
-	 Number of models evaluated: 2212	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, dcv_add_g_by_m_for_f, f_leaves]
-	 elapsed time:0.224367417
-	 Number of models evaluated: 2251	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, m_lie_ann_friends_mg_to_f_oblivious_go, f_leaves]
-	 elapsed time:0.236853709
-	 Number of models evaluated: 2286	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, m_lie_ann_friends_mg_to_o_oblivious_gf, f_leaves]
-	 elapsed time:0.241559
-	 Number of models evaluated: 2506	 Plan found is : [m_lie_ann_friends_mg_to_o_oblivious_gf, m_lie_ann_friends_mg_to_f_oblivious_go, f_leaves]
-	 elapsed time:0.268757459
-	 Number of models evaluated: 2541	 Plan found is : [m_lie_ann_friends_mg_to_o_oblivious_gf, m_lie_ann_friends_mg_to_o_oblivious_gf, f_leaves]
-	 elapsed time:0.273206917
-	 Number of models evaluated: 2762	 Plan found is : [flee_m, m_arrives, m_lie_ann_friends_mg_to_f_oblivious_go, f_leaves]
-	 elapsed time:0.281958042
-	 Number of models evaluated: 2797	 Plan found is : [flee_m, m_arrives, m_lie_ann_friends_mg_to_o_oblivious_gf, f_leaves]
-	 elapsed time:0.283188125
-	 Number of models evaluated: 3548	 Plan found is : [o_arrives, f_leaves, dcv_add_g_by_m_for_o, o_leaves]
-	 elapsed time:0.292044042
-	 Number of models evaluated: 3761	 Plan found is : [o_arrives, o_leaves, m_lie_ann_friends_mg_to_f_oblivious_go, f_leaves]
-	 elapsed time:0.298402375
-	 Number of models evaluated: 3796	 Plan found is : [o_arrives, o_leaves, m_lie_ann_friends_mg_to_o_oblivious_gf, f_leaves]
-	 elapsed time:0.29966
-	 Number of models evaluated: 6841	 Plan found is : [o_arrives, dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_fo_oblivious_g, flee_f]
-	 elapsed time:0.988864625
-	 Number of models evaluated: 6896	 Plan found is : [o_arrives, dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, flee_f]
-	 elapsed time:1.0072895
-	 Number of models evaluated: 7060	 Plan found is : [o_arrives, dcv_add_g_by_m_for_o, f_leaves, o_leaves]
-	 elapsed time:1.049303042
-	 Number of models evaluated: 7087	 Plan found is : [o_arrives, dcv_add_g_by_m_for_o, o_leaves, f_leaves]
-	 elapsed time:1.050748584
-	 Number of models evaluated: 7672	 Plan found is : [o_arrives, m_lie_ann_friends_mg_to_fo_oblivious_g, f_leaves, o_leaves]
-	 elapsed time:1.340272667
-	 Number of models evaluated: 7699	 Plan found is : [o_arrives, m_lie_ann_friends_mg_to_fo_oblivious_g, o_leaves, f_leaves]
-	 elapsed time:1.340885959
-	 Number of models evaluated: 7901	 Plan found is : [o_arrives, m_lie_ann_friends_mg_to_fo_oblivious_g, dcv_add_g_by_m_for_f, flee_f]
-	 elapsed time:1.3649955
-	 Number of models evaluated: 8191	 Plan found is : [o_arrives, m_lie_ann_friends_mg_to_f_oblivious_go, f_leaves, o_leaves]
-	 elapsed time:1.420235667
-	 Number of models evaluated: 8218	 Plan found is : [o_arrives, m_lie_ann_friends_mg_to_f_oblivious_go, o_leaves, f_leaves]
-	 elapsed time:1.420855709
-	 Number of models evaluated: 8421	 Plan found is : [o_arrives, m_lie_ann_friends_mg_to_f_oblivious_go, dcv_add_g_by_m_for_f, flee_f]
-	 elapsed time:1.447005
-	 Number of models evaluated: 8711	 Plan found is : [o_arrives, m_lie_ann_friends_mg_to_o_oblivious_gf, f_leaves, o_leaves]
-	 elapsed time:1.506821417
-	 Number of models evaluated: 8738	 Plan found is : [o_arrives, m_lie_ann_friends_mg_to_o_oblivious_gf, o_leaves, f_leaves]
-	 elapsed time:1.507465167
-	 Number of models evaluated: 9391	 Plan found is : [m_leaves, m_arrives, m_lie_ann_friends_mg_to_f_oblivious_go, f_leaves]
-	 elapsed time:1.616034125
-	 Number of models evaluated: 9426	 Plan found is : [m_leaves, m_arrives, m_lie_ann_friends_mg_to_o_oblivious_gf, f_leaves]
-	 elapsed time:1.617142834
-	 Number of models evaluated: 10336	 Plan found is : [add_g, flee_f, add_g, g_leaves]
-	 elapsed time:1.626120542
-	 Number of models evaluated: 12274	 Plan found is : [add_g, f_leaves, add_g, g_leaves]
-	 elapsed time:1.67478675
-	 Number of models evaluated: 12537	 Plan found is : [add_g, g_leaves, introduce_g_for_mf, f_leaves]
-	 elapsed time:1.677078917
-	 Number of models evaluated: 12622	 Plan found is : [add_g, g_leaves, m_lie_ann_friends_mg_to_f_oblivious_go, f_leaves]
-	 elapsed time:1.680772125
-	 Number of models evaluated: 12665	 Plan found is : [add_g, g_leaves, m_lie_ann_friends_mg_to_o_oblivious_gf, f_leaves]
-	 elapsed time:1.682001125
-	 Number of models evaluated: 12974	 Plan found is : [add_g, add_g, flee_f, g_leaves]
-	 elapsed time:1.684119792
-	 Number of models evaluated: 13117	 Plan found is : [add_g, add_g, f_leaves, g_leaves]
-	 elapsed time:1.685326625
-	 Number of models evaluated: 13144	 Plan found is : [add_g, add_g, g_leaves, f_leaves]
-	 elapsed time:1.685468
-	 Number of models evaluated: 13649	 Plan found is : [add_g, introduce_g_for_mf, flee_f, g_leaves]
-	 elapsed time:1.697676334
-	 Number of models evaluated: 13792	 Plan found is : [add_g, introduce_g_for_mf, f_leaves, g_leaves]
-	 elapsed time:1.701496667
-	 Number of models evaluated: 13819	 Plan found is : [add_g, introduce_g_for_mf, g_leaves, f_leaves]
-	 elapsed time:1.701826209
-	 Number of models evaluated: 14506	 Plan found is : [add_g, dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, flee_f]
-	 elapsed time:1.78442075
-	 Number of models evaluated: 14518	 Plan found is : [add_g, dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, f_leaves]
-	 elapsed time:1.7854175
-	 Number of models evaluated: 14618	 Plan found is : [add_g, m_truth_ann_at_g_to_gf_o_oblivious, flee_f, g_leaves]
-	 elapsed time:1.802762875
-	 Number of models evaluated: 14761	 Plan found is : [add_g, m_truth_ann_at_g_to_gf_o_oblivious, f_leaves, g_leaves]
-	 elapsed time:1.806601875
-	 Number of models evaluated: 14788	 Plan found is : [add_g, m_truth_ann_at_g_to_gf_o_oblivious, g_leaves, f_leaves]
-	 elapsed time:1.806927417
-	 Number of models evaluated: 15293	 Plan found is : [add_g, m_truth_ann_at_g_to_go_f_oblivious, flee_f, g_leaves]
-	 elapsed time:1.873435584
-	 Number of models evaluated: 15436	 Plan found is : [add_g, m_truth_ann_at_g_to_go_f_oblivious, f_leaves, g_leaves]
-	 elapsed time:1.877164375
-	 Number of models evaluated: 15463	 Plan found is : [add_g, m_truth_ann_at_g_to_go_f_oblivious, g_leaves, f_leaves]
-	 elapsed time:1.8774705
-	 Number of models evaluated: 15967	 Plan found is : [add_g, m_lie_ann_friends_mg_to_f_oblivious_go, flee_f, g_leaves]
-	 elapsed time:1.928151542
-	 Number of models evaluated: 16107	 Plan found is : [add_g, m_lie_ann_friends_mg_to_f_oblivious_go, f_leaves, g_leaves]
-	 elapsed time:1.931711334
-	 Number of models evaluated: 16133	 Plan found is : [add_g, m_lie_ann_friends_mg_to_f_oblivious_go, g_leaves, f_leaves]
-	 elapsed time:1.932008334
-	 Number of models evaluated: 16317	 Plan found is : [add_g, m_lie_ann_friends_mg_to_f_oblivious_go, dcv_add_g_by_m_for_f, flee_f]
-	 elapsed time:1.941812084
-	 Number of models evaluated: 16329	 Plan found is : [add_g, m_lie_ann_friends_mg_to_f_oblivious_go, dcv_add_g_by_m_for_f, f_leaves]
-	 elapsed time:1.942759167
-	 Number of models evaluated: 16621	 Plan found is : [add_g, m_lie_ann_friends_mg_to_o_oblivious_gf, flee_f, g_leaves]
-	 elapsed time:1.975629834
-	 Number of models evaluated: 16761	 Plan found is : [add_g, m_lie_ann_friends_mg_to_o_oblivious_gf, f_leaves, g_leaves]
-	 elapsed time:1.979157542
-	 Number of models evaluated: 16787	 Plan found is : [add_g, m_lie_ann_friends_mg_to_o_oblivious_gf, g_leaves, f_leaves]
-	 elapsed time:1.979450625
+Domain size:38
+	 Number of models evaluated: 499	 Plan found is : [dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, flee_f]
+	 elapsed time:0.103940541
+	 Number of models evaluated: 699	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, dcv_add_g_by_m_for_f, flee_f]
+	 elapsed time:0.134407458
+	 Number of models evaluated: 1991	 Plan found is : [dcv_add_g_by_m_for_f, flee_m, flee_f, m_arrives]
+	 elapsed time:0.203087333
+	 Number of models evaluated: 2003	 Plan found is : [dcv_add_g_by_m_for_f, flee_m, m_arrives, flee_f]
+	 elapsed time:0.203307083
+	 Number of models evaluated: 2102	 Plan found is : [dcv_add_g_by_m_for_f, flee_f, m_leaves, m_arrives]
+	 elapsed time:0.207795958
+	 Number of models evaluated: 2117	 Plan found is : [dcv_add_g_by_m_for_f, flee_f, add_g, g_leaves]
+	 elapsed time:0.208017291
+	 Number of models evaluated: 2532	 Plan found is : [dcv_add_g_by_m_for_f, o_arrives, m_lie_ann_friends_mg_to_fo_oblivious_g, flee_f]
+	 elapsed time:0.441648791
+	 Number of models evaluated: 2583	 Plan found is : [dcv_add_g_by_m_for_f, o_arrives, m_lie_ann_friends_mg_to_f_oblivious_go, flee_f]
+	 elapsed time:0.466395916
+	 Number of models evaluated: 2682	 Plan found is : [dcv_add_g_by_m_for_f, m_leaves, flee_f, m_arrives]
+	 elapsed time:0.514469583
+	 Number of models evaluated: 2694	 Plan found is : [dcv_add_g_by_m_for_f, m_leaves, m_arrives, flee_f]
+	 elapsed time:0.514689458
+	 Number of models evaluated: 2827	 Plan found is : [dcv_add_g_by_m_for_f, add_g, flee_f, g_leaves]
+	 elapsed time:0.522703625
+	 Number of models evaluated: 3621	 Plan found is : [dcv_add_g_by_m_for_f, dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, flee_f]
+	 elapsed time:1.308411041
+	 Number of models evaluated: 3922	 Plan found is : [dcv_add_g_by_m_for_f, m_lie_ann_at_g_to_f_oblivious_go, m_lie_ann_friends_mg_to_f_oblivious_go, flee_f]
+	 elapsed time:1.70178975
+	 Number of models evaluated: 4010	 Plan found is : [dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, o_arrives, flee_f]
+	 elapsed time:1.757005916
+	 Number of models evaluated: 4137	 Plan found is : [dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, dcv_add_g_by_m_for_f, flee_f]
+	 elapsed time:1.79541625
+	 Number of models evaluated: 4175	 Plan found is : [dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, m_lie_ann_at_g_to_f_oblivious_go, flee_f]
+	 elapsed time:1.923171041
+	 Number of models evaluated: 4213	 Plan found is : [dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, m_lie_ann_friends_mg_to_f_oblivious_go, flee_f]
+	 elapsed time:1.953429666
+	 Number of models evaluated: 4251	 Plan found is : [dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, m_lie_ann_friends_mg_to_o_oblivious_gf, flee_f]
+	 elapsed time:1.994222833
+	 Number of models evaluated: 4513	 Plan found is : [dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_o_oblivious_gf, m_lie_ann_friends_mg_to_f_oblivious_go, flee_f]
+	 elapsed time:2.227141333
+	 Number of models evaluated: 4869	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, o_arrives, dcv_add_g_by_m_for_f, flee_f]
+	 elapsed time:2.333886208
+	 Number of models evaluated: 5220	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, add_g, flee_f, g_leaves]
+	 elapsed time:2.389330958
+	 Number of models evaluated: 5525	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, add_g, dcv_add_g_by_m_for_f, flee_f]
+	 elapsed time:2.402315083
+	 Number of models evaluated: 5786	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, dcv_add_g_by_m_for_f, o_arrives, flee_f]
+	 elapsed time:2.437949666
+	 Number of models evaluated: 5913	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, dcv_add_g_by_m_for_f, dcv_add_g_by_m_for_f, flee_f]
+	 elapsed time:2.473185125
+	 Number of models evaluated: 5951	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, dcv_add_g_by_m_for_f, m_lie_ann_at_g_to_f_oblivious_go, flee_f]
+	 elapsed time:2.600803666
+	 Number of models evaluated: 5989	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, flee_f]
+	 elapsed time:2.63041475
+	 Number of models evaluated: 6027	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_o_oblivious_gf, flee_f]
+	 elapsed time:2.671086291
+	 Number of models evaluated: 6189	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, m_lie_ann_friends_mg_to_f_oblivious_go, dcv_add_g_by_m_for_f, flee_f]
+	 elapsed time:2.727476291
+	 Number of models evaluated: 6412	 Plan found is : [m_lie_ann_friends_mg_to_f_oblivious_go, m_lie_ann_friends_mg_to_o_oblivious_gf, dcv_add_g_by_m_for_f, flee_f]
+	 elapsed time:2.809971375
+	 Number of models evaluated: 7143	 Plan found is : [m_lie_ann_friends_mg_to_o_oblivious_gf, add_g, flee_f, g_leaves]
+	 elapsed time:2.957891708
