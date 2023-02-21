@@ -12,8 +12,8 @@ AGENTS : {m, f, o}.
 //uncertainty about mouse being friends with the gruffalo in the initial model
 MODEL : 
 { NODES = {
-(1,{at_m, -at_g, -at_f, -at_o, -th_m, -th_f, -th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, hungry_f}),
-(2,{at_m, -at_g, -at_f, -at_o, -th_m, -th_f, -th_g, -th_o, friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, hungry_f})
+(1,{at_m, -at_g, -at_f, -at_o, -th_m, -th_f, -th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, hungry_f, -hungry_g, -hungry_o}),
+(2,{at_m, -at_g, -at_f, -at_o, -th_m, -th_f, -th_g, -th_o, friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, hungry_f, -hungry_g, -hungry_o})
 },  
 EDGES = {
 (m,{-(1,1), -(2,2)}),
@@ -39,7 +39,7 @@ EDGES = {
 (g,{-(1,1)})
 },
 DES = {1}}), 
-m, m_runs_away),
+m, c8),
 
 CAPABILITY = (( flee_f = { 
 
@@ -56,7 +56,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-f, f_runs_away),
+f, c8),
 
 CAPABILITY = (( flee_g = { 
 
@@ -73,7 +73,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-g, g_runs_away),
+g, c8),
 
 CAPABILITY = (( flee_o = { 
 
@@ -90,7 +90,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-o, o_runs_away),
+o, c8),
 
 
 //arrives actions
@@ -110,7 +110,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_arrives),
+m, c8),
 
 CAPABILITY = (( f_arrives = { 
 
@@ -127,7 +127,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-f, f_arrives),
+f, c8),
 
 CAPABILITY = (( g_arrives = { 
 
@@ -144,7 +144,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-g, g_arrives),
+g, c8),
 
 CAPABILITY = (( o_arrives = { 
 
@@ -161,7 +161,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-o, o_arrives),
+o, c8),
 
 
 //leaves actions
@@ -181,7 +181,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_leaves),
+m, c8),
 
 CAPABILITY = (( f_leaves = { 
 
@@ -198,7 +198,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-f, f_leaves),
+f, c8),
 
 CAPABILITY = (( g_leaves = { 
 
@@ -215,7 +215,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-g, g_leaves),
+g, c8),
 
 CAPABILITY = (( o_leaves = { 
 
@@ -232,7 +232,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-o, o_leaves),
+o, c8),
 
 
 //'eats' actions affect alive, will have DEL edges
@@ -256,7 +256,7 @@ DELEDGES = {
 ,
 
 DES = {1}}), 
-g, g_eats_m),
+g, c8),
 
 CAPABILITY = (( g_eats_f = { 
 
@@ -277,7 +277,7 @@ DELEDGES = {
 ,
 
 DES = {1}}), 
-g, g_eats_f),
+g, c8),
 
 CAPABILITY = (( g_eats_o = { 
 
@@ -298,7 +298,7 @@ DELEDGES = {
 ,
 
 DES = {1}}), 
-g, g_eats_o),
+g, c8),
 
 
 CAPABILITY = (( f_eats_m = { 
@@ -319,7 +319,7 @@ DELEDGES = {
 ,
 
 DES = {1}}), 
-f, f_eats_m),
+f, c8),
 
 CAPABILITY = (( o_eats_m = { 
 
@@ -339,7 +339,7 @@ DELEDGES = {
 ,
 
 DES = {1}}), 
-o, o_eats_m),
+o, c8),
 
 //adding actions
 
@@ -365,7 +365,7 @@ SUMEDGES = {
 }
 ,
 DES = {1}}), 
-environment, test),
+environment, c8),
 
 // add for somebody
 //mfo, mf, mo
@@ -391,7 +391,7 @@ SUMEDGES = {
 }
 ,
 DES = {1}}), 
-m, m_brings_g_to_fo),
+m, c8),
 
 CAPABILITY = (( introduce_g_for_mf = { 
 
@@ -414,7 +414,7 @@ SUMEDGES = {
 }
 ,
 DES = {1}}), 
-m, m_brings_g_to_f),
+m, c8),
 
 CAPABILITY = (( introduce_g_for_mo = { 
 
@@ -437,7 +437,7 @@ SUMEDGES = {
 }
 ,
 DES = {1}}), 
-m, m_brings_g_to_o),
+m, c8),
 
 
 // deceptively add for somebody
@@ -464,7 +464,7 @@ SUMEDGES = {
 }
 ,
 DES = {1}}), 
-m, test),
+m, c8),
 
 CAPABILITY = (( dcv_add_g_by_m_for_f = { 
 
@@ -487,7 +487,7 @@ SUMEDGES = {
 }
 ,
 DES = {1}}), 
-m, test),
+m, c8),
 
 CAPABILITY = (( dcv_add_g_by_m_for_o = { 
 
@@ -510,7 +510,7 @@ SUMEDGES = {
 }
 ,
 DES = {1}}), 
-m, test),
+m, c8),
 
 
 //CAPABILITY = (( infer_th_g = { 
@@ -550,7 +550,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_at_g_to_gfo),
+m, c8),
 
 CAPABILITY = (( m_truth_ann_at_g_to_gf_o_oblivious = { 
 
@@ -568,7 +568,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_at_g_to_gf_o_oblivious),
+m, c8),
 
 CAPABILITY = (( m_truth_ann_at_g_to_go_f_oblivious = { 
 
@@ -586,7 +586,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_at_g_to_go_f_oblivious),
+m, c8),
 
 CAPABILITY = (( m_truth_ann_friends_mg_to_gfo = { 
 
@@ -603,7 +603,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_friends_mg_to_gfo),
+m, c8),
 
 CAPABILITY = (( m_truth_ann_friends_mg_to_gf_o_oblivious = { 
 
@@ -621,7 +621,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_friends_mg_to_gf_o_oblivious),
+m, c8),
 
 CAPABILITY = (( m_truth_ann_friends_mg_to_go_f_oblivious = { 
 
@@ -639,7 +639,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_friends_mg_to_go_f_oblivious),
+m, c8),
 
 //lying starts here
 
@@ -660,7 +660,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_at_g_to_fo_oblivious_g),
+m, c8),
 
 CAPABILITY = (( m_lie_ann_at_g_to_f_oblivious_go = { 
 
@@ -679,7 +679,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_at_g_to_f_oblivious_go),
+m, c8),
 
 CAPABILITY = (( m_lie_ann_at_g_to_o_oblivious_gf = { 
 
@@ -698,7 +698,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_at_g_to_o_oblivious_gf),
+m, c8),
 
 CAPABILITY = (( m_lie_ann_friends_mg_to_fo_oblivious_g = { 
 
@@ -717,7 +717,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_friends_mg_to_fo_oblivious_g),
+m, c8),
 
 CAPABILITY = (( m_lie_ann_friends_mg_to_f_oblivious_go = { 
 
@@ -736,7 +736,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_friends_mg_to_f_oblivious_go),
+m, c8),
 
 CAPABILITY = (( m_lie_ann_friends_mg_to_o_oblivious_gf = { 
 
@@ -755,7 +755,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_friends_mg_to_o_oblivious_gf),
+m, c8),
 
 CAPABILITY = (( m_bluff_ann_at_g_to_f_g = { 
 
@@ -772,7 +772,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_bluff_ann_at_g_to_f_g),
+m, c8),
 
 CAPABILITY = (( m_bluff_ann_at_g_to_f_oblivious_g = { 
 
@@ -789,7 +789,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_bluff_ann_at_g_to_f_oblivious_g),
+m, c8),
 
 CAPABILITY = (( m_bluff_ann_friends_m_g_to_f_g = { 
 
@@ -806,7 +806,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_bluff_ann_friends_m_g_to_f_g),
+m, c8),
 
 CAPABILITY = (( m_bluff_ann_friends_m_g_to_f_oblivious_g = { 
 
@@ -824,7 +824,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_bluff_ann_friends_m_g_to_f_oblivious_g)
+m, c8)
 }.
 
 //--adding inferencing actions below--
@@ -866,3 +866,5 @@ DES = {1,2}})
 //GOAL : at_m AND -th_m AND BELIEVES [f] (-th_f) AND BELIEVES [f] (-th_m).
 //GOAL : BELIEVES [m] (-th_m AND -th_f) AND BELIEVES [f] (-th_m AND -th_f).
 GOAL : -hungry_f.
+
+PLANNER : {f}.

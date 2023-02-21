@@ -10,8 +10,8 @@ AGENTS : {m, f, o, g}.
 
 MODEL : 
 { NODES = {
-(1,{at_m, at_g, -at_f, -at_o, th_m, -th_f, -th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, delay, -sc_f, -sc_o}),
-(2,{at_m, at_g, -at_f, -at_o, -th_m, -th_f, -th_g, -th_o, friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, delay, -sc_f, -sc_o})
+(1,{at_m, at_g, -at_f, -at_o, th_m, -th_f, -th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, delay, -sc_f, -sc_o, -hungry_f, hungry_g, -hungry_o}),
+(2,{at_m, at_g, -at_f, -at_o, -th_m, -th_f, -th_g, -th_o, friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, delay, -sc_f, -sc_o, -hungry_f, hungry_g, -hungry_o})
 },  
 EDGES = {
 (m,{-(1,1), -(2,2)}),
@@ -37,12 +37,12 @@ EDGES = {
 (g,{-(1,1)})
 },
 DES = {1}}), 
-m, m_runs_away),
+m, c8),
 
 CAPABILITY = (( flee_f = { 
 
 EVENTS = { 
-1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_f, sc_f} )
+1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_f,sc_f} )
 },
  
 EDGES = {
@@ -54,7 +54,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-f, f_runs_away),
+f, c8),
 
 CAPABILITY = (( flee_g = { 
 
@@ -71,7 +71,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-g, g_runs_away),
+g, c8),
 
 CAPABILITY = (( flee_o = { 
 
@@ -88,31 +88,31 @@ EDGES = {
 ,
 
 DES = {1}}), 
-o, o_runs_away),
+o, c8),
 
 //arrives actions
 
-CAPABILITY = (( m_arrives = { 
+//CAPABILITY = (( m_arrives = { 
 
-EVENTS = { 
-1 = ( PRE = -at_m AND POSSIBLE [m] (TRUE), POST = {at_m} )
-},
+//EVENTS = { 
+//1 = ( PRE = -at_m AND POSSIBLE [m] (TRUE), POST = {at_m} )
+//},
  
-EDGES = {
-(m,{-(1,1)}),
-(f,{-(1,1)}),
-(o,{-(1,1)}),
-(g,{-(1,1)})
-}
-,
+//EDGES = {
+//(m,{-(1,1)}),
+//(f,{-(1,1)}),
+//(o,{-(1,1)}),
+//(g,{-(1,1)})
+//}
+//,
 
-DES = {1}}), 
-m, m_arrives),
+//DES = {1}}), 
+//m, m_arrives),
 
 CAPABILITY = (( f_arrives = { 
 
 EVENTS = { 
-1 = ( PRE = -at_f AND POSSIBLE [f] (TRUE), POST = {at_f} )
+1 = ( PRE = -at_f AND POSSIBLE [f] (TRUE) AND hungry_f AND -th_f, POST = {at_f} )
 },
  
 EDGES = {
@@ -124,12 +124,29 @@ EDGES = {
 ,
 
 DES = {1}}), 
-f, f_arrives),
+f, c8),
+
+CAPABILITY = (( m_takes_g_to_f = { 
+
+EVENTS = { 
+1 = ( PRE = -at_f AND at_g AND at_m AND POSSIBLE [f] (TRUE) AND POSSIBLE [m] (TRUE) AND POSSIBLE [g] (TRUE), POST = {at_f} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+f, c8),
 
 CAPABILITY = (( g_arrives = { 
 
 EVENTS = { 
-1 = ( PRE = -at_g AND POSSIBLE [g] (TRUE), POST = {at_g} )
+1 = ( PRE = -at_g AND POSSIBLE [g] (TRUE) AND hungry_g AND -th_g, POST = {at_g} )
 },
  
 EDGES = {
@@ -141,12 +158,12 @@ EDGES = {
 ,
 
 DES = {1}}), 
-g, g_arrives),
+g, c8),
 
 CAPABILITY = (( o_arrives = { 
 
 EVENTS = { 
-1 = ( PRE = -at_o AND POSSIBLE [o] (TRUE), POST = {at_o} )
+1 = ( PRE = -at_o AND POSSIBLE [o] (TRUE) AND hungry_o AND -th_o, POST = {at_o} )
 },
  
 EDGES = {
@@ -158,31 +175,48 @@ EDGES = {
 ,
 
 DES = {1}}), 
-o, o_arrives),
+o, c8),
+
+CAPABILITY = (( m_takes_g_to_o = { 
+
+EVENTS = { 
+1 = ( PRE = -at_o AND at_g AND at_m AND POSSIBLE [o] (TRUE) AND POSSIBLE [m] (TRUE) AND POSSIBLE [g] (TRUE), POST = {at_o} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+f, c8),
 
 //leaves actions
 
-CAPABILITY = (( m_leaves = { 
+//CAPABILITY = (( m_leaves = { 
 
-EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE), POST = {-at_m} )
-},
- 
-EDGES = {
-(m,{-(1,1)}),
-(f,{-(1,1)}),
-(o,{-(1,1)}),
-(g,{-(1,1)})
-}
-,
-
-DES = {1}}), 
-m, m_leaves),
+//EVENTS = { 
+//1 = ( PRE = at_m AND POSSIBLE [m] (TRUE), POST = {-at_m} )
+//},
+// 
+//EDGES = {
+//(m,{-(1,1)}),
+//(f,{-(1,1)}),
+//(o,{-(1,1)}),
+//(g,{-(1,1)})
+//}
+//,
+//
+//DES = {1}}), 
+//m, m_leaves),
 
 CAPABILITY = (( f_leaves = { 
 
 EVENTS = { 
-1 = ( PRE = at_f AND POSSIBLE [f] (TRUE), POST = {-at_f} )
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE) AND NOT (hungry_f), POST = {-at_f} )
 },
  
 EDGES = {
@@ -194,12 +228,12 @@ EDGES = {
 ,
 
 DES = {1}}), 
-f, f_leaves),
+f, c8),
 
 CAPABILITY = (( g_leaves = { 
 
 EVENTS = { 
-1 = ( PRE = at_g AND POSSIBLE [g] (TRUE), POST = {-at_g} )
+1 = ( PRE = at_g AND POSSIBLE [g] (TRUE) AND NOT (hungry_g), POST = {-at_g} )
 },
  
 EDGES = {
@@ -211,12 +245,12 @@ EDGES = {
 ,
 
 DES = {1}}), 
-g, g_leaves),
+g, c8),
 
 CAPABILITY = (( o_leaves = { 
 
 EVENTS = { 
-1 = ( PRE = at_o AND POSSIBLE [o] (TRUE), POST = {-at_o} )
+1 = ( PRE = at_o AND POSSIBLE [o] (TRUE) AND NOT (hungry_o), POST = {-at_o} )
 },
  
 EDGES = {
@@ -228,14 +262,14 @@ EDGES = {
 ,
 
 DES = {1}}), 
-o, o_leaves),
+o, c8),
 
 //'eats' actions affect alive, will have DEL edges
 
 CAPABILITY = (( g_eats_m = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND at_g AND predator_g_m AND -friends_m_g AND POSSIBLE [m] (TRUE) AND POSSIBLE [g] (TRUE), POST = {-at_m})
+1 = ( PRE = at_m AND at_g AND predator_g_m AND -friends_m_g AND POSSIBLE [m] (TRUE) AND POSSIBLE [g] (TRUE) AND hungry_g, POST = {-at_m})
 },
  
 EDGES = {
@@ -251,12 +285,12 @@ DELEDGES = {
 ,
 
 DES = {1}}), 
-g, g_eats_m),
+g, c8),
 
 CAPABILITY = (( g_eats_f = { 
 
 EVENTS = { 
-1 = ( PRE = at_f AND at_g AND predator_g_f AND -friends_f_g AND POSSIBLE [f] (TRUE) AND POSSIBLE [g] (TRUE), POST = {-at_f} )
+1 = ( PRE = at_f AND at_g AND predator_g_f AND -friends_f_g AND POSSIBLE [f] (TRUE) AND POSSIBLE [g] (TRUE) AND hungry_g, POST = {-at_f} )
 },
  
 EDGES = {
@@ -272,12 +306,12 @@ DELEDGES = {
 ,
 
 DES = {1}}), 
-g, g_eats_f),
+g, c8),
 
 CAPABILITY = (( g_eats_o = { 
 
 EVENTS = { 
-1 = ( PRE = at_o AND at_g AND predator_g_o AND -friends_o_g AND POSSIBLE [o] (TRUE) AND POSSIBLE [g] (TRUE), POST = {-at_o} )
+1 = ( PRE = at_o AND at_g AND predator_g_o AND -friends_o_g AND POSSIBLE [o] (TRUE) AND POSSIBLE [g] (TRUE) AND hungry_o, POST = {-at_o} )
 },
  
 EDGES = {
@@ -293,13 +327,13 @@ DELEDGES = {
 ,
 
 DES = {1}}), 
-g, g_eats_o),
+g, c8),
 
 
 CAPABILITY = (( f_eats_m = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND at_f AND predator_f_m AND -friends_m_f AND POSSIBLE [f] (TRUE) AND POSSIBLE [m] (TRUE), POST = {-at_m} )
+1 = ( PRE = at_m AND at_f AND predator_f_m AND -friends_m_f AND POSSIBLE [f] (TRUE) AND POSSIBLE [m] (TRUE) AND hungry_f, POST = {-at_m} )
 },
 EDGES = {
 (m,{-(1,1)}),
@@ -314,12 +348,12 @@ DELEDGES = {
 ,
 
 DES = {1}}), 
-f, f_eats_m),
+f, c8),
 
 CAPABILITY = (( o_eats_m = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND at_o AND predator_o_m AND -friends_m_o AND POSSIBLE [o] (TRUE) AND POSSIBLE [m] (TRUE), POST = {-at_m} )
+1 = ( PRE = at_m AND at_o AND predator_o_m AND -friends_m_o AND POSSIBLE [o] (TRUE) AND POSSIBLE [m] (TRUE) AND hungry_o, POST = {-at_m} )
 },
 EDGES = {
 (m,{-(1,1)}),
@@ -334,14 +368,14 @@ DELEDGES = {
 ,
 
 DES = {1}}), 
-o, o_eats_m),
+o, c8),
 
 //assuming all information related to g is known by g
 
 CAPABILITY = (( m_truth_ann_at_g_to_gfo = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND BELIEVES [m] (at_g AND (NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [g] (-at_g) AND NOT POSSIBLE [o] (-at_g)) , POST = {nil} )
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND BELIEVES [m] (at_g AND NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [g] (-at_g) AND NOT POSSIBLE [o] (-at_g) AND (NOT BELIEVES [f] (at_g) AND NOT BELIEVES [g] (at_g) AND NOT BELIEVES [o] (at_g))) , POST = {nil} )
 },
  
 EDGES = {
@@ -353,12 +387,12 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_at_g_to_gfo),
+m, c8),
 
 CAPABILITY = (( m_truth_ann_at_g_to_gf_o_oblivious = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND BELIEVES [m] (at_g AND (NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [g] (-at_g)) , POST = {nil} ),
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND BELIEVES [m] (at_g AND (NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [g] (-at_g) AND NOT BELIEVES [f] (at_g)) , POST = {nil} ),
 2 = ( PRE =  TRUE , POST = {nil} )
 },
  
@@ -371,12 +405,12 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_at_g_to_gf_o_oblivious),
+m, c8),
 
 CAPABILITY = (( m_truth_ann_at_g_to_go_f_oblivious = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND BELIEVES [m] (at_g AND (NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [g] (-at_g)) , POST = {nil} ),
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND BELIEVES [m] (at_g AND (NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [g] (-at_g) AND NOT BELIEVES [o] (at_g)) , POST = {nil} ),
 2 = ( PRE =  TRUE , POST = {nil} )
 },
  
@@ -389,12 +423,12 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_at_g_to_go_f_oblivious),
+m, c8),
 
 CAPABILITY = (( m_truth_ann_friends_mg_to_gfo = { 
 
 EVENTS = { 
-1 = ( PRE = friends_m_g AND at_m AND POSSIBLE [m] (TRUE) AND POSSIBLE [g] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND BELIEVES [m] (friends_m_g AND (NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [g] (-friends_m_g) AND NOT POSSIBLE [o] (-friends_m_g)) , POST = {nil} )
+1 = ( PRE = friends_m_g AND at_m AND POSSIBLE [m] (TRUE) AND POSSIBLE [g] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND BELIEVES [m] (friends_m_g AND (NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [g] (-friends_m_g) AND NOT POSSIBLE [o] (-friends_m_g) AND NOT BELIEVES [f] (friends_m_g) AND NOT BELIEVES [o] (friends_m_g)) , POST = {nil} )
 },
  
 EDGES = {
@@ -406,12 +440,12 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_friends_mg_to_gfo),
+m, c8),
 
 CAPABILITY = (( m_truth_ann_friends_mg_to_gf_o_oblivious = { 
 
 EVENTS = { 
-1 = ( PRE = friends_m_g AND at_m AND POSSIBLE [m] (TRUE) AND POSSIBLE [g] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND BELIEVES [m] (friends_m_g AND (NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [g] (-friends_m_g)) , POST = {nil} ),
+1 = ( PRE = friends_m_g AND at_m AND POSSIBLE [m] (TRUE) AND POSSIBLE [g] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND BELIEVES [m] (friends_m_g AND (NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [g] (-friends_m_g) AND NOT BELIEVES [f] (friends_m_g)) , POST = {nil} ),
 2 = ( PRE =  TRUE , POST = {nil} )
 },
  
@@ -424,12 +458,12 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_friends_mg_to_gf_o_oblivious),
+m, c8),
 
 CAPABILITY = (( m_truth_ann_friends_mg_to_go_f_oblivious = { 
 
 EVENTS = { 
-1 = ( PRE = friends_m_g AND at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND BELIEVES [m] (friends_m_g AND (NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [g] (-friends_m_g)) , POST = {nil} ),
+1 = ( PRE = friends_m_g AND at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND BELIEVES [m] (friends_m_g AND (NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [g] (-friends_m_g) AND NOT BELIEVES [o] (friends_m_g)) , POST = {nil} ),
 2 = ( PRE =  TRUE , POST = {nil} )
 },
  
@@ -442,14 +476,14 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_friends_mg_to_go_f_oblivious),
+m, c8),
 
 //lying starts here
 
 CAPABILITY = (( m_lie_ann_at_g_to_fo_oblivious_g = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND -at_g AND BELIEVES [m] (-at_g AND NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [o] (-at_g)) , POST = {nil} ),  
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND -at_g AND BELIEVES [m] (-at_g AND NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [o] (-at_g) AND NOT BELIEVES [f] (at_g) AND NOT BELIEVES [o] (at_g)) , POST = {nil} ),  
 2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g, POST = {nil} ),
 3 = ( PRE = TRUE) , POST = {nil} )
 },
@@ -463,12 +497,12 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_at_g_to_fo_oblivious_g),
+m, c8),
 
 CAPABILITY = (( m_lie_ann_at_g_to_f_oblivious_go = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND -at_g AND BELIEVES [m] (-at_g AND NOT POSSIBLE [f] (-at_g)) , POST = {nil} ),  
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND -at_g AND BELIEVES [m] (-at_g AND NOT POSSIBLE [f] (-at_g) AND NOT BELIEVES [f] (at_g)) , POST = {nil} ),  
 2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_g, POST = {nil} ),
 3 = ( PRE = TRUE) , POST = {nil} )
 },
@@ -482,13 +516,13 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_at_g_to_f_oblivious_go),
+m, c8),
 
 CAPABILITY = (( m_lie_ann_at_g_to_o_oblivious_gf = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND -at_g AND BELIEVES [m] (-at_g AND NOT POSSIBLE [o] (-at_g)) , POST = {nil} ),  
-2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_g, POST = {nil} ),
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [f] (TRUE) AND -at_g AND BELIEVES [m] (-at_g AND NOT POSSIBLE [o] (-at_g) AND NOT BELIEVES [o] (at_g)) , POST = {nil} ),  
+2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [f] (TRUE) AND at_g, POST = {nil} ),
 3 = ( PRE = TRUE) , POST = {nil} )
 },
  
@@ -501,12 +535,12 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_at_g_to_o_oblivious_gf),
+m, c8),
 
 CAPABILITY = (( m_lie_ann_friends_mg_to_fo_oblivious_g = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND -friends_m_g AND BELIEVES [m] (-friends_m_g AND NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [o] (-friends_m_g)) , POST = {nil} ),  
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND -friends_m_g AND BELIEVES [m] (-friends_m_g AND NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [o] (-friends_m_g) AND NOT BELIEVES [o] (friends_m_g) AND NOT BELIEVES [f] (friends_m_g)) , POST = {nil} ),  
 2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND friends_m_g, POST = {nil} ),
 3 = ( PRE = TRUE) , POST = {nil} )
 },
@@ -520,12 +554,12 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_friends_mg_to_fo_oblivious_g),
+m, c8),
 
 CAPABILITY = (( m_lie_ann_friends_mg_to_f_oblivious_go = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND -friends_m_g AND BELIEVES [m] (-friends_m_g AND NOT POSSIBLE [f] (-friends_m_g)) , POST = {nil} ),  
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND -friends_m_g AND BELIEVES [m] (-friends_m_g AND POSSIBLE [f] (POSSIBLE [g] (TRUE)) AND NOT POSSIBLE [f] (-friends_m_g) AND NOT BELIEVES [f] (friends_m_g)) , POST = {nil} ),  
 2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND friends_m_g, POST = {nil} ),
 3 = ( PRE = TRUE) , POST = {nil} )
 },
@@ -539,13 +573,13 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_friends_mg_to_f_oblivious_go),
+m, c8),
 
 CAPABILITY = (( m_lie_ann_friends_mg_to_o_oblivious_gf = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND -friends_m_g AND BELIEVES [m] (-friends_m_g AND NOT POSSIBLE [o] (-friends_m_g)) , POST = {nil} ),  
-2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND friends_m_g, POST = {nil} ),
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [f] (TRUE) AND -friends_m_g AND BELIEVES [m] (-friends_m_g AND NOT POSSIBLE [o] (-friends_m_g) AND NOT BELIEVES [o] (friends_m_g)) , POST = {nil} ),  
+2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [f] (TRUE) AND friends_m_g, POST = {nil} ),
 3 = ( PRE = TRUE) , POST = {nil} )
 },
  
@@ -558,8 +592,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_friends_mg_to_o_oblivious_gf),
-
+m, c8),
 
 CAPABILITY = (( m_lie_inf_app_to_g = { 
 
@@ -577,7 +610,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_introduces_a_fake_inf_rul)
+m, c8)
 
 }.
 
@@ -659,3 +692,5 @@ DES = {1,2}})
 //GOAL : BELIEVES [m] (-th_m) AND BELIEVES [f] (-th_f) AND BELIEVES [f] (at_g) AND BELIEVES [m] (-at_g).
 GOAL : at_m AND -th_m AND -th_g AND -th_f AND -th_o.
 //GOAL : BELIEVES [m] (-th_m AND -th_f) AND BELIEVES [f] (-th_m AND -th_f).
+
+PLANNER : {m} .

@@ -27,6 +27,8 @@
                 <PROPOSITION text='predator_o_m' pos='15:171'/>
                 <PROPOSITION text='predator_g_o' pos='15:185'/>
                 <PROPOSITION text='hungry_f' pos='15:199'/>
+                <PROPOSITION text='-hungry_g' pos='15:209'/>
+                <PROPOSITION text='-hungry_o' pos='15:220'/>
             </N>
             <N text='2' pos='16:1'>
                 <PROPOSITION text='at_m' pos='16:4'/>
@@ -48,6 +50,8 @@
                 <PROPOSITION text='predator_o_m' pos='16:170'/>
                 <PROPOSITION text='predator_g_o' pos='16:184'/>
                 <PROPOSITION text='hungry_f' pos='16:198'/>
+                <PROPOSITION text='-hungry_g' pos='16:208'/>
+                <PROPOSITION text='-hungry_o' pos='16:219'/>
             </N>
         </NODELIST>
         <EDGELIST text='EDGES' pos='18:0'>
@@ -158,7 +162,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='42:0'/>
-            <EXPLANATION text='m_runs_away' pos='42:3'/>
+            <EXPLANATION text='c8' pos='42:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='44:0'>
             <EVENTMODEL text='flee_f' pos='44:16'>
@@ -215,7 +219,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='f' pos='59:0'/>
-            <EXPLANATION text='f_runs_away' pos='59:3'/>
+            <EXPLANATION text='c8' pos='59:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='61:0'>
             <EVENTMODEL text='flee_g' pos='61:16'>
@@ -272,7 +276,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='g' pos='76:0'/>
-            <EXPLANATION text='g_runs_away' pos='76:3'/>
+            <EXPLANATION text='c8' pos='76:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='78:0'>
             <EVENTMODEL text='flee_o' pos='78:16'>
@@ -329,7 +333,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='o' pos='93:0'/>
-            <EXPLANATION text='o_runs_away' pos='93:3'/>
+            <EXPLANATION text='c8' pos='93:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='98:0'>
             <EVENTMODEL text='m_arrives' pos='98:16'>
@@ -380,7 +384,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='113:0'/>
-            <EXPLANATION text='m_arrives' pos='113:3'/>
+            <EXPLANATION text='c8' pos='113:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='115:0'>
             <EVENTMODEL text='f_arrives' pos='115:16'>
@@ -431,7 +435,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='f' pos='130:0'/>
-            <EXPLANATION text='f_arrives' pos='130:3'/>
+            <EXPLANATION text='c8' pos='130:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='132:0'>
             <EVENTMODEL text='g_arrives' pos='132:16'>
@@ -482,7 +486,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='g' pos='147:0'/>
-            <EXPLANATION text='g_arrives' pos='147:3'/>
+            <EXPLANATION text='c8' pos='147:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='149:0'>
             <EVENTMODEL text='o_arrives' pos='149:16'>
@@ -533,7 +537,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='o' pos='164:0'/>
-            <EXPLANATION text='o_arrives' pos='164:3'/>
+            <EXPLANATION text='c8' pos='164:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='169:0'>
             <EVENTMODEL text='m_leaves' pos='169:16'>
@@ -584,7 +588,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='184:0'/>
-            <EXPLANATION text='m_leaves' pos='184:3'/>
+            <EXPLANATION text='c8' pos='184:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='186:0'>
             <EVENTMODEL text='f_leaves' pos='186:16'>
@@ -635,7 +639,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='f' pos='201:0'/>
-            <EXPLANATION text='f_leaves' pos='201:3'/>
+            <EXPLANATION text='c8' pos='201:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='203:0'>
             <EVENTMODEL text='g_leaves' pos='203:16'>
@@ -686,7 +690,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='g' pos='218:0'/>
-            <EXPLANATION text='g_leaves' pos='218:3'/>
+            <EXPLANATION text='c8' pos='218:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='220:0'>
             <EVENTMODEL text='o_leaves' pos='220:16'>
@@ -737,7 +741,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='o' pos='235:0'/>
-            <EXPLANATION text='o_leaves' pos='235:3'/>
+            <EXPLANATION text='c8' pos='235:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='240:0'>
             <EVENTMODEL text='g_eats_m' pos='240:16'>
@@ -811,7 +815,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='g' pos='259:0'/>
-            <EXPLANATION text='g_eats_m' pos='259:3'/>
+            <EXPLANATION text='c8' pos='259:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='261:0'>
             <EVENTMODEL text='g_eats_f' pos='261:16'>
@@ -885,7 +889,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='g' pos='280:0'/>
-            <EXPLANATION text='g_eats_f' pos='280:3'/>
+            <EXPLANATION text='c8' pos='280:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='282:0'>
             <EVENTMODEL text='g_eats_o' pos='282:16'>
@@ -959,7 +963,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='g' pos='301:0'/>
-            <EXPLANATION text='g_eats_o' pos='301:3'/>
+            <EXPLANATION text='c8' pos='301:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='304:0'>
             <EVENTMODEL text='f_eats_m' pos='304:16'>
@@ -1036,7 +1040,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='f' pos='322:0'/>
-            <EXPLANATION text='f_eats_m' pos='322:3'/>
+            <EXPLANATION text='c8' pos='322:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='324:0'>
             <EVENTMODEL text='o_eats_m' pos='324:16'>
@@ -1110,7 +1114,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='o' pos='342:0'/>
-            <EXPLANATION text='o_eats_m' pos='342:3'/>
+            <EXPLANATION text='c8' pos='342:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='348:0'>
             <EVENTMODEL text='add_g' pos='348:16'>
@@ -1163,7 +1167,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='environment' pos='368:0'/>
-            <EXPLANATION text='test' pos='368:13'/>
+            <EXPLANATION text='c8' pos='368:13'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='373:0'>
             <EVENTMODEL text='introduce_g_for_mfo' pos='373:16'>
@@ -1267,7 +1271,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='394:0'/>
-            <EXPLANATION text='m_brings_g_to_fo' pos='394:3'/>
+            <EXPLANATION text='c8' pos='394:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='396:0'>
             <EVENTMODEL text='introduce_g_for_mf' pos='396:16'>
@@ -1362,7 +1366,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='417:0'/>
-            <EXPLANATION text='m_brings_g_to_f' pos='417:3'/>
+            <EXPLANATION text='c8' pos='417:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='419:0'>
             <EVENTMODEL text='introduce_g_for_mo' pos='419:16'>
@@ -1457,7 +1461,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='440:0'/>
-            <EXPLANATION text='m_brings_g_to_o' pos='440:3'/>
+            <EXPLANATION text='c8' pos='440:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='446:0'>
             <EVENTMODEL text='dcv_add_g_by_m_for_fo' pos='446:16'>
@@ -1592,7 +1596,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='467:0'/>
-            <EXPLANATION text='test' pos='467:3'/>
+            <EXPLANATION text='c8' pos='467:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='469:0'>
             <EVENTMODEL text='dcv_add_g_by_m_for_f' pos='469:16'>
@@ -1709,7 +1713,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='490:0'/>
-            <EXPLANATION text='test' pos='490:3'/>
+            <EXPLANATION text='c8' pos='490:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='492:0'>
             <EVENTMODEL text='dcv_add_g_by_m_for_o' pos='492:16'>
@@ -1826,7 +1830,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='513:0'/>
-            <EXPLANATION text='test' pos='513:3'/>
+            <EXPLANATION text='c8' pos='513:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='538:0'>
             <EVENTMODEL text='m_truth_ann_at_g_to_gfo' pos='538:16'>
@@ -1934,7 +1938,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='553:0'/>
-            <EXPLANATION text='m_truth_ann_at_g_to_gfo' pos='553:3'/>
+            <EXPLANATION text='c8' pos='553:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='555:0'>
             <EVENTMODEL text='m_truth_ann_at_g_to_gf_o_oblivious' pos='555:16'>
@@ -2049,7 +2053,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='571:0'/>
-            <EXPLANATION text='m_truth_ann_at_g_to_gf_o_oblivious' pos='571:3'/>
+            <EXPLANATION text='c8' pos='571:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='573:0'>
             <EVENTMODEL text='m_truth_ann_at_g_to_go_f_oblivious' pos='573:16'>
@@ -2164,7 +2168,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='589:0'/>
-            <EXPLANATION text='m_truth_ann_at_g_to_go_f_oblivious' pos='589:3'/>
+            <EXPLANATION text='c8' pos='589:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='591:0'>
             <EVENTMODEL text='m_truth_ann_friends_mg_to_gfo' pos='591:16'>
@@ -2272,7 +2276,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='606:0'/>
-            <EXPLANATION text='m_truth_ann_friends_mg_to_gfo' pos='606:3'/>
+            <EXPLANATION text='c8' pos='606:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='608:0'>
             <EVENTMODEL text='m_truth_ann_friends_mg_to_gf_o_oblivious' pos='608:16'>
@@ -2387,7 +2391,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='624:0'/>
-            <EXPLANATION text='m_truth_ann_friends_mg_to_gf_o_oblivious' pos='624:3'/>
+            <EXPLANATION text='c8' pos='624:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='626:0'>
             <EVENTMODEL text='m_truth_ann_friends_mg_to_go_f_oblivious' pos='626:16'>
@@ -2505,7 +2509,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='642:0'/>
-            <EXPLANATION text='m_truth_ann_friends_mg_to_go_f_oblivious' pos='642:3'/>
+            <EXPLANATION text='c8' pos='642:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='646:0'>
             <EVENTMODEL text='m_lie_ann_at_g_to_fo_oblivious_g' pos='646:16'>
@@ -2674,7 +2678,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='663:0'/>
-            <EXPLANATION text='m_lie_ann_at_g_to_fo_oblivious_g' pos='663:3'/>
+            <EXPLANATION text='c8' pos='663:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='665:0'>
             <EVENTMODEL text='m_lie_ann_at_g_to_f_oblivious_go' pos='665:16'>
@@ -2817,7 +2821,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='682:0'/>
-            <EXPLANATION text='m_lie_ann_at_g_to_f_oblivious_go' pos='682:3'/>
+            <EXPLANATION text='c8' pos='682:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='684:0'>
             <EVENTMODEL text='m_lie_ann_at_g_to_o_oblivious_gf' pos='684:16'>
@@ -2960,7 +2964,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='701:0'/>
-            <EXPLANATION text='m_lie_ann_at_g_to_o_oblivious_gf' pos='701:3'/>
+            <EXPLANATION text='c8' pos='701:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='703:0'>
             <EVENTMODEL text='m_lie_ann_friends_mg_to_fo_oblivious_g' pos='703:16'>
@@ -3129,7 +3133,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='720:0'/>
-            <EXPLANATION text='m_lie_ann_friends_mg_to_fo_oblivious_g' pos='720:3'/>
+            <EXPLANATION text='c8' pos='720:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='722:0'>
             <EVENTMODEL text='m_lie_ann_friends_mg_to_f_oblivious_go' pos='722:16'>
@@ -3272,7 +3276,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='739:0'/>
-            <EXPLANATION text='m_lie_ann_friends_mg_to_f_oblivious_go' pos='739:3'/>
+            <EXPLANATION text='c8' pos='739:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='741:0'>
             <EVENTMODEL text='m_lie_ann_friends_mg_to_o_oblivious_gf' pos='741:16'>
@@ -3415,7 +3419,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='758:0'/>
-            <EXPLANATION text='m_lie_ann_friends_mg_to_o_oblivious_gf' pos='758:3'/>
+            <EXPLANATION text='c8' pos='758:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='760:0'>
             <EVENTMODEL text='m_bluff_ann_at_g_to_f_g' pos='760:16'>
@@ -3526,7 +3530,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='775:0'/>
-            <EXPLANATION text='m_bluff_ann_at_g_to_f_g' pos='775:3'/>
+            <EXPLANATION text='c8' pos='775:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='777:0'>
             <EVENTMODEL text='m_bluff_ann_at_g_to_f_oblivious_g' pos='777:16'>
@@ -3641,7 +3645,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='792:0'/>
-            <EXPLANATION text='m_bluff_ann_at_g_to_f_oblivious_g' pos='792:3'/>
+            <EXPLANATION text='c8' pos='792:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='794:0'>
             <EVENTMODEL text='m_bluff_ann_friends_m_g_to_f_g' pos='794:16'>
@@ -3752,7 +3756,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='809:0'/>
-            <EXPLANATION text='m_bluff_ann_friends_m_g_to_f_g' pos='809:3'/>
+            <EXPLANATION text='c8' pos='809:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='811:0'>
             <EVENTMODEL text='m_bluff_ann_friends_m_g_to_f_oblivious_g' pos='811:16'>
@@ -3876,7 +3880,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='827:0'/>
-            <EXPLANATION text='m_bluff_ann_friends_m_g_to_f_oblivious_g' pos='827:3'/>
+            <EXPLANATION text='c8' pos='827:3'/>
         </CAPABILITIES>
     </EVENTMODELS>
     <IEVENTMODELS text='IACTIONS' pos='831:0'>
@@ -4196,4 +4200,7 @@
     <GOAL pos='868:0'>
         <PROPOSITION text='-hungry_f' pos='868:7'/>
     </GOAL>
+    <PLANNER pos='870:0'>
+        <NAME text='f' pos='870:11'/>
+    </PLANNER>
 </PROGRAM>
