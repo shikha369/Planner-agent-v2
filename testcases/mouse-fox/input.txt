@@ -814,8 +814,9 @@ DES = {1,2}})
 
 //GOAL : BELIEVES [m] (-th_m  AND -th_f AND BELIEVES [f] (th_f)).
 //GOAL : BELIEVES [m] (-th_m) AND BELIEVES [f] (-th_f) AND BELIEVES [f] (at_g) AND BELIEVES [m] (-at_g).
-GOAL : at_m AND -th_m AND BELIEVES [f] (-th_f AND -th_m).
-//GOAL : at_m AND -th_m.
+//GOAL : at_m AND -th_m AND BELIEVES [f] (-th_f AND -th_m).
+GOAL : BELIEVES [m](-th_m).
 //GOAL : BELIEVES [m] (-th_m AND -th_f) AND BELIEVES [f] (-th_m AND -th_f).
+//GOAL : BELIEVES [m] (at_m AND -th_m).
 
 PLANNER : {m} .

@@ -3623,22 +3623,13 @@
             </DES>
         </EVENTMODEL>
     </IEVENTMODELS>
-    <GOAL pos='693:0'>
-        <AND pos='693:42'>
-            <AND pos='693:32'>
-                <AND pos='693:22'>
-                    <AND pos='693:12'>
-                        <PROPOSITION text='at_m' pos='693:7'/>
-                        <PROPOSITION text='-th_m' pos='693:16'/>
-                    </AND>
-                    <PROPOSITION text='-th_g' pos='693:26'/>
-                </AND>
-                <PROPOSITION text='-th_f' pos='693:36'/>
-            </AND>
-            <PROPOSITION text='-th_o' pos='693:46'/>
-        </AND>
+    <GOAL pos='695:0'>
+        <BELIEVES pos='695:7'>
+            <AGENT text='m' pos='695:17'/>
+            <PROPOSITION text='-th_m' pos='695:21'/>
+        </BELIEVES>
     </GOAL>
-    <PLANNER pos='696:0'>
-        <NAME text='m' pos='696:11'/>
+    <PLANNER pos='697:0'>
+        <NAME text='m' pos='697:11'/>
     </PLANNER>
 </PROGRAM>

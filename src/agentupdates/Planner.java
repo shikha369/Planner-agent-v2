@@ -52,9 +52,15 @@ public class Planner {
         //    String act_name = Planner.sequence.get(a).ActionName;
         //    System.out.println(action_to_cost.get(act_name));
         //}
-            
-        
 
+        /*
+         * set bnb to true for cost based planning
+         */
+        boolean bnb = true;   
+        if(bnb)
+            BranchAndBoundSearch.branchAndBoundSearch(Planner.models.get(0), testcase_dir);
+        else
+        {   
         SearchNode curr = new SearchNode(null, null, Planner.models.get(0), null, "[");
         //model_ctr++;
         KripkeStructure next;
@@ -207,7 +213,7 @@ public class Planner {
         //     System.out.println("printed"); 
 
     }
-
+    }
     
     public static String print_plan(SearchNode curr, String logs) { 
         ArrayList<String> plan = new ArrayList<>();
