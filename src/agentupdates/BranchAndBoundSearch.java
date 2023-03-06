@@ -39,24 +39,42 @@ public class BranchAndBoundSearch {
     // Define a heuristic function to estimate the cost of reaching the goal state
     private static int heuristic(KripkeStructure state) {
         // TODO: Implement your heuristic function here
+        //If undefined it returns undefined heuristic
         return 0;
     }
 
     // Define the main search function
-    public static void branchAndBoundSearch(KripkeStructure initialState, String testcase_dir) {
+    public static boolean branchAndBoundSearch(KripkeStructure initialState, String testcase_dir, int cost) {
         Stack<Node> nodestack = new Stack<>();
         nodestack.push(new Node(initialState, null, 0, 0, "", null));
+
+
+        /*
+         * Based on first character of 'c/o/m' parse the actions into cost, operation and meta operations.
+         * use 'o' upto predefined maxLevel or cost, if plan is not found then use a meta operation 
+         * (but it is a queue, can be used only once), repeat
+         * 
+         */
+
 
         /*
          * Stop exploring the space when the nodestack is empty
          */
+        
+        // uncomment to explore solutions beyond any set cost
+        // int minCost = Integer.MAX_VALUE;
+        int minCost = cost;
+        
+        // Hyper-parameters below
 
-        int minCost = Integer.MAX_VALUE;
         int maxLevel = 7;
         //String canEditLogs = "Y";
-        String logs = "";
 
+
+        String logs = "";
+        boolean plan_found = false;
         boolean firstnode = true;
+
         while (!nodestack.isEmpty()) {
             Node currentNode = nodestack.pop();
             KripkeStructure currentState = currentNode.state;
@@ -64,12 +82,19 @@ public class BranchAndBoundSearch {
             /* Stop exploring the current branch currentState is the goal state */
 
             if (goal_satisfied(currentState)) {
+
                 // Print the solution and the cost, save the minCost and explore further
                 if(minCost >= currentNode.cost)
                     {
+                        //maintain only mincost path
+
                         minCost = Integer.min(minCost, currentNode.cost);
-                        //logs = print_plan(currentNode,logs);
                         logs = print_plan(currentNode,"");
+                        plan_found = true;
+                        //comment above and uncomment below to get all paths explored before getting the mincost path
+                        //logs = print_plan(currentNode,logs);
+
+                        //logs = print_plan(currentNode,"");
                     }
                 continue ;
             }
@@ -145,6 +170,7 @@ public class BranchAndBoundSearch {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        return plan_found;
     }
     
 

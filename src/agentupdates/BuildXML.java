@@ -16,13 +16,13 @@ import java.io.InputStreamReader;
  */
 public class BuildXML {
     
-    public static void build(String testcase_dir){
+    public static void build(String testcase_dir, int meta){
         
         ProcessBuilder processBuilder = new ProcessBuilder();
         
         //processBuilder.command("bash", "-c", "java -jar \"testKRR/KRR.jar\" -ONT  input.txt 1>input.xml");
         
-        String  runCmd= "java -jar \"testKRR/KRR.jar\" -KD45 testcases/"+  testcase_dir+"/"+"input.txt 1>"+"testcases/"+testcase_dir+"/"+"input.xml";
+        String  runCmd= "java -jar \"testKRR/KRR.jar\" -KD45 testcases/"+  testcase_dir+"/"+"input"+meta+".txt 1>"+"testcases/"+testcase_dir+"/"+"input.xml";
         
         processBuilder.command("bash", "-c", runCmd);
         	

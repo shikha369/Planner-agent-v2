@@ -24,6 +24,7 @@ public class Planner {
     public static final ArrayList<KripkeStructure> models = new ArrayList<>();
     public static final ArrayList<String> fluentlist =new ArrayList<>();
     public static final ArrayList<String> agentlist =new ArrayList<>();
+    public static final ArrayList<String> extended_agentlist =new ArrayList<>();
     public static final ArrayList<KripkeAction> sequence =new ArrayList<>();
     public static final ArrayList<KripkeAction> inferencing_actions =new ArrayList<>();
     public static String self = new String();
@@ -42,10 +43,11 @@ public class Planner {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter testcase directory:");
         String testcase_dir = input.nextLine();
-        BuildXML.build(testcase_dir);
+        BuildXML.build(testcase_dir,0);
         BuildProblem.build(testcase_dir);
         String logs = "Domain size:" + (sequence.size() + inferencing_actions.size())+ "\n";
         boolean firstnode = true;
+        boolean plan_found = false;
 
         //System.out.println("cost of actions:");
         //for(int a = 0; a < Planner.sequence.size(); a++){
@@ -57,8 +59,39 @@ public class Planner {
          * set bnb to true for cost based planning
          */
         boolean bnb = true;   
-        if(bnb)
-            BranchAndBoundSearch.branchAndBoundSearch(Planner.models.get(0), testcase_dir);
+        if(bnb){
+            //cost 25 gives flee_m
+            plan_found = BranchAndBoundSearch.branchAndBoundSearch(Planner.models.get(0), testcase_dir, 26);
+            if(!plan_found)
+            {
+                /*
+                 * temp fix below
+                 */
+                BuildXML.build(testcase_dir, 4);
+                BuildProblem.build(testcase_dir);
+                logs = "Domain size:" + (sequence.size() + inferencing_actions.size())+ "\n";
+                plan_found = BranchAndBoundSearch.branchAndBoundSearch(Planner.models.get(0), testcase_dir, 20);
+                //the above should ideally be in while loop
+
+                /*OTHERWISE
+                 * New information that needs to be parsed for the changes
+                 * 1. extended agent list
+                 * 2. for each extended agent, each possible order, we maintain a list of init and actionlist
+                 * 3. current order and the corresponding domain in terms of init and actionlist
+                 * 4. Where do we parse it? maintain different files --- build domain again with init and actionlist.
+                 */
+                for(String ag : extended_agentlist){
+                    /*
+                     * Extended the domain defined over C with this new agent ag to get a new order C'
+                     * enumerate the possible orders and the corresponding init and action list
+                     * choose each one by one and run BnB with new init and cost
+                     * repeat until plan found
+                     */
+
+                }
+            }
+        }
+        
         else
         {   
         SearchNode curr = new SearchNode(null, null, Planner.models.get(0), null, "[");
