@@ -1,4 +1,5 @@
 //Order: {m} < {f,o,g}
+//Make the domain compatible with the above order
 
 PROPS : {at_m, at_g, at_f, at_o th_m, th_f, th_g, th_o, friends_m_g, friends_f_g, friends_m_f, friends_m_o, friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o} .
 
@@ -12,8 +13,8 @@ AGENTS : {m, f, o}.
 //uncertainty about mouse being friends with the gruffalo in the initial model
 MODEL : 
 { NODES = {
-(1,{at_m, -at_g, at_f, -at_o, th_m, -th_f, -th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, hungry_f, -hungry_g, -hungry_o}),
-(2,{at_m, -at_g, at_f, -at_o, th_m, -th_f, -th_g, -th_o, friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, hungry_f, -hungry_g, -hungry_o})
+(1,{at_m, -at_g, at_f, -at_o, th_m, -th_f, -th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, -predator_g_f, predator_f_m, predator_o_m, -predator_g_o, hungry_f, -hungry_g, -hungry_o}),
+(2,{at_m, -at_g, at_f, -at_o, th_m, -th_f, -th_g, -th_o, friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, -predator_g_f, predator_f_m, predator_o_m, -predator_g_o, hungry_f, -hungry_g, -hungry_o})
 },  
 EDGES = {
 (m,{-(1,1), -(2,2)}),
@@ -647,7 +648,7 @@ m, c1),
 CAPABILITY = (( m_lie_ann_at_g_to_fo_oblivious_g = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND -at_g AND BELIEVES [m] (-at_g AND NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [o] (-at_g) AND NOT BELIEVES [f] (at_g) AND NOT BELIEVES [o] (at_g)) , POST = {nil} ),  
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND -at_g AND BELIEVES [m] (-at_g AND POSSIBLE [f] (POSSIBLE [g] (TRUE)) AND POSSIBLE [o] (POSSIBLE [g] (TRUE)) AND NOT POSSIBLE [f] (-at_g) AND NOT POSSIBLE [o] (-at_g) AND NOT BELIEVES [f] (at_g) AND NOT BELIEVES [o] (at_g)) , POST = {nil} ),  
 2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g, POST = {nil} ),
 3 = ( PRE = TRUE) , POST = {nil} )
 },
@@ -666,7 +667,7 @@ m, c2),
 CAPABILITY = (( m_lie_ann_at_g_to_f_oblivious_go = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND -at_g AND BELIEVES [m] (-at_g AND NOT POSSIBLE [f] (-at_g) AND NOT BELIEVES [f] (at_g)) , POST = {nil} ),  
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND -at_g AND BELIEVES [m] (-at_g AND POSSIBLE [f] (POSSIBLE [g] (TRUE)) AND NOT POSSIBLE [f] (-at_g) AND NOT BELIEVES [f] (at_g)) , POST = {nil} ),  
 2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_g, POST = {nil} ),
 3 = ( PRE = TRUE) , POST = {nil} )
 },
@@ -685,7 +686,7 @@ m, c2),
 CAPABILITY = (( m_lie_ann_at_g_to_o_oblivious_gf = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [f] (TRUE) AND -at_g AND BELIEVES [m] (-at_g AND NOT POSSIBLE [o] (-at_g) AND NOT BELIEVES [o] (at_g)) , POST = {nil} ),  
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [f] (TRUE) AND -at_g AND BELIEVES [m] (-at_g AND POSSIBLE [o] (POSSIBLE [g] (TRUE)) AND NOT POSSIBLE [o] (-at_g) AND NOT BELIEVES [o] (at_g)) , POST = {nil} ),  
 2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [f] (TRUE) AND at_g, POST = {nil} ),
 3 = ( PRE = TRUE) , POST = {nil} )
 },
@@ -704,7 +705,7 @@ m, c2),
 CAPABILITY = (( m_lie_ann_friends_mg_to_fo_oblivious_g = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND -friends_m_g AND BELIEVES [m] (-friends_m_g AND NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [o] (-friends_m_g) AND NOT BELIEVES [o] (friends_m_g) AND NOT BELIEVES [f] (friends_m_g)) , POST = {nil} ),  
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND -friends_m_g AND BELIEVES [m] (-friends_m_g AND POSSIBLE [f] (POSSIBLE [g] (TRUE)) AND POSSIBLE [o] (POSSIBLE [g] (TRUE)) AND NOT POSSIBLE [f] (-friends_m_g) AND NOT POSSIBLE [o] (-friends_m_g) AND NOT BELIEVES [o] (friends_m_g) AND NOT BELIEVES [f] (friends_m_g)) , POST = {nil} ),  
 2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND friends_m_g, POST = {nil} ),
 3 = ( PRE = TRUE) , POST = {nil} )
 },
@@ -742,7 +743,7 @@ m, c2),
 CAPABILITY = (( m_lie_ann_friends_mg_to_o_oblivious_gf = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [f] (TRUE) AND -friends_m_g AND BELIEVES [m] (-friends_m_g AND NOT POSSIBLE [o] (-friends_m_g) AND NOT BELIEVES [o] (friends_m_g)) , POST = {nil} ),  
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [f] (TRUE) AND -friends_m_g AND BELIEVES [m] (-friends_m_g AND POSSIBLE [o] (POSSIBLE [g] (TRUE)) AND NOT POSSIBLE [o] (-friends_m_g) AND NOT BELIEVES [o] (friends_m_g)) , POST = {nil} ),  
 2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [f] (TRUE) AND friends_m_g, POST = {nil} ),
 3 = ( PRE = TRUE) , POST = {nil} )
 },
@@ -779,7 +780,7 @@ EDGES = {
 
 DES = {1,2}}), 
 
-( infer_th_f = { 
+( infer_th_o = { 
 
 EVENTS = { 
 1 = ( PRE = at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND predator_g_o AND -friends_o_g, POST = {th_o} ),

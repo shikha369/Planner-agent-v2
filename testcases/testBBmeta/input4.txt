@@ -780,7 +780,7 @@ EDGES = {
 
 DES = {1,2}}), 
 
-( infer_th_f = { 
+( infer_th_o = { 
 
 EVENTS = { 
 1 = ( PRE = at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND predator_g_o AND -friends_o_g, POST = {th_o} ),

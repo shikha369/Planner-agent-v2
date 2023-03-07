@@ -55,41 +55,44 @@ public class Planner {
         //    System.out.println(action_to_cost.get(act_name));
         //}
 
+         /*   * temp fix below      */
+
         /*
          * set bnb to true for cost based planning
+         * 
+         * 
          */
         boolean bnb = true;   
         if(bnb){
             //cost 25 gives flee_m
-            plan_found = BranchAndBoundSearch.branchAndBoundSearch(Planner.models.get(0), testcase_dir, 26);
-            if(!plan_found)
+
+            plan_found = BranchAndBoundSearch.branchAndBoundSearch(Planner.models.get(0), testcase_dir, 24);
+
+            int i = 0;
+            int maxOrderCombinations = 4;
+            while(!plan_found && i <= maxOrderCombinations)
             {
-                /*
-                 * temp fix below
-                 */
-                BuildXML.build(testcase_dir, 4);
-                BuildProblem.build(testcase_dir);
+                System.out.println("expanding domain " + i);
+                BuildXML.build(testcase_dir, ++i);
+
+                Planner.models.clear();
+                Planner.sequence.clear();
+                Planner.inferencing_actions.clear();
+                
+                BuildProblem.build(testcase_dir); //resets init too
                 logs = "Domain size:" + (sequence.size() + inferencing_actions.size())+ "\n";
                 plan_found = BranchAndBoundSearch.branchAndBoundSearch(Planner.models.get(0), testcase_dir, 20);
-                //the above should ideally be in while loop
-
-                /*OTHERWISE
-                 * New information that needs to be parsed for the changes
-                 * 1. extended agent list
-                 * 2. for each extended agent, each possible order, we maintain a list of init and actionlist
-                 * 3. current order and the corresponding domain in terms of init and actionlist
-                 * 4. Where do we parse it? maintain different files --- build domain again with init and actionlist.
-                 */
-                for(String ag : extended_agentlist){
-                    /*
-                     * Extended the domain defined over C with this new agent ag to get a new order C'
-                     * enumerate the possible orders and the corresponding init and action list
-                     * choose each one by one and run BnB with new init and cost
-                     * repeat until plan found
-                     */
-
-                }
             }
+
+            //     /*OTHERWISE for a general script
+            //      * New information that needs to be parsed for the changes
+            //      * 1. extended agent list
+            //      * 2. for each extended agent, each possible order, we maintain a list of init and actionlist
+            //      * 3. current order and the corresponding domain in terms of init and actionlist
+            //      * 4. Where do we parse it? maintain different files --- build domain again with init and actionlist.
+            //      */
+
+            // }
         }
         
         else
