@@ -1,0 +1,1 @@
+	 cost: 4	 Plan found is : [b_sense_sec2, a_mov_left, a_mov_left, a_sense_sec1]

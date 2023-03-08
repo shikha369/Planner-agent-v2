@@ -159,7 +159,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='35:12'/>
-            <EXPLANATION text='test' pos='35:15'/>
+            <EXPLANATION text='c1' pos='35:15'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='37:0'>
             <EVENTMODEL text='open_a_b' pos='37:16'>
@@ -242,7 +242,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='48:12'/>
-            <EXPLANATION text='test' pos='48:15'/>
+            <EXPLANATION text='c1' pos='48:15'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='50:0'>
             <EVENTMODEL text='open_a_c' pos='50:16'>
@@ -325,7 +325,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='61:12'/>
-            <EXPLANATION text='test' pos='61:15'/>
+            <EXPLANATION text='c1' pos='61:15'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='63:0'>
             <EVENTMODEL text='open_a' pos='63:16'>
@@ -408,7 +408,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='74:12'/>
-            <EXPLANATION text='test' pos='74:15'/>
+            <EXPLANATION text='c1' pos='74:15'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='76:0'>
             <EVENTMODEL text='peek_a_b_c' pos='76:16'>
@@ -537,7 +537,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='87:4'/>
-            <EXPLANATION text='test' pos='87:7'/>
+            <EXPLANATION text='c1' pos='87:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='89:0'>
             <EVENTMODEL text='peek_a_b' pos='89:16'>
@@ -678,7 +678,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='101:4'/>
-            <EXPLANATION text='test' pos='101:7'/>
+            <EXPLANATION text='c1' pos='101:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='103:0'>
             <EVENTMODEL text='peek_a_c' pos='103:16'>
@@ -819,7 +819,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='115:4'/>
-            <EXPLANATION text='test' pos='115:7'/>
+            <EXPLANATION text='c1' pos='115:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='117:0'>
             <EVENTMODEL text='peek_a' pos='117:16'>
@@ -905,7 +905,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='128:4'/>
-            <EXPLANATION text='test' pos='128:7'/>
+            <EXPLANATION text='c1' pos='128:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='130:0'>
             <EVENTMODEL text='peek_b_a_c' pos='130:16'>
@@ -1034,7 +1034,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='141:4'/>
-            <EXPLANATION text='test' pos='141:7'/>
+            <EXPLANATION text='c1' pos='141:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='143:0'>
             <EVENTMODEL text='peek_b_a' pos='143:16'>
@@ -1175,7 +1175,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='155:4'/>
-            <EXPLANATION text='test' pos='155:7'/>
+            <EXPLANATION text='c1' pos='155:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='157:0'>
             <EVENTMODEL text='peek_b_c' pos='157:16'>
@@ -1316,7 +1316,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='169:4'/>
-            <EXPLANATION text='test' pos='169:7'/>
+            <EXPLANATION text='c1' pos='169:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='171:0'>
             <EVENTMODEL text='peek_b' pos='171:16'>
@@ -1402,7 +1402,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='182:4'/>
-            <EXPLANATION text='test' pos='182:7'/>
+            <EXPLANATION text='c1' pos='182:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='186:0'>
             <EVENTMODEL text='peek_c_a_b' pos='186:16'>
@@ -1531,7 +1531,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='197:4'/>
-            <EXPLANATION text='test' pos='197:7'/>
+            <EXPLANATION text='c1' pos='197:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='199:0'>
             <EVENTMODEL text='peek_c_a' pos='199:16'>
@@ -1672,7 +1672,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='211:4'/>
-            <EXPLANATION text='test' pos='211:7'/>
+            <EXPLANATION text='c1' pos='211:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='213:0'>
             <EVENTMODEL text='peek_c_b' pos='213:16'>
@@ -1813,7 +1813,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='225:4'/>
-            <EXPLANATION text='test' pos='225:7'/>
+            <EXPLANATION text='c1' pos='225:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='227:0'>
             <EVENTMODEL text='peek_c' pos='227:16'>
@@ -1899,7 +1899,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='238:4'/>
-            <EXPLANATION text='test' pos='238:7'/>
+            <EXPLANATION text='c1' pos='238:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='242:0'>
             <EVENTMODEL text='signal_a_b' pos='242:16'>
@@ -1973,7 +1973,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='253:4'/>
-            <EXPLANATION text='test' pos='253:7'/>
+            <EXPLANATION text='c1' pos='253:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='255:0'>
             <EVENTMODEL text='signal_a_c' pos='255:16'>
@@ -2047,7 +2047,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='266:4'/>
-            <EXPLANATION text='test' pos='266:7'/>
+            <EXPLANATION text='c1' pos='266:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='268:0'>
             <EVENTMODEL text='signal_b_a' pos='268:16'>
@@ -2121,7 +2121,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='279:4'/>
-            <EXPLANATION text='test' pos='279:7'/>
+            <EXPLANATION text='c1' pos='279:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='281:0'>
             <EVENTMODEL text='signal_b_c' pos='281:16'>
@@ -2195,7 +2195,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='292:4'/>
-            <EXPLANATION text='test' pos='292:7'/>
+            <EXPLANATION text='c1' pos='292:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='294:0'>
             <EVENTMODEL text='signal_c_a' pos='294:16'>
@@ -2269,7 +2269,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='305:4'/>
-            <EXPLANATION text='test' pos='305:7'/>
+            <EXPLANATION text='c1' pos='305:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='307:0'>
             <EVENTMODEL text='signal_c_b' pos='307:16'>
@@ -2343,7 +2343,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='318:4'/>
-            <EXPLANATION text='test' pos='318:7'/>
+            <EXPLANATION text='c1' pos='318:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='322:0'>
             <EVENTMODEL text='distract_a_b' pos='322:16'>
@@ -2417,7 +2417,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='333:4'/>
-            <EXPLANATION text='test' pos='333:7'/>
+            <EXPLANATION text='c1' pos='333:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='335:0'>
             <EVENTMODEL text='distract_a_c' pos='335:16'>
@@ -2491,7 +2491,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='346:4'/>
-            <EXPLANATION text='test' pos='346:7'/>
+            <EXPLANATION text='c1' pos='346:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='348:0'>
             <EVENTMODEL text='distract_b_a' pos='348:16'>
@@ -2565,7 +2565,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='359:4'/>
-            <EXPLANATION text='test' pos='359:7'/>
+            <EXPLANATION text='c1' pos='359:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='361:0'>
             <EVENTMODEL text='distract_b_c' pos='361:16'>
@@ -2639,7 +2639,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='372:4'/>
-            <EXPLANATION text='test' pos='372:7'/>
+            <EXPLANATION text='c1' pos='372:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='374:0'>
             <EVENTMODEL text='distract_c_a' pos='374:16'>
@@ -2713,7 +2713,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='385:4'/>
-            <EXPLANATION text='test' pos='385:7'/>
+            <EXPLANATION text='c1' pos='385:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='387:0'>
             <EVENTMODEL text='distract_c_b' pos='387:16'>
@@ -2787,7 +2787,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='398:4'/>
-            <EXPLANATION text='test' pos='398:7'/>
+            <EXPLANATION text='c1' pos='398:7'/>
         </CAPABILITIES>
     </EVENTMODELS>
     <GOAL pos='401:0'>

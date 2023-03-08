@@ -43,7 +43,7 @@ EDGES = {
 (g,{-(1,1)})
 },
 DES = {1}}), 
-m, m_runs_away),
+m, c1),
 
 CAPABILITY = (( flee_f = { 
 
@@ -60,7 +60,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-f, f_runs_away),
+f, c1),
 
 CAPABILITY = (( flee_g = { 
 
@@ -77,7 +77,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-g, g_runs_away),
+g, c1),
 
 CAPABILITY = (( flee_o = { 
 
@@ -94,7 +94,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-o, o_runs_away),
+o, c1),
 
 //arrives actions
 
@@ -113,7 +113,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_arrives),
+m, c1),
 
 CAPABILITY = (( f_arrives = { 
 
@@ -130,7 +130,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-f, f_arrives),
+f, c1),
 
 CAPABILITY = (( g_arrives = { 
 
@@ -147,7 +147,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-g, g_arrives),
+g, c1),
 
 CAPABILITY = (( o_arrives = { 
 
@@ -164,7 +164,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-o, o_arrives),
+o, c1),
 
 
 //leaves actions
@@ -184,7 +184,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_leaves),
+m, c1),
 
 CAPABILITY = (( f_leaves = { 
 
@@ -201,7 +201,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-f, f_leaves),
+f, c1),
 
 CAPABILITY = (( g_leaves = { 
 
@@ -218,7 +218,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-g, g_leaves),
+g, c1),
 
 CAPABILITY = (( o_leaves = { 
 
@@ -235,7 +235,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-o, o_leaves),
+o, c1),
 
 
 // 'eats' actions affect alive and edges will be dropped simply because there are no-arrows in the action model.
@@ -254,7 +254,7 @@ EDGES = {
 },
 
 DES = {1}}), 
-g, g_eats_m),
+g, c1),
 
 CAPABILITY = (( g_eats_f = { 
 
@@ -269,7 +269,7 @@ EDGES = {
 },
 
 DES = {1}}), 
-g, g_eats_f),
+g, c1),
 
 CAPABILITY = (( g_eats_o = { 
 
@@ -285,7 +285,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-g, g_eats_o),
+g, c1),
 
 
 CAPABILITY = (( f_eats_m = { 
@@ -301,7 +301,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-f, f_eats_m),
+f, c1),
 
 CAPABILITY = (( o_eats_m = { 
 
@@ -316,7 +316,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-o, o_eats_m),
+o, c1),
 
 //no adding actions
 
@@ -338,7 +338,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_at_g_to_gfo),
+m, c1),
 
 CAPABILITY = (( m_truth_ann_at_g_to_gf_o_oblivious = { 
 
@@ -356,7 +356,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_at_g_to_gf_o_oblivious),
+m, c1),
 
 CAPABILITY = (( m_truth_ann_at_g_to_go_f_oblivious = { 
 
@@ -374,7 +374,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_at_g_to_go_f_oblivious),
+m, c1),
 
 CAPABILITY = (( m_truth_ann_friends_mg_to_gfo = { 
 
@@ -391,7 +391,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_friends_mg_to_gfo),
+m, c1),
 
 CAPABILITY = (( m_truth_ann_friends_mg_to_gf_o_oblivious = { 
 
@@ -409,7 +409,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_friends_mg_to_gf_o_oblivious),
+m, c1),
 
 CAPABILITY = (( m_truth_ann_friends_mg_to_go_f_oblivious = { 
 
@@ -427,7 +427,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_truth_ann_friends_mg_to_go_f_oblivious),
+m, c1),
 
 //lying starts here
 
@@ -448,7 +448,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_at_g_to_fo_oblivious_g),
+m, c1),
 
 CAPABILITY = (( m_lie_ann_at_g_to_f_oblivious_go = { 
 
@@ -467,7 +467,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_at_g_to_f_oblivious_go),
+m, c1),
 
 CAPABILITY = (( m_lie_ann_at_g_to_o_oblivious_gf = { 
 
@@ -486,7 +486,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_at_g_to_o_oblivious_gf),
+m, c1),
 
 CAPABILITY = (( m_lie_ann_friends_mg_to_fo_oblivious_g = { 
 
@@ -505,7 +505,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_friends_mg_to_fo_oblivious_g),
+m, c1),
 
 CAPABILITY = (( m_lie_ann_friends_mg_to_f_oblivious_go = { 
 
@@ -524,7 +524,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_friends_mg_to_f_oblivious_go),
+m, c1),
 
 CAPABILITY = (( m_lie_ann_friends_mg_to_o_oblivious_gf = { 
 
@@ -543,7 +543,7 @@ EDGES = {
 ,
 
 DES = {1}}), 
-m, m_lie_ann_friends_mg_to_o_oblivious_gf)
+m, c1)
 
 }.
 

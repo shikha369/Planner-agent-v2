@@ -1,0 +1,1 @@
+	 cost: 4	 Plan found is : [b_mov_right, b_sense_sec, a_mov_left, b_shout_secret_r4]

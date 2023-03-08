@@ -225,7 +225,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='35:4'/>
-            <EXPLANATION text='b_finds_that_the_secret_is_true_and_for_others_nothing_happened' pos='35:7'/>
+            <EXPLANATION text='c1' pos='35:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='37:0'>
             <EVENTMODEL text='a_sense_sec' pos='37:16'>
@@ -339,7 +339,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='48:4'/>
-            <EXPLANATION text='a_finds_that_the_secret_is_true_and_for_others_nothing_happened' pos='48:7'/>
+            <EXPLANATION text='c1' pos='48:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='50:0'>
             <EVENTMODEL text='c_sense_sec' pos='50:16'>
@@ -453,7 +453,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='61:4'/>
-            <EXPLANATION text='c_finds_that_the_secret_is_true_and_for_others_nothing_happened' pos='61:7'/>
+            <EXPLANATION text='c1' pos='61:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='63:0'>
             <EVENTMODEL text='a_mov_left' pos='63:16'>
@@ -559,7 +559,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='70:24'/>
-            <EXPLANATION text='a_moves_left' pos='70:27'/>
+            <EXPLANATION text='c1' pos='70:27'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='72:0'>
             <EVENTMODEL text='b_mov_left' pos='72:16'>
@@ -665,7 +665,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='79:24'/>
-            <EXPLANATION text='b_moves_left' pos='79:27'/>
+            <EXPLANATION text='c1' pos='79:27'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='81:0'>
             <EVENTMODEL text='c_mov_left' pos='81:16'>
@@ -771,7 +771,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='88:24'/>
-            <EXPLANATION text='c_moves_left' pos='88:27'/>
+            <EXPLANATION text='c1' pos='88:27'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='90:0'>
             <EVENTMODEL text='a_mov_right' pos='90:16'>
@@ -877,7 +877,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='97:24'/>
-            <EXPLANATION text='a_moves_right' pos='97:27'/>
+            <EXPLANATION text='c1' pos='97:27'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='99:0'>
             <EVENTMODEL text='b_mov_right' pos='99:16'>
@@ -983,7 +983,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='106:24'/>
-            <EXPLANATION text='b_moves_right' pos='106:27'/>
+            <EXPLANATION text='c1' pos='106:27'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='108:0'>
             <EVENTMODEL text='c_mov_right' pos='108:16'>
@@ -1089,7 +1089,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='115:24'/>
-            <EXPLANATION text='c_moves_right' pos='115:27'/>
+            <EXPLANATION text='c1' pos='115:27'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='126:0'>
             <EVENTMODEL text='b_shout_secret_r1' pos='126:16'>
@@ -1478,7 +1478,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='140:18'/>
-            <EXPLANATION text='b_shout_secret_r1' pos='140:21'/>
+            <EXPLANATION text='c1' pos='140:21'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='142:0'>
             <EVENTMODEL text='b_shout_secret_r2' pos='142:16'>
@@ -1867,7 +1867,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='156:18'/>
-            <EXPLANATION text='b_shout_secret_r2' pos='156:21'/>
+            <EXPLANATION text='c1' pos='156:21'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='158:0'>
             <EVENTMODEL text='b_shout_secret_r3' pos='158:16'>
@@ -2256,7 +2256,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='172:18'/>
-            <EXPLANATION text='b_shout_secret_r3' pos='172:21'/>
+            <EXPLANATION text='c1' pos='172:21'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='174:0'>
             <EVENTMODEL text='b_shout_secret_r4' pos='174:16'>
@@ -2645,7 +2645,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='b' pos='188:18'/>
-            <EXPLANATION text='b_shout_secret_r4' pos='188:21'/>
+            <EXPLANATION text='c1' pos='188:21'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='193:0'>
             <EVENTMODEL text='a_shout_secret_r1' pos='193:16'>
@@ -3034,7 +3034,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='207:18'/>
-            <EXPLANATION text='a_shout_secret_r1' pos='207:21'/>
+            <EXPLANATION text='c1' pos='207:21'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='210:0'>
             <EVENTMODEL text='a_shout_secret_r2' pos='210:16'>
@@ -3423,7 +3423,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='224:18'/>
-            <EXPLANATION text='a_shout_secret_r2' pos='224:21'/>
+            <EXPLANATION text='c1' pos='224:21'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='227:0'>
             <EVENTMODEL text='a_shout_secret_r3' pos='227:16'>
@@ -3812,7 +3812,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='241:18'/>
-            <EXPLANATION text='a_shout_secret_r3' pos='241:21'/>
+            <EXPLANATION text='c1' pos='241:21'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='243:0'>
             <EVENTMODEL text='a_shout_secret_r4' pos='243:16'>
@@ -4199,7 +4199,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='a' pos='257:18'/>
-            <EXPLANATION text='a_shout_secret_r4' pos='257:21'/>
+            <EXPLANATION text='c1' pos='257:21'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='261:0'>
             <EVENTMODEL text='c_shout_secret_r1' pos='261:16'>
@@ -4588,7 +4588,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='275:18'/>
-            <EXPLANATION text='c_shout_secret_r1' pos='275:21'/>
+            <EXPLANATION text='c1' pos='275:21'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='277:0'>
             <EVENTMODEL text='c_shout_secret_r2' pos='277:16'>
@@ -4977,7 +4977,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='291:18'/>
-            <EXPLANATION text='c_shout_secret_r2' pos='291:21'/>
+            <EXPLANATION text='c1' pos='291:21'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='293:0'>
             <EVENTMODEL text='c_shout_secret_r3' pos='293:16'>
@@ -5362,7 +5362,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='307:18'/>
-            <EXPLANATION text='c_shout_secret_r3' pos='307:21'/>
+            <EXPLANATION text='c1' pos='307:21'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='309:0'>
             <EVENTMODEL text='c_shout_secret_r4' pos='309:16'>
@@ -5751,7 +5751,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='c' pos='323:18'/>
-            <EXPLANATION text='c_shout_secret_r4' pos='323:21'/>
+            <EXPLANATION text='c1' pos='323:21'/>
         </CAPABILITIES>
     </EVENTMODELS>
     <GOAL pos='327:0'>

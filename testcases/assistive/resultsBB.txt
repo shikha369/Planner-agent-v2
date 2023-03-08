@@ -1,0 +1,1 @@
+	 cost: 4	 Plan found is : [ping_bus_service, inform_not_crowded, take_bus, sip_coffee_nearby]

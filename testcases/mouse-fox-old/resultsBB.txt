@@ -1,0 +1,1 @@
+	 cost: 8	 Plan found is : [flee_m]

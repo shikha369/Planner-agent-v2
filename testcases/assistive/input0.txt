@@ -34,7 +34,7 @@ CAPABILITY = (( take_bus = {
             (v,{-(1,1)})
             }, 
             DES = {1} }), 
-            u, user_believes_bus_not_crowded_and_takes_bus_to_reach_office_ontime),
+            u, c1),
 
 CAPABILITY = (( do-not-take_bus = { 
     EVENTS = { 
@@ -45,35 +45,35 @@ CAPABILITY = (( do-not-take_bus = {
             (v,{-(1,1)})
             }, 
             DES = {1} }), 
-            u, user_believes_bus_crowded_and_doesnot_takes_notontime),
+            u, c1),
 
 CAPABILITY = (( walk = { 
     EVENTS = { 1 = ( PRE =  B[u] (crowded) , POST = {-ontime} ) }, 
     EDGES ={(u,{-(1,1)}),(v,{-(1,1)})}, DES = {1} }), 
-    u, user_doesnot_believe_bus_not_crowded_and_walks_to_office_late),
+    u, c1),
 
 CAPABILITY = (( run_from_near = { 
     EVENTS = { 1 = ( PRE =  B[u] (crowded) AND -hungry AND -far, POST = {ontime} ) }, 
     EDGES ={(u,{-(1,1)}),(v,{-(1,1)})}, DES = {1} }), 
-    u, test),
+    u, c1),
 
 CAPABILITY = (( run_from_far = { 
     EVENTS = { 1 = ( PRE =  B[u] (crowded) AND -hungry AND far, POST = {-ontime} ) }, 
     EDGES ={(u,{-(1,1)}),(v,{-(1,1)})}, DES = {1} }), 
-    u, test),
+    u, c1),
 
 CAPABILITY = (( sip_coffee_nearby = { 
     EVENTS = { 1 = ( PRE = sleepy AND B[u] (shop-near) AND -walking, POST = {-sleepy} ) }, 
     EDGES ={(u,{-(1,1)}),(v,{-(1,1)})}, DES = {1} }), u, 
-    user_is_sleepy_sips_coffee_from_a_nearby),
+    c1),
 
 CAPABILITY = (( sip_coffee_faraway = { 
     EVENTS = { 1 = ( PRE = sleepy AND NOT B[u] (-shop-near), POST = {-sleepy, -ontime, far} ) }, 
-    EDGES ={(u,{-(1,1)}),(v,{-(1,1)})}, DES = {1} }), u, user_is_sleepy_sips_coffee_on_the_way_and_gets_late),
+    EDGES ={(u,{-(1,1)}),(v,{-(1,1)})}, DES = {1} }), u, c1),
 
 CAPABILITY = (( inform_not_crowded = { 
     EVENTS = { 1 = ( PRE = (B[v] (NOT (crowded)) AND B[v] (NOT (B[u] (NOT crowded) OR B[u] (crowded)))) , POST = {nil} )}, 
-    EDGES ={(v,{ -(1,1)}),(u,{ -(1,1)})}, DES = {1} }), v, v_believes_user_uncertain_of_bus_not_being_crowded_it_informs_the_user),
+    EDGES ={(v,{ -(1,1)}),(u,{ -(1,1)})}, DES = {1} }), v, c1),
 
 CAPABILITY = (( ping_bus_service = { 
     EVENTS = { 
@@ -85,7 +85,7 @@ CAPABILITY = (( ping_bus_service = {
         (v,{ -(1,1), -(2,2)})
         }, 
         DES = {1,2} }), 
-        v, v_finds_user_scared_checks_crowded_status),
+        v, c1),
 
 CAPABILITY = (( clock_tick = { 
     EVENTS = { 
@@ -96,7 +96,7 @@ CAPABILITY = (( clock_tick = {
         (v,{ -(1,1)})
         }, 
         DES = {1} }), 
-        v, assistant_does_nothing)
+        v, c1)
 
 }.
 

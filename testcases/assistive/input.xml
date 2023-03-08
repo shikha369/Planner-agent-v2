@@ -117,7 +117,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='u' pos='37:12'/>
-            <EXPLANATION text='user_believes_bus_not_crowded_and_takes_bus_to_reach_office_ontime' pos='37:15'/>
+            <EXPLANATION text='c1' pos='37:15'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='39:0'>
             <EVENTMODEL text='do-not-take_bus' pos='39:16'>
@@ -159,7 +159,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='u' pos='48:12'/>
-            <EXPLANATION text='user_believes_bus_crowded_and_doesnot_takes_notontime' pos='48:15'/>
+            <EXPLANATION text='c1' pos='48:15'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='50:0'>
             <EVENTMODEL text='walk' pos='50:16'>
@@ -195,7 +195,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='u' pos='53:4'/>
-            <EXPLANATION text='user_doesnot_believe_bus_not_crowded_and_walks_to_office_late' pos='53:7'/>
+            <EXPLANATION text='c1' pos='53:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='55:0'>
             <EVENTMODEL text='run_from_near' pos='55:16'>
@@ -237,7 +237,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='u' pos='58:4'/>
-            <EXPLANATION text='test' pos='58:7'/>
+            <EXPLANATION text='c1' pos='58:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='60:0'>
             <EVENTMODEL text='run_from_far' pos='60:16'>
@@ -279,7 +279,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='u' pos='63:4'/>
-            <EXPLANATION text='test' pos='63:7'/>
+            <EXPLANATION text='c1' pos='63:7'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='65:0'>
             <EVENTMODEL text='sip_coffee_nearby' pos='65:16'>
@@ -321,7 +321,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='u' pos='67:54'/>
-            <EXPLANATION text='user_is_sleepy_sips_coffee_from_a_nearby' pos='68:4'/>
+            <EXPLANATION text='c1' pos='68:4'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='70:0'>
             <EVENTMODEL text='sip_coffee_faraway' pos='70:16'>
@@ -364,7 +364,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='u' pos='72:54'/>
-            <EXPLANATION text='user_is_sleepy_sips_coffee_on_the_way_and_gets_late' pos='72:57'/>
+            <EXPLANATION text='c1' pos='72:57'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='74:0'>
             <EVENTMODEL text='inform_not_crowded' pos='74:16'>
@@ -421,7 +421,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='v' pos='76:56'/>
-            <EXPLANATION text='v_believes_user_uncertain_of_bus_not_being_crowded_it_informs_the_user' pos='76:59'/>
+            <EXPLANATION text='c1' pos='76:59'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='78:0'>
             <EVENTMODEL text='ping_bus_service' pos='78:16'>
@@ -519,7 +519,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='v' pos='88:8'/>
-            <EXPLANATION text='v_finds_user_scared_checks_crowded_status' pos='88:11'/>
+            <EXPLANATION text='c1' pos='88:11'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='90:0'>
             <EVENTMODEL text='clock_tick' pos='90:16'>
@@ -552,7 +552,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='v' pos='99:8'/>
-            <EXPLANATION text='assistant_does_nothing' pos='99:11'/>
+            <EXPLANATION text='c1' pos='99:11'/>
         </CAPABILITIES>
     </EVENTMODELS>
     <GOAL pos='103:0'>

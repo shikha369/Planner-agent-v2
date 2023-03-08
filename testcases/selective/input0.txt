@@ -32,7 +32,7 @@ CAPABILITY = (( b_sense_sec = {
         (c,{ -(1,3), -(1,3), -(3,3)})
         }, 
     DES = {1,2} }), 
-    b, b_finds_that_the_secret_is_true_and_for_others_nothing_happened),
+    b, c1),
 
 CAPABILITY = (( a_sense_sec = { 
     EVENTS = { 
@@ -45,7 +45,7 @@ CAPABILITY = (( a_sense_sec = {
         (c,{ -(1,3), -(2,3), -(3,3)})
         }, 
     DES = {1,2} }), 
-    a, a_finds_that_the_secret_is_true_and_for_others_nothing_happened),
+    a, c1),
 
 CAPABILITY = (( c_sense_sec = { 
     EVENTS = { 
@@ -58,7 +58,7 @@ CAPABILITY = (( c_sense_sec = {
         (a,{ -(1,3), -(2,3), -(3,3)})
         }, 
     DES = {1,2} }), 
-    c, c_finds_that_the_secret_is_true_and_for_others_nothing_happened),
+    c, c1),
 
 CAPABILITY = (( a_mov_left = { 
     EVENTS = { 
@@ -67,7 +67,7 @@ CAPABILITY = (( a_mov_left = {
         3 = ( PRE = (ar4) , POST = {ar3, -ar4} ), 
         4 = ( PRE = (ar3) , POST = {ar2, -ar3} )}, 
     EDGES ={(a,{-(1,1),-(2,2),-(3,3),-(4,4)}), (b,{-(1,1),-(2,2),-(3,3),-(4,4)}), (c,{-(1,1),-(2,2),-(3,3),-(4,4)})}, 
-    DES = {1,2,3,4} }), a, a_moves_left),
+    DES = {1,2,3,4} }), a, c1),
 
 CAPABILITY = (( b_mov_left = { 
     EVENTS = { 
@@ -76,7 +76,7 @@ CAPABILITY = (( b_mov_left = {
         3 = ( PRE = (br4) , POST = {br3, -br4} ), 
         4 = ( PRE = (br3) , POST = {br2, -br3} )}, 
     EDGES ={(a,{-(1,1),-(2,2),-(3,3),-(4,4)}), (b,{-(1,1),-(2,2),-(3,3),-(4,4)}), (c,{-(1,1),-(2,2),-(3,3),-(4,4)})}, 
-    DES = {1,2,3,4} }), b, b_moves_left),
+    DES = {1,2,3,4} }), b, c1),
 
 CAPABILITY = (( c_mov_left = { 
     EVENTS = { 
@@ -85,7 +85,7 @@ CAPABILITY = (( c_mov_left = {
         3 = ( PRE = (cr4) , POST = {cr3, -cr4} ), 
         4 = ( PRE = (cr3) , POST = {cr2, -cr3} )}, 
     EDGES ={(a,{-(1,1),-(2,2),-(3,3),-(4,4)}), (b,{-(1,1),-(2,2),-(3,3),-(4,4)}), (c,{-(1,1),-(2,2),-(3,3),-(4,4)})}, 
-    DES = {1,2,3,4} }), c, c_moves_left),
+    DES = {1,2,3,4} }), c, c1),
 
 CAPABILITY = (( a_mov_right = { 
     EVENTS = { 
@@ -94,7 +94,7 @@ CAPABILITY = (( a_mov_right = {
         3 = ( PRE = (ar4) , POST = {ar1, -ar4} ), 
         4 = ( PRE =  (ar1), POST = {ar2, -ar1} )}, 
     EDGES ={(a,{-(1,1),-(2,2),-(3,3),-(4,4)}), (b,{-(1,1),-(2,2),-(3,3),-(4,4)}), (c,{-(1,1),-(2,2),-(3,3),-(4,4)})},
-    DES = {1,2,3,4} }), a, a_moves_right),
+    DES = {1,2,3,4} }), a, c1),
 
 CAPABILITY = (( b_mov_right = { 
     EVENTS = { 
@@ -103,7 +103,7 @@ CAPABILITY = (( b_mov_right = {
         3 = ( PRE = (br4) , POST = {br1, -br4} ), 
         4 = ( PRE =  (br1), POST = {br2, -br1} )}, 
     EDGES ={(a,{-(1,1),-(2,2),-(3,3),-(4,4)}), (b,{-(1,1),-(2,2),-(3,3),-(4,4)}), (c,{-(1,1),-(2,2),-(3,3),-(4,4)})}, 
-    DES = {1,2,3,4} }), b, b_moves_right),
+    DES = {1,2,3,4} }), b, c1),
 
 CAPABILITY = (( c_mov_right = { 
     EVENTS = { 
@@ -112,7 +112,7 @@ CAPABILITY = (( c_mov_right = {
         3 = ( PRE = (cr4) , POST = {cr1, -cr4} ), 
         4 = ( PRE =  (cr1), POST = {cr2, -cr1} )}, 
     EDGES ={(a,{-(1,1),-(2,2),-(3,3),-(4,4)}), (b,{-(1,1),-(2,2),-(3,3),-(4,4)}), (c,{-(1,1),-(2,2),-(3,3),-(4,4)})}, 
-    DES = {1,2,3,4} }), c, c_moves_right),
+    DES = {1,2,3,4} }), c, c1),
 
 // shout actions below
 // event 1,2 says both a and c would get to know, no skip
@@ -137,7 +137,7 @@ EDGES ={
 (a,{-(1,2), -(2,2), -(3,4), -(4,4), -(6,7), -(5,7), -(7,7)}), 
 (c,{-(1,2), -(2,2), -(3,7), -(4,7), -(5,6), -(6,6), -(7,7)})
 }, 
-DES = {1,3,5} }), b, b_shout_secret_r1),
+DES = {1,3,5} }), b, c1),
 
 CAPABILITY = (( b_shout_secret_r2 = { EVENTS = {
 1 = ( PRE = (secret AND B [b] (secret) AND B[b] (NOT B[a] (secret) AND NOT B[a] (-secret)) AND B[b] (NOT B[c] (secret) AND NOT B[c] (-secret)) AND br2 AND (ar1 OR ar1 OR ar3) AND (cr1 OR cr2 OR cr3)), POST = {nil} ), 
@@ -153,7 +153,7 @@ EDGES ={
 (a,{-(1,2), -(2,2), -(3,4), -(4,4), -(6,7), -(5,7), -(7,7)}), 
 (c,{-(1,2), -(2,2), -(3,7), -(4,7), -(5,6), -(6,6), -(7,7)})
 }, 
-DES = {1,3,5} }), b, b_shout_secret_r2),
+DES = {1,3,5} }), b, c1),
 
 CAPABILITY = (( b_shout_secret_r3 = { EVENTS = {
 1 = ( PRE = (secret AND B [b] (secret) AND B[b] (NOT B[a] (secret) AND NOT B[a] (-secret)) AND B[b] (NOT B[c] (secret) AND NOT B[c] (-secret)) AND br3 AND (ar2 OR ar3 OR ar4) AND (cr2 OR cr3 OR cr4)), POST = {nil} ), 
@@ -169,7 +169,7 @@ EDGES ={
 (a,{-(1,2), -(2,2), -(3,4), -(4,4), -(6,7), -(5,7), -(7,7)}), 
 (c,{-(1,2), -(2,2), -(3,7), -(4,7), -(5,6), -(6,6), -(7,7)})
 }, 
-DES = {1,3,5} }), b, b_shout_secret_r3),
+DES = {1,3,5} }), b, c1),
 
 CAPABILITY = (( b_shout_secret_r4 = { EVENTS = {
 1 = ( PRE = (secret AND B [b] (secret) AND B[b] (NOT B[a] (secret) AND NOT B[a] (-secret)) AND B[b] (NOT B[c] (secret) AND NOT B[c] (-secret)) AND br4 AND (ar3 OR ar4 OR ar1) AND (cr3 OR cr4 OR cr1)), POST = {nil} ), 
@@ -185,7 +185,7 @@ EDGES ={
 (a,{-(1,2), -(2,2), -(3,4), -(4,4), -(6,7), -(5,7), -(7,7)}), 
 (c,{-(1,2), -(2,2), -(3,7), -(4,7), -(5,6), -(6,6), -(7,7)})
 }, 
-DES = {1,3,5} }), b, b_shout_secret_r4),
+DES = {1,3,5} }), b, c1),
 
 
 //shout_a actions - changes relations also
@@ -204,7 +204,7 @@ EDGES ={
 (b,{-(1,2), -(2,2), -(3,4), -(4,4), -(6,7), -(5,7), -(7,7)}), 
 (c,{-(1,2), -(2,2), -(3,7), -(4,7), -(5,6), -(6,6), -(7,7)})
 }, 
-DES = {1,3,5} }), a, a_shout_secret_r1),
+DES = {1,3,5} }), a, c1),
 
 
 CAPABILITY = (( a_shout_secret_r2 = { EVENTS = {
@@ -221,7 +221,7 @@ EDGES = {
 (b,{-(1,2), -(2,2), -(3,4), -(4,4), -(6,7), -(5,7), -(7,7)}), 
 (c,{-(1,2), -(2,2), -(3,7), -(4,7), -(5,6), -(6,6), -(7,7)})
 }, 
-DES = {1,3,5} }), a, a_shout_secret_r2),
+DES = {1,3,5} }), a, c1),
 
 
 CAPABILITY = (( a_shout_secret_r3 = { EVENTS = {
@@ -238,7 +238,7 @@ EDGES ={
 (b,{-(1,2), -(2,2), -(3,4), -(4,4), -(6,7), -(5,7), -(7,7)}), 
 (c,{-(1,2), -(2,2), -(3,7), -(4,7), -(5,6), -(6,6), -(7,7)})
 }, 
-DES = {1,3,5} }), a, a_shout_secret_r3),
+DES = {1,3,5} }), a, c1),
 
 CAPABILITY = (( a_shout_secret_r4 = { EVENTS = {
 1 = ( PRE = (secret AND B [a] (secret) AND B[a] (NOT B[b] (secret) AND NOT B[b] (-secret)) AND B[a] (NOT B[c] (secret) AND NOT B[c] (-secret)) AND ar4 AND (br3 OR br4 OR br1) AND (cr3 OR cr4 OR cr1)), POST = {nil} ), 
@@ -254,7 +254,7 @@ EDGES ={
 (b,{-(1,2), -(2,2), -(3,4), -(4,4), -(6,7), -(5,7), -(7,7)}), 
 (c,{-(1,2), -(2,2), -(3,7), -(4,7), -(5,6), -(6,6), -(7,7)})
 },
-DES = {1,3,5} }), a, a_shout_secret_r4),
+DES = {1,3,5} }), a, c1),
 
 // shout_c actions
 
@@ -272,7 +272,7 @@ EDGES ={
 (a,{-(1,2), -(2,2), -(3,4), -(4,4), -(6,7), -(5,7), -(7,7)}), 
 (b,{-(1,2), -(2,2), -(3,7), -(4,7), -(5,6), -(6,6), -(7,7)})
 }, 
-DES = {1,3,5} }), c, c_shout_secret_r1),
+DES = {1,3,5} }), c, c1),
 
 CAPABILITY = (( c_shout_secret_r2 = { EVENTS = {
 1 = ( PRE = (secret AND B [c] (secret) AND B[c] (NOT B[a] (secret) AND NOT B[a] (-secret)) AND B[c] (NOT B[b] (secret) AND NOT B[b] (-secret)) AND cr2 AND (ar1 OR ar2 OR ar3) AND (br1 OR br2 OR br3)), POST = {nil} ), 
@@ -288,7 +288,7 @@ EDGES = {
 (a,{-(1,2), -(2,2), -(3,4), -(4,4), -(6,7), -(5,7), -(7,7)}), 
 (b,{-(1,2), -(2,2), -(3,7), -(4,7), -(5,6), -(6,6), -(7,7)})
 }, 
-DES = {1,3,5} }), c, c_shout_secret_r2),
+DES = {1,3,5} }), c, c1),
 
 CAPABILITY = (( c_shout_secret_r3 = { EVENTS = {
 1 = ( PRE = (secret AND B [c] (secret) AND B[c] (NOT B[a] (secret) AND NOT B[a] (-secret)) AND B[c] (NOT B[b] (secret) AND NOT B[b] (-secret)) AND cr3 AND (ar2 OR ar3 OR ar4) AND (br2 OR br3 OR br4)), POST = {nil} ), 
@@ -304,7 +304,7 @@ EDGES = {
 (a,{-(1,2), -(2,2), -(3,4), -(4,4), -(6,7), -(5,7), -(7,7)}), 
 (b,{-(1,2), -(2,2), -(3,7), -(4,7), -(5,6), -(6,6), -(7,7)})
 }, 
-DES = {1,3,5} }), c, c_shout_secret_r3),
+DES = {1,3,5} }), c, c1),
 
 CAPABILITY = (( c_shout_secret_r4 = { EVENTS = {
 1 = ( PRE = (secret AND B [c] (secret) AND B[c] (NOT B[a] (secret) AND NOT B[a] (-secret)) AND B[c] (NOT B[b] (secret) AND NOT B[b] (-secret)) AND cr4 AND (ar3 OR ar4 OR ar1) AND (br3 OR br4 OR br1)), POST = {nil} ), 
@@ -320,7 +320,7 @@ EDGES = {
 (a,{-(1,2), -(2,2), -(3,4), -(4,4), -(6,7), -(5,7), -(7,7)}), 
 (b,{-(1,2), -(2,2), -(3,7), -(4,7), -(5,6), -(6,6), -(7,7)})
 }, 
-DES = {1,3,5} }), c, c_shout_secret_r4)
+DES = {1,3,5} }), c, c1)
 }.
 
 

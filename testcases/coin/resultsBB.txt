@@ -1,0 +1,1 @@
+	 cost: 3	 Plan found is : [open_a_b_c, distract_a_b, peek_a_c]
