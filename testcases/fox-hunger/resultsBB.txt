@@ -1,1 +1,1 @@
-	 cost: 16	 Plan found is : [f_arrives, f_eats_m]
+	 cost: 5	 Plan found is : [f_arrives__m, f_eats_m]

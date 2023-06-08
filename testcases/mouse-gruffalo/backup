@@ -1,4 +1,4 @@
-//PROPS : {at_m, at_g, at_f, at_o th_m, th_f, th_g, th_o, friends_m_g, friends_f_g, friends_m_f, friends_m_o, friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, -valid1, -sc_f, -sc_o} .
+PROPS : {at_m, at_g, at_f, at_o th_m, th_f, th_g, th_o, friends_m_g, friends_f_g, friends_m_f, friends_m_o, friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, valid, sc_f, sc_o} .
 
 //replacing alive_i atoms with POSSIBLE [i] (TRUE) statements. 
 
@@ -9,8 +9,8 @@ AGENTS : {m, f, o, g}.
 
 MODEL : 
 { NODES = {
-(1,{at_m, at_g, -at_f, -at_o, th_m, -th_f, -th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, -valid, -sc_f, -sc_o, -hungry_f, hungry_g, -hungry_o}),
-(2,{at_m, at_g, -at_f, -at_o, -th_m, -th_f, -th_g, -th_o, friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, -valid, -sc_f, -sc_o, -hungry_f, hungry_g, -hungry_o})
+(1,{at_m, at_g, -at_f, -at_o, th_m, -th_f, -th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, -valid1, -sc_f, -sc_o, -hungry_f, hungry_g, -hungry_o}),
+(2,{at_m, at_g, -at_f, -at_o, -th_m, -th_f, -th_g, -th_o, friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, -valid1, -sc_f, -sc_o, -hungry_f, hungry_g, -hungry_o})
 },  
 EDGES = {
 (m,{-(1,1), -(2,2)}),
@@ -20,6 +20,8 @@ EDGES = {
 },
 DES = {1}
 }.
+
+//action description starts here
 
 ACTIONS : {
 
@@ -39,7 +41,7 @@ m, c25),
 CAPABILITY = (( flee_f = { 
 
 EVENTS = { 
-1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_f, sc_f} )
+1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_f,sc_f} )
 },
  
 EDGES = {
@@ -594,15 +596,15 @@ m, c2),
 CAPABILITY = (( m_lie_inf_app_to_g = { 
 
 EVENTS = { 
-1 = ( PRE = -at_f AND -at_o AND at_g AND POSSIBLE [g] (TRUE) AND at_m AND POSSIBLE [m] (TRUE) AND -valid AND BELIEVES [m] (BELIEVES [g] (-valid)), POST = {nil} ),
-2 = ( PRE = (-valid), POST = {valid} )
+1 = ( PRE = -at_f AND -at_o AND at_g AND POSSIBLE [g] (TRUE) AND at_m AND POSSIBLE [m] (TRUE) AND delay , POST = {-delay} )
+//2 = ( PRE = (TRUE), POST = {nil} )
 },
  
 EDGES = {
-(m,{-(1,1),-(2,2)}),
-(g,{-(1,2),-(2,2)}),
-(f,{-(1,1),-(2,2)}),
-(o,{-(1,1),-(2,2)})
+(m,{-(1,1)}),
+(g,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)})
 }
 ,
 
@@ -636,21 +638,21 @@ DES = {1,2}}),
 
 EVENTS = { 
 
-//1 = ( PRE = valid, POST = {nil} ),
-//2 = ( PRE = at_g AND at_m AND sc_f AND sc_o ), POST = {th_g} ),
-//3 = ( PRE = (NOT (at_m) OR NOT (at_g) OR NOT (sc_f) OR NOT (sc_o)) ), POST = {-th_g} )
-1 = ( PRE = -valid AND sc_f AND sc_o, POST = {-th_g} ),
-2 = ( PRE = valid AND sc_f AND sc_o, POST = {th_g} )
+1 = ( PRE = -delay, POST = {nil} ),
+2 = ( PRE = at_g AND at_m AND sc_f AND sc_o ), POST = {th_g} ),
+3 = ( PRE = (NOT (at_m) OR NOT (at_g) OR NOT (sc_f) OR NOT (sc_o)) ), POST = {-th_g} )
+//1 = ( PRE = fake AND at_g AND at_m AND th_f AND th_o ), POST = {th_g} ),
+//2 = ( PRE = (NOT fake OR (at_m) OR NOT (at_g) OR NOT (th_f) OR NOT (th_o)) ), POST = {-th_g} )
 },
 EDGES = {
-(f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
-(m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
-(g,{-(1,1), -(1,2), -(2,1), -(2,2)}),
-(o,{-(1,1), -(1,2), -(2,1), -(2,2)})
+(f,{-(1,1), -(2,2), -(3,3)}),
+(m,{-(1,1), -(2,2), -(3,3)}),
+(g,{-(1,2), -(1,3), -(2,2), -(2,3), -(3,2), -(3,3)}),
+(o,{-(1,1), -(2,2), -(3,3)})
 }
 ,
 
-DES = {1,2}}), 
+DES = {1}}), 
 
 ( infer_th_f = { 
 

@@ -45,6 +45,7 @@ public class Planner {
         String testcase_dir = input.nextLine();
         BuildXML.build(testcase_dir,0);
         BuildProblem.build(testcase_dir);
+        System.out.println(sequence.size() + inferencing_actions.size());
         String logs = "Domain size:" + (sequence.size() + inferencing_actions.size())+ "\n";
         boolean firstnode = true;
         boolean plan_found = false;
@@ -78,6 +79,11 @@ public class Planner {
                 Planner.models.clear();
                 Planner.sequence.clear();
                 Planner.inferencing_actions.clear();
+                //new clears
+                Planner.action_to_agent.clear();
+                Planner.action_to_cost.clear();
+                Planner.fluentlist.clear();
+                Planner.agentlist.clear();
                 
                 BuildProblem.build(testcase_dir); //resets init too
                 logs = "Domain size:" + (sequence.size() + inferencing_actions.size())+ "\n";

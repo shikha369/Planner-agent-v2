@@ -1,1 +1,1 @@
-	 cost: 16	 Plan found is : [m_upgrades_m_dcv_g, flee_g]
+	 cost: 16	 Plan found is : [m_lie_inf_app_to_g, wait_moon, flee_g]

@@ -1,0 +1,1 @@
+	 cost: 7	 Plan found is : [dcv_add_g_by_m_for_f, m_lie_ann_friends_mg_to_f_oblivious_go, flee_f]

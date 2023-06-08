@@ -1,4 +1,4 @@
-PROPS : {at_m, at_g, at_f, at_o, th_m, th_f, th_g, th_o, friends_m_g, friends_f_g, friends_m_f, friends_m_o, friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o}.
+//PROPS : {at_m, at_g, at_f, at_o, th_m, th_f, th_g, th_o, friends_m_g, friends_f_g, friends_m_f, friends_m_o, friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, moon, big, bad, valid}.
 
 //replacing alive_i atoms with POSSIBLE [i] (TRUE) statements. 
 
@@ -11,8 +11,8 @@ AGENTS : {m, f, o, g}.
 
 MODEL : 
 { NODES = {
-(1,{at_m, at_g, -at_f, -at_o, th_m, -th_f, -th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, -hungry_f, hungry_g, -hungry_o}),
-(2,{at_m, at_g, -at_f, -at_o, -th_m, -th_f, th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, -predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, -hungry_f, hungry_g, -hungry_o})
+(1,{at_m, at_g, -at_f, -at_o, th_m, -th_f, -th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, -hungry_f, hungry_g, -hungry_o, -moon, -big, -bad, -valid}),
+(2,{at_m, at_g, -at_f, -at_o, -th_m, -th_f, th_g, -th_o, -friends_m_g, -friends_f_g, -friends_m_f, -friends_m_o, -friends_o_g, -predator_g_m, predator_g_f, predator_f_m, predator_o_m, predator_g_o, -hungry_f, hungry_g, -hungry_o, -moon, -big, -bad, -valid})
 },  
 EDGES = {
 (m,{-(1,1), -(2,2)}),
@@ -53,9 +53,25 @@ EDGES = {
 (g,{-(1,1)})
 }
 ,
-
 DES = {1}}), 
 f, c8),
+
+CAPABILITY = (( wait_moon = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND -moon AND BELIEVES[m] (BELIEVES [g] (valid)), POST = {moon, big, bad} )
+},
+ 
+EDGES = {
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+}
+,
+
+DES = {1}}), 
+m, c3),
 
 CAPABILITY = (( flee_g = { 
 
@@ -559,58 +575,24 @@ EDGES = {
 DES = {1}}), 
 m, c8),
 
-
-// m upgrades iteself for g's child to deceive g's child
-// consequences: 
-// m doesn't get deceived but g gets decieved 
-// others oblivious
-// deception about falsifying predator_g_m
-
-CAPABILITY = (( m_upgrades_m_dcv_g = { 
+CAPABILITY = (( m_lie_inf_app_to_g = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND predator_g_m, POST = {nil} ),
-2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND predator_g_m, POST = {-predator_g_m} ),
-3 = ( PRE = TRUE, POST = {nil} )
+1 = ( PRE = at_g AND POSSIBLE [g] (TRUE) AND at_m AND POSSIBLE [m] (TRUE) AND -valid AND BELIEVES [m] (BELIEVES [g] (-valid)), POST = {nil} ),
+2 = ( PRE = (-valid), POST = {valid} )
 },
  
 EDGES = {
-(m,{-(1,1),-(2,2),-(3,3)}),
-(g,{-(1,2),-(2,2),-(3,3)}),
-(o,{-(1,3),-(2,3),-(3,3)}),
-(f,{-(1,3),-(2,3),-(3,3)})
+(m,{-(1,1),-(2,2)}),
+(g,{-(1,2),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)})
 }
 ,
 
 DES = {1}}), 
-m, c8),
+m, c5)
 
-//self-deception: g deceives itself (but is it deception really...?), m sees it, nothing else happens for others
-// g downgrades m for iteself
-// consequences: 
-// g gets decieved and m sees it
-// others oblivious
-// event 2 is all about ensuring predator_g_m
-//to-do: flee and threat conditions not that negated predator means prey
-
-CAPABILITY = (( g_downgrades_m_dcv_g = { 
-
-EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND -predator_g_m, POST = {nil} ),
-2 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND -predator_g_m, POST = {predator_g_m} ),
-3 = ( PRE = TRUE, POST = {nil} )
-},
- 
-EDGES = {
-(m,{-(1,1),-(2,2),-(3,3)}),
-(g,{-(1,2),-(2,2),-(3,3)}),
-(o,{-(1,3),-(2,3),-(3,3)}),
-(f,{-(1,3),-(2,3),-(3,3)})
-}
-,
-
-DES = {1}}), 
-m, c8)
 }.
 
 
@@ -638,19 +620,21 @@ DES = {1,2}}),
 
 EVENTS = { 
 
-1 = ( PRE = TRUE, POST = {nil} ),
-2 = ( PRE = at_g AND at_m AND -predator_g_m), POST = {th_g} ),
-3 = ( PRE = (NOT (at_m) OR NOT (at_g) OR predator_g_m) ), POST = {-th_g} )
+//1 = ( PRE = valid, POST = {nil} ),
+//2 = ( PRE = at_g AND at_m AND sc_f AND sc_o ), POST = {th_g} ),
+//3 = ( PRE = (NOT (at_m) OR NOT (at_g) OR NOT (sc_f) OR NOT (sc_o)) ), POST = {-th_g} )
+1 = ( PRE = -valid AND moon AND big AND bad, POST = {-th_g} ),
+2 = ( PRE = valid AND moon AND big AND bad, POST = {th_g} )
 },
 EDGES = {
-(f,{-(1,1), -(2,2), -(3,3)}),
-(m,{-(1,1), -(2,2), -(3,3)}),
-(g,{-(1,2), -(1,3), -(2,2), -(2,3), -(3,2), -(3,3)}),
-(o,{-(1,1), -(2,2), -(3,3)})
+(f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(g,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(o,{-(1,1), -(1,2), -(2,1), -(2,2)})
 }
 ,
 
-DES = {1}}), 
+DES = {1,2}}),  
 
 ( infer_th_f = { 
 
@@ -687,7 +671,7 @@ DES = {1,2}})
 
 //GOAL : BELIEVES [m] (-th_m  AND -th_f AND BELIEVES [f] (th_f)).
 //GOAL : BELIEVES [m] (-th_m) AND BELIEVES [f] (-th_f) AND BELIEVES [f] (at_g) AND BELIEVES [m] (-at_g).
-GOAL : at_m AND -th_m AND BELIEVES [g] (-th_g).
+GOAL : BELIEVES [m] (-th_m).
 //GOAL : BELIEVES [m] (-th_m AND -th_f) AND BELIEVES [f] (-th_m AND -th_f).
 
 PLANNER : {m} .

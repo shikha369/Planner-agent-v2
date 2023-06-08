@@ -67,7 +67,7 @@ public class BranchAndBoundSearch {
         
         // Hyper-parameters below
 
-        int maxLevel = 7;
+        int maxLevel = 8;
         //String canEditLogs = "Y";
 
 
@@ -158,7 +158,8 @@ public class BranchAndBoundSearch {
                 }
             }
         }
-            firstnode = false;
+            
+        firstnode = false;
         }
         
         /* dump the plans and their costs*/
