@@ -1,1 +1,1 @@
-	 cost: 22	 Plan found is : [m_lie_inf_app_to_g, m_takes_g_to_f, flee_f, m_takes_g_to_o, flee_o, flee_g]
+	 cost: 19	 Plan found is : [f_arrives__m_g, f_flee__m_g, o_arrives__m_g, o_flee__m_g, g_flee__m]

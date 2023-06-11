@@ -1,1 +1,1 @@
-	 cost: 16	 Plan found is : [m_lie_inf_app_to_g, wait_moon, flee_g]
+	 cost: 8	 Plan found is : [fake-create_s_by_m_for__c__all_at, c_flee__m]

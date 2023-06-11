@@ -1,1 +1,1 @@
-	 cost: 7	 Plan found is : [fake-create_g_by_m_for__f__all_at, f_flee__m]
+	 cost: 8	 Plan found is : [fake-create_g_by_m_for__f__all_at, f_flee__m]

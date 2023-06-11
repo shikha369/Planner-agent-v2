@@ -496,9 +496,9 @@ for(String predator : agents) {
 public static void main(String[] args){
         
         agents.add("m"); arrivesCost.put("m", 25); fleeCost.put("m", 25); leavesCost.put("m", 25); eatsCost.put("m", 20); 
-        agents.add("f"); arrivesCost.put("f", 3);  fleeCost.put("f", 5);  leavesCost.put("f", 3);  eatsCost.put("f", 2);
-        agents.add("o"); arrivesCost.put("o", 3);  fleeCost.put("o", 5);  leavesCost.put("o", 3);  eatsCost.put("o", 2);
-        agents.add("g"); arrivesCost.put("g", 2);  fleeCost.put("g", 3);  leavesCost.put("g", 2);  eatsCost.put("g", 1);
+        agents.add("g"); arrivesCost.put("g", 3);  fleeCost.put("g", 5);  leavesCost.put("g", 3);  eatsCost.put("g", 2);
+        agents.add("c"); arrivesCost.put("c", 3);  fleeCost.put("c", 5);  leavesCost.put("c", 3);  eatsCost.put("c", 2);
+        agents.add("s"); arrivesCost.put("s", 2);  fleeCost.put("s", 3);  leavesCost.put("s", 2);  eatsCost.put("s", 1);
         //agents.add("c");  arrivesCost.put("c", 3); fleeCost.put("c", 2); leavesCost.put("c", 3);
         //agents.add("M");  arrivesCost.put("M", 1); fleeCost.put("M", 1); leavesCost.put("M", 1);
 

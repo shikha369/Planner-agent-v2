@@ -142,7 +142,7 @@ SUMEDGES = {
 }
 ,
 DES = {1}}), 
-m, c2),
+m, c3),
 
 CAPABILITY = (( fake-create_g_by_m_for__f__all_at = { 
 
@@ -165,7 +165,7 @@ SUMEDGES = {
 }
 ,
 DES = {1}}), 
-m, c2)
+m, c3)
 
 }.
 

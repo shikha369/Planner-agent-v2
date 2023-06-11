@@ -756,7 +756,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='145:0'/>
-            <EXPLANATION text='c2' pos='145:3'/>
+            <EXPLANATION text='c3' pos='145:3'/>
         </CAPABILITIES>
         <CAPABILITIES text='CAPABILITY' pos='147:0'>
             <EVENTMODEL text='fake-create_g_by_m_for__f__all_at' pos='147:16'>
@@ -913,7 +913,7 @@
                 </DES>
             </EVENTMODEL>
             <NAME text='m' pos='168:0'/>
-            <EXPLANATION text='c2' pos='168:3'/>
+            <EXPLANATION text='c3' pos='168:3'/>
         </CAPABILITIES>
     </EVENTMODELS>
     <IEVENTMODELS text='IACTIONS' pos='176:0'>
