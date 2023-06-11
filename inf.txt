@@ -1,0 +1,70 @@
+
+IACTIONS : {
+
+( infer_th_m = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND ((at_f AND POSSIBLE [f] (TRUE) AND predator_f_m AND -friends_m_f) OR (at_o AND POSSIBLE [o] (TRUE) AND predator_o_m AND -friends_m_o) OR (at_g AND POSSIBLE [g] (TRUE) AND predator_g_m AND -friends_m_g)), POST = {th_m} ),
+2 = ( PRE = POSSIBLE [m] (TRUE) AND NOT(at_m AND at_f AND POSSIBLE [f] (TRUE) AND predator_f_m AND -friends_m_f) AND NOT (at_o AND POSSIBLE [o] (TRUE) AND predator_o_m AND -friends_m_o) AND NOT (at_g AND POSSIBLE [g] (TRUE) AND predator_g_m AND -friends_m_g), POST = {-th_m} )
+},
+EDGES = {
+(f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(o,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(g,{-(1,1), -(1,2), -(2,1), -(2,2)})
+}
+,
+
+DES = {1,2}}), 
+
+( infer_th_o = { 
+
+EVENTS = { 
+1 = ( PRE = at_o AND POSSIBLE [o] (TRUE) AND ((at_f AND POSSIBLE [f] (TRUE) AND predator_f_o AND -friends_f_o) OR (at_m AND POSSIBLE [m] (TRUE) AND predator_m_o AND -friends_m_o) OR (at_g AND POSSIBLE [g] (TRUE) AND predator_g_o AND -friends_o_g)), POST = {th_o} ),
+2 = ( PRE = POSSIBLE [o] (TRUE) AND NOT(at_o AND at_f AND POSSIBLE [f] (TRUE) AND predator_f_o AND -friends_f_o) AND NOT (at_m AND POSSIBLE [m] (TRUE) AND predator_m_o AND -friends_m_o) AND NOT (at_g AND POSSIBLE [g] (TRUE) AND predator_g_o AND -friends_o_g), POST = {-th_o} )
+},
+EDGES = {
+(f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(o,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(g,{-(1,1), -(1,2), -(2,1), -(2,2)})
+}
+,
+
+DES = {1,2}}), 
+
+// epistemic ramification only
+
+( infer_th_g = { 
+
+EVENTS = { 
+1 = ( PRE = at_g AND POSSIBLE [g] (TRUE) AND at_m AND POSSIBLE [m] (TRUE) AND seen_fled_g_f_m AND seen_fled_g_o_m AND POSSIBLE [f] (TRUE) AND POSSIBLE [o] (TRUE), POST = {-th_g} ),
+2 = ( PRE = (TRUE), POST = {th_g} )
+},
+EDGES = {
+(f,{-(1,1), -(2,2)}),
+(m,{-(1,1), -(2,2)}),
+(o,{-(1,1), -(2,2)}),
+(g,{-(1,2), -(2,2)})
+}
+,
+
+DES = {1}}),
+
+( infer_th_f = { 
+
+EVENTS = { 
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE) AND ((at_o AND POSSIBLE [o] (TRUE) AND predator_o_f AND -friends_f_o) OR (at_m AND POSSIBLE [m] (TRUE) AND predator_m_f AND -friends_m_f) OR (at_g AND POSSIBLE [g] (TRUE) AND predator_g_f AND -friends_f_g)), POST = {th_f} ),
+2 = ( PRE = POSSIBLE [f] (TRUE) AND NOT(at_f AND at_o AND POSSIBLE [o] (TRUE) AND predator_o_f AND -friends_f_o) AND NOT (at_m AND POSSIBLE [m] (TRUE) AND predator_m_f AND -friends_m_f) AND NOT (at_g AND POSSIBLE [g] (TRUE) AND predator_g_f AND -friends_f_g), POST = {-th_f} )
+},
+EDGES = {
+(f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(o,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(g,{-(1,1), -(1,2), -(2,1), -(2,2)})
+}
+,
+
+DES = {1,2}})
+
+}.

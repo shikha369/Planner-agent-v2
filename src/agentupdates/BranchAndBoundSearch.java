@@ -67,7 +67,7 @@ public class BranchAndBoundSearch {
         
         // Hyper-parameters below
 
-        int maxLevel = 8;
+        int maxLevel = 6;
         //String canEditLogs = "Y";
 
 

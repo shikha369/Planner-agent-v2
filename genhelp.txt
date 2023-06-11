@@ -1,0 +1,1459 @@
+CAPABILITY = (( m_arrives__f_o_g = { 
+EVENTS = { 
+1 = ( PRE = -at_m AND POSSIBLE [m] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {at_m}) 
+ }, 
+EDGES = { 
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_arrives__f = { 
+EVENTS = { 
+1 = ( PRE = -at_m AND POSSIBLE [m] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE), POST = {at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_arrives__f_o = { 
+EVENTS = { 
+1 = ( PRE = -at_m AND POSSIBLE [m] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_arrives__f_o_g = { 
+EVENTS = { 
+1 = ( PRE = -at_m AND POSSIBLE [m] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_arrives__o = { 
+EVENTS = { 
+1 = ( PRE = -at_m AND POSSIBLE [m] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE), POST = {at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_arrives__o_g = { 
+EVENTS = { 
+1 = ( PRE = -at_m AND POSSIBLE [m] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_arrives__g = { 
+EVENTS = { 
+1 = ( PRE = -at_m AND POSSIBLE [m] (TRUE)  AND at_g AND POSSIBLE [g] (TRUE), POST = {at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_arrives__ = { 
+EVENTS = { 
+1 = ( PRE = -at_m AND POSSIBLE [m] (TRUE) , POST = {at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),CAPABILITY = (( f_arrives__m_o_g = { 
+EVENTS = { 
+1 = ( PRE = -at_f AND POSSIBLE [f] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {at_f}) 
+ }, 
+EDGES = { 
+(f,{-(1,1)}),
+(m,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_arrives__m = { 
+EVENTS = { 
+1 = ( PRE = -at_f AND POSSIBLE [f] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE), POST = {at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_arrives__m_o = { 
+EVENTS = { 
+1 = ( PRE = -at_f AND POSSIBLE [f] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_arrives__m_o_g = { 
+EVENTS = { 
+1 = ( PRE = -at_f AND POSSIBLE [f] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_arrives__o = { 
+EVENTS = { 
+1 = ( PRE = -at_f AND POSSIBLE [f] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE), POST = {at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_arrives__o_g = { 
+EVENTS = { 
+1 = ( PRE = -at_f AND POSSIBLE [f] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_arrives__g = { 
+EVENTS = { 
+1 = ( PRE = -at_f AND POSSIBLE [f] (TRUE)  AND at_g AND POSSIBLE [g] (TRUE), POST = {at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_arrives__ = { 
+EVENTS = { 
+1 = ( PRE = -at_f AND POSSIBLE [f] (TRUE) , POST = {at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c3),CAPABILITY = (( o_arrives__m_f_g = { 
+EVENTS = { 
+1 = ( PRE = -at_o AND POSSIBLE [o] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {at_o}) 
+ }, 
+EDGES = { 
+(o,{-(1,1)}),
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(g,{-(1,1)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_arrives__m = { 
+EVENTS = { 
+1 = ( PRE = -at_o AND POSSIBLE [o] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE), POST = {at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_arrives__m_f = { 
+EVENTS = { 
+1 = ( PRE = -at_o AND POSSIBLE [o] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE), POST = {at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_arrives__m_f_g = { 
+EVENTS = { 
+1 = ( PRE = -at_o AND POSSIBLE [o] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_arrives__f = { 
+EVENTS = { 
+1 = ( PRE = -at_o AND POSSIBLE [o] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE), POST = {at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_arrives__f_g = { 
+EVENTS = { 
+1 = ( PRE = -at_o AND POSSIBLE [o] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_arrives__g = { 
+EVENTS = { 
+1 = ( PRE = -at_o AND POSSIBLE [o] (TRUE)  AND at_g AND POSSIBLE [g] (TRUE), POST = {at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(f,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_arrives__ = { 
+EVENTS = { 
+1 = ( PRE = -at_o AND POSSIBLE [o] (TRUE) , POST = {at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c3),CAPABILITY = (( g_arrives__m_f_o = { 
+EVENTS = { 
+1 = ( PRE = -at_g AND POSSIBLE [g] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {at_g}) 
+ }, 
+EDGES = { 
+(g,{-(1,1)}),
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_arrives__m = { 
+EVENTS = { 
+1 = ( PRE = -at_g AND POSSIBLE [g] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE), POST = {at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_arrives__m_f = { 
+EVENTS = { 
+1 = ( PRE = -at_g AND POSSIBLE [g] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE), POST = {at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_arrives__m_f_o = { 
+EVENTS = { 
+1 = ( PRE = -at_g AND POSSIBLE [g] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_arrives__f = { 
+EVENTS = { 
+1 = ( PRE = -at_g AND POSSIBLE [g] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE), POST = {at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_arrives__f_o = { 
+EVENTS = { 
+1 = ( PRE = -at_g AND POSSIBLE [g] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_arrives__o = { 
+EVENTS = { 
+1 = ( PRE = -at_g AND POSSIBLE [g] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE), POST = {at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(f,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_arrives__ = { 
+EVENTS = { 
+1 = ( PRE = -at_g AND POSSIBLE [g] (TRUE) , POST = {at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c2),CAPABILITY = (( m_flee__f_o_g = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [m] (th_m)) AND at_m AND POSSIBLE [m] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_m}) 
+ }, 
+EDGES = { 
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_flee__f = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [m] (th_m)) AND at_m AND POSSIBLE [m] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_flee__f_o = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [m] (th_m)) AND at_m AND POSSIBLE [m] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_flee__f_o_g = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [m] (th_m)) AND at_m AND POSSIBLE [m] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_flee__o = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [m] (th_m)) AND at_m AND POSSIBLE [m] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_flee__o_g = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [m] (th_m)) AND at_m AND POSSIBLE [m] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_flee__g = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [m] (th_m)) AND at_m AND POSSIBLE [m] (TRUE)  AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_flee__ = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [m] (th_m)) AND at_m AND POSSIBLE [m] (TRUE) , POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),CAPABILITY = (( f_flee__m_o_g = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_f}) 
+ }, 
+EDGES = { 
+(f,{-(1,1)}),
+(m,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+},
+DES = {1}}), 
+f, c5),
+CAPABILITY = (( f_flee__m = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE), POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c5),
+CAPABILITY = (( f_flee__m_o = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c5),
+CAPABILITY = (( f_flee__m_o_g = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)})
+},
+DES = {1}}), 
+f, c5),
+CAPABILITY = (( f_flee__o = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c5),
+CAPABILITY = (( f_flee__o_g = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c5),
+CAPABILITY = (( f_flee__g = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE)  AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c5),
+CAPABILITY = (( f_flee__ = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE) , POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c5),CAPABILITY = (( o_flee__m_f_g = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [o] (th_o)) AND at_o AND POSSIBLE [o] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_o}) 
+ }, 
+EDGES = { 
+(o,{-(1,1)}),
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(g,{-(1,1)})
+},
+DES = {1}}), 
+o, c5),
+CAPABILITY = (( o_flee__m = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [o] (th_o)) AND at_o AND POSSIBLE [o] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE), POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c5),
+CAPABILITY = (( o_flee__m_f = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [o] (th_o)) AND at_o AND POSSIBLE [o] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c5),
+CAPABILITY = (( o_flee__m_f_g = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [o] (th_o)) AND at_o AND POSSIBLE [o] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)})
+},
+DES = {1}}), 
+o, c5),
+CAPABILITY = (( o_flee__f = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [o] (th_o)) AND at_o AND POSSIBLE [o] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c5),
+CAPABILITY = (( o_flee__f_g = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [o] (th_o)) AND at_o AND POSSIBLE [o] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c5),
+CAPABILITY = (( o_flee__g = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [o] (th_o)) AND at_o AND POSSIBLE [o] (TRUE)  AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(f,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c5),
+CAPABILITY = (( o_flee__ = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [o] (th_o)) AND at_o AND POSSIBLE [o] (TRUE) , POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c5),CAPABILITY = (( g_flee__m_f_o = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [g] (th_g)) AND at_g AND POSSIBLE [g] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_g}) 
+ }, 
+EDGES = { 
+(g,{-(1,1)}),
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)})
+},
+DES = {1}}), 
+g, c3),
+CAPABILITY = (( g_flee__m = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [g] (th_g)) AND at_g AND POSSIBLE [g] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE), POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c3),
+CAPABILITY = (( g_flee__m_f = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [g] (th_g)) AND at_g AND POSSIBLE [g] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c3),
+CAPABILITY = (( g_flee__m_f_o = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [g] (th_g)) AND at_g AND POSSIBLE [g] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)})
+},
+DES = {1}}), 
+g, c3),
+CAPABILITY = (( g_flee__f = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [g] (th_g)) AND at_g AND POSSIBLE [g] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c3),
+CAPABILITY = (( g_flee__f_o = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [g] (th_g)) AND at_g AND POSSIBLE [g] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c3),
+CAPABILITY = (( g_flee__o = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [g] (th_g)) AND at_g AND POSSIBLE [g] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(f,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c3),
+CAPABILITY = (( g_flee__ = { 
+EVENTS = { 
+1 = ( PRE = (BELIEVES [g] (th_g)) AND at_g AND POSSIBLE [g] (TRUE) , POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c3),CAPABILITY = (( m_leaves__f_o_g = { 
+EVENTS = { 
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_m}) 
+ }, 
+EDGES = { 
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_leaves__f = { 
+EVENTS = { 
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_leaves__f_o = { 
+EVENTS = { 
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_leaves__f_o_g = { 
+EVENTS = { 
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_leaves__o = { 
+EVENTS = { 
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_leaves__o_g = { 
+EVENTS = { 
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_leaves__g = { 
+EVENTS = { 
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE)  AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),
+CAPABILITY = (( m_leaves__ = { 
+EVENTS = { 
+1 = at_m AND POSSIBLE [m] (TRUE) , POST = {-at_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+m, c25),CAPABILITY = (( f_leaves__m_o_g = { 
+EVENTS = { 
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_f}) 
+ }, 
+EDGES = { 
+(f,{-(1,1)}),
+(m,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_leaves__m = { 
+EVENTS = { 
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE), POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_leaves__m_o = { 
+EVENTS = { 
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_leaves__m_o_g = { 
+EVENTS = { 
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_leaves__o = { 
+EVENTS = { 
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_leaves__o_g = { 
+EVENTS = { 
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_leaves__g = { 
+EVENTS = { 
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE)  AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c3),
+CAPABILITY = (( f_leaves__ = { 
+EVENTS = { 
+1 = at_f AND POSSIBLE [f] (TRUE) , POST = {-at_f}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+f, c3),CAPABILITY = (( o_leaves__m_f_g = { 
+EVENTS = { 
+1 = ( PRE = at_o AND POSSIBLE [o] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_o}) 
+ }, 
+EDGES = { 
+(o,{-(1,1)}),
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(g,{-(1,1)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_leaves__m = { 
+EVENTS = { 
+1 = ( PRE = at_o AND POSSIBLE [o] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE), POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_leaves__m_f = { 
+EVENTS = { 
+1 = ( PRE = at_o AND POSSIBLE [o] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_leaves__m_f_g = { 
+EVENTS = { 
+1 = ( PRE = at_o AND POSSIBLE [o] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_leaves__f = { 
+EVENTS = { 
+1 = ( PRE = at_o AND POSSIBLE [o] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_leaves__f_g = { 
+EVENTS = { 
+1 = ( PRE = at_o AND POSSIBLE [o] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_leaves__g = { 
+EVENTS = { 
+1 = ( PRE = at_o AND POSSIBLE [o] (TRUE)  AND at_g AND POSSIBLE [g] (TRUE), POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(f,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c3),
+CAPABILITY = (( o_leaves__ = { 
+EVENTS = { 
+1 = at_o AND POSSIBLE [o] (TRUE) , POST = {-at_o}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+o, c3),CAPABILITY = (( g_leaves__m_f_o = { 
+EVENTS = { 
+1 = ( PRE = at_g AND POSSIBLE [g] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_g}) 
+ }, 
+EDGES = { 
+(g,{-(1,1)}),
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_leaves__m = { 
+EVENTS = { 
+1 = ( PRE = at_g AND POSSIBLE [g] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE), POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_leaves__m_f = { 
+EVENTS = { 
+1 = ( PRE = at_g AND POSSIBLE [g] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_leaves__m_f_o = { 
+EVENTS = { 
+1 = ( PRE = at_g AND POSSIBLE [g] (TRUE)  AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_leaves__f = { 
+EVENTS = { 
+1 = ( PRE = at_g AND POSSIBLE [g] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_leaves__f_o = { 
+EVENTS = { 
+1 = ( PRE = at_g AND POSSIBLE [g] (TRUE)  AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_leaves__o = { 
+EVENTS = { 
+1 = ( PRE = at_g AND POSSIBLE [g] (TRUE)  AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(f,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c2),
+CAPABILITY = (( g_leaves__ = { 
+EVENTS = { 
+1 = at_g AND POSSIBLE [g] (TRUE) , POST = {-at_g}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(g,{-(1,1),-(2,2)}),
+(m,{-(1,2),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+},
+DES = {1}}), 
+g, c2),CAPABILITY = (( m_eats_f__o_g = { 
+EVENTS = { 
+1 = ( PRE = predator_m_f AND -friends_f_m AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND hungry_m AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-hungry_m}) 
+ }, 
+EDGES = { 
+(m,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)}),
+(g,{-(1,1)})
+} 
+ DELEDGES = {
+ (f,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),
+CAPABILITY = (( m_eats_f__o = { 
+EVENTS = { 
+1 = ( PRE = predator_m_f AND -friends_f_m AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND hungry_m AND at_o AND POSSIBLE [o] (TRUE), POST = {-hungry_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+} 
+ DELEDGES = {
+ (f,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),
+CAPABILITY = (( m_eats_f__o_g = { 
+EVENTS = { 
+1 = ( PRE = predator_m_f AND -friends_f_m AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND hungry_m AND at_o AND POSSIBLE [o] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-hungry_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)})
+} 
+ DELEDGES = {
+ (f,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),
+CAPABILITY = (( m_eats_f__g = { 
+EVENTS = { 
+1 = ( PRE = predator_m_f AND -friends_f_m AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND hungry_m AND at_g AND POSSIBLE [g] (TRUE), POST = {-hungry_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+} 
+ DELEDGES = {
+ (f,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),
+CAPABILITY = (( m_eats_f__g = { 
+EVENTS = { 
+1 = ( PRE = predator_m_f AND -friends_f_m AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND hungry_m, POST = {-hungry_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+} 
+ DELEDGES = {
+ (f,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),CAPABILITY = (( m_eats_o__f_g = { 
+EVENTS = { 
+1 = ( PRE = predator_m_o AND -friends_o_m AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND hungry_m AND at_f AND POSSIBLE [f] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-hungry_m}) 
+ }, 
+EDGES = { 
+(m,{-(1,1)}),
+(o,{-(1,1)}),
+(f,{-(1,1)}),
+(g,{-(1,1)})
+} 
+ DELEDGES = {
+ (o,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),
+CAPABILITY = (( m_eats_o__f = { 
+EVENTS = { 
+1 = ( PRE = predator_m_o AND -friends_o_m AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND hungry_m AND at_f AND POSSIBLE [f] (TRUE), POST = {-hungry_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+} 
+ DELEDGES = {
+ (o,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),
+CAPABILITY = (( m_eats_o__f_g = { 
+EVENTS = { 
+1 = ( PRE = predator_m_o AND -friends_o_m AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND hungry_m AND at_f AND POSSIBLE [f] (TRUE) AND at_g AND POSSIBLE [g] (TRUE), POST = {-hungry_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)})
+} 
+ DELEDGES = {
+ (o,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),
+CAPABILITY = (( m_eats_o__g = { 
+EVENTS = { 
+1 = ( PRE = predator_m_o AND -friends_o_m AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND hungry_m AND at_g AND POSSIBLE [g] (TRUE), POST = {-hungry_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)})
+} 
+ DELEDGES = {
+ (o,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),
+CAPABILITY = (( m_eats_o__g = { 
+EVENTS = { 
+1 = ( PRE = predator_m_o AND -friends_o_m AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND hungry_m, POST = {-hungry_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(g,{-(1,2),-(2,2)})
+} 
+ DELEDGES = {
+ (o,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),CAPABILITY = (( m_eats_g__f_o = { 
+EVENTS = { 
+1 = ( PRE = predator_m_g AND -friends_g_m AND at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND hungry_m AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-hungry_m}) 
+ }, 
+EDGES = { 
+(m,{-(1,1)}),
+(g,{-(1,1)}),
+(f,{-(1,1)}),
+(o,{-(1,1)})
+} 
+ DELEDGES = {
+ (g,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),
+CAPABILITY = (( m_eats_g__f = { 
+EVENTS = { 
+1 = ( PRE = predator_m_g AND -friends_g_m AND at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND hungry_m AND at_f AND POSSIBLE [f] (TRUE), POST = {-hungry_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+} 
+ DELEDGES = {
+ (g,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),
+CAPABILITY = (( m_eats_g__f_o = { 
+EVENTS = { 
+1 = ( PRE = predator_m_g AND -friends_g_m AND at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND hungry_m AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-hungry_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)})
+} 
+ DELEDGES = {
+ (g,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),
+CAPABILITY = (( m_eats_g__o = { 
+EVENTS = { 
+1 = ( PRE = predator_m_g AND -friends_g_m AND at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND hungry_m AND at_o AND POSSIBLE [o] (TRUE), POST = {-hungry_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)})
+} 
+ DELEDGES = {
+ (g,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),
+CAPABILITY = (( m_eats_g__o = { 
+EVENTS = { 
+1 = ( PRE = predator_m_g AND -friends_g_m AND at_m AND POSSIBLE [m] (TRUE) AND at_g AND POSSIBLE [g] (TRUE) AND hungry_m, POST = {-hungry_m}), 
+2 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = { 
+(m,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)}),
+(f,{-(1,2),-(2,2)}),
+(o,{-(1,2),-(2,2)})
+} 
+ DELEDGES = {
+ (g,{-(1,1)})
+} ,
+DES = {1}}), 
+m, c20),

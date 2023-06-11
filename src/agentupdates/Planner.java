@@ -66,14 +66,14 @@ public class Planner {
         boolean bnb = true;   
         if(bnb){
             //cost 25 gives flee_m
-
-            plan_found = BranchAndBoundSearch.branchAndBoundSearch(Planner.models.get(0), testcase_dir, 24);
+            System.out.println("working with the initial domain ");
+            plan_found = BranchAndBoundSearch.branchAndBoundSearch(Planner.models.get(0), testcase_dir, 20);
 
             int i = 0;
             int maxOrderCombinations = 4;
-            while(!plan_found && i <= maxOrderCombinations)
+            while(!plan_found && i < maxOrderCombinations)
             {
-                System.out.println("expanding domain " + i);
+                System.out.println("expanding to domain " + (i+1));
                 BuildXML.build(testcase_dir, ++i);
 
                 Planner.models.clear();
@@ -86,6 +86,7 @@ public class Planner {
                 Planner.agentlist.clear();
                 
                 BuildProblem.build(testcase_dir); //resets init too
+                System.out.println(sequence.size() + inferencing_actions.size());
                 logs = "Domain size:" + (sequence.size() + inferencing_actions.size())+ "\n";
                 plan_found = BranchAndBoundSearch.branchAndBoundSearch(Planner.models.get(0), testcase_dir, 20);
             }

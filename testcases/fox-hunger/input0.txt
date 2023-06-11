@@ -11,7 +11,7 @@ AGENTS : {m, f, o}.
 //uncertainty about mouse being friends with the gruffalo in the initial model
 MODEL : 
 { NODES = {
-(1,{at_m, -at_f, -at_o, -th_m, -th_f, -th_o, -friends_m_f, -friends_m_o, friends_f_o, predator_f_m, predator_o_m, hungry_f, hungry_g, hungry_o})
+(1,{at_m, -at_f, -at_o, th_m, -th_f, -th_o, -friends_m_f, -friends_m_o, friends_f_o, predator_f_m, predator_o_m, hungry_f, hungry_m, hungry_o})
 },  
 EDGES = {
 (m,{-(1,1)}),
@@ -25,9 +25,9 @@ DES = {1}
 
 ACTIONS : {
 
-CAPABILITY = (( flee_m = { 
+CAPABILITY = (( flee_m__f_o = { 
 EVENTS = { 
-1 = ( PRE = (BELIEVES [m] (th_m)) AND at_m AND POSSIBLE [m] (TRUE), POST = {-at_m} )
+1 = ( PRE = (BELIEVES [m] (th_m)) AND at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_m} )
 },
 EDGES = {
 (m,{-(1,1)}),
@@ -35,12 +35,12 @@ EDGES = {
 (o,{-(1,1)})
 },
 DES = {1}}), 
-m, c20),
+m, c25),
 
-CAPABILITY = (( flee_f = { 
+CAPABILITY = (( flee_f__m_o = { 
 
 EVENTS = { 
-1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_f} )
+1 = ( PRE = (BELIEVES [f] (th_f)) AND at_f AND POSSIBLE [f] (TRUE) AND at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_f} )
 },
  
 EDGES = {
@@ -53,7 +53,7 @@ EDGES = {
 DES = {1}}), 
 f, c5),
 
-CAPABILITY = (( flee_o = { 
+CAPABILITY = (( flee_o__m_f = { 
 
 EVENTS = { 
 1 = ( PRE = (BELIEVES [o] (th_o)) AND at_o AND POSSIBLE [o] (TRUE), POST = {-at_o} )
@@ -72,10 +72,10 @@ o, c5),
 
 //arrives actions
 
-CAPABILITY = (( m_arrives = { 
+CAPABILITY = (( m_arrives__f_o = { 
 
 EVENTS = { 
-1 = ( PRE = -at_m AND POSSIBLE [m] (TRUE), POST = {at_m} )
+1 = ( PRE = -at_m AND POSSIBLE [m] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE), POST = {at_m} )
 },
  
 EDGES = {
@@ -143,10 +143,10 @@ f, c3),
 
 // ending all variations
 
-CAPABILITY = (( o_arrives = { 
+CAPABILITY = (( o_arrives__f_m = { 
 
 EVENTS = { 
-1 = ( PRE = -at_o AND POSSIBLE [o] (TRUE), POST = {at_o} )
+1 = ( PRE = -at_o AND POSSIBLE [o] (TRUE) AND at_f AND POSSIBLE [f] (TRUE) AND at_m AND POSSIBLE [m] (TRUE), POST = {at_o} )
 },
  
 EDGES = {
@@ -162,10 +162,10 @@ o, c3),
 
 //leaves actions
 
-CAPABILITY = (( m_leaves = { 
+CAPABILITY = (( m_leaves__f_o = { 
 
 EVENTS = { 
-1 = ( PRE = at_m AND POSSIBLE [m] (TRUE), POST = {-at_m} )
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_f AND POSSIBLE [f] (TRUE), POST = {-at_m} )
 },
  
 EDGES = {
@@ -178,10 +178,10 @@ EDGES = {
 DES = {1}}), 
 m, c25),
 
-CAPABILITY = (( f_leaves = { 
+CAPABILITY = (( f_leaves__m_o = { 
 
 EVENTS = { 
-1 = ( PRE = at_f AND POSSIBLE [f] (TRUE), POST = {-at_f} )
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_m AND POSSIBLE [m] (TRUE), POST = {-at_f} )
 },
  
 EDGES = {
@@ -194,10 +194,10 @@ EDGES = {
 DES = {1}}), 
 f, c5),
 
-CAPABILITY = (( o_leaves = { 
+CAPABILITY = (( o_leaves__f_m = { 
 
 EVENTS = { 
-1 = ( PRE = at_o AND POSSIBLE [o] (TRUE), POST = {-at_o} )
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE) AND at_o AND POSSIBLE [o] (TRUE) AND at_m AND POSSIBLE [m] (TRUE), POST = {-at_o} )
 },
  
 EDGES = {
@@ -258,7 +258,7 @@ f, c2),
 
 // ending all variations of eats
 
-CAPABILITY = (( o_eats_m = { 
+CAPABILITY = (( o_eats_m__f = { 
 
 EVENTS = { 
 1 = ( PRE = at_m AND at_o AND predator_o_m AND -friends_m_o AND POSSIBLE [o] (TRUE) AND POSSIBLE [m] (TRUE), POST = {-at_m} )
