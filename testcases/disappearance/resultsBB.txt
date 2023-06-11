@@ -1,0 +1,1 @@
+	 cost: 6	 Plan found is : [fakedis_f_g__m]

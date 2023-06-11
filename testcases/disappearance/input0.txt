@@ -1,0 +1,114 @@
+//Order:  {m} < {f,o} < {g} : 
+
+//PROPS : {at_m, at_f, at_o, at_g, th_m, th_f, th_o, th_g, friends_m_f, friends_m_o, friends_f_o, friends_g_m, friends_g_f, friends_g_o, predator_f_m, predator_o_m, predator_m_g, predator_f_g, predator_o_g, hungry_f, hungry_m, hungry_g, hungry_o} .
+
+// __observing agents 
+// _agents involved
+
+AGENTS : {m, f, o, g}.
+
+MODEL : 
+{ NODES = {
+(1,{at_m, at_f, -at_o, -at_g, th_m, -th_f, -th_o, -th_g, -friends_m_f, -friends_m_o, friends_f_o, -friends_m_g, -friends_f_g, -friends_o_g, predator_f_m, predator_o_m, -predator_g_m, -predator_g_f, -predator_g_o, hungry_f, hungry_m, -hungry_g, hungry_o}),
+(2,{at_m, at_f, -at_o, -at_g, th_m, th_f, -th_o, -th_g, -friends_m_f, -friends_m_o, friends_f_o, -friends_m_g, -friends_f_g, -friends_o_g, predator_f_m, predator_o_m, predator_g_m, predator_g_f, predator_g_o, hungry_f, hungry_m, -hungry_g, hungry_o}),
+(3,{at_m, at_f, -at_o, -at_g, th_m, -th_f, -th_o, -th_g, -friends_m_f, -friends_m_o, friends_f_o, -friends_m_g, -friends_f_g, -friends_o_g, predator_f_m, predator_o_m, -predator_g_m, -predator_g_f, -predator_g_o, hungry_f, hungry_m, -hungry_g, hungry_o})
+},  
+EDGES = {
+(m,{-(1,1),-(2,2),-(3,3)}),
+(f,{-(1,2),-(2,2),-(3,3)}),
+(o,{-(1,3),-(2,3),-(3,3)}),
+(g,{-(2,2)})
+},
+DES = {1}
+}.
+
+
+// action description starts here
+
+ACTIONS : {
+
+CAPABILITY = (( fakedis_f_g__m = { 
+EVENTS = { 
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE) AND at_m AND POSSIBLE [m] (TRUE) AND BELIEVES [f] (POSSIBLE [g] (TRUE)) AND BELIEVES [f] (BELIEVES [m] (POSSIBLE [g] (TRUE))), POST = {nil}), 
+2 = ( PRE = (TRUE) , POST = {nil} ),
+3 = ( PRE = (TRUE) , POST = {nil} ) 
+}, 
+EDGES = {
+(f,{-(1,1),-(2,2),-(3,3)}),
+(m,{-(1,2),-(2,2),-(3,3)}),
+(o,{-(1,3),-(2,3),-(3,3)}),
+(g,{-(1,3),-(2,3),-(3,3)})
+}
+
+DELEDGES = {
+ (g,{-(2,2)})
+} ,
+DES = {1}}), 
+f, c6)
+
+}.
+
+
+//--adding inferencing actions below--
+
+
+IACTIONS : {
+
+( infer_th_m = { 
+
+EVENTS = { 
+1 = ( PRE = at_m AND POSSIBLE [m] (TRUE) AND ((at_f AND POSSIBLE [f] (TRUE) AND predator_f_m AND -friends_m_f) OR (at_o AND POSSIBLE [o] (TRUE) AND predator_o_m AND -friends_m_o) OR (at_g AND POSSIBLE [g] (TRUE) AND predator_g_m AND -friends_m_g)), POST = {th_m} ),
+2 = ( PRE = NOT (at_m AND POSSIBLE [m] (TRUE) AND ((at_f AND POSSIBLE [f] (TRUE) AND predator_f_m AND -friends_m_f) OR (at_o AND POSSIBLE [o] (TRUE) AND predator_o_m AND -friends_m_o) OR (at_g AND POSSIBLE [g] (TRUE) AND predator_g_m AND -friends_m_g))), POST = {-th_m} )
+},
+EDGES = {
+(f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(o,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(g,{-(1,1), -(1,2), -(2,1), -(2,2)})
+}
+,
+
+DES = {1,2}}), 
+
+( infer_th_o = { 
+
+EVENTS = { 
+1 = ( PRE = at_o AND POSSIBLE [o] (TRUE) AND ((at_f AND POSSIBLE [f] (TRUE) AND predator_f_o AND -friends_f_o) OR (at_m AND POSSIBLE [m] (TRUE) AND predator_m_o AND -friends_m_o) OR (at_g AND POSSIBLE [g] (TRUE) AND predator_g_o AND -friends_o_g)), POST = {th_o} ),
+2 = ( PRE = NOT (at_o AND POSSIBLE [o] (TRUE) AND ((at_f AND POSSIBLE [f] (TRUE) AND predator_f_o AND -friends_f_o) OR (at_m AND POSSIBLE [m] (TRUE) AND predator_m_o AND -friends_m_o) OR (at_g AND POSSIBLE [g] (TRUE) AND predator_g_o AND -friends_o_g))), POST = {-th_o} )
+},
+EDGES = {
+(f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(o,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(g,{-(1,1), -(1,2), -(2,1), -(2,2)})
+}
+,
+
+DES = {1,2}}), 
+
+( infer_th_f = { 
+
+EVENTS = { 
+1 = ( PRE = at_f AND POSSIBLE [f] (TRUE) AND ((at_o AND POSSIBLE [o] (TRUE) AND predator_o_f AND -friends_f_o) OR (at_m AND POSSIBLE [m] (TRUE) AND predator_m_f AND -friends_m_f) OR (at_g AND POSSIBLE [g] (TRUE) AND predator_g_f AND -friends_f_g)), POST = {th_f} ),
+2 = ( PRE = NOT (at_f AND POSSIBLE [f] (TRUE) AND ((at_o AND POSSIBLE [o] (TRUE) AND predator_o_f AND -friends_f_o) OR (at_m AND POSSIBLE [m] (TRUE) AND predator_m_f AND -friends_m_f) OR (at_g AND POSSIBLE [g] (TRUE) AND predator_g_f AND -friends_f_g))), POST = {-th_f} )
+},
+EDGES = {
+(f,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(m,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(o,{-(1,1), -(1,2), -(2,1), -(2,2)}),
+(g,{-(1,1), -(1,2), -(2,1), -(2,2)})
+}
+,
+
+DES = {1,2}})
+
+}.
+
+//GOAL : BELIEVES [m] (-th_m  AND -th_f AND BELIEVES [f] (th_f)).
+//GOAL : BELIEVES [m] (-th_m) AND BELIEVES [f] (-th_f) AND BELIEVES [f] (at_g) AND BELIEVES [m] (-at_g).
+//GOAL : at_m AND -th_m AND BELIEVES [f] (-th_f AND -th_m).
+ GOAL : at_f AND BELIEVES [f] (BELIEVES [m] (BELIEVES [f](-th_f))).
+// GOAL : BELIEVES [m] (-th_m AND -th_f) AND BELIEVES [f] (-th_m AND -th_f).
+// GOAL : BELIEVES [m] (at_m AND -th_m).
+
+PLANNER : {f} .
