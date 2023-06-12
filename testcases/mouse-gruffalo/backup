@@ -694,3 +694,40 @@ DES = {1,2}})
 GOAL : BELIEVES [m] (-th_m)
 
 PLANNER : {m} .
+
+last backup: 12 Jun
+
+( infer_th_g = { 
+
+EVENTS = { 
+1 = ( PRE = NOT (sc_f AND sc_o), POST = {-th_g} ),
+2 = ( PRE = sc_f AND sc_o, POST = {th_g} )
+},
+EDGES = {
+(f,{-(1,1),-(2,2)}),
+(m,{-(1,1),-(2,2)}),
+(o,{-(1,1),-(2,2)}),
+(g,{-(1,1),-(2,2)})
+}
+,
+
+DES = {1,2}}),
+
+another backup:
+
+( infer_th_g = { 
+
+EVENTS = { 
+1 = ( PRE = NOT (sc_f AND sc_o), POST = {-th_g} ),
+2 = ( PRE = sc_f AND sc_o, POST = {-th_g} ),
+3 = ( PRE = sc_f AND sc_o, POST = {th_g} )
+},
+EDGES = {
+(f,{-(1,1),-(1,2), -(2,1),-(2,2),-(3,3)}),
+(m,{-(1,1),-(1,2), -(2,1),-(2,2),-(3,3)}),
+(o,{-(1,1),-(1,2), -(2,1),-(2,2),-(3,3)}),
+(g,{-(1,1),-(2,3),-(3,3)})
+}
+,
+
+DES = {1,2}}),

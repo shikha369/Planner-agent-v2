@@ -134,18 +134,20 @@ DES = {1,2}}),
 ( infer_th_g = { 
 
 EVENTS = { 
-1 = ( PRE = NOT (sc_f AND sc_o), POST = {-th_g} ),
-2 = ( PRE = sc_f AND sc_o, POST = {th_g} )
+1 = ( PRE = (at_m AND POSSIBLE [m] (TRUE) AND predator_m_g AND -friends_g_m), POST = {th_g} ),
+2 = ( PRE = NOT (sc_f AND sc_o) AND NOT (at_m AND POSSIBLE [m] (TRUE) AND predator_m_g AND -friends_g_m), POST = {-th_g} ),
+3 = ( PRE = (sc_f AND sc_o) AND NOT (at_m AND POSSIBLE [m] (TRUE) AND predator_m_g AND -friends_g_m), POST = {-th_g} ),
+4 = ( PRE = sc_f AND sc_o, POST = {th_g} )
 },
 EDGES = {
-(f,{-(1,1),-(2,2)}),
-(m,{-(1,1),-(2,2)}),
-(o,{-(1,1),-(2,2)}),
-(g,{-(1,1),-(2,2)})
+(f,{-(1,1),-(1,2),-(1,3), -(2,1),-(2,2),-(2,3),-(3,1),-(3,2),-(3,3),-(4,4)}),
+(m,{-(1,1),-(1,2),-(1,3), -(2,1),-(2,2),-(2,3),-(3,1),-(3,2),-(3,3),-(4,4)}),
+(o,{-(1,1),-(1,2),-(1,3), -(2,1),-(2,2),-(2,3),-(3,1),-(3,2),-(3,3),-(4,4)}),
+(g,{-(1,1),-(1,2),-(1,3), -(2,1),-(2,2),-(2,3),-(3,4),-(4,4)})
 }
 ,
 
-DES = {1,2}}),
+DES = {1,2,3}}),
 
 ( infer_th_f = { 
 
