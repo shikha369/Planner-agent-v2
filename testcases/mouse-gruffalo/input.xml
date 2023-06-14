@@ -948,184 +948,100 @@
                 <ID text='2' pos='132:9'/>
             </DES>
         </EVENTMODEL>
-        <EVENTMODEL text='infer_th_g' pos='134:2'>
-            <EVENTLIST text='EVENTS' pos='136:0'>
-                <ID text='1' pos='137:0'>
-                    <PRECONDITIONS text='PRE' pos='137:6'>
-                        <AND pos='137:59'>
-                            <AND pos='137:42'>
-                                <AND pos='137:18'>
-                                    <PROPOSITION text='at_m' pos='137:13'/>
-                                    <POSSIBLE pos='137:22'>
-                                        <AGENT text='m' pos='137:32'/>
-                                        <TRUE pos='137:36'/>
+        <EVENTMODEL text='infer_th_g' pos='136:2'>
+            <EVENTLIST text='EVENTS' pos='138:0'>
+                <ID text='1' pos='139:0'>
+                    <PRECONDITIONS text='PRE' pos='139:6'>
+                        <AND pos='139:59'>
+                            <AND pos='139:42'>
+                                <AND pos='139:18'>
+                                    <PROPOSITION text='at_m' pos='139:13'/>
+                                    <POSSIBLE pos='139:22'>
+                                        <AGENT text='m' pos='139:32'/>
+                                        <TRUE pos='139:36'/>
                                     </POSSIBLE>
                                 </AND>
-                                <PROPOSITION text='predator_m_g' pos='137:46'/>
+                                <PROPOSITION text='predator_m_g' pos='139:46'/>
                             </AND>
-                            <PROPOSITION text='-friends_g_m' pos='137:63'/>
+                            <PROPOSITION text='-friends_g_m' pos='139:63'/>
                         </AND>
                     </PRECONDITIONS>
-                    <POST pos='137:78'>
-                        <PROPOSITION text='th_g' pos='137:86'/>
+                    <POST pos='139:78'>
+                        <PROPOSITION text='th_g' pos='139:86'/>
                     </POST>
                 </ID>
-                <ID text='2' pos='138:0'>
-                    <PRECONDITIONS text='PRE' pos='138:6'>
-                        <AND pos='138:32'>
-                            <NOT pos='138:12'>
-                                <AND pos='138:22'>
-                                    <PROPOSITION text='sc_f' pos='138:17'/>
-                                    <PROPOSITION text='sc_o' pos='138:26'/>
-                                </AND>
-                            </NOT>
-                            <NOT pos='138:36'>
-                                <AND pos='138:87'>
-                                    <AND pos='138:70'>
-                                        <AND pos='138:46'>
-                                            <PROPOSITION text='at_m' pos='138:41'/>
-                                            <POSSIBLE pos='138:50'>
-                                                <AGENT text='m' pos='138:60'/>
-                                                <TRUE pos='138:64'/>
-                                            </POSSIBLE>
-                                        </AND>
-                                        <PROPOSITION text='predator_m_g' pos='138:74'/>
-                                    </AND>
-                                    <PROPOSITION text='-friends_g_m' pos='138:91'/>
-                                </AND>
-                            </NOT>
-                        </AND>
-                    </PRECONDITIONS>
-                    <POST pos='138:106'>
-                        <PROPOSITION text='-th_g' pos='138:114'/>
-                    </POST>
-                </ID>
-                <ID text='3' pos='139:0'>
-                    <PRECONDITIONS text='PRE' pos='139:6'>
-                        <AND pos='139:28'>
-                            <AND pos='139:18'>
-                                <PROPOSITION text='sc_f' pos='139:13'/>
-                                <PROPOSITION text='sc_o' pos='139:22'/>
-                            </AND>
-                            <NOT pos='139:32'>
-                                <AND pos='139:83'>
-                                    <AND pos='139:66'>
-                                        <AND pos='139:42'>
-                                            <PROPOSITION text='at_m' pos='139:37'/>
-                                            <POSSIBLE pos='139:46'>
-                                                <AGENT text='m' pos='139:56'/>
-                                                <TRUE pos='139:60'/>
-                                            </POSSIBLE>
-                                        </AND>
-                                        <PROPOSITION text='predator_m_g' pos='139:70'/>
-                                    </AND>
-                                    <PROPOSITION text='-friends_g_m' pos='139:87'/>
-                                </AND>
-                            </NOT>
-                        </AND>
-                    </PRECONDITIONS>
-                    <POST pos='139:102'>
-                        <PROPOSITION text='-th_g' pos='139:110'/>
-                    </POST>
-                </ID>
-                <ID text='4' pos='140:0'>
+                <ID text='2' pos='140:0'>
                     <PRECONDITIONS text='PRE' pos='140:6'>
-                        <AND pos='140:17'>
-                            <PROPOSITION text='sc_f' pos='140:12'/>
-                            <PROPOSITION text='sc_o' pos='140:21'/>
+                        <AND pos='140:32'>
+                            <NOT pos='140:12'>
+                                <AND pos='140:22'>
+                                    <PROPOSITION text='sc_f' pos='140:17'/>
+                                    <PROPOSITION text='sc_o' pos='140:26'/>
+                                </AND>
+                            </NOT>
+                            <NOT pos='140:36'>
+                                <AND pos='140:87'>
+                                    <AND pos='140:70'>
+                                        <AND pos='140:46'>
+                                            <PROPOSITION text='at_m' pos='140:41'/>
+                                            <POSSIBLE pos='140:50'>
+                                                <AGENT text='m' pos='140:60'/>
+                                                <TRUE pos='140:64'/>
+                                            </POSSIBLE>
+                                        </AND>
+                                        <PROPOSITION text='predator_m_g' pos='140:74'/>
+                                    </AND>
+                                    <PROPOSITION text='-friends_g_m' pos='140:91'/>
+                                </AND>
+                            </NOT>
                         </AND>
                     </PRECONDITIONS>
-                    <POST pos='140:27'>
-                        <PROPOSITION text='th_g' pos='140:35'/>
+                    <POST pos='140:106'>
+                        <PROPOSITION text='-th_g' pos='140:114'/>
+                    </POST>
+                </ID>
+                <ID text='3' pos='141:0'>
+                    <PRECONDITIONS text='PRE' pos='141:6'>
+                        <AND pos='141:28'>
+                            <AND pos='141:18'>
+                                <PROPOSITION text='sc_f' pos='141:13'/>
+                                <PROPOSITION text='sc_o' pos='141:22'/>
+                            </AND>
+                            <NOT pos='141:32'>
+                                <AND pos='141:83'>
+                                    <AND pos='141:66'>
+                                        <AND pos='141:42'>
+                                            <PROPOSITION text='at_m' pos='141:37'/>
+                                            <POSSIBLE pos='141:46'>
+                                                <AGENT text='m' pos='141:56'/>
+                                                <TRUE pos='141:60'/>
+                                            </POSSIBLE>
+                                        </AND>
+                                        <PROPOSITION text='predator_m_g' pos='141:70'/>
+                                    </AND>
+                                    <PROPOSITION text='-friends_g_m' pos='141:87'/>
+                                </AND>
+                            </NOT>
+                        </AND>
+                    </PRECONDITIONS>
+                    <POST pos='141:102'>
+                        <PROPOSITION text='-th_g' pos='141:110'/>
+                    </POST>
+                </ID>
+                <ID text='4' pos='142:0'>
+                    <PRECONDITIONS text='PRE' pos='142:6'>
+                        <AND pos='142:17'>
+                            <PROPOSITION text='sc_f' pos='142:12'/>
+                            <PROPOSITION text='sc_o' pos='142:21'/>
+                        </AND>
+                    </PRECONDITIONS>
+                    <POST pos='142:27'>
+                        <PROPOSITION text='th_g' pos='142:35'/>
                     </POST>
                 </ID>
             </EVENTLIST>
-            <EDGELIST text='EDGES' pos='142:0'>
-                <AE text='f' pos='143:1'>
-                    <E text='-' pos='143:4'>
-                        <ID text='1' pos='143:6'/>
-                        <ID text='1' pos='143:8'/>
-                    </E>
-                    <E text='-' pos='143:11'>
-                        <ID text='1' pos='143:13'/>
-                        <ID text='2' pos='143:15'/>
-                    </E>
-                    <E text='-' pos='143:18'>
-                        <ID text='1' pos='143:20'/>
-                        <ID text='3' pos='143:22'/>
-                    </E>
-                    <E text='-' pos='143:26'>
-                        <ID text='2' pos='143:28'/>
-                        <ID text='1' pos='143:30'/>
-                    </E>
-                    <E text='-' pos='143:33'>
-                        <ID text='2' pos='143:35'/>
-                        <ID text='2' pos='143:37'/>
-                    </E>
-                    <E text='-' pos='143:40'>
-                        <ID text='2' pos='143:42'/>
-                        <ID text='3' pos='143:44'/>
-                    </E>
-                    <E text='-' pos='143:47'>
-                        <ID text='3' pos='143:49'/>
-                        <ID text='1' pos='143:51'/>
-                    </E>
-                    <E text='-' pos='143:54'>
-                        <ID text='3' pos='143:56'/>
-                        <ID text='2' pos='143:58'/>
-                    </E>
-                    <E text='-' pos='143:61'>
-                        <ID text='3' pos='143:63'/>
-                        <ID text='3' pos='143:65'/>
-                    </E>
-                    <E text='-' pos='143:68'>
-                        <ID text='4' pos='143:70'/>
-                        <ID text='4' pos='143:72'/>
-                    </E>
-                </AE>
-                <AE text='m' pos='144:1'>
-                    <E text='-' pos='144:4'>
-                        <ID text='1' pos='144:6'/>
-                        <ID text='1' pos='144:8'/>
-                    </E>
-                    <E text='-' pos='144:11'>
-                        <ID text='1' pos='144:13'/>
-                        <ID text='2' pos='144:15'/>
-                    </E>
-                    <E text='-' pos='144:18'>
-                        <ID text='1' pos='144:20'/>
-                        <ID text='3' pos='144:22'/>
-                    </E>
-                    <E text='-' pos='144:26'>
-                        <ID text='2' pos='144:28'/>
-                        <ID text='1' pos='144:30'/>
-                    </E>
-                    <E text='-' pos='144:33'>
-                        <ID text='2' pos='144:35'/>
-                        <ID text='2' pos='144:37'/>
-                    </E>
-                    <E text='-' pos='144:40'>
-                        <ID text='2' pos='144:42'/>
-                        <ID text='3' pos='144:44'/>
-                    </E>
-                    <E text='-' pos='144:47'>
-                        <ID text='3' pos='144:49'/>
-                        <ID text='1' pos='144:51'/>
-                    </E>
-                    <E text='-' pos='144:54'>
-                        <ID text='3' pos='144:56'/>
-                        <ID text='2' pos='144:58'/>
-                    </E>
-                    <E text='-' pos='144:61'>
-                        <ID text='3' pos='144:63'/>
-                        <ID text='3' pos='144:65'/>
-                    </E>
-                    <E text='-' pos='144:68'>
-                        <ID text='4' pos='144:70'/>
-                        <ID text='4' pos='144:72'/>
-                    </E>
-                </AE>
-                <AE text='o' pos='145:1'>
+            <EDGELIST text='EDGES' pos='144:0'>
+                <AE text='f' pos='145:1'>
                     <E text='-' pos='145:4'>
                         <ID text='1' pos='145:6'/>
                         <ID text='1' pos='145:8'/>
@@ -1167,7 +1083,7 @@
                         <ID text='4' pos='145:72'/>
                     </E>
                 </AE>
-                <AE text='g' pos='146:1'>
+                <AE text='m' pos='146:1'>
                     <E text='-' pos='146:4'>
                         <ID text='1' pos='146:6'/>
                         <ID text='1' pos='146:8'/>
@@ -1194,181 +1110,221 @@
                     </E>
                     <E text='-' pos='146:47'>
                         <ID text='3' pos='146:49'/>
-                        <ID text='4' pos='146:51'/>
+                        <ID text='1' pos='146:51'/>
                     </E>
                     <E text='-' pos='146:54'>
-                        <ID text='4' pos='146:56'/>
-                        <ID text='4' pos='146:58'/>
+                        <ID text='3' pos='146:56'/>
+                        <ID text='2' pos='146:58'/>
+                    </E>
+                    <E text='-' pos='146:61'>
+                        <ID text='3' pos='146:63'/>
+                        <ID text='3' pos='146:65'/>
+                    </E>
+                    <E text='-' pos='146:68'>
+                        <ID text='4' pos='146:70'/>
+                        <ID text='4' pos='146:72'/>
+                    </E>
+                </AE>
+                <AE text='o' pos='147:1'>
+                    <E text='-' pos='147:4'>
+                        <ID text='1' pos='147:6'/>
+                        <ID text='1' pos='147:8'/>
+                    </E>
+                    <E text='-' pos='147:11'>
+                        <ID text='1' pos='147:13'/>
+                        <ID text='2' pos='147:15'/>
+                    </E>
+                    <E text='-' pos='147:18'>
+                        <ID text='1' pos='147:20'/>
+                        <ID text='3' pos='147:22'/>
+                    </E>
+                    <E text='-' pos='147:26'>
+                        <ID text='2' pos='147:28'/>
+                        <ID text='1' pos='147:30'/>
+                    </E>
+                    <E text='-' pos='147:33'>
+                        <ID text='2' pos='147:35'/>
+                        <ID text='2' pos='147:37'/>
+                    </E>
+                    <E text='-' pos='147:40'>
+                        <ID text='2' pos='147:42'/>
+                        <ID text='3' pos='147:44'/>
+                    </E>
+                    <E text='-' pos='147:47'>
+                        <ID text='3' pos='147:49'/>
+                        <ID text='1' pos='147:51'/>
+                    </E>
+                    <E text='-' pos='147:54'>
+                        <ID text='3' pos='147:56'/>
+                        <ID text='2' pos='147:58'/>
+                    </E>
+                    <E text='-' pos='147:61'>
+                        <ID text='3' pos='147:63'/>
+                        <ID text='3' pos='147:65'/>
+                    </E>
+                    <E text='-' pos='147:68'>
+                        <ID text='4' pos='147:70'/>
+                        <ID text='4' pos='147:72'/>
+                    </E>
+                </AE>
+                <AE text='g' pos='148:1'>
+                    <E text='-' pos='148:4'>
+                        <ID text='1' pos='148:6'/>
+                        <ID text='1' pos='148:8'/>
+                    </E>
+                    <E text='-' pos='148:11'>
+                        <ID text='1' pos='148:13'/>
+                        <ID text='2' pos='148:15'/>
+                    </E>
+                    <E text='-' pos='148:19'>
+                        <ID text='2' pos='148:21'/>
+                        <ID text='1' pos='148:23'/>
+                    </E>
+                    <E text='-' pos='148:26'>
+                        <ID text='2' pos='148:28'/>
+                        <ID text='2' pos='148:30'/>
+                    </E>
+                    <E text='-' pos='148:33'>
+                        <ID text='3' pos='148:35'/>
+                        <ID text='4' pos='148:37'/>
+                    </E>
+                    <E text='-' pos='148:40'>
+                        <ID text='4' pos='148:42'/>
+                        <ID text='4' pos='148:44'/>
                     </E>
                 </AE>
             </EDGELIST>
-            <DES pos='150:0'>
-                <ID text='1' pos='150:7'/>
-                <ID text='2' pos='150:9'/>
-                <ID text='3' pos='150:11'/>
+            <DES pos='152:0'>
+                <ID text='1' pos='152:7'/>
+                <ID text='2' pos='152:9'/>
+                <ID text='3' pos='152:11'/>
             </DES>
         </EVENTMODEL>
-        <EVENTMODEL text='infer_th_f' pos='152:2'>
-            <EVENTLIST text='EVENTS' pos='154:0'>
-                <ID text='1' pos='155:0'>
-                    <PRECONDITIONS text='PRE' pos='155:6'>
-                        <AND pos='155:41'>
-                            <AND pos='155:17'>
-                                <PROPOSITION text='at_f' pos='155:12'/>
-                                <POSSIBLE pos='155:21'>
-                                    <AGENT text='f' pos='155:31'/>
-                                    <TRUE pos='155:35'/>
+        <EVENTMODEL text='infer_th_f' pos='154:2'>
+            <EVENTLIST text='EVENTS' pos='156:0'>
+                <ID text='1' pos='157:0'>
+                    <PRECONDITIONS text='PRE' pos='157:6'>
+                        <AND pos='157:41'>
+                            <AND pos='157:17'>
+                                <PROPOSITION text='at_f' pos='157:12'/>
+                                <POSSIBLE pos='157:21'>
+                                    <AGENT text='f' pos='157:31'/>
+                                    <TRUE pos='157:35'/>
                                 </POSSIBLE>
                             </AND>
-                            <OR pos='155:179'>
-                                <OR pos='155:111'>
-                                    <AND pos='155:93'>
-                                        <AND pos='155:76'>
-                                            <AND pos='155:52'>
-                                                <PROPOSITION text='at_o' pos='155:47'/>
-                                                <POSSIBLE pos='155:56'>
-                                                    <AGENT text='o' pos='155:66'/>
-                                                    <TRUE pos='155:70'/>
+                            <OR pos='157:179'>
+                                <OR pos='157:111'>
+                                    <AND pos='157:93'>
+                                        <AND pos='157:76'>
+                                            <AND pos='157:52'>
+                                                <PROPOSITION text='at_o' pos='157:47'/>
+                                                <POSSIBLE pos='157:56'>
+                                                    <AGENT text='o' pos='157:66'/>
+                                                    <TRUE pos='157:70'/>
                                                 </POSSIBLE>
                                             </AND>
-                                            <PROPOSITION text='predator_o_f' pos='155:80'/>
+                                            <PROPOSITION text='predator_o_f' pos='157:80'/>
                                         </AND>
-                                        <PROPOSITION text='-friends_f_o' pos='155:97'/>
+                                        <PROPOSITION text='-friends_f_o' pos='157:97'/>
                                     </AND>
-                                    <AND pos='155:161'>
-                                        <AND pos='155:144'>
-                                            <AND pos='155:120'>
-                                                <PROPOSITION text='at_m' pos='155:115'/>
-                                                <POSSIBLE pos='155:124'>
-                                                    <AGENT text='m' pos='155:134'/>
-                                                    <TRUE pos='155:138'/>
+                                    <AND pos='157:161'>
+                                        <AND pos='157:144'>
+                                            <AND pos='157:120'>
+                                                <PROPOSITION text='at_m' pos='157:115'/>
+                                                <POSSIBLE pos='157:124'>
+                                                    <AGENT text='m' pos='157:134'/>
+                                                    <TRUE pos='157:138'/>
                                                 </POSSIBLE>
                                             </AND>
-                                            <PROPOSITION text='predator_m_f' pos='155:148'/>
+                                            <PROPOSITION text='predator_m_f' pos='157:148'/>
                                         </AND>
-                                        <PROPOSITION text='-friends_m_f' pos='155:165'/>
+                                        <PROPOSITION text='-friends_m_f' pos='157:165'/>
                                     </AND>
                                 </OR>
-                                <AND pos='155:229'>
-                                    <AND pos='155:212'>
-                                        <AND pos='155:188'>
-                                            <PROPOSITION text='at_g' pos='155:183'/>
-                                            <POSSIBLE pos='155:192'>
-                                                <AGENT text='g' pos='155:202'/>
-                                                <TRUE pos='155:206'/>
+                                <AND pos='157:229'>
+                                    <AND pos='157:212'>
+                                        <AND pos='157:188'>
+                                            <PROPOSITION text='at_g' pos='157:183'/>
+                                            <POSSIBLE pos='157:192'>
+                                                <AGENT text='g' pos='157:202'/>
+                                                <TRUE pos='157:206'/>
                                             </POSSIBLE>
                                         </AND>
-                                        <PROPOSITION text='predator_g_f' pos='155:216'/>
+                                        <PROPOSITION text='predator_g_f' pos='157:216'/>
                                     </AND>
-                                    <PROPOSITION text='-friends_f_g' pos='155:233'/>
+                                    <PROPOSITION text='-friends_f_g' pos='157:233'/>
                                 </AND>
                             </OR>
                         </AND>
                     </PRECONDITIONS>
-                    <POST pos='155:249'>
-                        <PROPOSITION text='th_f' pos='155:257'/>
+                    <POST pos='157:249'>
+                        <PROPOSITION text='th_f' pos='157:257'/>
                     </POST>
                 </ID>
-                <ID text='2' pos='156:0'>
-                    <PRECONDITIONS text='PRE' pos='156:6'>
-                        <NOT pos='156:12'>
-                            <AND pos='156:46'>
-                                <AND pos='156:22'>
-                                    <PROPOSITION text='at_f' pos='156:17'/>
-                                    <POSSIBLE pos='156:26'>
-                                        <AGENT text='f' pos='156:36'/>
-                                        <TRUE pos='156:40'/>
+                <ID text='2' pos='158:0'>
+                    <PRECONDITIONS text='PRE' pos='158:6'>
+                        <NOT pos='158:12'>
+                            <AND pos='158:46'>
+                                <AND pos='158:22'>
+                                    <PROPOSITION text='at_f' pos='158:17'/>
+                                    <POSSIBLE pos='158:26'>
+                                        <AGENT text='f' pos='158:36'/>
+                                        <TRUE pos='158:40'/>
                                     </POSSIBLE>
                                 </AND>
-                                <OR pos='156:184'>
-                                    <OR pos='156:116'>
-                                        <AND pos='156:98'>
-                                            <AND pos='156:81'>
-                                                <AND pos='156:57'>
-                                                    <PROPOSITION text='at_o' pos='156:52'/>
-                                                    <POSSIBLE pos='156:61'>
-                                                        <AGENT text='o' pos='156:71'/>
-                                                        <TRUE pos='156:75'/>
+                                <OR pos='158:184'>
+                                    <OR pos='158:116'>
+                                        <AND pos='158:98'>
+                                            <AND pos='158:81'>
+                                                <AND pos='158:57'>
+                                                    <PROPOSITION text='at_o' pos='158:52'/>
+                                                    <POSSIBLE pos='158:61'>
+                                                        <AGENT text='o' pos='158:71'/>
+                                                        <TRUE pos='158:75'/>
                                                     </POSSIBLE>
                                                 </AND>
-                                                <PROPOSITION text='predator_o_f' pos='156:85'/>
+                                                <PROPOSITION text='predator_o_f' pos='158:85'/>
                                             </AND>
-                                            <PROPOSITION text='-friends_f_o' pos='156:102'/>
+                                            <PROPOSITION text='-friends_f_o' pos='158:102'/>
                                         </AND>
-                                        <AND pos='156:166'>
-                                            <AND pos='156:149'>
-                                                <AND pos='156:125'>
-                                                    <PROPOSITION text='at_m' pos='156:120'/>
-                                                    <POSSIBLE pos='156:129'>
-                                                        <AGENT text='m' pos='156:139'/>
-                                                        <TRUE pos='156:143'/>
+                                        <AND pos='158:166'>
+                                            <AND pos='158:149'>
+                                                <AND pos='158:125'>
+                                                    <PROPOSITION text='at_m' pos='158:120'/>
+                                                    <POSSIBLE pos='158:129'>
+                                                        <AGENT text='m' pos='158:139'/>
+                                                        <TRUE pos='158:143'/>
                                                     </POSSIBLE>
                                                 </AND>
-                                                <PROPOSITION text='predator_m_f' pos='156:153'/>
+                                                <PROPOSITION text='predator_m_f' pos='158:153'/>
                                             </AND>
-                                            <PROPOSITION text='-friends_f_m' pos='156:170'/>
+                                            <PROPOSITION text='-friends_f_m' pos='158:170'/>
                                         </AND>
                                     </OR>
-                                    <AND pos='156:234'>
-                                        <AND pos='156:217'>
-                                            <AND pos='156:193'>
-                                                <PROPOSITION text='at_g' pos='156:188'/>
-                                                <POSSIBLE pos='156:197'>
-                                                    <AGENT text='g' pos='156:207'/>
-                                                    <TRUE pos='156:211'/>
+                                    <AND pos='158:234'>
+                                        <AND pos='158:217'>
+                                            <AND pos='158:193'>
+                                                <PROPOSITION text='at_g' pos='158:188'/>
+                                                <POSSIBLE pos='158:197'>
+                                                    <AGENT text='g' pos='158:207'/>
+                                                    <TRUE pos='158:211'/>
                                                 </POSSIBLE>
                                             </AND>
-                                            <PROPOSITION text='predator_g_f' pos='156:221'/>
+                                            <PROPOSITION text='predator_g_f' pos='158:221'/>
                                         </AND>
-                                        <PROPOSITION text='-friends_f_g' pos='156:238'/>
+                                        <PROPOSITION text='-friends_f_g' pos='158:238'/>
                                     </AND>
                                 </OR>
                             </AND>
                         </NOT>
                     </PRECONDITIONS>
-                    <POST pos='156:255'>
-                        <PROPOSITION text='-th_f' pos='156:263'/>
+                    <POST pos='158:255'>
+                        <PROPOSITION text='-th_f' pos='158:263'/>
                     </POST>
                 </ID>
             </EVENTLIST>
-            <EDGELIST text='EDGES' pos='158:0'>
-                <AE text='f' pos='159:1'>
-                    <E text='-' pos='159:4'>
-                        <ID text='1' pos='159:6'/>
-                        <ID text='1' pos='159:8'/>
-                    </E>
-                    <E text='-' pos='159:12'>
-                        <ID text='1' pos='159:14'/>
-                        <ID text='2' pos='159:16'/>
-                    </E>
-                    <E text='-' pos='159:20'>
-                        <ID text='2' pos='159:22'/>
-                        <ID text='1' pos='159:24'/>
-                    </E>
-                    <E text='-' pos='159:28'>
-                        <ID text='2' pos='159:30'/>
-                        <ID text='2' pos='159:32'/>
-                    </E>
-                </AE>
-                <AE text='m' pos='160:1'>
-                    <E text='-' pos='160:4'>
-                        <ID text='1' pos='160:6'/>
-                        <ID text='1' pos='160:8'/>
-                    </E>
-                    <E text='-' pos='160:12'>
-                        <ID text='1' pos='160:14'/>
-                        <ID text='2' pos='160:16'/>
-                    </E>
-                    <E text='-' pos='160:20'>
-                        <ID text='2' pos='160:22'/>
-                        <ID text='1' pos='160:24'/>
-                    </E>
-                    <E text='-' pos='160:28'>
-                        <ID text='2' pos='160:30'/>
-                        <ID text='2' pos='160:32'/>
-                    </E>
-                </AE>
-                <AE text='o' pos='161:1'>
+            <EDGELIST text='EDGES' pos='160:0'>
+                <AE text='f' pos='161:1'>
                     <E text='-' pos='161:4'>
                         <ID text='1' pos='161:6'/>
                         <ID text='1' pos='161:8'/>
@@ -1386,7 +1342,7 @@
                         <ID text='2' pos='161:32'/>
                     </E>
                 </AE>
-                <AE text='g' pos='162:1'>
+                <AE text='m' pos='162:1'>
                     <E text='-' pos='162:4'>
                         <ID text='1' pos='162:6'/>
                         <ID text='1' pos='162:8'/>
@@ -1404,20 +1360,56 @@
                         <ID text='2' pos='162:32'/>
                     </E>
                 </AE>
+                <AE text='o' pos='163:1'>
+                    <E text='-' pos='163:4'>
+                        <ID text='1' pos='163:6'/>
+                        <ID text='1' pos='163:8'/>
+                    </E>
+                    <E text='-' pos='163:12'>
+                        <ID text='1' pos='163:14'/>
+                        <ID text='2' pos='163:16'/>
+                    </E>
+                    <E text='-' pos='163:20'>
+                        <ID text='2' pos='163:22'/>
+                        <ID text='1' pos='163:24'/>
+                    </E>
+                    <E text='-' pos='163:28'>
+                        <ID text='2' pos='163:30'/>
+                        <ID text='2' pos='163:32'/>
+                    </E>
+                </AE>
+                <AE text='g' pos='164:1'>
+                    <E text='-' pos='164:4'>
+                        <ID text='1' pos='164:6'/>
+                        <ID text='1' pos='164:8'/>
+                    </E>
+                    <E text='-' pos='164:12'>
+                        <ID text='1' pos='164:14'/>
+                        <ID text='2' pos='164:16'/>
+                    </E>
+                    <E text='-' pos='164:20'>
+                        <ID text='2' pos='164:22'/>
+                        <ID text='1' pos='164:24'/>
+                    </E>
+                    <E text='-' pos='164:28'>
+                        <ID text='2' pos='164:30'/>
+                        <ID text='2' pos='164:32'/>
+                    </E>
+                </AE>
             </EDGELIST>
-            <DES pos='166:0'>
-                <ID text='1' pos='166:7'/>
-                <ID text='2' pos='166:9'/>
+            <DES pos='168:0'>
+                <ID text='1' pos='168:7'/>
+                <ID text='2' pos='168:9'/>
             </DES>
         </EVENTMODEL>
     </IEVENTMODELS>
-    <GOAL pos='174:0'>
-        <BELIEVES pos='174:7'>
-            <AGENT text='m' pos='174:17'/>
-            <PROPOSITION text='-th_m' pos='174:21'/>
+    <GOAL pos='176:0'>
+        <BELIEVES pos='176:7'>
+            <AGENT text='m' pos='176:17'/>
+            <PROPOSITION text='-th_m' pos='176:21'/>
         </BELIEVES>
     </GOAL>
-    <PLANNER pos='176:0'>
-        <NAME text='m' pos='176:11'/>
+    <PLANNER pos='178:0'>
+        <NAME text='m' pos='178:11'/>
     </PLANNER>
 </PROGRAM>
